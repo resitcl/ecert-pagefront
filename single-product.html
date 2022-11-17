@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=18867" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=18867" type="text/javascript"></script>
+    <link href="css/main.css?v=16645" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=16645" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -24,7 +24,7 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
-            <div class="header__right">
+            <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
                   <ul> 
@@ -34,6 +34,9 @@
                   </ul>
                 </div>
               </div>
+            </div>
+            <div class="header__right"> 
+              <div data-open-search class="header__item header__item--search"><span class="fa fa-search"></span></div>
             </div>
           </div>
         </div>
@@ -56,16 +59,24 @@
                 </div>
                 <nav>
                   <ul>
-                    <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a></li>
+                    <li class="header__nav__li header__nav__li--digtrans"><a href="solutions.html">Soluciones</a></li>
                     <li><a href="#">Alianzas</a></li>
-                    <li><a href="#">Verificación y Ayuda</a></li>
+                    <li> <a href="#">Ayuda</a>
+                      <ul> 
+                        <li> <a href="faq.html">Preguntas frecuentes</a></li>
+                        <li><a href="verification.html">Verificación</a></li>
+                        <li><a href="tutoriales.html">Tutoriales</a></li>
+                      </ul>
+                    </li>
                     <li><a href="#">Más</a></li>
                   </ul>
                 </nav>
               </div>
             </div>
             <div class="header__right">
-              <div data-open-search class="header__item header__item--search"><span class="fa fa-search"></span></div>
+              <div class="header__item"> 
+                <div class="header__buttons"> <a href="#" class="btn btn--xs">Crea tu cuenta</a><a href="#" class="btn btn--xs btn--white">Ingresar</a></div>
+              </div>
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
               </div>
@@ -77,9 +88,8 @@
     <div id="sections">
       <section class="section--header section--header--product">
         <div class="section__clipath">
-          <div class="section__svg"> <img src="img/eff-2.svg"></div>
           <div class="section__bg">
-            <div class="bg"><img src="img/uploads/2.jpg"></div>
+            <div class="bg"><img src="img/uploads/3.jpg"></div>
           </div>
           <div class="section__wrap section__wrap--header">
             <div class="section__body">
@@ -100,43 +110,119 @@
           </div>
           <div class="section__body"> 
             <div class="section__options">
-              <div class="cols"> 
+              <h3 class="section__title">Selecciona tu mejor opción</h3>
+              <div class="cols cols-scroll">
                 <div class="col-md-4"> 
                   <article class="article--option article--option--checked">
-                    <div class="article__bg"> 
-                      <div class="bg"> <img src="img/uploads/5.jpeg"></div>
-                    </div>
-                    <div class="article__icon"> <img src="img/icons/icon-check.png"></div>
-                    <div class="article__body"> 
-                      <h4 class="article__title">Firma electrónica</h4>
-                      <p class="article__age">1 Año</p><span class="article__price">$14.500</span>
-                      <p class="article__iva">(iva incluido)</p><a data-check-product class="btn btn--sm">Presiona continuar<span class="fa fa-"></span></a>
+                    <div class="article__tag">Producto seleccionado</div>
+                    <div class="article__body">
+                      <div class="article__radio"> 
+                        <label>
+                          <input type="radio" name="product" value="1" class="radio-options">
+                        </label>
+                      </div>
+                      <div class="article__icon"> <svg width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_35_2)">
+<path d="M341.333 682.667C152.818 682.667 0 529.844 0 341.333C0 152.818 152.818 0 341.333 0C529.844 0 682.667 152.818 682.667 341.333C682.443 529.755 529.755 682.443 341.333 682.667ZM341.333 42.6667C176.385 42.6667 42.6667 176.385 42.6667 341.333C42.6667 506.281 176.385 640 341.333 640C506.281 640 640 506.281 640 341.333C639.823 176.458 506.208 42.8438 341.333 42.6667Z" fill="url(#paint0_angular_35_2)"/>
+<path d="M234.667 512C229.01 512 223.583 509.75 219.583 505.75L134.25 420.417C126.068 411.943 126.302 398.438 134.776 390.25C143.042 382.266 156.151 382.266 164.417 390.25L234.667 460.5L498.432 196.734C506.906 188.552 520.411 188.786 528.599 197.26C536.583 205.526 536.583 218.635 528.599 226.901L249.75 505.75C245.75 509.75 240.323 512 234.667 512Z" fill="url(#paint1_angular_35_2)"/>
+</g>
+<defs>
+<radialGradient id="paint0_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(341.333 341.333) rotate(90) scale(341.333)">
+<stop stop-color="#B01F8C"/>
+<stop offset="1" stop-color="#4F2B83"/>
+</radialGradient>
+<radialGradient id="paint1_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(331.425 351.374) rotate(90) scale(160.626 203.162)">
+<stop stop-color="#B01F8C"/>
+<stop offset="1" stop-color="#4F2B83"/>
+</radialGradient>
+<clipPath id="clip0_35_2">
+<rect width="682.667" height="682.667" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                      </div>
+                      <div class="article__content">
+                        <h4 class="article__title">Firma electrónica</h4>
+                        <p class="article__age">1 Año</p><span class="article__price">$14.500</span>
+                        <p class="article__iva">(iva incluido)</p><a class="btn btn--sm">Presiona abajo continuar</a>
+                      </div>
                     </div>
                   </article>
                 </div>
                 <div class="col-md-4"> 
                   <article class="article--option">
-                    <div class="article__bg"> 
-                      <div class="bg"> <img src="img/uploads/5.jpeg"></div>
-                    </div>
-                    <div class="article__icon"> <img src="img/icons/icon-check.png"></div>
-                    <div class="article__body"> 
-                      <h4 class="article__title">Firma electrónica</h4>
-                      <p class="article__age">2 Año</p><span class="article__price">$22.900</span>
-                      <p class="article__iva">(iva incluido)</p><a data-check-product class="btn btn--white btn--sm">Seleccionar Producto<span class="fa fa-"></span></a>
+                    <div class="article__tag">Producto seleccionado</div>
+                    <div class="article__body">
+                      <div class="article__radio"> 
+                        <label>
+                          <input type="radio" name="product" value="2" class="radio-options">
+                        </label>
+                      </div>
+                      <div class="article__icon"> <svg width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_35_2)">
+<path d="M341.333 682.667C152.818 682.667 0 529.844 0 341.333C0 152.818 152.818 0 341.333 0C529.844 0 682.667 152.818 682.667 341.333C682.443 529.755 529.755 682.443 341.333 682.667ZM341.333 42.6667C176.385 42.6667 42.6667 176.385 42.6667 341.333C42.6667 506.281 176.385 640 341.333 640C506.281 640 640 506.281 640 341.333C639.823 176.458 506.208 42.8438 341.333 42.6667Z" fill="url(#paint0_angular_35_2)"/>
+<path d="M234.667 512C229.01 512 223.583 509.75 219.583 505.75L134.25 420.417C126.068 411.943 126.302 398.438 134.776 390.25C143.042 382.266 156.151 382.266 164.417 390.25L234.667 460.5L498.432 196.734C506.906 188.552 520.411 188.786 528.599 197.26C536.583 205.526 536.583 218.635 528.599 226.901L249.75 505.75C245.75 509.75 240.323 512 234.667 512Z" fill="url(#paint1_angular_35_2)"/>
+</g>
+<defs>
+<radialGradient id="paint0_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(341.333 341.333) rotate(90) scale(341.333)">
+<stop stop-color="#B01F8C"/>
+<stop offset="1" stop-color="#4F2B83"/>
+</radialGradient>
+<radialGradient id="paint1_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(331.425 351.374) rotate(90) scale(160.626 203.162)">
+<stop stop-color="#B01F8C"/>
+<stop offset="1" stop-color="#4F2B83"/>
+</radialGradient>
+<clipPath id="clip0_35_2">
+<rect width="682.667" height="682.667" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                      </div>
+                      <div class="article__content">
+                        <h4 class="article__title">Firma electrónica</h4>
+                        <p class="article__age">2 Año</p><span class="article__price">$22.900</span>
+                        <p class="article__iva">(iva incluido)</p><a class="btn btn--sm">Seleccionar Producto</a>
+                      </div>
                     </div>
                   </article>
                 </div>
                 <div class="col-md-4"> 
                   <article class="article--option">
-                    <div class="article__bg"> 
-                      <div class="bg"> <img src="img/uploads/5.jpeg"></div>
-                    </div>
-                    <div class="article__icon"> <img src="img/icons/icon-check.png"></div>
-                    <div class="article__body"> 
-                      <h4 class="article__title">Firma electrónica</h4>
-                      <p class="article__age">3 Año</p><span class="article__price">$29.900</span>
-                      <p class="article__iva">(iva incluido)</p><a data-check-product class="btn btn--white btn--sm">Seleccionar Producto<span class="fa fa-"></span></a>
+                    <div class="article__tag">Producto seleccionado</div>
+                    <div class="article__body">
+                      <div class="article__radio"> 
+                        <label>
+                          <input type="radio" name="product" value="3" class="radio-options">
+                        </label>
+                      </div>
+                      <div class="article__icon"> <svg width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_35_2)">
+<path d="M341.333 682.667C152.818 682.667 0 529.844 0 341.333C0 152.818 152.818 0 341.333 0C529.844 0 682.667 152.818 682.667 341.333C682.443 529.755 529.755 682.443 341.333 682.667ZM341.333 42.6667C176.385 42.6667 42.6667 176.385 42.6667 341.333C42.6667 506.281 176.385 640 341.333 640C506.281 640 640 506.281 640 341.333C639.823 176.458 506.208 42.8438 341.333 42.6667Z" fill="url(#paint0_angular_35_2)"/>
+<path d="M234.667 512C229.01 512 223.583 509.75 219.583 505.75L134.25 420.417C126.068 411.943 126.302 398.438 134.776 390.25C143.042 382.266 156.151 382.266 164.417 390.25L234.667 460.5L498.432 196.734C506.906 188.552 520.411 188.786 528.599 197.26C536.583 205.526 536.583 218.635 528.599 226.901L249.75 505.75C245.75 509.75 240.323 512 234.667 512Z" fill="url(#paint1_angular_35_2)"/>
+</g>
+<defs>
+<radialGradient id="paint0_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(341.333 341.333) rotate(90) scale(341.333)">
+<stop stop-color="#B01F8C"/>
+<stop offset="1" stop-color="#4F2B83"/>
+</radialGradient>
+<radialGradient id="paint1_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(331.425 351.374) rotate(90) scale(160.626 203.162)">
+<stop stop-color="#B01F8C"/>
+<stop offset="1" stop-color="#4F2B83"/>
+</radialGradient>
+<clipPath id="clip0_35_2">
+<rect width="682.667" height="682.667" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                      </div>
+                      <div class="article__content">
+                        <h4 class="article__title">Firma electrónica</h4>
+                        <p class="article__age">3 Año</p><span class="article__price">$29.900</span>
+                        <p class="article__iva">(iva incluido)</p><a class="btn btn--sm">Seleccionar Producto</a>
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -144,7 +230,7 @@
             </div>
           </div>
           <div class="section__footer"> 
-            <div class="section__button"> <a href="#" class="btn">Continuar<span class="fa fa-shopping-cart"> </span></a></div>
+            <div class="section__button"> <a href="#" class="btn">Continuar al carro de compras<span class="fa fa-shopping-cart"> </span></a></div>
           </div>
         </div>
       </section>
@@ -199,7 +285,7 @@
                     <h4 class="article__title">¿Qué es una firma electrónica?</h4>
                   </div>
                   <div class="article__body">
-                    <p class="article__description">Ut condimentum imperdiet vehicula quam sagittis vivamus sociosqu conubia gravida pulvinar pharetra.
+                    <p class="article__description">Fames ultrices cursus ligula litora hendrerit nunc bibendum elementum imperdiet euismod praesent.
                     </p><a href="#" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -212,7 +298,7 @@
                     <h4 class="article__title">Preguntas frecuentes</h4>
                   </div>
                   <div class="article__body"> 
-                    <p class="article__description">Posuere varius curae hac potenti leo hac lacinia integer duis aliquet faucibus.
+                    <p class="article__description">Aenean consequat enim torquent ac quis id adipiscing a tempor sapien tempor.
                     </p><a href="#" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -225,7 +311,7 @@
                     <h4 class="article__title">Manuales</h4>
                   </div>
                   <div class="article__body"> 
-                    <p class="article__description">Eleifend hac risus metus magna platea sem non at eget habitant nisl.
+                    <p class="article__description">Posuere pulvinar tristique habitasse convallis consequat sem consectetur malesuada eros tellus condimentum.
                     </p><a href="#" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -238,7 +324,7 @@
                     <h4 class="article__title">Tutoriales</h4>
                   </div>
                   <div class="article__body"> 
-                    <p class="article__description">Tortor aliquam tempus pulvinar quisque curabitur justo hac malesuada orci hac iaculis.
+                    <p class="article__description">Velit elit sapien per ut quam ultricies sed id et urna ut.
                     </p><a href="#" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -249,13 +335,19 @@
       </section>
     </div>
     <footer>
+      <div class="footer__bar"> 
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div class="footer__wrap">
         <div class="footer__svg"> <img src="img/icons/eff-white.svg"></div>
         <div class="footer__primary">
           <div class="footer__top">
             <div class="cols">
               <div class="col-xs-12 col-md-3">
-                <div class="footer__logo"><a href="#"><img src="img/icons/logo-ecert-white.svg"></a></div>
+                <div class="footer__logo"><a href="#"><img src="img/icons/logo-ecert.png"></a></div>
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
