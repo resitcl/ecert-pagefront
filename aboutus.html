@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=20744" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=20744" type="text/javascript"></script>
+    <link href="css/main.css?v=82205" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=82205" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -18,6 +20,10 @@
     <meta name="twitter:image" content="#"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
   </head>
   <body>
     <header>
@@ -59,8 +65,30 @@
                 </div>
                 <nav>
                   <ul>
-                    <li class="header__nav__li header__nav__li--digtrans"><a href="solutions.html">Soluciones</a></li>
-                    <li><a href="#">Alianzas</a></li>
+                    <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative">
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Soluciones </h4>
+                            <p>Nos adaptamos al tamaño y formato de tu empresa</p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="#">Certificado Digital</a>
+                                <p>Certificado Digital para el SII</p>
+                              </li>
+                              <li><a href="personas.html">Personas</a>
+                                <p>Certificado Digital y Firma Avanzada</p>
+                              </li>
+                              <li><a href="empresas.html">Empresas</a>
+                                <p>Pymes y Corporativo</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="alliances.html">Alianzas</a></li>
                     <li> <a href="#">Ayuda</a>
                       <ul> 
                         <li> <a href="faq.html">Preguntas frecuentes</a></li>
@@ -68,14 +96,98 @@
                         <li><a href="tutoriales.html">Tutoriales</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Más</a></li>
+                    <li><a href="#">Más</a>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative"> 
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Mas </h4>
+                            <p>Creamos confianza</p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="aboutus.html">Quienes somos</a>
+                                <p>Libero faucibus etiam facilisis neque aliquam
+                                </p>
+                              </li>
+                              <li><a href="news.html">Blog</a>
+                                <p>Tincidunt senectus et eget quisque rutrum leo
+                                </p>
+                              </li>
+                              <li><a href="red-atencion.html">Red de Atención</a>
+                                <p>Erat colus praesent phasellus pharetra
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </nav>
               </div>
             </div>
+            <div class="header__nav__mobile">
+              <div class="header__nav__opacity"> </div>
+              <div class="header__nav__nav"> 
+                <div class="header__nav__nav__header"> 
+                  <div class="header__nav__isotipo"> <img src="img/icons/logo-ecert.png"></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="header__nav__back">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="#">Soluciones</a>
+                        <ul>
+                          <li class="header__nav__title">Soluciones</li>
+                          <li><a href="personas.html">Personas</a></li>
+                          <li><a href="empresas.html">Empresas</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="alliances.html">Alianzas</a></li>
+                      <li><a href="#">Ayuda</a>
+                        <ul>
+                          <li class="header__nav__title">Ayuda</li>
+                          <li><a href="faq.html">Preguntas Frecuentas</a></li>
+                          <li><a href="verification.html">Verificación</a></li>
+                          <li><a href="tutoriales.html">Tutoriales</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Más</a>
+                        <ul>
+                          <li class="header__nav__title">Más</li>
+                          <li><a href="aboutus.html">Quienes Somos</a></li>
+                          <li><a href="news.html">Blog</a></li>
+                          <li><a href="red-atencion.html">Red de Atención</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="alliances.html">Portal Empresa</a></li>
+                      <li><a href="alliances.html">migrup.cl</a></li>
+                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__footer"> 
+                  <div class="header__nav__buttons"><a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
+                </div>
+              </div>
+            </div>
             <div class="header__right">
               <div class="header__item"> 
-                <div class="header__buttons"> <a href="#" class="btn btn--xs">Crea tu cuenta</a><a href="#" class="btn btn--xs btn--white">Ingresar</a></div>
+                <div class="header__buttons"> <a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
               </div>
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
@@ -96,7 +208,7 @@
               <div class="section__content">
                 <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="aboutus.html">Quienes Somos</a></div>
                 <h1 class="section__title">Quienes Somos</h1>
-                <p class="section__description">Metus ultricies nulla ultrices fermentum donec habitant dapibus orci velit. Vestibulum aliquet eget habitasse nunc hendrerit conubia posuere ut per vehicula scelerisque torquent torquent ut.
+                <p class="section__description">Convallis magna placerat aliquet donec sapien magna bibendum nunc curae. Vestibulum class metus sed id lectus posuere nulla tellus accumsan tellus aliquam aliquet mauris eleifend.
                 </p>
               </div>
             </div>
@@ -107,11 +219,11 @@
         <div class="section__wrap"> 
           <div class="section__body"> 
             <div class="section__content section--center"> 
-              <h2 class="section__title">Congue convallis ante litora fusce
+              <h2 class="section__title">Donec libero dictumst blandit feugiat
               </h2>
-              <p class="section__description">A dui tristique auctor aenean arcu augue curae tempor inceptos. Inceptos placerat conubia cras colus quisque est tincidunt risus facilisis sollicitudin bibendum quis curabitur bibendum.
+              <p class="section__description">Ad velit lectus phasellus taciti luctus vitae netus himenaeos fermentum. Mi dictumst molestie proin massa leo suspendisse litora aliquet malesuada gravida quam tellus sodales scelerisque.
               </p>
-              <p class="section__description">Aliquam placerat egestas egestas iaculis augue erat fames bibendum cursus. Erat phasellus venenatis non mi euismod viverra ut quisque fringilla. Proin nunc auctor sed quam aliquam augue pellentesque porta quis suspendisse platea viverra neque tellus.
+              <p class="section__description">Condimentum dapibus a sollicitudin mauris nulla turpis fermentum magna aptent. Erat metus fusce gravida viverra cursus pellentesque placerat neque malesuada. Quam massa sed neque interdum potenti cursus pulvinar neque felis sagittis at ligula urna cras.
               </p>
             </div>
           </div>
@@ -128,9 +240,9 @@
                 <div class="col-md-7"> 
                   <div class="section__content"> 
                     <h3 class="section__title">Nuestra Misión</h3>
-                    <p class="section__description">Quisque sapien orci tempus pellentesque rhoncus pulvinar primis integer lobortis. Convallis per erat conubia dictum etiam sollicitudin volutpat ut suspendisse. Etiam aenean cras magna habitasse convallis massa aenean pharetra habitasse leo vitae nullam lacus elit.
+                    <p class="section__description">Curabitur habitant placerat litora laoreet cras malesuada tellus vulputate varius. Metus viverra arcu iaculis eget conubia enim accumsan vulputate mauris. Rutrum class aptent faucibus donec risus duis sodales lacinia placerat nisi felis nostra vulputate iaculis.
                     </p>
-                    <p class="section__description">Vestibulum curabitur mollis dui habitasse justo ante fringilla nisi ante. Nullam tincidunt nulla magna tortor a cursus lectus rhoncus consequat aenean fringilla integer duis etiam.
+                    <p class="section__description">Curabitur venenatis feugiat hendrerit praesent id cras varius tortor torquent. Dictumst pulvinar auctor tempor per senectus dui sem blandit commodo ligula nulla dictumst malesuada aptent.
                     </p>
                   </div>
                 </div>
@@ -150,9 +262,9 @@
                 <div class="col-md-7 col-md-pull-5">
                   <div class="section__content"> 
                     <h3 class="section__title">Nuestra Visión</h3>
-                    <p class="section__description">Eget vitae pretium semper dapibus lobortis convallis vel pellentesque dui. Felis dictumst risus curabitur morbi dictumst ultrices nullam volutpat blandit. Maecenas laoreet donec placerat congue metus enim consectetur praesent class feugiat leo rutrum porta nunc.
+                    <p class="section__description">Dui interdum augue ac sociosqu interdum tempus semper aptent blandit. Velit non venenatis dictumst vel quisque neque massa fermentum laoreet. Colus diam habitasse feugiat nullam cras nam potenti est velit morbi porta ullamcorper libero suscipit.
                     </p>
-                    <p class="section__description">Quam ullamcorper fermentum fermentum phasellus vivamus libero porttitor arcu habitant. Integer sem pretium sagittis lacinia laoreet elementum sodales quisque commodo aliquet nisl sagittis odio potenti.
+                    <p class="section__description">Erat mattis nulla nostra per nulla mattis torquent tincidunt vestibulum. Nisi sed fames sem id nisi tempor leo condimentum fringilla ligula nullam curae condimentum himenaeos.
                     </p>
                   </div>
                 </div>
@@ -172,7 +284,7 @@
                 <article class="article--what">
                   <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
                   <div class="article__body"> 
-                    <p class="article__description">Dictumst euismod commodo suscipit porttitor dui tempor iaculis volutpat dictum condimentum vestibulum.
+                    <p class="article__description">Imperdiet quis vitae nisi semper aliquet platea eleifend imperdiet cras aliquam vehicula.
                     </p>
                   </div>
                 </article>
@@ -181,7 +293,7 @@
                 <article class="article--what">
                   <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
                   <div class="article__body"> 
-                    <p class="article__description">Quisque per velit fringilla morbi praesent et nunc felis habitant et sodales.
+                    <p class="article__description">Class senectus integer quisque lacus molestie pulvinar pharetra luctus nisi sollicitudin pharetra.
                     </p>
                   </div>
                 </article>
@@ -198,7 +310,7 @@
                 <article class="article--what">
                   <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
                   <div class="article__body"> 
-                    <p class="article__description">Tortor sociosqu vulputate et nunc taciti convallis urna tortor torquent porttitor sollicitudin.
+                    <p class="article__description">Euismod curabitur elit erat sodales inceptos lacinia odio dictum cubilia pellentesque tempor.
                     </p>
                   </div>
                 </article>
@@ -207,7 +319,7 @@
                 <article class="article--what">
                   <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
                   <div class="article__body"> 
-                    <p class="article__description">In mattis senectus gravida vel tempus morbi commodo risus cras rhoncus enim.
+                    <p class="article__description">Proin vivamus enim nullam vel arcu curae himenaeos vehicula integer tempus sem.
                     </p>
                   </div>
                 </article>
@@ -216,7 +328,7 @@
                 <article class="article--what">
                   <div class="article__icon"> <img src="img/icons/feature-3.png"></div>
                   <div class="article__body"> 
-                    <p class="article__description">Nunc duis vel varius massa mollis auctor aenean commodo quam et donec.
+                    <p class="article__description">Morbi nunc laoreet libero magna hendrerit integer lacinia pretium mi iaculis sed.
                     </p>
                   </div>
                 </article>
@@ -227,12 +339,7 @@
       </section>
     </div>
     <footer>
-      <div class="footer__bar"> 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <div class="footer__bar"> <img src="img/icons/line-colors.svg"></div>
       <div class="footer__wrap">
         <div class="footer__svg"> <img src="img/icons/eff-white.svg"></div>
         <div class="footer__primary">
@@ -309,7 +416,7 @@
                     <li><a href="#">Portal Empresas</a></li>
                     <li><a href="#">Soluciones</a></li>
                     <li><a href="#">Casos de Éxito</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                   </ul>
                 </div>
               </div>

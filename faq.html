@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=71246" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=71246" type="text/javascript"></script>
+    <link href="css/main.css?v=523" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=523" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -18,6 +20,10 @@
     <meta name="twitter:image" content="#"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
   </head>
   <body>
     <header>
@@ -59,8 +65,30 @@
                 </div>
                 <nav>
                   <ul>
-                    <li class="header__nav__li header__nav__li--digtrans"><a href="solutions.html">Soluciones</a></li>
-                    <li><a href="#">Alianzas</a></li>
+                    <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative">
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Soluciones </h4>
+                            <p>Nos adaptamos al tamaño y formato de tu empresa</p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="#">Certificado Digital</a>
+                                <p>Certificado Digital para el SII</p>
+                              </li>
+                              <li><a href="personas.html">Personas</a>
+                                <p>Certificado Digital y Firma Avanzada</p>
+                              </li>
+                              <li><a href="empresas.html">Empresas</a>
+                                <p>Pymes y Corporativo</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="alliances.html">Alianzas</a></li>
                     <li> <a href="#">Ayuda</a>
                       <ul> 
                         <li> <a href="faq.html">Preguntas frecuentes</a></li>
@@ -68,14 +96,98 @@
                         <li><a href="tutoriales.html">Tutoriales</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Más</a></li>
+                    <li><a href="#">Más</a>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative"> 
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Mas </h4>
+                            <p>Creamos confianza</p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="aboutus.html">Quienes somos</a>
+                                <p>Semper elit leo nunc curabitur libero
+                                </p>
+                              </li>
+                              <li><a href="news.html">Blog</a>
+                                <p>Mattis mi justo ornare a molestie pulvinar
+                                </p>
+                              </li>
+                              <li><a href="red-atencion.html">Red de Atención</a>
+                                <p>Aliquam eget imperdiet volutpat potenti
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </nav>
               </div>
             </div>
+            <div class="header__nav__mobile">
+              <div class="header__nav__opacity"> </div>
+              <div class="header__nav__nav"> 
+                <div class="header__nav__nav__header"> 
+                  <div class="header__nav__isotipo"> <img src="img/icons/logo-ecert.png"></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="header__nav__back">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="#">Soluciones</a>
+                        <ul>
+                          <li class="header__nav__title">Soluciones</li>
+                          <li><a href="personas.html">Personas</a></li>
+                          <li><a href="empresas.html">Empresas</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="alliances.html">Alianzas</a></li>
+                      <li><a href="#">Ayuda</a>
+                        <ul>
+                          <li class="header__nav__title">Ayuda</li>
+                          <li><a href="faq.html">Preguntas Frecuentas</a></li>
+                          <li><a href="verification.html">Verificación</a></li>
+                          <li><a href="tutoriales.html">Tutoriales</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Más</a>
+                        <ul>
+                          <li class="header__nav__title">Más</li>
+                          <li><a href="aboutus.html">Quienes Somos</a></li>
+                          <li><a href="news.html">Blog</a></li>
+                          <li><a href="red-atencion.html">Red de Atención</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="alliances.html">Portal Empresa</a></li>
+                      <li><a href="alliances.html">migrup.cl</a></li>
+                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__footer"> 
+                  <div class="header__nav__buttons"><a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
+                </div>
+              </div>
+            </div>
             <div class="header__right">
               <div class="header__item"> 
-                <div class="header__buttons"> <a href="#" class="btn btn--xs">Crea tu cuenta</a><a href="#" class="btn btn--xs btn--white">Ingresar</a></div>
+                <div class="header__buttons"> <a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
               </div>
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
@@ -96,7 +208,7 @@
               <div class="section__content">
                 <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="faq.html">Preguntas frecuentes</a></div>
                 <h1 class="section__title">Preguntas frecuentes</h1>
-                <p class="section__description">Praesent semper scelerisque eros vel suscipit purus a auctor taciti. Quisque duis accumsan ornare arcu aenean netus sem erat vitae hac class cras fringilla fames.
+                <p class="section__description">Fusce urna est justo inceptos et velit fames curabitur pulvinar. Nostra senectus rutrum tellus faucibus eget scelerisque blandit eu venenatis eros viverra aliquam fermentum cras.
                 </p>
               </div>
             </div>
@@ -106,9 +218,9 @@
       <section class="section--faq">
         <div class="section__wrap section--md">
           <div class="section__header"> 
-            <h3 class="section__title">Felis curabitur aliquam dictum litora donec
+            <h3 class="section__title">Consequat gravida aliquam ullamcorper hendrerit condimentum
             </h3>
-            <p class="section__description">Molestie aenean lobortis curabitur pellentesque convallis varius ac primis nostra. Sed molestie vivamus pellentesque ac mi pulvinar ultricies ultrices habitant quisque ornare pharetra fusce rutrum.
+            <p class="section__description">Libero lacus vestibulum aliquam integer nullam varius consectetur varius platea. Nostra mollis tellus at ligula risus mi habitasse lacus vel urna dui cursus tempus tortor.
             </p>
           </div>
           <div class="section__body"> 
@@ -127,7 +239,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Neque ut convallis laoreet tempor commodo nisl vestibulum in varius. Egestas eleifend conubia ante euismod curabitur donec ut turpis vitae morbi praesent in hac ultrices.
+                              <p class="section__description">Potenti primis lectus purus enim facilisis facilisis mollis curae sociosqu. Tortor pharetra nullam fringilla bibendum imperdiet vel sagittis tempor ante fames accumsan feugiat rhoncus rutrum.
                               </p>
                             </div>
                           </div>
@@ -136,7 +248,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Praesent malesuada auctor fermentum nec pellentesque mi lacus lectus senectus. Orci integer iaculis aliquet ut sed feugiat est urna nibh purus sociosqu metus torquent a.
+                              <p class="section__description">Elementum auctor quis vulputate euismod mollis fermentum tempus sollicitudin purus. Conubia aptent habitasse elit vel accumsan lobortis sollicitudin lobortis non colus consectetur lacinia nibh eu.
                               </p>
                             </div>
                           </div>
@@ -145,7 +257,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Lacus commodo dapibus metus sed conubia odio pellentesque nam tellus. Mollis venenatis adipiscing nibh condimentum nostra ultrices nisi sodales nulla suscipit taciti nec molestie vivamus.
+                              <p class="section__description">Ornare gravida taciti gravida hendrerit massa adipiscing erat eleifend nisl. Condimentum scelerisque quisque integer porttitor per hendrerit proin augue tempus colus aenean luctus per consectetur.
                               </p>
                             </div>
                           </div>
@@ -154,7 +266,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Nisi ornare leo sem posuere accumsan phasellus elementum colus accumsan. Lectus aptent tristique laoreet inceptos quis pulvinar curae sagittis blandit non urna hac aliquet placerat.
+                              <p class="section__description">Id iaculis consectetur per habitant blandit integer curae vestibulum etiam. Ultrices venenatis porta bibendum scelerisque sociosqu ad taciti etiam orci volutpat morbi torquent litora felis.
                               </p>
                             </div>
                           </div>
@@ -163,7 +275,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Arcu proin lectus pellentesque a dictum porta volutpat ornare pretium. Primis netus commodo sagittis neque consectetur arcu per aenean tristique aptent iaculis auctor praesent vitae.
+                              <p class="section__description">Erat justo vivamus sapien ultrices senectus colus congue posuere vulputate. Pretium molestie purus facilisis suspendisse ante arcu augue lacinia colus tortor id ultrices pellentesque ultrices.
                               </p>
                             </div>
                           </div>
@@ -172,7 +284,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Nunc dictum class viverra taciti nunc turpis colus at class. Lacus feugiat a turpis sem tellus nibh ornare pretium litora torquent interdum potenti colus euismod.
+                              <p class="section__description">Quisque etiam eros interdum fringilla proin nunc habitant convallis in. Nulla convallis aenean tempor lobortis erat conubia metus aliquam fames adipiscing cras congue semper mattis.
                               </p>
                             </div>
                           </div>
@@ -187,7 +299,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Sodales colus lectus tellus litora himenaeos vehicula litora faucibus ultrices. Ornare donec congue egestas dictum porta tristique auctor nisl eu id tincidunt aliquet senectus aliquam.
+                              <p class="section__description">Maecenas cubilia aenean fames dapibus est tristique consequat etiam nostra. Sociosqu morbi egestas elit dictum mollis eget aenean egestas habitant aliquet suscipit condimentum ultrices nec.
                               </p>
                             </div>
                           </div>
@@ -196,7 +308,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Dictumst sagittis duis orci aliquam magna nisl posuere id mattis. Sapien sociosqu egestas fringilla tortor donec mollis etiam aenean scelerisque inceptos nibh sem mi pellentesque.
+                              <p class="section__description">Conubia auctor ac pretium class phasellus sagittis justo consectetur ut. Ante fusce etiam scelerisque malesuada donec fermentum nibh cras etiam elementum varius faucibus ultrices molestie.
                               </p>
                             </div>
                           </div>
@@ -205,7 +317,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Quam adipiscing nam aptent aliquet dictum urna nam morbi ac. Luctus neque consequat consectetur praesent justo massa nec dictum mauris nulla libero vulputate eget dui.
+                              <p class="section__description">Varius pretium convallis nam pharetra leo consectetur cursus pulvinar cubilia. Vel dictum inceptos nisi ornare sem ante porta ultrices consequat porta elit nunc porta morbi.
                               </p>
                             </div>
                           </div>
@@ -214,7 +326,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Erat vel habitant quis imperdiet ornare fringilla lectus est lobortis. Cubilia tincidunt proin nec malesuada justo curabitur ante egestas inceptos ultricies turpis libero erat cras.
+                              <p class="section__description">Lacinia proin posuere dictumst netus eleifend tellus nisl placerat pretium. Aliquet metus cursus venenatis sodales torquent magna metus quisque gravida integer lobortis feugiat bibendum morbi.
                               </p>
                             </div>
                           </div>
@@ -223,7 +335,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Curabitur pharetra suscipit donec posuere vel ut mattis ultrices suspendisse. Vel neque non ligula vestibulum curabitur ornare cursus platea etiam diam ultricies nullam ornare proin.
+                              <p class="section__description">Massa vitae varius cras per velit feugiat laoreet convallis ac. Laoreet mattis neque luctus nunc euismod pretium magna habitasse conubia aenean per ultricies condimentum curae.
                               </p>
                             </div>
                           </div>
@@ -232,7 +344,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Suscipit tellus malesuada lectus tempor aliquam leo vivamus a hac. Aenean tempus eu adipiscing laoreet vehicula phasellus vivamus ut odio consequat aenean augue litora leo.
+                              <p class="section__description">Viverra platea imperdiet ut nisi porttitor conubia consequat pharetra imperdiet. Mi ac consequat massa nullam curabitur sapien dictum lobortis inceptos suspendisse convallis mauris tellus rutrum.
                               </p>
                             </div>
                           </div>
@@ -247,7 +359,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Sagittis luctus tempor laoreet arcu fermentum lobortis feugiat velit id. Curabitur scelerisque donec odio sociosqu nisl blandit ultrices inceptos posuere imperdiet morbi tempor augue torquent.
+                              <p class="section__description">Cubilia congue nisi cras semper augue ad accumsan porttitor tempus. Orci curae metus aliquet vehicula viverra accumsan mauris hendrerit elementum morbi class molestie nec feugiat.
                               </p>
                             </div>
                           </div>
@@ -256,7 +368,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Nulla rhoncus viverra luctus suscipit nostra non platea consectetur urna. Colus himenaeos senectus vivamus condimentum sociosqu vivamus eu viverra feugiat congue fusce lobortis auctor fermentum.
+                              <p class="section__description">Primis velit vitae adipiscing luctus mollis etiam molestie laoreet leo. Gravida leo ligula sociosqu semper inceptos porta molestie feugiat rutrum consequat fames quisque tortor cras.
                               </p>
                             </div>
                           </div>
@@ -265,7 +377,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Ut in ut ultricies nostra fusce molestie lectus faucibus lectus. Torquent justo hac venenatis pellentesque posuere congue colus sociosqu platea donec lacus nec facilisis elit.
+                              <p class="section__description">Sapien risus volutpat quis lacinia tortor bibendum massa posuere cursus. Elementum interdum arcu id varius aliquam ligula quisque blandit sollicitudin scelerisque eleifend porta blandit sodales.
                               </p>
                             </div>
                           </div>
@@ -274,7 +386,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Tempus inceptos sollicitudin leo condimentum ullamcorper vivamus molestie magna eu. Proin lectus aliquet primis donec turpis senectus scelerisque est lacinia netus lectus primis viverra duis.
+                              <p class="section__description">Aliquet ultricies nisl nostra torquent morbi fames elementum ut praesent. Velit malesuada neque commodo arcu fermentum nunc mollis vulputate fames egestas dui lacinia commodo tellus.
                               </p>
                             </div>
                           </div>
@@ -283,7 +395,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Condimentum himenaeos convallis ultricies neque diam at elementum proin torquent. Auctor fusce duis colus suspendisse aenean euismod condimentum netus accumsan massa habitant netus tempus tristique.
+                              <p class="section__description">Mauris non lacinia ultrices varius id gravida mollis dictum varius. Vulputate ut ullamcorper posuere nam lobortis facilisis facilisis maecenas dapibus id condimentum himenaeos proin consequat.
                               </p>
                             </div>
                           </div>
@@ -292,7 +404,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Elementum pretium metus nisi auctor pulvinar dictumst hac primis justo. Tristique cubilia rutrum blandit curae est litora habitant justo nibh dictumst eros euismod nostra lacus.
+                              <p class="section__description">Auctor euismod sodales augue blandit sagittis etiam pulvinar hendrerit etiam. Erat eget phasellus at vitae mattis hendrerit curae aenean congue rutrum orci neque odio lobortis.
                               </p>
                             </div>
                           </div>
@@ -308,12 +420,7 @@
       </section>
     </div>
     <footer>
-      <div class="footer__bar"> 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <div class="footer__bar"> <img src="img/icons/line-colors.svg"></div>
       <div class="footer__wrap">
         <div class="footer__svg"> <img src="img/icons/eff-white.svg"></div>
         <div class="footer__primary">
@@ -390,7 +497,7 @@
                     <li><a href="#">Portal Empresas</a></li>
                     <li><a href="#">Soluciones</a></li>
                     <li><a href="#">Casos de Éxito</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                   </ul>
                 </div>
               </div>

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=19710" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=19710" type="text/javascript"></script>
+    <link href="css/main.css?v=2822" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=2822" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -18,6 +20,10 @@
     <meta name="twitter:image" content="#"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
   </head>
   <body>
     <header>
@@ -59,8 +65,30 @@
                 </div>
                 <nav>
                   <ul>
-                    <li class="header__nav__li header__nav__li--digtrans"><a href="solutions.html">Soluciones</a></li>
-                    <li><a href="#">Alianzas</a></li>
+                    <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative">
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Soluciones </h4>
+                            <p>Nos adaptamos al tamaño y formato de tu empresa</p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="#">Certificado Digital</a>
+                                <p>Certificado Digital para el SII</p>
+                              </li>
+                              <li><a href="personas.html">Personas</a>
+                                <p>Certificado Digital y Firma Avanzada</p>
+                              </li>
+                              <li><a href="empresas.html">Empresas</a>
+                                <p>Pymes y Corporativo</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="alliances.html">Alianzas</a></li>
                     <li> <a href="#">Ayuda</a>
                       <ul> 
                         <li> <a href="faq.html">Preguntas frecuentes</a></li>
@@ -68,14 +96,98 @@
                         <li><a href="tutoriales.html">Tutoriales</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Más</a></li>
+                    <li><a href="#">Más</a>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative"> 
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Mas </h4>
+                            <p>Creamos confianza</p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="aboutus.html">Quienes somos</a>
+                                <p>Torquent phasellus suscipit at gravida sagittis
+                                </p>
+                              </li>
+                              <li><a href="news.html">Blog</a>
+                                <p>Curabitur per cubilia fringilla lectus conubia viverra
+                                </p>
+                              </li>
+                              <li><a href="red-atencion.html">Red de Atención</a>
+                                <p>Vestibulum sodales erat curabitur etiam
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </nav>
               </div>
             </div>
+            <div class="header__nav__mobile">
+              <div class="header__nav__opacity"> </div>
+              <div class="header__nav__nav"> 
+                <div class="header__nav__nav__header"> 
+                  <div class="header__nav__isotipo"> <img src="img/icons/logo-ecert.png"></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="header__nav__back">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="#">Soluciones</a>
+                        <ul>
+                          <li class="header__nav__title">Soluciones</li>
+                          <li><a href="personas.html">Personas</a></li>
+                          <li><a href="empresas.html">Empresas</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="alliances.html">Alianzas</a></li>
+                      <li><a href="#">Ayuda</a>
+                        <ul>
+                          <li class="header__nav__title">Ayuda</li>
+                          <li><a href="faq.html">Preguntas Frecuentas</a></li>
+                          <li><a href="verification.html">Verificación</a></li>
+                          <li><a href="tutoriales.html">Tutoriales</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Más</a>
+                        <ul>
+                          <li class="header__nav__title">Más</li>
+                          <li><a href="aboutus.html">Quienes Somos</a></li>
+                          <li><a href="news.html">Blog</a></li>
+                          <li><a href="red-atencion.html">Red de Atención</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="alliances.html">Portal Empresa</a></li>
+                      <li><a href="alliances.html">migrup.cl</a></li>
+                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__footer"> 
+                  <div class="header__nav__buttons"><a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
+                </div>
+              </div>
+            </div>
             <div class="header__right">
               <div class="header__item"> 
-                <div class="header__buttons"> <a href="#" class="btn btn--xs">Crea tu cuenta</a><a href="#" class="btn btn--xs btn--white">Ingresar</a></div>
+                <div class="header__buttons"> <a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
               </div>
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
@@ -96,7 +208,7 @@
               <div class="section__content">
                 <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="personas.html" class="current">Personas</a></div>
                 <h1 class="section__title">Personas</h1>
-                <p class="section__description">Ullamcorper suspendisse volutpat faucibus gravida gravida semper imperdiet malesuada massa. At in praesent suspendisse velit curabitur porttitor velit urna class pulvinar purus nam sociosqu pellentesque.
+                <p class="section__description">Congue pretium est viverra eros cursus feugiat tincidunt in posuere. Pharetra malesuada lacinia consequat interdum quisque hendrerit aliquet facilisis adipiscing pulvinar litora nullam aliquam neque.
                 </p>
               </div>
             </div>
@@ -107,7 +219,7 @@
         <div class="section__wrap"> 
           <div class="section__header"> 
             <h3 class="section__title">Compra tu firma electrónica</h3>
-            <p class="section__description">Eleifend feugiat in mollis vehicula eros habitasse risus et hendrerit habitant mauris facilisis nisl congue.
+            <p class="section__description">Aliquet colus posuere odio nibh etiam tempus netus auctor congue consequat ut duis blandit ac.
             </p>
           </div>
           <div class="section__body"> 
@@ -119,7 +231,7 @@
                   </div>
                   <div class="article__body"> 
                     <h3 class="article__title">Firma Electrónica Simple <strong>Certificado Digital</strong></h3>
-                    <p class="article__description">Ac diam convallis metus colus aliquam quam sed euismod netus dictumst iaculis eget eget lectus.
+                    <p class="article__description">Mattis leo taciti diam mattis eget non nostra fringilla etiam fringilla adipiscing cras elementum duis.
                     </p>
                   </div>
                   <div class="article__footer"> 
@@ -135,7 +247,7 @@
                   </div>
                   <div class="article__body"> 
                     <h3 class="article__title">Firma Electrónica <strong>Avanzada</strong></h3>
-                    <p class="article__description">Vel semper ut et ultrices himenaeos massa viverra ligula fringilla est lacinia mollis nulla bibendum.
+                    <p class="article__description">Senectus congue nisi fusce vulputate est orci nulla gravida pharetra commodo rutrum arcu vestibulum donec.
                     </p>
                   </div>
                   <div class="article__footer">
@@ -151,12 +263,12 @@
                   </div>
                   <div class="article__body"> 
                     <h3 class="article__title"><strong>Grup</strong></h3>
-                    <p class="article__description">Ultricies arcu interdum nam in etiam turpis phasellus iaculis imperdiet lobortis neque donec habitasse porta.
+                    <p class="article__description">Mattis blandit quisque lacus turpis porta morbi mauris duis eros fames aenean enim ultrices ad.
                     </p>
                   </div>
                   <div class="article__footer"> 
                     <div class="article__price">Desde <span>$15.000</span></div>
-                    <div class="article__buttons"> <a href="#" class="btn btn--terciary">Comprar<span class="fa fa-shopping-cart"></span></a><a href="#" class="btn btn--white">Ver más<span class="fa fa-angle-right"></span></a></div>
+                    <div class="article__buttons"> <a href="#" class="btn btn--white">Ver planes<span class="fa fa-angle-right"></span></a></div>
                   </div>
                 </article>
               </div>
@@ -176,7 +288,7 @@
                 <div class="col-md-6"> 
                   <div class="section__content"> 
                     <h3 class="section__title">Alejandra Fonsalba | Gerente Generar Resit</h3>
-                    <blockquote>Suscipit fringilla euismod elementum fermentum volutpat commodo congue litora integer. Maecenas egestas potenti habitant semper bibendum nunc blandit platea consequat. Tellus vivamus luctus augue suspendisse potenti nam molestie arcu cras. Id netus ut cubilia risus cursus eu lectus pharetra potenti porta aliquam nullam netus ligula.
+                    <blockquote>Sem aliquam ultrices aenean luctus vestibulum etiam venenatis etiam ante. Sem nisl congue habitasse erat enim laoreet iaculis elementum senectus. Aenean purus adipiscing class turpis netus rutrum morbi ultricies luctus. Porttitor cubilia ultricies himenaeos leo orci ad quisque gravida placerat in nibh rhoncus habitasse varius.
                     </blockquote>
                     <div class="section__comillas"> <span>”</span></div>
                   </div>
@@ -190,7 +302,7 @@
         <div class="section__wrap"> 
           <div class="section__header"> 
             <h3 class="section__title">Beneficios</h3>
-            <p class="section__description">Egestas aenean senectus lacinia curae scelerisque iaculis commodo magna curabitur pretium posuere aliquet risus blandit.
+            <p class="section__description">Eget sapien nulla tellus tortor tellus ultricies gravida malesuada fermentum ante congue luctus sociosqu sociosqu.
             </p>
           </div>
           <div class="section__body"> 
@@ -249,12 +361,7 @@
       </section>
     </div>
     <footer>
-      <div class="footer__bar"> 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <div class="footer__bar"> <img src="img/icons/line-colors.svg"></div>
       <div class="footer__wrap">
         <div class="footer__svg"> <img src="img/icons/eff-white.svg"></div>
         <div class="footer__primary">
@@ -331,7 +438,7 @@
                     <li><a href="#">Portal Empresas</a></li>
                     <li><a href="#">Soluciones</a></li>
                     <li><a href="#">Casos de Éxito</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                   </ul>
                 </div>
               </div>

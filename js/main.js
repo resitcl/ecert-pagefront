@@ -4071,9 +4071,15 @@ var trim = String.prototype.trim ?
 }));
 
 
-var app;
+var $map, $pines, $pinesMarkers, app;
 
 app = [];
+
+$pines = [];
+
+$pinesMarkers = [];
+
+$map = '';
 
 app.bg = {
   init: function() {
@@ -4218,12 +4224,12 @@ app.header = {
       if (el.siblings("ul").length && $(window).width() < 1090) {
         e.preventDefault();
         el.siblings("ul").addClass("ul--in");
-        return $(".header__nav").addClass("header__nav--ul-in");
+        return $(".header__nav__mobile").addClass("header__nav--ul-in");
       }
     },
     backLvl: function() {
       if ($(".header__nav--ul-in").length) {
-        $(".header__nav").removeClass("header__nav--ul-in");
+        $(".header__nav__mobile").removeClass("header__nav--ul-in");
         $(".header__nav__nav ul.ul--in").addClass("ul--out");
         return setTimeout(function() {
           return $(".header__nav__nav ul.ul--in").removeClass("ul--in ul--out");
@@ -4313,6 +4319,84 @@ app.isMobile = function() {
   }
 };
 
+app.isotope_ubication = {
+  init: function() {
+    var $grid, $quicksearch, buttonFilter, buttonFilters, concatValues, debounce, qsRegex;
+    console.log("fix isotope ubication");
+    buttonFilters = {};
+    buttonFilter = void 0;
+    qsRegex = void 0;
+    $grid = $('.grid--ubication').isotope({
+      itemSelector: '.col-xs-12',
+      layoutMode: 'masonry',
+      filter: function() {
+        var $this, buttonResult, searchResult;
+        $this = $(this);
+        searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+        buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
+        return searchResult && buttonResult;
+      }
+    });
+    concatValues = function(obj) {
+      var prop, value;
+      value = '';
+      for (prop in obj) {
+        value += obj[prop];
+      }
+      return value;
+    };
+    debounce = function(fn, threshold) {
+      var timeout;
+      timeout = void 0;
+      threshold = threshold || 100;
+      return function() {
+        var _this, args, delayed;
+        delayed = function() {
+          fn.apply(_this, args);
+        };
+        clearTimeout(timeout);
+        args = arguments;
+        _this = this;
+        timeout = setTimeout(delayed, threshold);
+      };
+    };
+    $('.filters-select').change(function() {
+      var $buttonGroup, $this, filterGroup;
+      $this = $(this);
+      $buttonGroup = $this.parents('.button-group');
+      filterGroup = $buttonGroup.attr('data-filter-group');
+      buttonFilters[filterGroup] = $this.val();
+      buttonFilter = concatValues(buttonFilters);
+      $grid.isotope();
+      app.scroll.dscroll;
+    });
+    $('.section__lists__filters').on('click', '.section__filter', function() {
+      var $buttonGroup, $this, filterGroup;
+      $this = $(this);
+      $buttonGroup = $this.parents('.button-group');
+      filterGroup = $buttonGroup.attr('data-filter-group');
+      buttonFilters[filterGroup] = $this.attr('data-filter');
+      buttonFilter = concatValues(buttonFilters);
+      $grid.isotope();
+      app.scroll.dscroll;
+      $(this).parents(".section__lists__filters").find(".current").removeClass("current");
+      $(this).addClass("current");
+    });
+    $quicksearch = $('.quicksearch').keyup(debounce(function() {
+      qsRegex = new RegExp($quicksearch.val(), 'gi');
+      $grid.isotope();
+    }));
+    return $('.button-group').each(function(i, buttonGroup) {
+      var $buttonGroup;
+      $buttonGroup = $(buttonGroup);
+      $buttonGroup.on('click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+      });
+    });
+  }
+};
+
 app.isotope = {
   init: function() {
     var $grid, $quicksearch, buttonFilter, buttonFilters, concatValues, debounce, qsRegex;
@@ -4320,7 +4404,7 @@ app.isotope = {
     buttonFilter = void 0;
     qsRegex = void 0;
     $grid = $('.grid').isotope({
-      itemSelector: '.col-xs-6',
+      itemSelector: '.col-sm-6',
       layoutMode: 'masonry',
       filter: function() {
         var $this, buttonResult, searchResult;
@@ -4387,6 +4471,314 @@ app.isotope = {
         $(this).addClass('is-checked');
       });
     });
+  }
+};
+
+app.mapbox = {
+  init: function() {
+    var mapboxClient;
+    if ($("body").find(".section--red").length) {
+      $(".article--ubication").each(function() {
+        var idmap, lat, lng, mapboxClient;
+        if ($(this).attr("data-lng").length && $(this).attr("data-lat").length) {
+          lng = $(this).attr("data-lng");
+          lat = $(this).attr("data-lat");
+          idmap = $(this).find(".article__map__map").attr("id");
+          mapboxgl.accessToken = 'pk.eyJ1IjoiZWR1YXJkb2FjZXZlZG8iLCJhIjoiY2tyMmdmZzRuMmJqMjJ2cGExdnBnNDViZCJ9.YeFmR_-6hvDM1VaRbs5cZw';
+          mapboxClient = mapboxSdk({
+            accessToken: mapboxgl.accessToken
+          });
+          return mapboxClient.geocoding.forwardGeocode({
+            query: 'padre mariano 10, santiago, chile',
+            autocomplete: false,
+            limit: 1
+          }).send().then(function(response) {
+            var cont, el, lat_final, lat_int, lat_prom, lng_final, lng_int, lng_prom, marker;
+            if (response && response.body && response.body.features && response.body.features.length) {
+              lng_prom = 0;
+              lat_prom = 0;
+              lng_final = 0;
+              lat_final = 0;
+              cont = 0;
+              $map = new mapboxgl.Map({
+                container: idmap,
+                style: 'mapbox://styles/eduardoacevedo/ck83ekdsb21wb1iqw9oanhboi',
+                center: [lat, lng],
+                zoom: 13
+              });
+              $map.addControl(new mapboxgl.NavigationControl());
+              $map.on('popupclose', function(e) {
+                return map.setView([lng, lng], 5);
+              });
+              lng_int = parseFloat(lng);
+              lat_int = parseFloat(lat);
+              el = document.createElement('div');
+              el.className = 'marker';
+              marker = (new mapboxgl.Marker(el)).setLngLat([lat_int, lng_int]).setPopup(new mapboxgl.Popup({
+                offset: 25
+              })).addTo($map);
+              return $pinesMarkers.push(marker);
+            }
+          });
+        }
+      });
+    }
+    if ($("body").find(".section--red").length) {
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZWR1YXJkb2FjZXZlZG8iLCJhIjoiY2tyMmdmZzRuMmJqMjJ2cGExdnBnNDViZCJ9.YeFmR_-6hvDM1VaRbs5cZw';
+      mapboxClient = mapboxSdk({
+        accessToken: mapboxgl.accessToken
+      });
+      mapboxClient.geocoding.forwardGeocode({
+        query: 'padre mariano 10, santiago, chile',
+        autocomplete: false,
+        limit: 1
+      }).send().then(function(response) {
+        var cont, lat_final, lat_prom, lng_final, lng_prom;
+        if (response && response.body && response.body.features && response.body.features.length) {
+          lng_prom = 0;
+          lat_prom = 0;
+          lng_final = 0;
+          lat_final = 0;
+          cont = 0;
+          $map = new mapboxgl.Map({
+            container: 'mapglobal',
+            style: 'mapbox://styles/eduardoacevedo/ck83ekdsb21wb1iqw9oanhboi',
+            center: [-70.64827, -33.45694],
+            zoom: 4
+          });
+          $map.addControl(new mapboxgl.NavigationControl());
+          $map.on('popupclose', function(e) {
+            return map.setView([36.83711, -2.464459], 5);
+          });
+        }
+        return $(".article--ubication").each(function() {
+          var address, el, horario, lat, lat_int, lng, lng_int, marker, phone, subtitle, title;
+          if ($(this).attr("data-lng").length && $(this).attr("data-lat").length) {
+            lng = $(this).attr("data-lng");
+            lat = $(this).attr("data-lat");
+            subtitle = "La Serena";
+            title = "Cámara de Comercio de La Serena A.G";
+            address = "Dirección: Prat 521. La Serena, Chile.";
+            horario = "Lunes a viernes 09:00 a 16:00 horas";
+            phone = "Teléfono: (+51 2) 217 907";
+            lng_int = parseFloat(lng);
+            lat_int = parseFloat(lat);
+            el = document.createElement('div');
+            el.className = 'marker';
+            marker = (new mapboxgl.Marker(el)).setLngLat([lat_int, lng_int]).setPopup(new mapboxgl.Popup({
+              offset: 25
+            }).setHTML('<span>' + subtitle + '</span><h4>' + title + '</h4><p>' + address + '</p> <p>' + horario + '</p><p>' + phone + '</p>')).addTo($map);
+            return $pinesMarkers.push(marker);
+          }
+        });
+      });
+    }
+    $("[singlemap-modal-open]").click(function(e) {
+      e.preventDefault();
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZWR1YXJkb2FjZXZlZG8iLCJhIjoiY2sxdHAyb3dtMHQ1ZzNtcHE1aGU1cGY3ZCJ9.Seb4Ah2VT6trtrRGoCOv7Q';
+      mapboxClient = mapboxSdk({
+        accessToken: mapboxgl.accessToken
+      });
+      return mapboxClient.geocoding.forwardGeocode({
+        query: 'padre mariano 10, santiago, chile',
+        autocomplete: false,
+        limit: 1
+      }).send().then(function(response) {
+        var center_cord, cont, lat, lat_final, lat_int, lat_prom, lng, lng_final, lng_int, lng_prom, marker;
+        if (response && response.body && response.body.features && response.body.features.length) {
+          lng_prom = 0;
+          lat_prom = 0;
+          lng_final = 0;
+          lat_final = 0;
+          cont = 0;
+          lng = $(".section--data").attr("data-lng");
+          lat = $(".section--data").attr("data-lat");
+          lng_int = parseFloat(lng);
+          lat_int = parseFloat(lat);
+          lng_prom = lng_prom + lng_int;
+          lat_prom = lat_prom + lat_int;
+          $pines.push([lng_int, lat_int]);
+          cont = cont + 1;
+          lng_final = lng_prom / cont;
+          lat_final = lat_prom / cont;
+          center_cord = [lng_final, lat_final];
+          $map = new mapboxgl.Map({
+            container: 'singlemapbox',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: center_cord,
+            zoom: 12
+          });
+          $map.addControl(new mapboxgl.NavigationControl());
+          marker = (new mapboxgl.Marker).setLngLat([lng_int, lat_int]).addTo($map);
+          return $pinesMarkers.push(marker);
+        }
+      });
+    });
+    if ($(".contactmapbox").length) {
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZWR1YXJkb2FjZXZlZG8iLCJhIjoiY2sxdHAyb3dtMHQ1ZzNtcHE1aGU1cGY3ZCJ9.Seb4Ah2VT6trtrRGoCOv7Q';
+      mapboxClient = mapboxSdk({
+        accessToken: mapboxgl.accessToken
+      });
+      mapboxClient.geocoding.forwardGeocode({
+        query: 'padre mariano 10, santiago, chile',
+        autocomplete: false,
+        limit: 1
+      }).send().then(function(response) {
+        var cont, lat_final, lat_prom, lng_final, lng_prom;
+        if (response && response.body && response.body.features && response.body.features.length) {
+          lng_prom = 0;
+          lat_prom = 0;
+          lng_final = 0;
+          lat_final = 0;
+          cont = 0;
+          return $.get(URL_API + 'generate_offices_json', function(data, status) {
+            var center_cord, communes;
+            center_cord = [-70.65028, -33.43778];
+            $map = new mapboxgl.Map({
+              container: 'contactmapbox',
+              style: 'mapbox://styles/mapbox/streets-v11',
+              center: center_cord,
+              zoom: 16
+            });
+            $map.addControl(new mapboxgl.NavigationControl());
+            communes = ["Vitacura", "Colina", "Las Condes", "Lo Barnechea", "Santiago", "Providencia", "Temuco", "Ñuñoa", "Rancagua", "Concepción", "La Florida", "Villarrica"];
+            return jQuery.each(data.data, function() {
+              var color, direccion, email, html_office, lat, lat_int, lng, lng_int, marker, title;
+              title = this.name;
+              lng = this.lng;
+              lat = this.lat;
+              direccion = this.address;
+              email = this.email;
+              color = this.commune.color;
+              lng_int = parseFloat(lng);
+              lat_int = parseFloat(lat);
+              html_office = "";
+              jQuery.each(this.offices, function() {
+                return html_office = html_office + '<div class="office"> <h5>' + this.name + '</h5><p><a href="tel:' + this.phone + '">' + this.phone + '</a></p><p class="sep"><a href="mailto:' + this.email + '">' + this.email + '</a></p><a class="boton-toltip" data-modal-sucursal data-email="' + this.email + '" data-title="' + this.name + '"">Contactar</a> </div>';
+              });
+              marker = (new mapboxgl.Marker({
+                color: color
+              })).setLngLat([lng_int, lat_int]).setPopup(new mapboxgl.Popup({
+                offset: 25
+              }).setHTML('<h4>' + title + '</h4><p>' + direccion + '</p> <h4>Oficinas:</h4> ' + html_office + ' ')).addTo($map);
+              return $pinesMarkers.push(marker);
+            });
+          });
+        }
+      });
+      $('#region').on('change', function() {
+        var option__lat, option__lng;
+        option__lng = $(this).find('option:selected').attr("data-lng");
+        option__lat = $(this).find('option:selected').attr("data-lat");
+        $map.flyTo({
+          center: [option__lng, option__lat],
+          zoom: 9,
+          bearing: 0,
+          speed: 0.9,
+          curve: 1,
+          essential: true
+        });
+        $('#commune').val('');
+        return $('#city').val('');
+      });
+      $('#commune').on('change', function() {
+        var option__lat, option__lng;
+        option__lng = $(this).find('option:selected').attr("data-lng");
+        option__lat = $(this).find('option:selected').attr("data-lat");
+        $map.flyTo({
+          center: [option__lng, option__lat],
+          zoom: 11,
+          bearing: 0,
+          speed: 0.7,
+          curve: 1,
+          essential: true
+        });
+        return $('#city').val('');
+      });
+      $('#city').on('change', function() {
+        var option__lat, option__lng;
+        option__lng = $(this).find('option:selected').attr("data-lng");
+        option__lat = $(this).find('option:selected').attr("data-lat");
+        return $map.flyTo({
+          center: [option__lng, option__lat],
+          zoom: 13,
+          bearing: 0,
+          speed: 0.5,
+          curve: 1,
+          essential: true
+        });
+      });
+    }
+    $('#checkbox_repeat').on('change', function() {
+      if (this.checked) {
+        $(".section__map").addClass("section__map--show");
+        return app.mapbox.init();
+      } else {
+        return $(".section__map").removeClass("section__map--show");
+      }
+    });
+    $('[data-open-map]').on('click', function() {
+      if ($(this).hasClass("btn--blocked")) {
+        $(".section__map").addClass("section__map--show");
+        $(this).removeClass("btn--blocked");
+        return $(this).addClass("btn--dark");
+      } else {
+        $(".section__map").removeClass("section__map--show");
+        $(this).addClass("btn--blocked");
+        return $(this).removeClass("btn--dark");
+      }
+    });
+    $('.section__map .section__capa').dblclick(function() {
+      console.log("doble click capa");
+      return $(this).addClass("section__capa--hide");
+    });
+    return $('[data-block-map]').click(function(e) {
+      e.preventDefault();
+      return $('.section__map .section__capa').removeClass("section__capa--hide");
+    });
+  },
+  deletePines: function() {
+    var i;
+    if ($pinesMarkers !== null) {
+      i = 0;
+      while (i < $pinesMarkers.length) {
+        $pinesMarkers[i].remove();
+        i++;
+      }
+    }
+    $pinesMarkers = [];
+    return $pines = [];
+  },
+  addPines: function() {
+    return $(".article--smart--small").each(function() {
+      var color, img, lat, lat_int, link, lng, lng_int, marker, price, title;
+      if ($(this).attr("data-lng").length && $(this).attr("data-lat").length) {
+        lng = $(this).attr("data-lng");
+        lat = $(this).attr("data-lat");
+        title = $(this).find(".article__title").text();
+        img = $(this).find("img").attr("src");
+        price = $(this).find(".article__price .article__price__div").attr("data-price");
+        link = $(this).find(".article__body a").attr("href");
+        lng_int = parseFloat(lng);
+        lat_int = parseFloat(lat);
+        $pines.push([lng_int, lat_int]);
+        if ($(this).hasClass("article--smart--outstanding")) {
+          color = "#30357E";
+        } else {
+          color = "#EC7A25";
+        }
+        marker = (new mapboxgl.Marker({
+          color: color
+        })).setLngLat([lng_int, lat_int]).setPopup(new mapboxgl.Popup({
+          offset: 25
+        }).setHTML('<img src="' + img + '"><h3>' + title + '</h3><p>' + price + '</p> <a href="' + link + '" >Ver más </a>')).addTo($map);
+        return $pinesMarkers.push(marker);
+      }
+    });
+  },
+  showPines: function() {
+    console.log("mostrando pines");
+    return console.log($pinesMarkers);
   }
 };
 
@@ -4776,7 +5168,7 @@ app.slider = {
 app.swiper = {
   init: function() {
     var swiper;
-    return swiper = new Swiper('.swiper-clients', {
+    swiper = new Swiper('.swiper-clients', {
       loop: true,
       autoplay: {
         delay: 5000
@@ -4807,6 +5199,32 @@ app.swiper = {
         }
       }
     });
+    return swiper = new Swiper('.swiper-partners', {
+      loop: true,
+      autoplay: {
+        delay: 5000
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          slidesPerGroup: 1
+        },
+        900: {
+          slidesPerView: 4,
+          spaceBetween: 0,
+          slidesPerGroup: 1
+        }
+      }
+    });
   }
 };
 
@@ -4822,7 +5240,8 @@ app.tabs = {
         var index;
         e.preventDefault();
         index = $(this).index();
-        return app.tabs.open(tab, index);
+        app.tabs.open(tab, index);
+        return $map.resize();
       });
     });
   },

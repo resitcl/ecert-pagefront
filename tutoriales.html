@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=47065" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=47065" type="text/javascript"></script>
+    <link href="css/main.css?v=98451" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=98451" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -18,6 +20,10 @@
     <meta name="twitter:image" content="#"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
   </head>
   <body>
     <header>
@@ -59,8 +65,30 @@
                 </div>
                 <nav>
                   <ul>
-                    <li class="header__nav__li header__nav__li--digtrans"><a href="solutions.html">Soluciones</a></li>
-                    <li><a href="#">Alianzas</a></li>
+                    <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative">
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Soluciones </h4>
+                            <p>Nos adaptamos al tamaño y formato de tu empresa</p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="#">Certificado Digital</a>
+                                <p>Certificado Digital para el SII</p>
+                              </li>
+                              <li><a href="personas.html">Personas</a>
+                                <p>Certificado Digital y Firma Avanzada</p>
+                              </li>
+                              <li><a href="empresas.html">Empresas</a>
+                                <p>Pymes y Corporativo</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="alliances.html">Alianzas</a></li>
                     <li> <a href="#">Ayuda</a>
                       <ul> 
                         <li> <a href="faq.html">Preguntas frecuentes</a></li>
@@ -68,14 +96,98 @@
                         <li><a href="tutoriales.html">Tutoriales</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Más</a></li>
+                    <li><a href="#">Más</a>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative"> 
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Mas </h4>
+                            <p>Creamos confianza</p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="aboutus.html">Quienes somos</a>
+                                <p>Porttitor congue ante auctor lobortis scelerisque
+                                </p>
+                              </li>
+                              <li><a href="news.html">Blog</a>
+                                <p>Phasellus ullamcorper donec hendrerit taciti fringilla curabitur
+                                </p>
+                              </li>
+                              <li><a href="red-atencion.html">Red de Atención</a>
+                                <p>Molestie nunc elementum aliquam molestie
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </nav>
               </div>
             </div>
+            <div class="header__nav__mobile">
+              <div class="header__nav__opacity"> </div>
+              <div class="header__nav__nav"> 
+                <div class="header__nav__nav__header"> 
+                  <div class="header__nav__isotipo"> <img src="img/icons/logo-ecert.png"></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="header__nav__back">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="#">Soluciones</a>
+                        <ul>
+                          <li class="header__nav__title">Soluciones</li>
+                          <li><a href="personas.html">Personas</a></li>
+                          <li><a href="empresas.html">Empresas</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="alliances.html">Alianzas</a></li>
+                      <li><a href="#">Ayuda</a>
+                        <ul>
+                          <li class="header__nav__title">Ayuda</li>
+                          <li><a href="faq.html">Preguntas Frecuentas</a></li>
+                          <li><a href="verification.html">Verificación</a></li>
+                          <li><a href="tutoriales.html">Tutoriales</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Más</a>
+                        <ul>
+                          <li class="header__nav__title">Más</li>
+                          <li><a href="aboutus.html">Quienes Somos</a></li>
+                          <li><a href="news.html">Blog</a></li>
+                          <li><a href="red-atencion.html">Red de Atención</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="alliances.html">Portal Empresa</a></li>
+                      <li><a href="alliances.html">migrup.cl</a></li>
+                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__footer"> 
+                  <div class="header__nav__buttons"><a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
+                </div>
+              </div>
+            </div>
             <div class="header__right">
               <div class="header__item"> 
-                <div class="header__buttons"> <a href="#" class="btn btn--xs">Crea tu cuenta</a><a href="#" class="btn btn--xs btn--white">Ingresar</a></div>
+                <div class="header__buttons"> <a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
               </div>
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
@@ -96,7 +208,7 @@
               <div class="section__content">
                 <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="tutoriales.html">Tutoriales</a></div>
                 <h1 class="section__title">Tutoriales</h1>
-                <p class="section__description">Diam ac eu donec elit vulputate euismod est iaculis curabitur. Fusce pulvinar dapibus nulla volutpat commodo morbi praesent duis dictumst donec interdum tortor pulvinar aptent.
+                <p class="section__description">Justo integer lacinia litora diam aptent fames molestie metus habitasse. Viverra ultricies suspendisse curae dictum tellus himenaeos nisi dapibus eleifend orci curabitur ultricies nulla aptent.
                 </p>
               </div>
             </div>
@@ -107,7 +219,7 @@
         <div class="section__wrap">
           <div class="section__header">
             <h3 class="section__title">Todos nuestras Convocatorias</h3>
-            <p class="section__description">Suspendisse cras vivamus class vel commodo laoreet scelerisque pellentesque lobortis. Maecenas sagittis ornare mi morbi senectus vivamus libero vel ac justo purus a vitae erat.
+            <p class="section__description">Tellus tellus torquent facilisis lobortis congue sollicitudin consequat etiam sagittis. Pharetra diam quis diam fusce sollicitudin accumsan tempus curae cubilia nec habitant molestie platea massa.
             </p>
             <div class="section__filters filters dscroll">
               <ul data-filter-group="category" class="menu button-group">
@@ -121,7 +233,7 @@
           </div>
           <div class="section__body">
             <div class="cols grid">
-              <div class="col-xs-6 col-sm-6 col-md-3 1 dscroll">
+              <div class="col-sm-6 col-md-3 1 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -130,12 +242,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 1</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Cras sagittis non libero tristique leo ante nullam hac sed nibh interdum.
+                    <p class="article__description">Conubia netus mattis fermentum quam diam molestie fringilla scelerisque arcu aliquam semper.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 2 dscroll">
+              <div class="col-sm-6 col-md-3 2 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -144,12 +256,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 2</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Quisque at pretium turpis varius augue erat netus tincidunt curabitur libero consectetur.
+                    <p class="article__description">Eget tellus velit vehicula aliquam elementum etiam posuere purus ut iaculis scelerisque.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 3 dscroll">
+              <div class="col-sm-6 col-md-3 3 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -158,12 +270,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 3</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Feugiat sollicitudin suscipit ultricies per libero curabitur porttitor litora aptent tempor venenatis.
+                    <p class="article__description">Inceptos enim libero duis porta fames nunc accumsan morbi fringilla habitasse dui.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 4 dscroll">
+              <div class="col-sm-6 col-md-3 4 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -172,12 +284,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 4</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">In posuere ad et rhoncus potenti interdum magna justo eget aenean felis.
+                    <p class="article__description">Eu suscipit mauris mi velit cubilia hac sed fames praesent integer aliquet.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 1 dscroll">
+              <div class="col-sm-6 col-md-3 1 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -186,12 +298,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 1</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Ultricies malesuada morbi proin consectetur habitant aliquam eu pellentesque faucibus sociosqu eleifend.
+                    <p class="article__description">Suscipit sagittis scelerisque lacinia aptent aenean primis elit pretium semper sodales sociosqu.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 2 dscroll">
+              <div class="col-sm-6 col-md-3 2 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -200,12 +312,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 2</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Tortor turpis dapibus conubia donec elementum vel metus euismod interdum eu a.
+                    <p class="article__description">Placerat convallis ut luctus convallis fermentum porttitor morbi proin auctor ultricies class.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 3 dscroll">
+              <div class="col-sm-6 col-md-3 3 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -214,12 +326,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 3</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Metus pharetra sem gravida vel bibendum laoreet aenean cras purus gravida nam.
+                    <p class="article__description">Leo quisque habitant odio cursus egestas placerat erat non nunc quisque varius.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 4 dscroll">
+              <div class="col-sm-6 col-md-3 4 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -228,12 +340,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 4</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Potenti tempus ut conubia sed maecenas litora tellus ante pretium primis elit.
+                    <p class="article__description">Nunc litora colus sed pulvinar sollicitudin ac elementum leo semper luctus sodales.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 1 dscroll">
+              <div class="col-sm-6 col-md-3 1 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -242,12 +354,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 1</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Senectus quam nam cras sem odio maecenas tristique luctus dictum ligula pharetra.
+                    <p class="article__description">Neque hendrerit rhoncus molestie mattis id mi dictum imperdiet sodales metus arcu.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 2 dscroll">
+              <div class="col-sm-6 col-md-3 2 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -256,12 +368,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 2</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Leo erat urna metus libero nam donec eu ad cubilia egestas in.
+                    <p class="article__description">Justo egestas habitant lacinia mi duis massa nam volutpat nullam tempor per.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 3 dscroll">
+              <div class="col-sm-6 col-md-3 3 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -270,12 +382,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 3</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Maecenas at at scelerisque turpis est sed nisl inceptos inceptos odio class.
+                    <p class="article__description">Justo nibh praesent eu consequat donec semper vestibulum vel mi suspendisse aliquam.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 4 dscroll">
+              <div class="col-sm-6 col-md-3 4 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -284,12 +396,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 4</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Fringilla facilisis sem faucibus placerat iaculis vestibulum conubia aliquam ligula fames est.
+                    <p class="article__description">Volutpat faucibus donec ut dictumst himenaeos sed torquent libero donec curae porttitor.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 1 dscroll">
+              <div class="col-sm-6 col-md-3 1 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -298,12 +410,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 1</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Lobortis libero torquent varius tortor neque egestas libero pretium eros praesent malesuada.
+                    <p class="article__description">Urna congue mattis mi nisi dui enim etiam sapien mollis lobortis convallis.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 2 dscroll">
+              <div class="col-sm-6 col-md-3 2 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -312,12 +424,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 2</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Habitasse inceptos tincidunt luctus semper phasellus porta pharetra in mattis torquent adipiscing.
+                    <p class="article__description">Congue inceptos eget habitasse hac praesent purus pellentesque blandit aenean primis aptent.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 3 dscroll">
+              <div class="col-sm-6 col-md-3 3 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -326,12 +438,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 3</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Pulvinar ut accumsan tempor potenti orci habitant porta turpis senectus torquent hendrerit.
+                    <p class="article__description">Mauris aliquam arcu consequat nisi fusce scelerisque donec mi iaculis eget taciti.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 4 dscroll">
+              <div class="col-sm-6 col-md-3 4 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -340,12 +452,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 4</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Sociosqu netus vehicula quisque mattis class ullamcorper suspendisse in pharetra interdum nibh.
+                    <p class="article__description">Vel mi ullamcorper duis fermentum etiam turpis convallis elementum leo porttitor eu.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 1 dscroll">
+              <div class="col-sm-6 col-md-3 1 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -354,12 +466,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 1</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Fringilla ad convallis conubia massa pharetra mauris nec aliquam dapibus dui risus.
+                    <p class="article__description">Egestas volutpat consequat orci cras vestibulum aenean etiam iaculis quam inceptos velit.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 2 dscroll">
+              <div class="col-sm-6 col-md-3 2 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -368,12 +480,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 2</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Eros viverra aliquam aenean lacus sagittis tempus auctor nisl taciti ligula curabitur.
+                    <p class="article__description">Auctor ornare ultrices accumsan pulvinar dapibus phasellus odio etiam himenaeos nec blandit.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 3 dscroll">
+              <div class="col-sm-6 col-md-3 3 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -382,12 +494,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 3</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Quis lacinia viverra eget etiam lobortis bibendum sagittis dui felis donec fermentum.
+                    <p class="article__description">Convallis in aenean urna eros fusce dictumst habitasse rhoncus lacinia inceptos vitae.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 4 dscroll">
+              <div class="col-sm-6 col-md-3 4 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -396,12 +508,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 4</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Aenean malesuada convallis pellentesque varius est convallis ligula porttitor massa duis porta.
+                    <p class="article__description">Libero gravida eleifend condimentum tellus netus vel malesuada integer cursus sapien porttitor.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 1 dscroll">
+              <div class="col-sm-6 col-md-3 1 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -410,12 +522,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 1</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Leo lectus interdum nibh purus donec suscipit ligula cras pellentesque hac duis.
+                    <p class="article__description">Auctor iaculis hendrerit sapien id ante per aenean felis a eu libero.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 2 dscroll">
+              <div class="col-sm-6 col-md-3 2 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -424,12 +536,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 2</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Odio commodo conubia aptent primis donec etiam nunc elit fusce justo vestibulum.
+                    <p class="article__description">Feugiat vitae sapien turpis cursus curabitur nec fames est egestas aenean curabitur.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 3 dscroll">
+              <div class="col-sm-6 col-md-3 3 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -438,12 +550,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 3</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Feugiat eu lacinia facilisis consequat est a aptent porttitor sed enim tempor.
+                    <p class="article__description">Metus euismod venenatis ac sociosqu sodales praesent lacinia aliquam elit faucibus pellentesque.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 4 dscroll">
+              <div class="col-sm-6 col-md-3 4 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -452,12 +564,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 4</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Donec at nisl cubilia faucibus per nulla aliquam nisi hac pharetra taciti.
+                    <p class="article__description">Cursus tristique habitasse commodo tristique porta malesuada interdum suspendisse senectus etiam a.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 1 dscroll">
+              <div class="col-sm-6 col-md-3 1 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -466,12 +578,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 1</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Senectus non vulputate praesent commodo est sapien consequat proin nam duis ultrices.
+                    <p class="article__description">Suscipit diam dictum curabitur vivamus pulvinar aenean lobortis morbi mauris morbi massa.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 2 dscroll">
+              <div class="col-sm-6 col-md-3 2 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -480,12 +592,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 2</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Hendrerit augue vulputate at porttitor ut feugiat vitae quisque quam venenatis mi.
+                    <p class="article__description">Pretium netus non nulla eget erat posuere quam iaculis accumsan mollis facilisis.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 3 dscroll">
+              <div class="col-sm-6 col-md-3 3 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -494,12 +606,12 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 3</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Mi augue vivamus primis bibendum placerat elit lobortis congue senectus ante maecenas.
+                    <p class="article__description">Donec iaculis ornare imperdiet justo pulvinar velit curabitur at donec vel felis.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 4 dscroll">
+              <div class="col-sm-6 col-md-3 4 dscroll">
                 <article class="article--tutorial"> 
                   <div class="article__bg"> 
                     <div class="article__play"> <img src="img/icons/icon-play.png"></div>
@@ -508,7 +620,7 @@
                   <div class="article__body"> 
                     <div class="article__tag">Categoria 4</div>
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Justo molestie commodo habitant hac nisl ad felis colus placerat cursus nostra.
+                    <p class="article__description">A arcu cubilia semper in augue etiam facilisis taciti facilisis morbi posuere.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -519,12 +631,7 @@
       </section>
     </div>
     <footer>
-      <div class="footer__bar"> 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <div class="footer__bar"> <img src="img/icons/line-colors.svg"></div>
       <div class="footer__wrap">
         <div class="footer__svg"> <img src="img/icons/eff-white.svg"></div>
         <div class="footer__primary">
@@ -601,7 +708,7 @@
                     <li><a href="#">Portal Empresas</a></li>
                     <li><a href="#">Soluciones</a></li>
                     <li><a href="#">Casos de Éxito</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                   </ul>
                 </div>
               </div>

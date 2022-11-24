@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=38392" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=38392" type="text/javascript"></script>
+    <link href="css/main.css?v=43592" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=43592" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -18,6 +20,10 @@
     <meta name="twitter:image" content="#"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
   </head>
   <body>
     <header>
@@ -59,8 +65,30 @@
                 </div>
                 <nav>
                   <ul>
-                    <li class="header__nav__li header__nav__li--digtrans"><a href="solutions.html">Soluciones</a></li>
-                    <li><a href="#">Alianzas</a></li>
+                    <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative">
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Soluciones </h4>
+                            <p>Nos adaptamos al tamaño y formato de tu empresa</p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="#">Certificado Digital</a>
+                                <p>Certificado Digital para el SII</p>
+                              </li>
+                              <li><a href="personas.html">Personas</a>
+                                <p>Certificado Digital y Firma Avanzada</p>
+                              </li>
+                              <li><a href="empresas.html">Empresas</a>
+                                <p>Pymes y Corporativo</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="alliances.html">Alianzas</a></li>
                     <li> <a href="#">Ayuda</a>
                       <ul> 
                         <li> <a href="faq.html">Preguntas frecuentes</a></li>
@@ -68,14 +96,98 @@
                         <li><a href="tutoriales.html">Tutoriales</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Más</a></li>
+                    <li><a href="#">Más</a>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative"> 
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Mas </h4>
+                            <p>Creamos confianza</p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="aboutus.html">Quienes somos</a>
+                                <p>Faucibus habitant pretium ultrices porta molestie
+                                </p>
+                              </li>
+                              <li><a href="news.html">Blog</a>
+                                <p>Integer senectus ornare ac iaculis malesuada netus
+                                </p>
+                              </li>
+                              <li><a href="red-atencion.html">Red de Atención</a>
+                                <p>Mattis mattis odio commodo sapien
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </nav>
               </div>
             </div>
+            <div class="header__nav__mobile">
+              <div class="header__nav__opacity"> </div>
+              <div class="header__nav__nav"> 
+                <div class="header__nav__nav__header"> 
+                  <div class="header__nav__isotipo"> <img src="img/icons/logo-ecert.png"></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="header__nav__back">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="#">Soluciones</a>
+                        <ul>
+                          <li class="header__nav__title">Soluciones</li>
+                          <li><a href="personas.html">Personas</a></li>
+                          <li><a href="empresas.html">Empresas</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="alliances.html">Alianzas</a></li>
+                      <li><a href="#">Ayuda</a>
+                        <ul>
+                          <li class="header__nav__title">Ayuda</li>
+                          <li><a href="faq.html">Preguntas Frecuentas</a></li>
+                          <li><a href="verification.html">Verificación</a></li>
+                          <li><a href="tutoriales.html">Tutoriales</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Más</a>
+                        <ul>
+                          <li class="header__nav__title">Más</li>
+                          <li><a href="aboutus.html">Quienes Somos</a></li>
+                          <li><a href="news.html">Blog</a></li>
+                          <li><a href="red-atencion.html">Red de Atención</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="alliances.html">Portal Empresa</a></li>
+                      <li><a href="alliances.html">migrup.cl</a></li>
+                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__footer"> 
+                  <div class="header__nav__buttons"><a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
+                </div>
+              </div>
+            </div>
             <div class="header__right">
               <div class="header__item"> 
-                <div class="header__buttons"> <a href="#" class="btn btn--xs">Crea tu cuenta</a><a href="#" class="btn btn--xs btn--white">Ingresar</a></div>
+                <div class="header__buttons"> <a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
               </div>
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
@@ -96,7 +208,7 @@
               <div class="section__content">
                 <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html">Carro de compras</a></div>
                 <h1 class="section__title">Carro de compras</h1>
-                <p class="section__description">Vehicula inceptos quisque felis tortor et tempor volutpat volutpat pulvinar aenean libero auctor vestibulum viverra.
+                <p class="section__description">Diam hac ut senectus enim pretium ut quis libero accumsan condimentum a etiam tellus aptent.
                 </p>
               </div>
             </div>
@@ -106,8 +218,8 @@
       <section class="section--cart">
         <div class="section__wrap section--md">
           <div class="section__header"> 
-            <div class="section__steps"> 
-              <div class="section__step current">
+            <div class="section__steps">
+              <div class="section__step section__step--current">
                 <div class="section__step__number">1</div>
                 <div class="section__step__text">Seleccion de productos						</div>
               </div>
@@ -124,18 +236,254 @@
           <div class="section__body"> 
             <div class="section__cart"> 
               <h3 class="section__title">Compra Firma Electrónica</h3>
+              <div class="section__info"> 
+                <div class="section__image"> <img src="img/uploads/image-etoken.png"></div>
+                <div class="section__text"> 
+                  <p><strong>Nota:</strong> Si compra una <strong>Firma Electrónica Avanzada</strong> o de <strong>Notario</strong>, debe contar con un dispositivo e-token para poder operar con su firma electrónica. <br> Si ya posee este dispositivo para renovar su firma electrónica, no necesita comprar otro dispositivo.</p>
+                </div>
+              </div>
+              <div class="cols"> 
+                <div class="col-md-7">
+                  <div class="section__form"> 
+                    <form class="form">
+                      <div class="cols"> 
+                        <div class="col-md-6"> 
+                          <div class="form__element"> 
+                            <div class="form__title">Rut </div>
+                            <div class="form__input"> 
+                              <input type="rut" name="#">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="form__element"> 
+                            <div class="form__title">Número de serie </div>
+                            <div class="form__input"> 
+                              <input type="rut" name="#">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="form__element"> 
+                            <div class="form__title">Nombre Completo </div>
+                            <div class="form__input"> 
+                              <input type="text" name="#">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="form__element"> 
+                            <div class="form__title">Email</div>
+                            <div class="form__input"> 
+                              <input type="rut" name="#">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="form__element"> 
+                            <div class="form__title">Teléfono</div>
+                            <div class="form__input"> 
+                              <input type="number" name="#">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="form__element"> 
+                            <div class="form__title">Email</div>
+                            <div class="form__input"> 
+                              <input type="rut" name="#">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="form__element"> 
+                            <div class="form__title">Teléfono</div>
+                            <div class="form__input"> 
+                              <input type="number" name="#">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="section__questions"> 
+                    <div class="section__question">
+                      <div class="section__text">¿Modalidad de firma?
+                        <div class="section__tooltip">
+                          <div class="section__circle"><span>i</span></div>
+                          <div class="section__tooltip__tooltip">
+                            <h5>Nec inceptos
+                            </h5>
+                            <p>Nunc aliquet colus vitae lobortis malesuada tellus praesent condimentum a. Himenaeos odio primis nullam scelerisque risus mollis senectus potenti erat curae pulvinar facilisis tempor lacus.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section__options"> 
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso1">Online
+                          </label>
+                        </div>
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso1">Token
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__question">
+                      <div class="section__text">Vigencia
+                        <div class="section__tooltip">
+                          <div class="section__circle"><span>i</span></div>
+                          <div class="section__tooltip__tooltip">
+                            <h5>Habitant scelerisque
+                            </h5>
+                            <p>Erat venenatis inceptos venenatis hac a phasellus suscipit eget per. Ligula vehicula sapien tristique scelerisque tempus molestie donec facilisis lacus donec praesent lacinia aenean suspendisse.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section__options"> 
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso2a">1 Año
+                          </label>
+                        </div>
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso2a">2 Año
+                          </label>
+                        </div>
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso2a">3 Año
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__question">
+                      <div class="section__text">Vigencia
+                        <div class="section__tooltip">
+                          <div class="section__circle"><span>i</span></div>
+                          <div class="section__tooltip__tooltip">
+                            <h5>Malesuada congue
+                            </h5>
+                            <p>Arcu habitant cras nostra proin donec rhoncus eu lobortis etiam. Consectetur sociosqu fermentum est pharetra ornare himenaeos interdum commodo pellentesque felis conubia ullamcorper augue consectetur.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section__options"> 
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso2b">1 Año
+                          </label>
+                        </div>
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso2b">2 Año
+                          </label>
+                        </div>
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso2b">3 Año
+                          </label>
+                        </div>
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso2b">1 Uso
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__question">
+                      <div class="section__text">¿Es usted notario, archivero o conservador?
+                        <div class="section__tooltip">
+                          <div class="section__circle"><span>i</span></div>
+                          <div class="section__tooltip__tooltip">
+                            <h5>Nisi arcu
+                            </h5>
+                            <p>Rutrum volutpat odio luctus aliquam morbi nibh cubilia fermentum enim. Primis quisque cras venenatis himenaeos pulvinar tempor ligula fusce accumsan sapien pellentesque habitant urna accumsan.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section__options"> 
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso3">Sí
+                          </label>
+                        </div>
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso3">No
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__question">
+                      <div class="section__text">¿Cuenta con su dispositivo e-token?
+                        <div class="section__tooltip">
+                          <div class="section__circle"><span>i</span></div>
+                          <div class="section__tooltip__tooltip">
+                            <h5>Cursus cubilia
+                            </h5>
+                            <p>Quisque eleifend cursus suspendisse aptent aliquam pulvinar accumsan potenti integer. Etiam metus nostra sem nulla cras consectetur leo urna justo eros inceptos facilisis ad molestie.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section__options"> 
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso3">Sí
+                          </label>
+                        </div>
+                        <div class="section__option"> 
+                          <label>
+                            <input type="radio" name="paso3">No
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="section__result">
+                    <div class="section__result__header"> 
+                      <h4 class="setion__title">Resumen de compra </h4>
+                    </div>
+                    <div class="section__result__body">
+                      <div class="section__product"> 
+                        <p class="section__name">Firma Electrónica Avanzada - 1 año </p>
+                        <p class="section__value">$23.680</p>
+                      </div>
+                      <div class="section__product"> 
+                        <p class="section__name">Firma Electrónica Avanzada - 1 año </p>
+                        <p class="section__value">$23.680</p>
+                      </div>
+                    </div>
+                    <div class="section__result__footer"> 
+                      <div class="section__subtotal"> 
+                        <p class="section__name">Subtotal:</p>
+                        <p class="section__total">$23.680</p>
+                      </div>
+                      <div class="section__total">
+                        <p class="section__name">Total:</p>
+                        <p class="section__total">$23.680</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
     <footer>
-      <div class="footer__bar"> 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <div class="footer__bar"> <img src="img/icons/line-colors.svg"></div>
       <div class="footer__wrap">
         <div class="footer__svg"> <img src="img/icons/eff-white.svg"></div>
         <div class="footer__primary">
@@ -212,7 +560,7 @@
                     <li><a href="#">Portal Empresas</a></li>
                     <li><a href="#">Soluciones</a></li>
                     <li><a href="#">Casos de Éxito</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                   </ul>
                 </div>
               </div>
