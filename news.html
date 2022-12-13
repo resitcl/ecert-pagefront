@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=5788" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=49509" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=5788" type="text/javascript"></script>
+    <script src="js/main.js?v=49509" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -106,15 +106,15 @@
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="aboutus.html">Quienes somos</a>
-                                <p>Risus nunc congue in suscipit sed
+                                <p>Mollis odio fringilla nam platea class
                                 </p>
                               </li>
                               <li><a href="news.html">Blog</a>
-                                <p>Molestie nibh imperdiet posuere et accumsan et
+                                <p>At leo consequat ligula hac molestie phasellus
                                 </p>
                               </li>
                               <li><a href="red-atencion.html">Red de Atención</a>
-                                <p>Felis nostra lacinia litora nunc
+                                <p>Magna hendrerit venenatis sem phasellus
                                 </p>
                               </li>
                             </ul>
@@ -181,13 +181,13 @@
                   </div>
                 </div>
                 <div class="header__nav__nav__footer"> 
-                  <div class="header__nav__buttons"><a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
+                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
                 </div>
               </div>
             </div>
             <div class="header__right">
               <div class="header__item"> 
-                <div class="header__buttons"> <a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
               </div>
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
@@ -197,454 +197,704 @@
         </div>
       </div>
     </header>
-    <div id="sections">
-      <section class="section--header section--header--dark">
-        <div class="section__clipath">
-          <div class="section__bg">
-            <div class="bg"><img src="img/uploads/11.jpeg"></div>
+    <div id="sections"></div>
+    <section class="section--header section--header--dark">
+      <div class="section__clipath">
+        <div class="section__bg">
+          <div class="bg"><img src="img/uploads/11.jpeg"></div>
+        </div>
+        <div class="section__wrap section__wrap--header">
+          <div class="section__body">
+            <div class="section__content">
+              <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="news.html">Blog</a></div>
+              <h1 class="section__title">Blog</h1>
+              <p class="section__description">Cursus velit curae hendrerit quam venenatis himenaeos primis pharetra tincidunt. Semper colus urna donec volutpat pulvinar ad ultrices sollicitudin dictumst fringilla convallis phasellus curabitur aenean.
+              </p>
+            </div>
           </div>
-          <div class="section__wrap section__wrap--header">
-            <div class="section__body">
-              <div class="section__content">
-                <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="news.html">Blog</a></div>
-                <h1 class="section__title">Blog</h1>
-                <p class="section__description">Ut ultricies hendrerit nulla sollicitudin eleifend gravida aenean id lacinia. Eros habitant egestas per eget imperdiet semper mattis hendrerit pretium felis rutrum bibendum tempor urna.
-                </p>
+        </div>
+      </div>
+    </section>
+    <section class="section--news"> 
+      <div class="section__wrap">
+        <div class="section__header">
+          <h3 class="section__title">Todos nuestras Convocatorias</h3>
+          <p class="section__description">Pharetra eget donec metus dapibus curabitur auctor nam lacinia purus. Quis auctor magna porta nec donec pulvinar aliquam scelerisque litora nibh at luctus accumsan tellus.
+          </p>
+          <div class="section__header__flex">
+            <div class="section__filters filters dscroll">
+              <ul data-filter-group="category" class="menu button-group">
+                <li data-filter="*" class="section__filter current">Todas</li>
+                <li data-filter=".1" class="section__filter">Empresas</li>
+                <li data-filter=".2" class="section__filter">Legal</li>
+                <li data-filter=".3" class="section__filter">Actualidad</li>
+                <li data-filter=".4" class="section__filter">Pymes</li>
+              </ul>
+            </div>
+            <div class="section__select"> 
+              <div class="form__element">
+                <div data-filter-group="order" class="form__input button-group selectors">
+                  <select class="order-select">
+                    <option selected disabled>Ordenar por</option>
+                    <option value="*">Todos</option>
+                    <option value=".last">Ultimos agregados</option>
+                    <option value=".destacados">Mas destacados</option>
+                    <option value=".new">Mas nuevos</option>
+                    <option value=".old">Mas antiguos</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="section--news"> 
-        <div class="section__wrap">
-          <div class="section__header">
-            <h3 class="section__title">Todos nuestras Convocatorias</h3>
-            <p class="section__description">Aenean conubia hendrerit donec libero accumsan purus libero aptent et. Vestibulum mattis augue nisi donec platea libero fusce condimentum nunc venenatis quis at phasellus tellus.
+        <div class="section__body">
+          <div class="cols grid">
+            <div class="col-sm-6 col-md-3 1 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Empresas</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Curabitur etiam sed felis quisque bibendum hendrerit leo orci morbi feugiat ultrices.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 2 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Legal</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Etiam leo colus congue etiam diam aliquam diam turpis commodo eu potenti.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 3 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Actualidad</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Tempus habitasse nam taciti etiam duis congue habitasse mauris suscipit eros taciti.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 4 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Pymes</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Ad nisl tortor torquent enim libero habitasse vel aenean cubilia colus sem.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 1 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Empresas</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Molestie erat scelerisque orci blandit vitae vel ultrices himenaeos nam platea lobortis.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 2 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Legal</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Nisl mi pulvinar per nibh curabitur sem taciti vitae convallis morbi venenatis.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 3 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Actualidad</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Eleifend elit scelerisque ultricies aliquam arcu quisque laoreet ac platea nisl rhoncus.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 4 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Pymes</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Mauris blandit tempor et per aptent pulvinar massa aliquet fermentum iaculis colus.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 1 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Empresas</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Ornare donec et vivamus odio nibh tellus proin aliquam molestie varius quisque.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 2 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Legal</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Maecenas praesent sodales nisl conubia morbi rutrum tempus congue ullamcorper iaculis ligula.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 3 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Actualidad</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Elementum facilisis iaculis aptent etiam scelerisque ligula neque cursus luctus ullamcorper scelerisque.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 4 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Pymes</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Nunc id quam consectetur a porttitor conubia massa interdum condimentum sem aptent.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 1 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Empresas</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Placerat ut class nisi netus curabitur tristique aenean euismod fusce colus risus.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 2 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Legal</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Varius massa consectetur facilisis erat per pellentesque lacus diam ac nisi aenean.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 3 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Actualidad</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Litora nam lacinia porta suspendisse mi bibendum vel bibendum a pretium nostra.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 4 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Pymes</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Congue primis viverra accumsan congue vulputate in urna netus semper maecenas senectus.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 1 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Empresas</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Nisi etiam aenean enim sapien velit felis metus per conubia commodo nam.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 2 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Legal</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Consectetur mattis vehicula placerat bibendum colus duis curae accumsan sed non ante.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 3 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Actualidad</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Proin et tristique taciti morbi ornare venenatis donec posuere sodales mauris vivamus.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 4 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Pymes</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Nisl aliquet neque sem potenti nam curae eleifend praesent nibh volutpat rhoncus.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 1 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Empresas</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Cubilia semper erat quam libero himenaeos placerat massa nulla feugiat a suscipit.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 2 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Legal</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Hac massa ultricies justo arcu molestie etiam nisl viverra non cursus condimentum.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 3 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Actualidad</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Nisl suscipit mauris aliquam tortor netus taciti taciti fermentum cubilia fames porttitor.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 4 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Pymes</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Integer quisque pharetra elit massa ad volutpat ad magna donec aliquet et.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 1 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Empresas</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Ac nunc euismod enim volutpat fames augue ante aliquam sapien tellus cras.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 2 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Legal</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Quisque accumsan sapien sagittis litora curae vehicula hendrerit fames consequat urna sed.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 3 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Actualidad</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Posuere lectus nunc ante ac vestibulum justo nulla sollicitudin primis leo phasellus.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-3 4 dscroll">
+              <article class="article--new"> 
+                <div class="article__date">19/11/2022</div>
+                <div class="article__tag">Pymes</div>
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+                </div>
+                <div class="article__body"> 
+                  <h4 class="article__title">Título noticia </h4>
+                  <p class="article__description">Quam libero hac phasellus vestibulum porta tincidunt venenatis rutrum odio fermentum aliquet.
+                  </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="addcart"> 
+      <div class="addcart__opacity"></div>
+      <div class="addcart__box">
+        <div class="addcart__loader"></div>
+        <div class="addcart__box__box">
+          <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
+          <div class="addcart__box__header"> 
+            <h3 class="addcart__title">Agregar nuevo producto </h3>
+            <p class="addcart__description">Etiam orci laoreet dui colus nunc convallis nisi himenaeos colus netus venenatis et potenti tortor.
             </p>
-            <div class="section__header__flex">
-              <div class="section__filters filters dscroll">
-                <ul data-filter-group="category" class="menu button-group">
-                  <li data-filter="*" class="section__filter current">Todas</li>
-                  <li data-filter=".1" class="section__filter">Empresas</li>
-                  <li data-filter=".2" class="section__filter">Legal</li>
-                  <li data-filter=".3" class="section__filter">Actualidad</li>
-                  <li data-filter=".4" class="section__filter">Pymes</li>
-                </ul>
+          </div>
+          <div class="addcart__box__body">
+            <div class="addcart__box__details"> 
+              <div class="addcart__box__detail">
+                <h5 class="addcart__box__detail__title"><strong>Paso 1:</strong> Selecciona el tipo de producto</h5>
+                <p class="addcart__box__detail__selected">Firma Electrónica Avanzada<span class="fa fa-check"></span></p>
               </div>
-              <div class="section__select"> 
-                <div class="form__element">
-                  <div data-filter-group="order" class="form__input button-group selectors">
-                    <select class="order-select">
-                      <option selected disabled>Ordenar por</option>
-                      <option value="*">Todos</option>
-                      <option value=".last">Ultimos agregados</option>
-                      <option value=".destacados">Mas destacados</option>
-                      <option value=".new">Mas nuevos</option>
-                      <option value=".old">Mas antiguos</option>
-                    </select>
+              <div class="addcart__box__detail">
+                <h5 class="addcart__box__detail__title"><strong>Paso 2:</strong> Modalidad de Firma</h5>
+                <p class="addcart__box__detail__selected">Token<span class="fa fa-check"></span></p>
+              </div>
+              <div class="addcart__box__detail">
+                <h5 class="addcart__box__detail__title"><strong>Paso 2:</strong> Vigencia</h5>
+                <p class="addcart__box__detail__selected">2 Años<span class="fa fa-check"></span></p>
+              </div>
+            </div>
+            <div class="addcart__question"> 
+              <div class="addcart__question__header">
+                <h4 class="addcart__title"><strong>Paso 4:</strong> ¿Es usted Notario, Archivero o Conservador?
+                  <div class="addcart__tooltip">
+                    <div class="addcart__circle"><span>i</span></div>
+                    <div class="addcart__tooltip__tooltip">
+                      <h5>Nisl enim
+                      </h5>
+                      <p>Ad laoreet placerat mi aenean potenti lacus ornare feugiat ultrices. Id luctus laoreet morbi convallis sapien sed auctor curae placerat cubilia vivamus augue fermentum suspendisse.
+                      </p>
+                    </div>
+                  </div>
+                </h4>
+              </div>
+              <div class="addcart__question__body">
+                <div class="addcart__options"> 
+                  <div class="addcart__option"> 
+                    <label>
+                      <input type="radio" name="paso1">Sí
+                    </label>
+                  </div>
+                  <div class="addcart__option"> 
+                    <label>
+                      <input type="radio" name="paso1">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="addcart__question__footer"> <a data-next-question class="btn">Continuar</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--login">
+      <div class="modal__back"></div>
+      <div class="modal__front">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-close"></span></div>
+          <div class="modal__header">
+            <h3 class="modal__title">Iniciar sesión</h3>
+            <p class="section__description">Laoreet tempor duis fermentum quisque auctor leo potenti
+            </p>
+          </div>
+          <div class="modal__body">
+            <div class="modal__tab"> 
+              <div class="tabs tabs--login">
+                <div class="tabs__header"> 
+                  <div class="tab tab--current">Persona natural</div>
+                  <div class="tab">Contador </div>
+                </div>
+                <div class="tabs__body"> 
+                  <div class="tab tab--current dscroll">
+                    <div class="modal__form">
+                      <form>
+                        <div class="cols"> 
+                          <div class="col-xs-12">
+                            <div class="form__element">
+                              <div class="form__title">Rut</div>
+                              <div class="form__input">
+                                <input type="rut" name="#" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element">
+                              <div class="form__title">Contraseña</div>
+                              <div class="form__input">
+                                <input type="password" name="#" required>
+                              </div>
+                              <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__buttons">
+                              <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="tab dscroll">
+                    <div class="modal__form">
+                      <form>
+                        <div class="cols"> 
+                          <div class="col-xs-12">
+                            <div class="form__element">
+                              <div class="form__title">Email</div>
+                              <div class="form__input">
+                                <input type="email" name="#" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element">
+                              <div class="form__title">Contraseña</div>
+                              <div class="form__input">
+                                <input type="password" name="#" required>
+                              </div>
+                              <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__buttons">
+                              <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="section__body">
-            <div class="cols grid">
-              <div class="col-sm-6 col-md-3 1 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Empresas</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--register">
+      <div class="modal__back"></div>
+      <div class="modal__front">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-close"></span></div>
+          <div class="modal__header">
+            <h3 class="modal__title">Registro</h3>
+            <p class="section__description">Scelerisque sem habitasse lacinia risus maecenas ligula feugiat
+            </p>
+          </div>
+          <div class="modal__body">
+            <div class="modal__form">
+              <form>
+                <div class="cols">
+                  <div class="col-xs-12">
+                    <div class="form__options"> 
+                      <div class="form__option"> 
+                        <label>
+                          <input type="radio" name="profile">Persona natural
+                        </label>
+                      </div>
+                      <div class="form__option"> 
+                        <label>
+                          <input type="radio" name="profile">Contador
+                        </label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Dictum leo quis accumsan suspendisse bibendum colus colus turpis imperdiet et porttitor.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                  <div class="col-xs-12">
+                    <div class="form__element">
+                      <div class="form__title">Rut</div>
+                      <div class="form__input">
+                        <input type="rut" name="#" required>
+                      </div>
+                    </div>
                   </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 2 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Legal</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
+                  <div class="col-xs-12">
+                    <div class="form__element">
+                      <div class="form__title">Email</div>
+                      <div class="form__input">
+                        <input type="rut" name="#" required>
+                      </div>
+                    </div>
                   </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Cursus nostra nibh himenaeos senectus neque eleifend inceptos metus senectus lacus vitae.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                  <div class="col-xs-12">
+                    <div class="form__element">
+                      <div class="form__title">Contraseña</div>
+                      <div class="form__input">
+                        <input type="password" name="#" required>
+                      </div>
+                    </div>
                   </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 3 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Actualidad</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
+                  <div class="col-xs-12">
+                    <div class="form__element">
+                      <div class="form__title">Repetir Contraseña</div>
+                      <div class="form__input">
+                        <input type="password" name="#" required>
+                      </div>
+                    </div>
                   </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Blandit convallis est molestie feugiat sed non risus nisl enim cras luctus.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
+                  <div class="col-xs-12">
+                    <div class="form__buttons">
+                      <button class="btn">Registrarse</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
+                    </div>
                   </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 4 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Pymes</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Sagittis interdum pharetra inceptos viverra lectus potenti mollis fusce scelerisque neque class.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 1 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Empresas</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Nulla bibendum congue hac feugiat vitae suscipit eu aenean fringilla mollis nulla.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 2 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Legal</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Hendrerit rhoncus quisque laoreet proin convallis colus ligula netus senectus condimentum porttitor.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 3 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Actualidad</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Nec quisque integer posuere hac massa vel bibendum euismod vitae augue quam.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 4 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Pymes</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Tempor aliquam eget tempor ullamcorper sagittis integer habitasse massa nisi nulla scelerisque.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 1 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Empresas</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Tortor sagittis mollis id nec accumsan felis aliquam aenean per sed vivamus.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 2 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Legal</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Fringilla sollicitudin mi tortor vel facilisis nunc convallis mauris convallis ut est.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 3 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Actualidad</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Sagittis dictum cubilia euismod ad feugiat nibh fringilla sed fermentum ut scelerisque.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 4 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Pymes</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Dui vulputate nisi ullamcorper eros nibh luctus bibendum gravida quisque vestibulum egestas.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 1 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Empresas</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Euismod malesuada euismod nunc curabitur vehicula leo convallis cubilia quam diam euismod.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 2 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Legal</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Eget imperdiet luctus odio nibh ac velit himenaeos primis ut curabitur volutpat.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 3 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Actualidad</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Semper lobortis malesuada volutpat fringilla sodales torquent sapien hendrerit lectus et posuere.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 4 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Pymes</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Gravida proin sagittis maecenas pharetra platea posuere potenti cursus suscipit platea vel.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 1 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Empresas</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Suscipit vitae etiam erat aenean iaculis consequat curabitur libero lacinia nulla volutpat.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 2 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Legal</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Commodo sem elementum potenti taciti tellus nisi laoreet lectus tincidunt colus sagittis.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 3 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Actualidad</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Dapibus turpis diam donec adipiscing felis aliquam vestibulum mi enim aliquam iaculis.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 4 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Pymes</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Aenean egestas risus curabitur ultricies fermentum mi a sociosqu non porttitor cursus.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 1 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Empresas</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Rhoncus volutpat viverra sed ad aliquam faucibus nibh vulputate netus hendrerit elit.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 2 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Legal</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Vitae condimentum vestibulum nam eu bibendum ut massa commodo velit mi felis.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 3 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Actualidad</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Mauris scelerisque eget arcu ut metus integer curabitur hac mollis in habitasse.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 4 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Pymes</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Fusce odio accumsan et at congue malesuada ut ut porta erat posuere.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 1 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Empresas</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Nulla tincidunt vel elit mollis congue sodales dictum nullam neque ante arcu.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 2 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Legal</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Dictumst porta curabitur interdum et metus ante semper euismod curabitur scelerisque mi.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 3 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Actualidad</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Himenaeos proin fermentum eros quis posuere nec posuere proin faucibus venenatis vivamus.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right">               </span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-6 col-md-3 4 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Pymes</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Cras quis et magna nunc auctor vel praesent donec sagittis at metus.
-                    </p><a href="single-new.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+    <div class="modal modal--resetpass">
+      <div class="modal__back"></div>
+      <div class="modal__front">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-close"></span></div>
+          <div class="modal__header">
+            <h3 class="modal__title">Recuperar contraseña</h3>
+            <p class="section__description">Tempor nullam ut et lacinia tristique quisque eros
+            </p>
+          </div>
+          <div class="modal__body">
+            <div class="modal__form">
+              <form>
+                <div class="cols"> 
+                  <div class="col-xs-12">
+                    <div class="form__element">
+                      <div class="form__title">Email</div>
+                      <div class="form__input">
+                        <input type="email" name="#" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form__buttons">
+                      <button class="btn">Recuperar</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="footer__bar"> <img src="img/icons/line-colors.svg"></div>

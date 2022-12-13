@@ -4081,6 +4081,48 @@ $pinesMarkers = [];
 
 $map = '';
 
+app.addcart = {
+  init: function() {
+    app.addcart.nav.events();
+    return $("[data-next-question]").click(function(e) {
+      e.preventDefault();
+      return app.loader["in"]($(".addcart__loader"));
+    });
+  },
+  nav: {
+    events: function() {
+      $("[data-modal-addcart]").click(function(e) {
+        return app.addcart.nav.toggle();
+      });
+      return $(".addcart__close , .addcart__opacity").on('click', function() {
+        return app.addcart.nav.out();
+      });
+    },
+    toggle: function() {
+      if (!$(".addcart").is(".addcart--in")) {
+        return this["in"]();
+      } else {
+        return this.out();
+      }
+    },
+    "in": function() {
+      if (!$(".addcart").hasClass("addcart--nav-out")) {
+        return $(".addcart").addClass("addcart--in");
+      }
+    },
+    out: function() {
+      if (!$(".addcart").hasClass("addcart--nav-out")) {
+        $(".addcart").addClass("addcart--nav-out");
+        return setTimeout(function() {
+          $(".addcart").removeClass("addcart--nav-out");
+          $(".addcart").removeClass("addcart--in");
+          return app.addcart.nav.backLvl();
+        }, 500);
+      }
+    }
+  }
+};
+
 app.bg = {
   init: function() {
     return $(".bg").each(function() {
@@ -4474,6 +4516,36 @@ app.isotope = {
   }
 };
 
+app.loader = {
+  init: function() {},
+  html: function() {
+    return '' + '<div class="loader">' + '<svg viewBox="25 25 50 50">' + '	<circle cx="50" cy="50" r="20"></circle>' + '</svg>' + '</div>';
+  },
+  "in": function(element) {
+    if (!$(".search__body .loader")[0]) {
+      if (!element) {
+        element = $("body");
+      }
+      return element.append(app.loader.html());
+    }
+  },
+  new_in: function(element) {
+    if (!$(".newsearch__body .loader")[0]) {
+      if (!element) {
+        element = $("body");
+      }
+      return element.append(app.loader.html());
+    }
+  },
+  out: function() {
+    $(".loader").addClass("out");
+    setTimeout(function() {
+      return $(".loader").remove();
+    }, 500);
+    return $("body").addClass("loaded");
+  }
+};
+
 app.mapbox = {
   init: function() {
     var mapboxClient;
@@ -4784,12 +4856,30 @@ app.mapbox = {
 
 app.modal = {
   init: function() {
+    $("[data-modal-login]").click(function(e) {
+      e.preventDefault();
+      app.modal.open(".modal--login");
+      $(".modal--resetpass").removeClass("modal--in");
+      return $(".modal--register").removeClass("modal--in");
+    });
+    $("[data-modal-resetpass]").click(function(e) {
+      e.preventDefault();
+      app.modal.open(".modal--resetpass");
+      $(".modal--login").removeClass("modal--in");
+      return $(".modal--register").removeClass("modal--in");
+    });
+    $("[data-modal-register]").click(function(e) {
+      e.preventDefault();
+      app.modal.open(".modal--register");
+      return $(".modal--login").removeClass("modal--in");
+    });
     $(".modal__close").click(function() {
       return app.modal.close($(this).closest(".modal"));
     });
-    return $("[data-modal-login]").click(function(e) {
-      e.preventDefault();
-      return app.modal.open(".modal--login");
+    return $('.modal').click(function(e) {
+      if ($(e.target).hasClass('modal__front')) {
+        return app.modal.close($(this).closest(".modal"));
+      }
     });
   },
   open: function(elementclass) {
@@ -4802,9 +4892,9 @@ app.modal = {
     if (!modal) {
       modal = $(".modal");
     }
-    modal.addClass("modal--out");
+    modal.removeClass("modal--in").addClass("modal--out");
     return setTimeout(function() {
-      return $(".modal.modal--out").removeClass("modal--in modal--out");
+      return modal.removeClass("modal--out");
     }, 200);
   }
 };

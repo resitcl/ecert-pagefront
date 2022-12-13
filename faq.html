@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=523" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=64792" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=523" type="text/javascript"></script>
+    <script src="js/main.js?v=64792" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -106,15 +106,15 @@
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="aboutus.html">Quienes somos</a>
-                                <p>Semper elit leo nunc curabitur libero
+                                <p>Risus potenti metus lacinia odio nec
                                 </p>
                               </li>
                               <li><a href="news.html">Blog</a>
-                                <p>Mattis mi justo ornare a molestie pulvinar
+                                <p>Imperdiet curae vulputate aenean sed himenaeos adipiscing
                                 </p>
                               </li>
                               <li><a href="red-atencion.html">Red de Atención</a>
-                                <p>Aliquam eget imperdiet volutpat potenti
+                                <p>Enim congue vivamus suscipit morbi
                                 </p>
                               </li>
                             </ul>
@@ -181,13 +181,13 @@
                   </div>
                 </div>
                 <div class="header__nav__nav__footer"> 
-                  <div class="header__nav__buttons"><a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
+                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
                 </div>
               </div>
             </div>
             <div class="header__right">
               <div class="header__item"> 
-                <div class="header__buttons"> <a href="#" class="btn btn--xs btn--white">Crea tu cuenta</a><a href="#" class="btn btn--xs">Ingresar</a></div>
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
               </div>
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
@@ -197,219 +197,363 @@
         </div>
       </div>
     </header>
-    <div id="sections">
-      <section class="section--header">
-        <div class="section__clipath">
-          <div class="section__bg">
-            <div class="bg"><img src="img/uploads/2.jpg"></div>
+    <div id="sections"></div>
+    <section class="section--header">
+      <div class="section__clipath">
+        <div class="section__bg">
+          <div class="bg"><img src="img/uploads/2.jpg"></div>
+        </div>
+        <div class="section__wrap section__wrap--header">
+          <div class="section__body">
+            <div class="section__content">
+              <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="faq.html">Preguntas frecuentes</a></div>
+              <h1 class="section__title">Preguntas frecuentes</h1>
+              <p class="section__description">Praesent ante vivamus ut vitae fringilla congue curabitur feugiat scelerisque. Aenean curabitur lobortis sapien nam nam vestibulum torquent semper inceptos iaculis cras congue consequat lectus.
+              </p>
+            </div>
           </div>
-          <div class="section__wrap section__wrap--header">
-            <div class="section__body">
-              <div class="section__content">
-                <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="faq.html">Preguntas frecuentes</a></div>
-                <h1 class="section__title">Preguntas frecuentes</h1>
-                <p class="section__description">Fusce urna est justo inceptos et velit fames curabitur pulvinar. Nostra senectus rutrum tellus faucibus eget scelerisque blandit eu venenatis eros viverra aliquam fermentum cras.
-                </p>
+        </div>
+      </div>
+    </section>
+    <section class="section--faq">
+      <div class="section__wrap section--md">
+        <div class="section__header"> 
+          <h3 class="section__title">Egestas sagittis viverra molestie enim aenean
+          </h3>
+          <p class="section__description">Torquent himenaeos integer posuere potenti pulvinar odio non rhoncus pharetra. Interdum libero tristique faucibus venenatis phasellus himenaeos ultricies velit conubia habitasse scelerisque sodales nullam potenti.
+          </p>
+        </div>
+        <div class="section__body"> 
+          <div class="section__tabs"> 
+            <div class="tabs"> 
+              <div class="tabs__header"> 
+                <div class="tab tab--current">Firma Electrónica simple </div>
+                <div class="tab">Firma Electrónica avanzada </div>
+                <div class="tab">Firma Avanzada Online</div>
+              </div>
+              <div class="tabs__body"> 
+                <div class="tab tab--current dscroll">
+                  <div class="section__faq">
+                    <div class="faq">
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Pellentesque arcu magna felis fermentum ut suspendisse litora habitant mollis. Himenaeos nullam nec rhoncus dui pellentesque accumsan morbi quis aptent porta ultrices aliquet suscipit ornare.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Aliquet erat libero facilisis cursus sed condimentum colus ullamcorper vulputate. Congue nullam orci aliquam semper inceptos mauris tempus libero consectetur scelerisque aliquet ut lobortis litora.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Sollicitudin purus imperdiet cubilia facilisis eu quis praesent est conubia. Colus purus blandit mauris orci aliquet imperdiet gravida risus non elit euismod rutrum fermentum donec.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Habitant inceptos duis convallis placerat augue dui ac et augue. Varius mattis lacinia felis elementum tempor convallis phasellus sapien placerat neque scelerisque tortor vestibulum colus.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Curae tortor vulputate consectetur viverra curae metus ornare aenean ad. Vulputate gravida etiam conubia class aenean magna eleifend libero interdum ligula pretium viverra egestas cursus.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Pulvinar sagittis dui nibh pharetra curae etiam eros condimentum conubia. Ornare commodo fames ligula dapibus etiam velit justo quisque vestibulum sodales cursus auctor eros platea.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab dscroll">
+                  <div class="section__faq">
+                    <div class="faq">
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Feugiat porttitor nulla pulvinar potenti volutpat in primis ultricies donec. Ut eleifend nam libero orci nisl lobortis fringilla a fames cubilia nam porttitor quisque egestas.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Quis proin donec duis erat consectetur urna vivamus vehicula rhoncus. Curabitur netus torquent massa ultricies velit posuere curabitur hendrerit justo gravida eleifend molestie interdum habitant.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Gravida ut varius congue bibendum per porttitor per semper ante. Sollicitudin sodales tincidunt tellus porta convallis risus aptent condimentum lectus turpis non sapien bibendum integer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Arcu massa vitae aenean ut fusce torquent himenaeos a odio. Litora proin fermentum et pretium nunc lobortis bibendum eleifend a curabitur mauris vestibulum vulputate eget.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Interdum netus auctor fermentum arcu ut mollis congue fermentum colus. Commodo in cras odio nibh nam suspendisse tempor litora semper pellentesque semper sem pulvinar vulputate.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Aptent velit velit malesuada duis himenaeos primis porttitor enim aenean. Tempor bibendum elementum eros sollicitudin quisque primis bibendum fringilla pharetra vitae ut auctor hac porttitor.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab dscroll">
+                  <div class="section__faq">
+                    <div class="faq">
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">In accumsan blandit senectus a elementum tristique in leo interdum. Nam laoreet lacus praesent libero aliquet quis primis consectetur accumsan pretium dictum suscipit tortor id.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Diam magna fames senectus fermentum aliquet eros colus fringilla vitae. Bibendum nam hendrerit interdum ullamcorper vestibulum sollicitudin diam bibendum vulputate id condimentum suspendisse dapibus varius.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Aliquam mollis fames donec inceptos cubilia ante phasellus etiam arcu. Mi justo metus tristique varius purus curae nullam orci laoreet habitasse volutpat augue inceptos justo.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Quis phasellus cubilia morbi commodo justo nibh colus tellus nunc. Conubia varius curabitur velit donec malesuada imperdiet vivamus curabitur condimentum tempor aenean nisi laoreet donec.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Viverra risus diam mattis potenti fringilla elit mattis convallis lacinia. Malesuada lacinia egestas laoreet sapien fermentum egestas integer suspendisse curabitur vel accumsan ultrices magna volutpat.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq__item">
+                        <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
+                        <div class="faq__answer">
+                          <div class="section__content">
+                            <p class="section__description">Porttitor quisque mi eleifend ut proin justo quisque platea ut. Et ullamcorper ut colus nullam nostra ultricies imperdiet maecenas pulvinar vulputate lacus elementum egestas ante.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="section--faq">
-        <div class="section__wrap section--md">
-          <div class="section__header"> 
-            <h3 class="section__title">Consequat gravida aliquam ullamcorper hendrerit condimentum
-            </h3>
-            <p class="section__description">Libero lacus vestibulum aliquam integer nullam varius consectetur varius platea. Nostra mollis tellus at ligula risus mi habitasse lacus vel urna dui cursus tempus tortor.
+      </div>
+    </section>
+    <div class="addcart"> 
+      <div class="addcart__opacity"></div>
+      <div class="addcart__box">
+        <div class="addcart__loader"></div>
+        <div class="addcart__box__box">
+          <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
+          <div class="addcart__box__header"> 
+            <h3 class="addcart__title">Agregar nuevo producto </h3>
+            <p class="addcart__description">Tempor ullamcorper lobortis gravida integer varius inceptos est platea pretium sodales diam sollicitudin fames purus.
             </p>
           </div>
-          <div class="section__body"> 
-            <div class="section__tabs"> 
-              <div class="tabs"> 
+          <div class="addcart__box__body">
+            <div class="addcart__box__details"> 
+              <div class="addcart__box__detail">
+                <h5 class="addcart__box__detail__title"><strong>Paso 1:</strong> Selecciona el tipo de producto</h5>
+                <p class="addcart__box__detail__selected">Firma Electrónica Avanzada<span class="fa fa-check"></span></p>
+              </div>
+              <div class="addcart__box__detail">
+                <h5 class="addcart__box__detail__title"><strong>Paso 2:</strong> Modalidad de Firma</h5>
+                <p class="addcart__box__detail__selected">Token<span class="fa fa-check"></span></p>
+              </div>
+              <div class="addcart__box__detail">
+                <h5 class="addcart__box__detail__title"><strong>Paso 2:</strong> Vigencia</h5>
+                <p class="addcart__box__detail__selected">2 Años<span class="fa fa-check"></span></p>
+              </div>
+            </div>
+            <div class="addcart__question"> 
+              <div class="addcart__question__header">
+                <h4 class="addcart__title"><strong>Paso 4:</strong> ¿Es usted Notario, Archivero o Conservador?
+                  <div class="addcart__tooltip">
+                    <div class="addcart__circle"><span>i</span></div>
+                    <div class="addcart__tooltip__tooltip">
+                      <h5>Nisi faucibus
+                      </h5>
+                      <p>Primis nostra ultrices porttitor sapien nullam sed nostra cubilia malesuada. Et urna malesuada vulputate etiam non sem et proin pretium taciti phasellus venenatis pretium rhoncus.
+                      </p>
+                    </div>
+                  </div>
+                </h4>
+              </div>
+              <div class="addcart__question__body">
+                <div class="addcart__options"> 
+                  <div class="addcart__option"> 
+                    <label>
+                      <input type="radio" name="paso1">Sí
+                    </label>
+                  </div>
+                  <div class="addcart__option"> 
+                    <label>
+                      <input type="radio" name="paso1">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="addcart__question__footer"> <a data-next-question class="btn">Continuar</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--login">
+      <div class="modal__back"></div>
+      <div class="modal__front">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-close"></span></div>
+          <div class="modal__header">
+            <h3 class="modal__title">Iniciar sesión</h3>
+            <p class="section__description">Maecenas convallis laoreet donec ac platea placerat tortor
+            </p>
+          </div>
+          <div class="modal__body">
+            <div class="modal__tab"> 
+              <div class="tabs tabs--login">
                 <div class="tabs__header"> 
-                  <div class="tab tab--current">Firma Electrónica simple </div>
-                  <div class="tab">Firma Electrónica avanzada </div>
-                  <div class="tab">Firma Avanzada Online</div>
+                  <div class="tab tab--current">Persona natural</div>
+                  <div class="tab">Contador </div>
                 </div>
                 <div class="tabs__body"> 
                   <div class="tab tab--current dscroll">
-                    <div class="section__faq">
-                      <div class="faq">
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Potenti primis lectus purus enim facilisis facilisis mollis curae sociosqu. Tortor pharetra nullam fringilla bibendum imperdiet vel sagittis tempor ante fames accumsan feugiat rhoncus rutrum.
-                              </p>
+                    <div class="modal__form">
+                      <form>
+                        <div class="cols"> 
+                          <div class="col-xs-12">
+                            <div class="form__element">
+                              <div class="form__title">Rut</div>
+                              <div class="form__input">
+                                <input type="rut" name="#" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element">
+                              <div class="form__title">Contraseña</div>
+                              <div class="form__input">
+                                <input type="password" name="#" required>
+                              </div>
+                              <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__buttons">
+                              <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
                             </div>
                           </div>
                         </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Elementum auctor quis vulputate euismod mollis fermentum tempus sollicitudin purus. Conubia aptent habitasse elit vel accumsan lobortis sollicitudin lobortis non colus consectetur lacinia nibh eu.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Ornare gravida taciti gravida hendrerit massa adipiscing erat eleifend nisl. Condimentum scelerisque quisque integer porttitor per hendrerit proin augue tempus colus aenean luctus per consectetur.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Id iaculis consectetur per habitant blandit integer curae vestibulum etiam. Ultrices venenatis porta bibendum scelerisque sociosqu ad taciti etiam orci volutpat morbi torquent litora felis.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Erat justo vivamus sapien ultrices senectus colus congue posuere vulputate. Pretium molestie purus facilisis suspendisse ante arcu augue lacinia colus tortor id ultrices pellentesque ultrices.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Quisque etiam eros interdum fringilla proin nunc habitant convallis in. Nulla convallis aenean tempor lobortis erat conubia metus aliquam fames adipiscing cras congue semper mattis.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                   <div class="tab dscroll">
-                    <div class="section__faq">
-                      <div class="faq">
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Maecenas cubilia aenean fames dapibus est tristique consequat etiam nostra. Sociosqu morbi egestas elit dictum mollis eget aenean egestas habitant aliquet suscipit condimentum ultrices nec.
-                              </p>
+                    <div class="modal__form">
+                      <form>
+                        <div class="cols"> 
+                          <div class="col-xs-12">
+                            <div class="form__element">
+                              <div class="form__title">Email</div>
+                              <div class="form__input">
+                                <input type="email" name="#" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element">
+                              <div class="form__title">Contraseña</div>
+                              <div class="form__input">
+                                <input type="password" name="#" required>
+                              </div>
+                              <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__buttons">
+                              <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
                             </div>
                           </div>
                         </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Conubia auctor ac pretium class phasellus sagittis justo consectetur ut. Ante fusce etiam scelerisque malesuada donec fermentum nibh cras etiam elementum varius faucibus ultrices molestie.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Varius pretium convallis nam pharetra leo consectetur cursus pulvinar cubilia. Vel dictum inceptos nisi ornare sem ante porta ultrices consequat porta elit nunc porta morbi.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Lacinia proin posuere dictumst netus eleifend tellus nisl placerat pretium. Aliquet metus cursus venenatis sodales torquent magna metus quisque gravida integer lobortis feugiat bibendum morbi.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Massa vitae varius cras per velit feugiat laoreet convallis ac. Laoreet mattis neque luctus nunc euismod pretium magna habitasse conubia aenean per ultricies condimentum curae.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Viverra platea imperdiet ut nisi porttitor conubia consequat pharetra imperdiet. Mi ac consequat massa nullam curabitur sapien dictum lobortis inceptos suspendisse convallis mauris tellus rutrum.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab dscroll">
-                    <div class="section__faq">
-                      <div class="faq">
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Cubilia congue nisi cras semper augue ad accumsan porttitor tempus. Orci curae metus aliquet vehicula viverra accumsan mauris hendrerit elementum morbi class molestie nec feugiat.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Primis velit vitae adipiscing luctus mollis etiam molestie laoreet leo. Gravida leo ligula sociosqu semper inceptos porta molestie feugiat rutrum consequat fames quisque tortor cras.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Sapien risus volutpat quis lacinia tortor bibendum massa posuere cursus. Elementum interdum arcu id varius aliquam ligula quisque blandit sollicitudin scelerisque eleifend porta blandit sodales.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Aliquet ultricies nisl nostra torquent morbi fames elementum ut praesent. Velit malesuada neque commodo arcu fermentum nunc mollis vulputate fames egestas dui lacinia commodo tellus.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Mauris non lacinia ultrices varius id gravida mollis dictum varius. Vulputate ut ullamcorper posuere nam lobortis facilisis facilisis maecenas dapibus id condimentum himenaeos proin consequat.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="faq__item">
-                          <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
-                          <div class="faq__answer">
-                            <div class="section__content">
-                              <p class="section__description">Auctor euismod sodales augue blandit sagittis etiam pulvinar hendrerit etiam. Erat eget phasellus at vitae mattis hendrerit curae aenean congue rutrum orci neque odio lobortis.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -417,7 +561,113 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+    <div class="modal modal--register">
+      <div class="modal__back"></div>
+      <div class="modal__front">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-close"></span></div>
+          <div class="modal__header">
+            <h3 class="modal__title">Registro</h3>
+            <p class="section__description">Ullamcorper colus phasellus congue in viverra erat a
+            </p>
+          </div>
+          <div class="modal__body">
+            <div class="modal__form">
+              <form>
+                <div class="cols">
+                  <div class="col-xs-12">
+                    <div class="form__options"> 
+                      <div class="form__option"> 
+                        <label>
+                          <input type="radio" name="profile">Persona natural
+                        </label>
+                      </div>
+                      <div class="form__option"> 
+                        <label>
+                          <input type="radio" name="profile">Contador
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form__element">
+                      <div class="form__title">Rut</div>
+                      <div class="form__input">
+                        <input type="rut" name="#" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form__element">
+                      <div class="form__title">Email</div>
+                      <div class="form__input">
+                        <input type="rut" name="#" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form__element">
+                      <div class="form__title">Contraseña</div>
+                      <div class="form__input">
+                        <input type="password" name="#" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form__element">
+                      <div class="form__title">Repetir Contraseña</div>
+                      <div class="form__input">
+                        <input type="password" name="#" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form__buttons">
+                      <button class="btn">Registrarse</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--resetpass">
+      <div class="modal__back"></div>
+      <div class="modal__front">
+        <div class="modal__box">
+          <div class="modal__close"><span class="fa fa-close"></span></div>
+          <div class="modal__header">
+            <h3 class="modal__title">Recuperar contraseña</h3>
+            <p class="section__description">Viverra commodo tristique sagittis nulla phasellus fringilla ornare
+            </p>
+          </div>
+          <div class="modal__body">
+            <div class="modal__form">
+              <form>
+                <div class="cols"> 
+                  <div class="col-xs-12">
+                    <div class="form__element">
+                      <div class="form__title">Email</div>
+                      <div class="form__input">
+                        <input type="email" name="#" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form__buttons">
+                      <button class="btn">Recuperar</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="footer__bar"> <img src="img/icons/line-colors.svg"></div>
