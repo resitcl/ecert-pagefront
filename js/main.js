@@ -5331,7 +5331,15 @@ app.tabs = {
         e.preventDefault();
         index = $(this).index();
         app.tabs.open(tab, index);
-        return $map.resize();
+        if ($('#mapglobal')[0]) {
+          $map.resize();
+        }
+        if ($(this).find("input")) {
+          if ($(this).find("input").is(':checked')) {
+            $(this).find("input").attr("checked", true);
+            return $(this).siblings(".tab").find("input").attr("checked", false);
+          }
+        }
       });
     });
   },

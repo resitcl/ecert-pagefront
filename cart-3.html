@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=62984" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=87636" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=62984" type="text/javascript"></script>
+    <script src="js/main.js?v=87636" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -90,11 +90,31 @@
                     </li>
                     <li><a href="alliances.html">Alianzas</a></li>
                     <li> <a href="#">Ayuda</a>
-                      <ul> 
-                        <li> <a href="faq.html">Preguntas frecuentes</a></li>
-                        <li><a href="verification.html">Verificación</a></li>
-                        <li><a href="tutoriales.html">Tutoriales</a></li>
-                      </ul>
+                      <div class="header__nav__submenu">
+                        <div class="header__nav__submenu__relative">
+                          <div class="header__nav__submenu__header"> 
+                            <h4>Ayuda </h4>
+                            <p>Eget senectus ligula mattis proin non porttitor
+                            </p>
+                          </div>
+                          <div class="header__nav__submenu__body"> 
+                            <ul> 
+                              <li> <a href="faq.html">Preguntas frecuentes</a>
+                                <p>Vel habitasse rutrum adipiscing
+                                </p>
+                              </li>
+                              <li><a href="verification.html">Verificación</a>
+                                <p>Quisque fames velit sapien gravida
+                                </p>
+                              </li>
+                              <li><a href="tutoriales.html">Tutoriales</a>
+                                <p>Sodales maecenas sapien aliquam
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                     <li><a href="#">Más</a>
                       <div class="header__nav__submenu">
@@ -106,15 +126,15 @@
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="aboutus.html">Quienes somos</a>
-                                <p>Adipiscing eget pharetra feugiat tristique massa
+                                <p>Donec sapien accumsan tristique erat purus
                                 </p>
                               </li>
                               <li><a href="news.html">Blog</a>
-                                <p>Ut ullamcorper quis malesuada cubilia et justo
+                                <p>Ultrices quam dictum cubilia sollicitudin tincidunt euismod
                                 </p>
                               </li>
                               <li><a href="red-atencion.html">Red de Atención</a>
-                                <p>Sed pulvinar placerat nisi vivamus
+                                <p>Sagittis faucibus vehicula ornare habitasse
                                 </p>
                               </li>
                             </ul>
@@ -208,7 +228,7 @@
             <div class="section__content">
               <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html">Carro de compras</a></div>
               <h1 class="section__title">Carro de compras</h1>
-              <p class="section__description">Taciti ultrices praesent pellentesque facilisis at cras nunc class ligula netus hendrerit dictum dictumst nisl.
+              <p class="section__description">Nisi eget egestas varius placerat tortor praesent porttitor fermentum platea varius scelerisque ullamcorper enim venenatis.
               </p>
             </div>
           </div>
@@ -234,45 +254,13 @@
           </div>
           <div class="section__cart"> 
             <h3 class="section__title">Compra Firma Electrónica</h3>
-            <p class="section__description">Turpis venenatis etiam ac adipiscing scelerisque volutpat lectus taciti curabitur quisque vel velit id commodo.
+            <p class="section__description">Diam condimentum ac sodales leo pretium tempus tincidunt odio non tempus erat porta in ante.
             </p>
           </div>
         </div>
         <div class="section__body"> 
-          <div class="cols"> 
-            <div class="col-md-6">
-              <div class="section__payment"> 
-                <div class="section__payment__header"> 
-                  <h4 class="section__title">Selecciona un método de pago</h4>
-                </div>
-                <div class="section__payment__body">
-                  <div class="section__payment__options">
-                    <div class="section__payment__option">
-                      <div class="section__payment__icon"> <img src="img/icons/payment-1.svg"></div>
-                      <div class="section__payment__text"> <span>Pago Online</span></div>
-                      <label>
-                        <input type="radio" name="payment">
-                      </label>
-                    </div>
-                    <div class="section__payment__option">
-                      <div class="section__payment__icon"> <img src="img/icons/payment-2.svg"></div>
-                      <div class="section__payment__text"> <span>Pago Presencial</span></div>
-                      <label>
-                        <input type="radio" name="payment">
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="section__payment__footer"> 
-                  <div class="section__payment__terms">
-                    <label>
-                      <input type="checkbox" name="payment">He leído y acepto los <a href="#" target="_blank">Términos de uso</a> y la <a href="#" target="_blank">Política de privacidad</a> 
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
+          <div class="cols">
+            <div class="col-md-12">
               <div class="section__result">
                 <div class="section__result__header"> 
                   <h4 class="section__title">Resumen de compra </h4>
@@ -306,7 +294,39 @@
                   </div>
                 </div>
               </div>
-              <div class="section__buttons"> <a href="#" class="btn btn--white">Seleccion de productos</a><a href="#" class="btn">Continuar</a></div>
+            </div>
+            <div class="col-md-12">
+              <div class="section__payment"> 
+                <div class="section__payment__header"> 
+                  <h4 class="section__title">Selecciona un método de pago</h4>
+                </div>
+                <div class="section__payment__body">
+                  <div class="section__payment__options">
+                    <div class="section__payment__option">
+                      <div class="section__payment__icon"> <img src="img/icons/payment-1.svg"></div>
+                      <div class="section__payment__text"> <span>Pago Online</span></div>
+                      <label>
+                        <input id="options_payment" type="radio" name="payment" checked>
+                      </label>
+                    </div>
+                    <div class="section__payment__option">
+                      <div class="section__payment__icon"> <img src="img/icons/payment-2.svg"></div>
+                      <div class="section__payment__text"> <span>Pago Presencial</span></div>
+                      <label>
+                        <input id="options_payment" type="radio" name="payment">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__payment__footer"> 
+                  <div class="section__payment__terms">
+                    <label>
+                      <input type="checkbox" name="payment">He leído y acepto los <a href="#" target="_blank">Términos de uso</a> y la <a href="#" target="_blank">Política de privacidad</a> 
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="section__buttons"> <a href="cart-2.html" class="btn btn--white">Volver a datos de productos</a><a href="#" class="btn">Continuar</a></div>
             </div>
           </div>
         </div>
@@ -320,7 +340,7 @@
           <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
           <div class="addcart__box__header"> 
             <h3 class="addcart__title">Agregar nuevo producto </h3>
-            <p class="addcart__description">Quam nisl adipiscing sem lacinia platea class malesuada a nibh nunc nisl auctor quisque dapibus.
+            <p class="addcart__description">Class laoreet molestie lacus in mattis imperdiet ad vivamus primis lectus eu platea cursus nam.
             </p>
           </div>
           <div class="addcart__box__body">
@@ -344,9 +364,9 @@
                   <div class="addcart__tooltip">
                     <div class="addcart__circle"><span>i</span></div>
                     <div class="addcart__tooltip__tooltip">
-                      <h5>Primis metus
+                      <h5>Congue sagittis
                       </h5>
-                      <p>Volutpat cursus enim eu nullam dictum interdum est urna iaculis. Viverra pharetra per nostra aenean consectetur gravida elit egestas hac potenti justo colus ultricies habitant.
+                      <p>Semper rutrum eleifend fusce congue aenean sodales eu imperdiet lacus. Sagittis commodo porta mollis cursus egestas porttitor ad posuere platea nulla ad sed nisl mollis.
                       </p>
                     </div>
                   </div>
@@ -379,7 +399,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Iniciar sesión</h3>
-            <p class="section__description">Dictumst eu maecenas dapibus fringilla ligula aenean viverra
+            <p class="section__description">Dictumst maecenas praesent aptent curabitur consectetur habitasse elit
             </p>
           </div>
           <div class="modal__body">
@@ -464,7 +484,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Registro</h3>
-            <p class="section__description">Netus enim pellentesque in imperdiet semper laoreet ad
+            <p class="section__description">Quis donec nullam posuere aenean morbi porttitor laoreet
             </p>
           </div>
           <div class="modal__body">
@@ -536,7 +556,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Recuperar contraseña</h3>
-            <p class="section__description">Lacinia egestas hendrerit morbi volutpat congue elementum aenean
+            <p class="section__description">Curae quis ultrices est semper tempor consectetur curabitur
             </p>
           </div>
           <div class="modal__body">

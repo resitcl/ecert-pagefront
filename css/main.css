@@ -3065,7 +3065,7 @@ select,
 textarea {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 5px 10px;
   vertical-align: top;
   background: #fff;
   -moz-box-sizing: border-box;
@@ -3073,6 +3073,13 @@ textarea {
   -webkit-appearance: none;
   appearance: none;
   font-weight: 100;
+}
+@media (min-width: 720px) {
+  input,
+  select,
+  textarea {
+    padding: 10px;
+  }
 }
 input:focus,
 select:focus,
@@ -3117,9 +3124,14 @@ select {
   display: inline-block;
   border: none;
   opacity: 1;
-  padding: 10px 40px 10px 15px;
+  padding: 5px 10px;
   margin-bottom: 0;
-  background: url("../img/icons/angle-down.png") 90% 50% no-repeat;
+  background: url("../img/icons/angle-down.png") 95% 50% no-repeat;
+}
+@media (min-width: 720px) {
+  select {
+    padding: 10px;
+  }
 }
 textarea {
   height: 100px;
@@ -3176,8 +3188,15 @@ textarea {
   border-radius: 20px;
   background-color: #fff;
   border: 0;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 0;
+}
+@media (min-width: 720px) {
+  .form__element .form__input input,
+  .form__element .form__input select,
+  .form__element .form__input textarea {
+    padding-left: 20px;
+  }
 }
 .form__element .form__select {
   position: relative;
@@ -5756,6 +5775,10 @@ section.section--cart .section__header .section__steps .section__step .section__
   line-height: 16px;
   font-weight: 500;
 }
+section.section--cart .section__body.section__body--xs {
+  max-width: 700px;
+  margin: 0 auto;
+}
 section.section--cart .section__body .section__init {
   color: #212121;
   box-shadow: rgba(0,0,0,0.05) 0px 6px 24px 0px, rgba(0,0,0,0.08) 0px 0px 0px 1px;
@@ -5781,8 +5804,13 @@ section.section--cart .section__body .section__form {
   color: #212121;
   box-shadow: rgba(0,0,0,0.05) 0px 6px 24px 0px, rgba(0,0,0,0.08) 0px 0px 0px 1px;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
+}
+@media (min-width: 720px) {
+  section.section--cart .section__body .section__form {
+    padding: 20px;
+  }
 }
 section.section--cart .section__body .section__form .section__form__header {
   margin-bottom: 10px;
@@ -5792,12 +5820,180 @@ section.section--cart .section__body .section__form .section__form__header {
 section.section--cart .section__body .section__form .section__form__body {
   margin-bottom: 10px;
 }
+section.section--cart .section__body .section__form .section__form__body .form__button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 60px;
+}
+@media (min-width: 720px) {
+  section.section--cart .section__body .section__form .section__form__body .form__button {
+    -ms-flex-align: end;
+        align-items: flex-end;
+  }
+}
+section.section--cart .section__body .section__form .section__form__body .form__button .btn img {
+  position: relative;
+  top: 1px;
+  float: right;
+  margin-left: 10px;
+}
 section.section--cart .section__body .section__form .section__form__body .form__buttons {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 section.section--cart .section__body .section__form .section__form__body .form__buttons .btn {
   max-width: 100%;
   width: 100%;
+}
+section.section--cart .section__body .section__form .section__form__product {
+  background-color: #fbfbfb;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0,0,0,0.05) 0px 6px 24px 0px, rgba(0,0,0,0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__header .section__title {
+  margin-bottom: 0;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__header .section__form__product__number {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #00a88b;
+  color: #fff;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__personal .section__title,
+section.section--cart .section__body .section__form .section__form__product .section__form__product__payment .section__title,
+section.section--cart .section__body .section__form .section__form__product .section__form__product__delivery .section__title {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__personal .form__buttons,
+section.section--cart .section__body .section__form .section__form__product .section__form__product__payment .form__buttons,
+section.section--cart .section__body .section__form .section__form__product .section__form__product__delivery .form__buttons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+@media (min-width: 720px) {
+  section.section--cart .section__body .section__form .section__form__product .section__form__product__personal .form__buttons,
+  section.section--cart .section__body .section__form .section__form__product .section__form__product__payment .form__buttons,
+  section.section--cart .section__body .section__form .section__form__product .section__form__product__delivery .form__buttons {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__personal .form__buttons .btn,
+section.section--cart .section__body .section__form .section__form__product .section__form__product__payment .form__buttons .btn,
+section.section--cart .section__body .section__form .section__form__product .section__form__product__delivery .form__buttons .btn {
+  margin: 5px 0;
+}
+@media (min-width: 720px) {
+  section.section--cart .section__body .section__form .section__form__product .section__form__product__personal .form__buttons .btn,
+  section.section--cart .section__body .section__form .section__form__product .section__form__product__payment .form__buttons .btn,
+  section.section--cart .section__body .section__form .section__form__product .section__form__product__delivery .form__buttons .btn {
+    margin: 0 5px;
+  }
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__header {
+  display: block;
+  text-align: center;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__header .section__form__product__icon {
+  margin-bottom: 10px;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__header .section__form__product__icon img {
+  width: 60px;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body {
+  height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body::-webkit-scrollbar {
+  width: 10px;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body::-webkit-scrollbar-track {
+  background-color: #fbfbfb;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body::-webkit-scrollbar-thumb {
+  background-color: #4f2b83;
+  border-radius: 5px;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body table {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid rgba(0,0,0,0.1);
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #fff;
+}
+@media (min-width: 960px) {
+  section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body table {
+    display: table;
+    overflow: initial;
+    white-space: initial;
+  }
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body table thead th {
+  padding: 10px;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body table tbody tr {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body table tbody td {
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  max-width: 50%;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body table tbody td:first-child {
+  font-weight: 500;
+}
+section.section--cart .section__body .section__form .section__form__product .section__form__product__resumen .section__form__product__finish .section__form__product__body table tbody td:last-child {
+  text-align: right;
 }
 section.section--cart .section__body .section__payment {
   color: #212121;
@@ -5819,14 +6015,22 @@ section.section--cart .section__body .section__payment .section__payment__body .
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 20px;
 }
 section.section--cart .section__body .section__payment .section__payment__body .section__payment__options .section__payment__option {
   padding: 10px;
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+section.section--cart .section__body .section__payment .section__payment__body .section__payment__options .section__payment__option:first-child {
+  margin-right: 10px;
 }
 section.section--cart .section__body .section__payment .section__payment__body .section__payment__options .section__payment__option .section__payment__icon {
   width: 100px;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
 section.section--cart .section__body .section__result {
   color: #212121;
@@ -5892,8 +6096,10 @@ section.section--cart .section__body .section__result .section__result__footer .
   margin-top: 10px;
   padding-top: 10px;
   border-top: 1px solid rgba(0,0,0,0.1);
+  font-weight: bold;
 }
 section.section--cart .section__body .section__buttons {
+  margin-top: 10px;
   padding: 5px;
   display: -ms-flexbox;
   display: flex;
@@ -6875,6 +7081,15 @@ button.swiper-pagination-bullet {
   color: #212121;
   opacity: 0.3;
 }
+.tabs.tabs--login .tabs__header .tab span {
+  float: left;
+  margin-right: 10px;
+  padding: 1px 3px;
+  background-color: #eaeaea;
+  color: #eaeaea;
+  font-size: 14px;
+  line-height: 16px;
+}
 .tabs.tabs--login .tabs__header .tab:after {
   content: "";
   position: absolute;
@@ -6892,6 +7107,57 @@ button.swiper-pagination-bullet {
 }
 .tabs.tabs--login .tabs__header .tab.tab--current:after {
   width: 100%;
+}
+.tabs.tabs--login .tabs__header .tab.tab--current span {
+  opacity: 1;
+  background-color: #00a88b;
+  color: #fff;
+}
+.tabs.tabs--login .tabs__header .tab .form__option {
+  z-index: 5;
+}
+.tabs.tabs--payment .tabs__header {
+  min-height: initial;
+  text-align: left;
+  padding-left: 0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.tabs.tabs--payment .tabs__header .tab {
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 0;
+  position: relative;
+  border: none;
+  color: #212121;
+  opacity: 0.3;
+  padding: 0;
+}
+.tabs.tabs--payment .tabs__header .tab span {
+  float: left;
+  margin-right: 10px;
+  padding: 3px 5px;
+  background-color: #eaeaea;
+  color: #eaeaea;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid rgba(0,0,0,0.6);
+  position: relative;
+  top: -3px;
+}
+.tabs.tabs--payment .tabs__header .tab.tab--current {
+  background-color: initial;
+  color: #212121;
+  opacity: 1;
+}
+.tabs.tabs--payment .tabs__header .tab.tab--current span {
+  opacity: 1;
+  background-color: #00a88b;
+  color: #fff;
+  border-color: #00a88b;
+}
+.tabs.tabs--payment .tabs__header .tab .form__option {
+  z-index: 5;
 }
 .wp {
   max-width: 1400px;
