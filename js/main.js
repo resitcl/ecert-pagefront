@@ -4149,11 +4149,50 @@ app.common = {
       $(this).parents(".article--option").addClass("article--option--checked");
       return $(this).parents(".article__body").find(".btn").text("Presiona abajo continuar");
     });
-    return $('.radio-options-2').change(function() {
+    $('.radio-options-2').change(function() {
       $(".article--option").removeClass("article--option--checked");
       $(".article--option").find(".article__footer .btn").text("Seleccionar Producto");
       $(this).parents(".article--option").addClass("article--option--checked");
       return $(this).parents(".article__body").find(".btn").text("Presiona abajo continuar");
+    });
+    $("[data-next-1]").click(function(e) {
+      e.preventDefault();
+      app.loader["in"]($(this).parents(".section__form__product__body").find(".section__steploader"));
+      $(this).parents(".section__form__product__search").siblings(".section__form__product__personal").addClass("stepshow");
+      $(this).parents(".section__form__product__search").removeClass("stepshow");
+      return setTimeout(function() {
+        return app.loader.out($(this).parents(".section__form__product__body").find(".section__steploader"));
+      }, 1000);
+    });
+    $("[data-next-2]").click(function(e) {
+      e.preventDefault();
+      app.loader["in"]($(this).parents(".section__form__product__body").find(".section__steploader"));
+      $(this).parents(".section__form__product__personal").siblings(".section__form__product__payment").addClass("stepshow");
+      $(this).parents(".section__form__product__personal").removeClass("stepshow");
+      return setTimeout(function() {
+        return app.loader.out($(this).parents(".section__form__product__body").find(".section__steploader"));
+      }, 1000);
+    });
+    $("[data-next-3]").click(function(e) {
+      e.preventDefault();
+      app.loader["in"]($(this).parents(".section__form__product__body").find(".section__steploader"));
+      $(this).parents(".section__form__product__payment").siblings(".section__form__product__delivery").addClass("stepshow");
+      $(this).parents(".section__form__product__payment").removeClass("stepshow");
+      return setTimeout(function() {
+        return app.loader.out($(this).parents(".section__form__product__body").find(".section__steploader"));
+      }, 1000);
+    });
+    $("[data-next-4]").click(function(e) {
+      e.preventDefault();
+      app.loader["in"]($(this).parents(".section__form__product__body").find(".section__steploader"));
+      $(this).parents(".section__form__product__delivery").siblings(".section__form__product__resumen").addClass("stepshow");
+      $(this).parents(".section__form__product__delivery").removeClass("stepshow");
+      return setTimeout(function() {
+        return app.loader.out($(this).parents(".section__form__product__body").find(".section__steploader"));
+      }, 1000);
+    });
+    return $('#focusrut').focus(function() {
+      return app.modal.open(".modal--focusrut");
     });
   }
 };
