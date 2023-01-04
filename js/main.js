@@ -4417,10 +4417,86 @@ app.isMobile = function() {
   }
 };
 
+app.isotope_results = {
+  init: function() {
+    var $grid_2, $quicksearch, buttonFilter, buttonFilters, concatValues, debounce, qsRegex;
+    buttonFilters = {};
+    buttonFilter = void 0;
+    qsRegex = void 0;
+    $grid_2 = $('.grid--results').isotope({
+      itemSelector: '.col-xs-12',
+      layoutMode: 'masonry',
+      filter: function() {
+        var $this, buttonResult, searchResult;
+        $this = $(this);
+        searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+        buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
+        return searchResult && buttonResult;
+      }
+    });
+    concatValues = function(obj) {
+      var prop, value;
+      value = '';
+      for (prop in obj) {
+        value += obj[prop];
+      }
+      return value;
+    };
+    debounce = function(fn, threshold) {
+      var timeout;
+      timeout = void 0;
+      threshold = threshold || 100;
+      return function() {
+        var _this, args, delayed;
+        delayed = function() {
+          fn.apply(_this, args);
+        };
+        clearTimeout(timeout);
+        args = arguments;
+        _this = this;
+        timeout = setTimeout(delayed, threshold);
+      };
+    };
+    $('.filters-select').change(function() {
+      var $buttonGroup, $this, filterGroup;
+      $this = $(this);
+      $buttonGroup = $this.parents('.button-group');
+      filterGroup = $buttonGroup.attr('data-filter-group');
+      buttonFilters[filterGroup] = $this.val();
+      buttonFilter = concatValues(buttonFilters);
+      $grid_2.isotope();
+      app.scroll.dscroll;
+    });
+    $('.section__filters').on('click', '.section__filter', function() {
+      var $buttonGroup, $this, filterGroup;
+      $this = $(this);
+      $buttonGroup = $this.parents('.button-group');
+      filterGroup = $buttonGroup.attr('data-filter-group');
+      buttonFilters[filterGroup] = $this.attr('data-filter');
+      buttonFilter = concatValues(buttonFilters);
+      $grid_2.isotope();
+      app.scroll.dscroll;
+      $(this).parents(".section__filters").find(".current").removeClass("current");
+      $(this).addClass("current");
+    });
+    $quicksearch = $('.quicksearch').keyup(debounce(function() {
+      qsRegex = new RegExp($quicksearch.val(), 'gi');
+      $grid_2.isotope();
+    }));
+    return $('.button-group').each(function(i, buttonGroup) {
+      var $buttonGroup;
+      $buttonGroup = $(buttonGroup);
+      $buttonGroup.on('click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+      });
+    });
+  }
+};
+
 app.isotope_ubication = {
   init: function() {
     var $grid, $quicksearch, buttonFilter, buttonFilters, concatValues, debounce, qsRegex;
-    console.log("fix isotope ubication");
     buttonFilters = {};
     buttonFilter = void 0;
     qsRegex = void 0;

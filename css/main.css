@@ -2650,6 +2650,17 @@ article.article--result .article__body {
     width: 80%;
   }
 }
+article.article--result .article__tag {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #b01f8c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 16px;
+}
 .bg {
   position: absolute;
   top: 0;
