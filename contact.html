@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=62338" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=40467" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=62338" type="text/javascript"></script>
+    <script src="js/main.js?v=40467" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -30,6 +30,12 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
+            <div class="header__search">
+              <form action="search.html" method="get">
+                <input type="text" name="s" placeholder="Buscar producto">
+                <button><span class="fa fa-search"></span></button>
+              </form>
+            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
@@ -42,7 +48,7 @@
               </div>
             </div>
             <div class="header__right"> 
-              <div data-open-search class="header__item header__item--search"><span class="fa fa-search"></span></div>
+              <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
             </div>
           </div>
         </div>
@@ -94,21 +100,21 @@
                         <div class="header__nav__submenu__relative">
                           <div class="header__nav__submenu__header"> 
                             <h4>Ayuda </h4>
-                            <p>Aliquam inceptos ultrices etiam sociosqu eleifend eros
+                            <p>Torquent aliquam aliquam porta consequat dictum elementum
                             </p>
                           </div>
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="faq.html">Preguntas frecuentes</a>
-                                <p>Cras velit dictum tristique
+                                <p>Turpis lacinia lobortis lectus
                                 </p>
                               </li>
                               <li><a href="verification.html">Verificación</a>
-                                <p>Porttitor pretium laoreet hendrerit porttitor
+                                <p>Venenatis inceptos augue dapibus placerat
                                 </p>
                               </li>
                               <li><a href="tutoriales.html">Tutoriales</a>
-                                <p>Iaculis quam sed litora
+                                <p>Porttitor malesuada varius rhoncus
                                 </p>
                               </li>
                             </ul>
@@ -126,15 +132,15 @@
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="aboutus.html">Quienes somos</a>
-                                <p>Sapien ut mattis tristique risus pharetra
+                                <p>Suspendisse felis lacinia cursus hac conubia
                                 </p>
                               </li>
                               <li><a href="news.html">Blog</a>
-                                <p>Mollis iaculis porta quisque felis ullamcorper sed
+                                <p>Colus cubilia duis vehicula himenaeos varius vestibulum
                                 </p>
                               </li>
                               <li><a href="red-atencion.html">Red de Atención</a>
-                                <p>Sagittis nam sociosqu nisi dapibus
+                                <p>Tempus per senectus feugiat facilisis
                                 </p>
                               </li>
                             </ul>
@@ -228,7 +234,7 @@
             <div class="section__content">
               <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="contact.html">Hablemos</a></div>
               <h1 class="section__title">Hablemos</h1>
-              <p class="section__description">Ornare fames semper est interdum risus id molestie justo hac. Platea sollicitudin tempus accumsan imperdiet ac taciti nibh etiam pulvinar a scelerisque metus id colus.
+              <p class="section__description">Leo dui tortor lectus interdum mattis nulla id metus conubia. Pellentesque eros nulla auctor leo dictumst conubia malesuada nullam etiam nam tempus lectus justo velit.
               </p>
             </div>
           </div>
@@ -238,9 +244,9 @@
     <section class="section--contact">
       <div class="section__wrap section--md">
         <div class="section__header"> 
-          <h3 class="section__title">Ultrices nostra potenti dictum placerat
+          <h3 class="section__title">Curabitur aptent scelerisque placerat etiam
           </h3>
-          <p class="section__description">Ultrices tellus platea gravida massa augue tortor litora id senectus et ultricies.
+          <p class="section__description">Praesent quisque justo lacinia nibh vivamus aenean elementum egestas litora pellentesque orci.
           </p>
         </div>
         <div class="section__body"> 
@@ -300,17 +306,17 @@
                     <div class="form__title">Motivo de contacto</div>
                     <div class="form__input">
                       <select name="#">
-                        <option value="#">Placerat feugiat risus
+                        <option value="#">Pulvinar habitasse quisque
                         </option>
-                        <option value="#">Elementum habitant
+                        <option value="#">Molestie nibh
                         </option>
-                        <option value="#">Ut
+                        <option value="#">Habitasse
                         </option>
-                        <option value="#">Senectus pharetra facilisis
+                        <option value="#">Etiam eleifend ut
                         </option>
-                        <option value="#">Tempor velit
+                        <option value="#">Bibendum torquent
                         </option>
-                        <option value="#">Enim aenean aptent
+                        <option value="#">Vulputate libero turpis
                         </option>
                       </select>
                     </div>
@@ -343,7 +349,7 @@
           <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
           <div class="addcart__box__header"> 
             <h3 class="addcart__title">Agregar nuevo producto </h3>
-            <p class="addcart__description">Rhoncus praesent eros eu rutrum at purus convallis est netus class turpis interdum nunc taciti.
+            <p class="addcart__description">Felis sollicitudin habitasse sem vitae vel sodales platea malesuada odio semper rhoncus taciti praesent praesent.
             </p>
           </div>
           <div class="addcart__box__body">
@@ -367,9 +373,9 @@
                   <div class="addcart__tooltip">
                     <div class="addcart__circle"><span>i</span></div>
                     <div class="addcart__tooltip__tooltip">
-                      <h5>Vivamus donec
+                      <h5>Accumsan curabitur
                       </h5>
-                      <p>Fringilla placerat curabitur tempus tempus vivamus etiam turpis suspendisse curae. Pretium accumsan eu laoreet id id lectus praesent egestas colus metus adipiscing tincidunt aenean tempus.
+                      <p>Condimentum cubilia consequat cursus curae id ad senectus tortor magna. Dictum aliquet odio curabitur sagittis sociosqu nisl massa nisl laoreet elit adipiscing senectus lectus senectus.
                       </p>
                     </div>
                   </div>
@@ -402,7 +408,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Iniciar sesión</h3>
-            <p class="section__description">Feugiat tempor felis tincidunt orci mollis rhoncus per
+            <p class="section__description">Sagittis etiam condimentum posuere egestas condimentum suscipit volutpat
             </p>
           </div>
           <div class="modal__body">
@@ -487,7 +493,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Registro</h3>
-            <p class="section__description">Posuere ornare quisque rhoncus inceptos aenean varius cursus
+            <p class="section__description">Quam etiam consequat ac tristique turpis phasellus laoreet
             </p>
           </div>
           <div class="modal__body">
@@ -559,7 +565,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Recuperar contraseña</h3>
-            <p class="section__description">Non nostra nunc cursus habitant elit porttitor posuere
+            <p class="section__description">Tellus mattis accumsan aliquam maecenas a netus metus
             </p>
           </div>
           <div class="modal__body">

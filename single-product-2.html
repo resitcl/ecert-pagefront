@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=41732" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=96921" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=41732" type="text/javascript"></script>
+    <script src="js/main.js?v=96921" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -30,6 +30,12 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
+            <div class="header__search">
+              <form action="search.html" method="get">
+                <input type="text" name="s" placeholder="Buscar producto">
+                <button><span class="fa fa-search"></span></button>
+              </form>
+            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
@@ -42,7 +48,7 @@
               </div>
             </div>
             <div class="header__right"> 
-              <div data-open-search class="header__item header__item--search"><span class="fa fa-search"></span></div>
+              <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
             </div>
           </div>
         </div>
@@ -94,21 +100,21 @@
                         <div class="header__nav__submenu__relative">
                           <div class="header__nav__submenu__header"> 
                             <h4>Ayuda </h4>
-                            <p>Integer nibh libero risus lectus hac a
+                            <p>Interdum pretium dui porta ad odio porta
                             </p>
                           </div>
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="faq.html">Preguntas frecuentes</a>
-                                <p>Potenti tristique feugiat imperdiet
+                                <p>Etiam nisi fermentum aenean
                                 </p>
                               </li>
                               <li><a href="verification.html">Verificación</a>
-                                <p>Sed conubia ultrices sodales odio
+                                <p>Aenean suspendisse pretium faucibus viverra
                                 </p>
                               </li>
                               <li><a href="tutoriales.html">Tutoriales</a>
-                                <p>Nulla maecenas mattis condimentum
+                                <p>Lectus ut nam mattis
                                 </p>
                               </li>
                             </ul>
@@ -126,15 +132,15 @@
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="aboutus.html">Quienes somos</a>
-                                <p>Nam convallis et habitant quis senectus
+                                <p>Eros pretium donec lectus venenatis diam
                                 </p>
                               </li>
                               <li><a href="news.html">Blog</a>
-                                <p>Ligula arcu integer justo dictum ullamcorper vivamus
+                                <p>Vivamus ut accumsan per laoreet vitae elit
                                 </p>
                               </li>
                               <li><a href="red-atencion.html">Red de Atención</a>
-                                <p>Ac semper cras proin ornare
+                                <p>Tincidunt colus tristique primis sem
                                 </p>
                               </li>
                             </ul>
@@ -282,15 +288,15 @@
                     <div class="article__footer"> 
                       <h5 class="article__title">Características </h5>
                       <ul> 
-                        <li>Duis viverra accumsan ante primis cubilia lectus aenean
+                        <li>Accumsan gravida sagittis eleifend nec consequat cursus nostra
                         </li>
-                        <li>Fringilla felis habitant arcu consequat fames enim
+                        <li>Placerat nulla commodo non velit facilisis sem
                         </li>
-                        <li>Placerat mauris fusce suspendisse suspendisse
+                        <li>Arcu nibh turpis nec aliquam
                         </li>
-                        <li>Est rutrum curae in faucibus leo lobortis vehicula pulvinar
+                        <li>Nunc consequat integer potenti ultrices tellus mattis phasellus quisque
                         </li>
-                        <li>Sodales per euismod turpis mi habitant ante
+                        <li>Iaculis venenatis duis ante lacus per suspendisse
                         </li>
                       </ul><a class="btn btn--sm">Presiona abajo continuar</a>
                     </div>
@@ -336,15 +342,15 @@
                     <div class="article__footer"> 
                       <h5 class="article__title">Características </h5>
                       <ul> 
-                        <li>Donec himenaeos viverra tellus duis pretium placerat pharetra
+                        <li>Congue in quam facilisis aenean class pharetra diam
                         </li>
-                        <li>Massa a pretium nulla enim lobortis mattis
+                        <li>Phasellus eu volutpat facilisis netus aenean phasellus
                         </li>
-                        <li>Sagittis sollicitudin donec litora blandit
+                        <li>Rutrum vitae et magna euismod
                         </li>
-                        <li>Auctor malesuada sem dictum leo varius taciti bibendum taciti
+                        <li>Sollicitudin quis euismod vestibulum curabitur auctor congue curae molestie
                         </li>
-                        <li>Pretium posuere rhoncus fames primis per facilisis
+                        <li>Felis curabitur blandit egestas adipiscing ultricies nam
                         </li>
                       </ul><a class="btn btn--sm">Seleccionar Producto</a>
                     </div>
@@ -390,15 +396,15 @@
                     <div class="article__footer"> 
                       <h5 class="article__title">Características </h5>
                       <ul> 
-                        <li>Tincidunt libero tristique quam elit ultrices lectus nisi
+                        <li>Taciti rutrum elit eget vitae luctus sodales vulputate
                         </li>
-                        <li>Duis tristique sollicitudin fringilla nisi quis conubia
+                        <li>Scelerisque nec interdum sagittis congue class fermentum
                         </li>
-                        <li>Cursus donec fusce molestie consequat
+                        <li>Praesent fames sodales iaculis lacus
                         </li>
-                        <li>Fringilla netus quisque dapibus vivamus feugiat leo tristique platea
+                        <li>Senectus curae ante nibh magna eros malesuada litora arcu
                         </li>
-                        <li>Et sagittis ut luctus auctor etiam augue
+                        <li>Ultrices rhoncus fusce sollicitudin potenti et dapibus
                         </li>
                       </ul><a class="btn btn--sm">Seleccionar Producto</a>
                     </div>
@@ -417,7 +423,7 @@
       <div class="section__wrap"> 
         <div class="section__header"> 
           <h3 class="section__title">Casos de uso</h3>
-          <p class="section__description">Sapien senectus pharetra proin per leo ultrices ullamcorper quam quam pretium maecenas urna fringilla quam.
+          <p class="section__description">Sollicitudin imperdiet primis tortor magna integer maecenas consectetur sociosqu tempor platea egestas eu nostra scelerisque.
           </p>
         </div>
         <div class="section__body"> 
@@ -436,9 +442,9 @@
                         <div class="col-md-6">
                           <div class="section__content"> 
                             <h3 class="section__title">Proceso de matrícula para estudiantes </h3>
-                            <p class="section__description">Colus dictumst tempus adipiscing malesuada ante egestas tristique mollis ullamcorper ut erat adipiscing habitasse iaculis.
+                            <p class="section__description">Iaculis lacus curabitur ultrices ornare fermentum magna sed sapien fringilla donec eget tempus hendrerit consequat.
                             </p>
-                            <p class="section__description">Porttitor sodales sociosqu congue varius per convallis ultricies placerat augue. Dictum aenean ante sagittis lacinia dictumst colus ad nisl tincidunt convallis faucibus curabitur nam vivamus.
+                            <p class="section__description">Risus pretium et aenean quam senectus ad non litora porttitor. Eleifend vestibulum molestie platea platea sem vulputate leo nunc mi arcu nullam erat at curae.
                             </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                           </div>
                         </div>
@@ -458,9 +464,9 @@
                         <div class="col-md-6">
                           <div class="section__content"> 
                             <h3 class="section__title">Verificación de identidad de un cliente para entrega de beneficios</h3>
-                            <p class="section__description">Semper tortor enim nisl magna quisque commodo magna viverra primis adipiscing litora colus nibh euismod.
+                            <p class="section__description">Fringilla senectus sed libero porttitor posuere tortor rutrum nibh per venenatis habitant primis vivamus nunc.
                             </p>
-                            <p class="section__description">Gravida ante vel tristique risus vulputate malesuada rutrum non lectus. Blandit tristique convallis congue curabitur et suscipit iaculis ad malesuada tellus mattis quam rutrum est.
+                            <p class="section__description">Rutrum imperdiet condimentum sed scelerisque sollicitudin facilisis tellus semper non. Vestibulum lacinia elit ligula cursus per consectetur nibh tempor donec sed porttitor libero integer in.
                             </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                           </div>
                         </div>
@@ -480,9 +486,9 @@
                         <div class="col-md-6">
                           <div class="section__content"> 
                             <h3 class="section__title">Solución para adhesión de socios</h3>
-                            <p class="section__description">Fringilla gravida quis purus habitant nunc dui fusce primis felis tempus nostra arcu ac nunc.
+                            <p class="section__description">Odio ullamcorper lobortis ligula euismod scelerisque rutrum inceptos ut lectus nam laoreet arcu ac laoreet.
                             </p>
-                            <p class="section__description">Colus cubilia bibendum accumsan nostra nisl faucibus tristique per hac. Ornare hac maecenas commodo vestibulum pellentesque tortor torquent venenatis tellus in nibh rhoncus sociosqu tempor.
+                            <p class="section__description">Himenaeos ac quisque vestibulum quis placerat mi faucibus vitae vivamus. Sollicitudin cursus suscipit tempus consequat vestibulum quisque dui ut sed interdum netus velit nostra sem.
                             </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                           </div>
                         </div>
@@ -502,9 +508,9 @@
                         <div class="col-md-6">
                           <div class="section__content"> 
                             <h3 class="section__title">Contratos de afiliación</h3>
-                            <p class="section__description">Elit ad nostra at tortor id interdum nec ante rutrum aenean tincidunt fermentum dictumst ultrices.
+                            <p class="section__description">Accumsan eget porta curabitur in non orci feugiat neque semper litora bibendum habitasse porttitor porttitor.
                             </p>
-                            <p class="section__description">Tortor justo suscipit etiam nec etiam lacus habitant porttitor et. Cras aptent integer sapien purus cras commodo hendrerit arcu nibh duis colus tincidunt quisque ut.
+                            <p class="section__description">Nostra nullam purus interdum justo volutpat fermentum lacinia in nisl. Nibh ac interdum gravida praesent mauris suspendisse nec volutpat volutpat adipiscing ut viverra sagittis erat.
                             </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                           </div>
                         </div>
@@ -530,7 +536,7 @@
               <div class="col-md-7"> 
                 <div class="section__content"> 
                   <h3 class="section__title">Dispositivo E-token </h3>
-                  <p class="section__description">Cursus curabitur porttitor lacinia nec colus accumsan proin placerat augue. Pulvinar bibendum duis platea nullam ac egestas cursus diam risus. Laoreet semper congue consectetur hac purus pharetra quisque eros praesent metus elementum a hendrerit sapien.
+                  <p class="section__description">Primis condimentum fermentum commodo phasellus ut vulputate etiam hac varius. Curabitur per nulla ante egestas libero luctus imperdiet diam vehicula. Leo per cras ornare aliquam blandit sodales malesuada blandit facilisis felis nec orci senectus aliquam.
                   </p><span class="section__price">$44.990</span>
                   <p class="section__info">(Si usted ya posee E-token para renovar su Firma Electrónica, no necesita comprar otro dispositivo.)</p>
                 </div>
@@ -591,7 +597,7 @@
                   <h4 class="article__title">¿Qué es una firma electrónica?</h4>
                 </div>
                 <div class="article__body">
-                  <p class="article__description">Velit vel ornare libero aliquam hac magna volutpat senectus gravida purus sed.
+                  <p class="article__description">Vitae volutpat libero ut hendrerit arcu fusce dictumst praesent scelerisque dui aliquam.
                   </p><a href="#" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
                 </div>
               </article>
@@ -604,7 +610,7 @@
                   <h4 class="article__title">Preguntas frecuentes</h4>
                 </div>
                 <div class="article__body"> 
-                  <p class="article__description">Lacus condimentum maecenas arcu iaculis porta elit imperdiet odio litora dictumst enim.
+                  <p class="article__description">Quisque velit placerat inceptos ornare hac vestibulum suscipit aenean vel dui egestas.
                   </p><a href="faq.html" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
                 </div>
               </article>
@@ -617,7 +623,7 @@
                   <h4 class="article__title">Manuales</h4>
                 </div>
                 <div class="article__body"> 
-                  <p class="article__description">Fermentum ad volutpat sem id netus habitasse morbi urna class mattis tempus.
+                  <p class="article__description">Imperdiet habitant cras a porttitor pharetra laoreet consequat nisi netus tincidunt a.
                   </p><a href="" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
                 </div>
               </article>
@@ -630,7 +636,7 @@
                   <h4 class="article__title">Tutoriales</h4>
                 </div>
                 <div class="article__body"> 
-                  <p class="article__description">Sagittis gravida nulla est proin lacinia habitasse cursus volutpat massa tristique mi.
+                  <p class="article__description">Fusce ornare ultricies elementum in consequat tincidunt vivamus dictumst molestie torquent potenti.
                   </p><a href="tutoriales.html" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
                 </div>
               </article>
@@ -647,7 +653,7 @@
           <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
           <div class="addcart__box__header"> 
             <h3 class="addcart__title">Agregar nuevo producto </h3>
-            <p class="addcart__description">Non imperdiet nam vitae primis vivamus feugiat conubia massa donec eros quis ullamcorper rhoncus sociosqu.
+            <p class="addcart__description">Interdum primis tempor suscipit platea dictum aenean pellentesque maecenas aenean auctor sapien nisl pulvinar nunc.
             </p>
           </div>
           <div class="addcart__box__body">
@@ -671,9 +677,9 @@
                   <div class="addcart__tooltip">
                     <div class="addcart__circle"><span>i</span></div>
                     <div class="addcart__tooltip__tooltip">
-                      <h5>Feugiat fusce
+                      <h5>Metus adipiscing
                       </h5>
-                      <p>Sodales cras odio cras curabitur nullam sagittis curabitur aliquam erat. Nulla cursus hac semper lobortis fringilla semper varius et sagittis turpis lobortis mauris a eleifend.
+                      <p>Integer eleifend placerat etiam diam sagittis cursus ad felis integer. Dictum class mi duis hendrerit metus himenaeos torquent phasellus nullam et quis sociosqu nam est.
                       </p>
                     </div>
                   </div>
@@ -706,7 +712,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Iniciar sesión</h3>
-            <p class="section__description">Cubilia etiam eleifend libero vehicula platea blandit rhoncus
+            <p class="section__description">Fames etiam cras sed ac aliquam quisque felis
             </p>
           </div>
           <div class="modal__body">
@@ -791,7 +797,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Registro</h3>
-            <p class="section__description">Et proin purus accumsan suspendisse lacinia bibendum non
+            <p class="section__description">Mollis faucibus elit vehicula porta quam conubia semper
             </p>
           </div>
           <div class="modal__body">
@@ -863,7 +869,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Recuperar contraseña</h3>
-            <p class="section__description">Molestie praesent et praesent nisl nam consectetur quis
+            <p class="section__description">Augue aptent condimentum potenti himenaeos dictumst mi nulla
             </p>
           </div>
           <div class="modal__body">

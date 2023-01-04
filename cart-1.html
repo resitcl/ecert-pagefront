@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=84270" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=5239" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=84270" type="text/javascript"></script>
+    <script src="js/main.js?v=5239" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -30,6 +30,12 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
+            <div class="header__search">
+              <form action="search.html" method="get">
+                <input type="text" name="s" placeholder="Buscar producto">
+                <button><span class="fa fa-search"></span></button>
+              </form>
+            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
@@ -42,7 +48,7 @@
               </div>
             </div>
             <div class="header__right"> 
-              <div data-open-search class="header__item header__item--search"><span class="fa fa-search"></span></div>
+              <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
             </div>
           </div>
         </div>
@@ -94,21 +100,21 @@
                         <div class="header__nav__submenu__relative">
                           <div class="header__nav__submenu__header"> 
                             <h4>Ayuda </h4>
-                            <p>Vitae sem mattis curabitur himenaeos auctor turpis
+                            <p>Integer inceptos ut hendrerit suscipit dictumst cursus
                             </p>
                           </div>
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="faq.html">Preguntas frecuentes</a>
-                                <p>Aliquet interdum laoreet hac
+                                <p>Pharetra luctus aliquam neque
                                 </p>
                               </li>
                               <li><a href="verification.html">Verificación</a>
-                                <p>Proin congue ultrices nullam eros
+                                <p>Aliquam donec urna fermentum quam
                                 </p>
                               </li>
                               <li><a href="tutoriales.html">Tutoriales</a>
-                                <p>Sed felis himenaeos et
+                                <p>Turpis donec cursus porttitor
                                 </p>
                               </li>
                             </ul>
@@ -126,15 +132,15 @@
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="aboutus.html">Quienes somos</a>
-                                <p>Torquent nisi justo vehicula curabitur mi
+                                <p>Est tincidunt hac orci turpis in
                                 </p>
                               </li>
                               <li><a href="news.html">Blog</a>
-                                <p>Iaculis curae quis quam turpis sagittis viverra
+                                <p>Habitant scelerisque condimentum tristique praesent senectus fringilla
                                 </p>
                               </li>
                               <li><a href="red-atencion.html">Red de Atención</a>
-                                <p>Pellentesque pretium bibendum donec nulla
+                                <p>Consectetur volutpat ornare lectus aenean
                                 </p>
                               </li>
                             </ul>
@@ -228,7 +234,7 @@
             <div class="section__content">
               <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html">Carro de compras</a></div>
               <h1 class="section__title">Carro de compras</h1>
-              <p class="section__description">Volutpat dictumst aliquet libero scelerisque tellus pharetra quisque donec dapibus justo senectus donec senectus curae.
+              <p class="section__description">Nostra ornare feugiat ad quisque praesent vivamus arcu nulla est proin nisi quisque auctor suscipit.
               </p>
             </div>
           </div>
@@ -254,7 +260,7 @@
           </div>
           <div class="section__cart"> 
             <h3 class="section__title">Compra Firma Electrónica</h3>
-            <p class="section__description">Mauris eget netus dictum vehicula dui hendrerit et enim nulla phasellus blandit nam phasellus id.
+            <p class="section__description">Quisque arcu viverra erat aliquet quisque malesuada imperdiet netus aliquet lacinia cras tellus feugiat a.
             </p>
           </div>
           <div class="section__info"> 
@@ -538,7 +544,7 @@
           <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
           <div class="addcart__box__header"> 
             <h3 class="addcart__title">Agregar nuevo producto </h3>
-            <p class="addcart__description">Malesuada sapien sociosqu integer ac volutpat auctor ultricies porttitor leo orci ac ante fringilla tempor.
+            <p class="addcart__description">Quisque laoreet velit cras cubilia inceptos malesuada eu inceptos taciti pellentesque cursus aliquam primis pretium.
             </p>
           </div>
           <div class="addcart__box__body">
@@ -562,9 +568,9 @@
                   <div class="addcart__tooltip">
                     <div class="addcart__circle"><span>i</span></div>
                     <div class="addcart__tooltip__tooltip">
-                      <h5>Ac vehicula
+                      <h5>Colus molestie
                       </h5>
-                      <p>Taciti aliquam sagittis urna etiam porttitor eleifend nostra commodo viverra. Vitae curae platea sociosqu rutrum orci mauris ante enim consequat phasellus himenaeos velit adipiscing porta.
+                      <p>Urna eros diam lacinia venenatis ligula aenean tellus est eu. Per bibendum fames justo ut ut laoreet pulvinar imperdiet rhoncus dictum blandit ante arcu neque.
                       </p>
                     </div>
                   </div>
@@ -597,7 +603,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Iniciar sesión</h3>
-            <p class="section__description">Fusce semper ut congue viverra felis ullamcorper nostra
+            <p class="section__description">Curabitur posuere bibendum aenean cursus ante accumsan lacinia
             </p>
           </div>
           <div class="modal__body">
@@ -682,7 +688,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Registro</h3>
-            <p class="section__description">Justo quisque augue fusce consequat potenti semper ante
+            <p class="section__description">Fusce tempor class nunc accumsan id nisl vehicula
             </p>
           </div>
           <div class="modal__body">
@@ -754,7 +760,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Recuperar contraseña</h3>
-            <p class="section__description">Habitasse varius sapien enim primis est himenaeos euismod
+            <p class="section__description">Rhoncus class torquent duis dictum dapibus egestas tellus
             </p>
           </div>
           <div class="modal__body">

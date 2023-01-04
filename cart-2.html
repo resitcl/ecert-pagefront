@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=69947" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=2625" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=69947" type="text/javascript"></script>
+    <script src="js/main.js?v=2625" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -30,6 +30,12 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
+            <div class="header__search">
+              <form action="search.html" method="get">
+                <input type="text" name="s" placeholder="Buscar producto">
+                <button><span class="fa fa-search"></span></button>
+              </form>
+            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
@@ -42,7 +48,7 @@
               </div>
             </div>
             <div class="header__right"> 
-              <div data-open-search class="header__item header__item--search"><span class="fa fa-search"></span></div>
+              <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
             </div>
           </div>
         </div>
@@ -94,21 +100,21 @@
                         <div class="header__nav__submenu__relative">
                           <div class="header__nav__submenu__header"> 
                             <h4>Ayuda </h4>
-                            <p>Aptent senectus nostra ut nam scelerisque mollis
+                            <p>Neque pretium nulla dapibus mattis blandit ante
                             </p>
                           </div>
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="faq.html">Preguntas frecuentes</a>
-                                <p>Fusce class colus massa
+                                <p>Quam sagittis massa eleifend
                                 </p>
                               </li>
                               <li><a href="verification.html">Verificación</a>
-                                <p>Phasellus sem dui conubia morbi
+                                <p>At elementum erat pulvinar at
                                 </p>
                               </li>
                               <li><a href="tutoriales.html">Tutoriales</a>
-                                <p>Fermentum a aliquam quis
+                                <p>Nec tristique sem diam
                                 </p>
                               </li>
                             </ul>
@@ -126,15 +132,15 @@
                           <div class="header__nav__submenu__body"> 
                             <ul> 
                               <li> <a href="aboutus.html">Quienes somos</a>
-                                <p>Hendrerit potenti conubia velit duis ac
+                                <p>Nec potenti pulvinar nibh duis ornare
                                 </p>
                               </li>
                               <li><a href="news.html">Blog</a>
-                                <p>Facilisis feugiat facilisis eget sollicitudin eros convallis
+                                <p>Vestibulum praesent litora nam adipiscing elementum aenean
                                 </p>
                               </li>
                               <li><a href="red-atencion.html">Red de Atención</a>
-                                <p>Lectus porta eros tincidunt at
+                                <p>Pulvinar eleifend tempor ac praesent
                                 </p>
                               </li>
                             </ul>
@@ -228,7 +234,7 @@
             <div class="section__content">
               <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html">Carro de compras</a></div>
               <h1 class="section__title">Carro de compras</h1>
-              <p class="section__description">Quam ut sociosqu auctor diam fames volutpat phasellus ultricies cursus mattis curae nec imperdiet dui.
+              <p class="section__description">Senectus aliquet commodo enim venenatis ligula maecenas fames neque proin posuere nullam volutpat nostra pellentesque.
               </p>
             </div>
           </div>
@@ -254,7 +260,7 @@
           </div>
           <div class="section__cart"> 
             <h3 class="section__title">Compra Firma Electrónica</h3>
-            <p class="section__description">Faucibus fusce curabitur feugiat mollis purus nisl lacinia elit porta venenatis semper condimentum taciti sapien.
+            <p class="section__description">Imperdiet aenean viverra suscipit congue gravida molestie non egestas neque ad malesuada est purus non.
             </p>
           </div>
         </div>
@@ -483,15 +489,15 @@
                                     <div class="form__title">Región</div>
                                     <div class="form__input">
                                       <select name="#">
-                                        <option value="#">Urna
+                                        <option value="#">Neque
+                                        </option>
+                                        <option value="#">Tincidunt
                                         </option>
                                         <option value="#">Mi
                                         </option>
-                                        <option value="#">Viverra
+                                        <option value="#">Dictumst
                                         </option>
-                                        <option value="#">Sapien
-                                        </option>
-                                        <option value="#">Ultricies
+                                        <option value="#">Aliquet
                                         </option>
                                       </select>
                                     </div>
@@ -502,15 +508,15 @@
                                     <div class="form__title">Comuna</div>
                                     <div class="form__input">
                                       <select name="#">
-                                        <option value="#">Hac
+                                        <option value="#">Egestas
                                         </option>
-                                        <option value="#">Id
+                                        <option value="#">Lacinia
                                         </option>
-                                        <option value="#">Nostra
+                                        <option value="#">Dui
                                         </option>
-                                        <option value="#">Posuere
+                                        <option value="#">Ut
                                         </option>
-                                        <option value="#">Venenatis
+                                        <option value="#">Torquent
                                         </option>
                                       </select>
                                     </div>
@@ -577,15 +583,15 @@
                                     <div class="form__title">Región</div>
                                     <div class="form__input">
                                       <select name="#">
-                                        <option value="#">Lectus
+                                        <option value="#">Nulla
                                         </option>
-                                        <option value="#">Volutpat
+                                        <option value="#">Eget
                                         </option>
-                                        <option value="#">Venenatis
+                                        <option value="#">Eros
                                         </option>
-                                        <option value="#">Vel
+                                        <option value="#">Congue
                                         </option>
-                                        <option value="#">Turpis
+                                        <option value="#">Taciti
                                         </option>
                                       </select>
                                     </div>
@@ -596,15 +602,15 @@
                                     <div class="form__title">Comuna</div>
                                     <div class="form__input">
                                       <select name="#">
-                                        <option value="#">Facilisis
+                                        <option value="#">Porttitor
                                         </option>
-                                        <option value="#">Suspendisse
+                                        <option value="#">Pretium
                                         </option>
-                                        <option value="#">Curabitur
+                                        <option value="#">Et
                                         </option>
-                                        <option value="#">Diam
+                                        <option value="#">Turpis
                                         </option>
-                                        <option value="#">Eget
+                                        <option value="#">Urna
                                         </option>
                                       </select>
                                     </div>
@@ -669,15 +675,15 @@
                               <div class="form__title">Región</div>
                               <div class="form__input">
                                 <select name="#">
-                                  <option value="#">Suspendisse
+                                  <option value="#">Posuere
                                   </option>
-                                  <option value="#">Convallis
+                                  <option value="#">Torquent
                                   </option>
-                                  <option value="#">Fames
+                                  <option value="#">Purus
                                   </option>
-                                  <option value="#">Felis
+                                  <option value="#">Elit
                                   </option>
-                                  <option value="#">Eu
+                                  <option value="#">Lacinia
                                   </option>
                                 </select>
                               </div>
@@ -688,15 +694,15 @@
                               <div class="form__title">Provincia</div>
                               <div class="form__input">
                                 <select name="#">
-                                  <option value="#">Eget
+                                  <option value="#">Lacus
                                   </option>
-                                  <option value="#">Morbi
+                                  <option value="#">Curae
                                   </option>
-                                  <option value="#">Nisl
+                                  <option value="#">Congue
                                   </option>
-                                  <option value="#">Quisque
+                                  <option value="#">Tempor
                                   </option>
-                                  <option value="#">At
+                                  <option value="#">Leo
                                   </option>
                                 </select>
                               </div>
@@ -707,15 +713,15 @@
                               <div class="form__title">Comuna</div>
                               <div class="form__input">
                                 <select name="#">
-                                  <option value="#">Suscipit
+                                  <option value="#">Maecenas
                                   </option>
-                                  <option value="#">Quam
+                                  <option value="#">Elit
                                   </option>
-                                  <option value="#">Netus
+                                  <option value="#">Elementum
                                   </option>
-                                  <option value="#">Ultricies
+                                  <option value="#">Gravida
                                   </option>
-                                  <option value="#">Venenatis
+                                  <option value="#">Odio
                                   </option>
                                 </select>
                               </div>
@@ -845,7 +851,7 @@
                                     </tr>
                                     <tr> 
                                       <td>Referencia</td>
-                                      <td>Et porttitor lacus ultrices conubia ante varius sociosqu aenean pellentesque etiam risus.
+                                      <td>Sollicitudin auctor tellus velit magna imperdiet nisl blandit habitasse nisl imperdiet sem.
                                       </td>
                                     </tr>
                                     <tr> 
@@ -1022,15 +1028,15 @@
                                     <div class="form__title">Región</div>
                                     <div class="form__input">
                                       <select name="#">
-                                        <option value="#">Scelerisque
+                                        <option value="#">Tellus
                                         </option>
-                                        <option value="#">Elementum
+                                        <option value="#">Lacus
                                         </option>
-                                        <option value="#">Nam
+                                        <option value="#">Suspendisse
                                         </option>
-                                        <option value="#">Placerat
+                                        <option value="#">Potenti
                                         </option>
-                                        <option value="#">Non
+                                        <option value="#">Convallis
                                         </option>
                                       </select>
                                     </div>
@@ -1041,15 +1047,15 @@
                                     <div class="form__title">Comuna</div>
                                     <div class="form__input">
                                       <select name="#">
-                                        <option value="#">Venenatis
+                                        <option value="#">Sodales
                                         </option>
-                                        <option value="#">Hac
+                                        <option value="#">Litora
                                         </option>
-                                        <option value="#">Blandit
+                                        <option value="#">Pulvinar
                                         </option>
-                                        <option value="#">Ut
+                                        <option value="#">Accumsan
                                         </option>
-                                        <option value="#">Eros
+                                        <option value="#">Taciti
                                         </option>
                                       </select>
                                     </div>
@@ -1116,15 +1122,15 @@
                                     <div class="form__title">Región</div>
                                     <div class="form__input">
                                       <select name="#">
-                                        <option value="#">Ornare
+                                        <option value="#">Risus
                                         </option>
-                                        <option value="#">Lobortis
+                                        <option value="#">Nisi
                                         </option>
-                                        <option value="#">Proin
+                                        <option value="#">Fames
                                         </option>
-                                        <option value="#">Commodo
+                                        <option value="#">Aliquam
                                         </option>
-                                        <option value="#">Nullam
+                                        <option value="#">At
                                         </option>
                                       </select>
                                     </div>
@@ -1135,15 +1141,15 @@
                                     <div class="form__title">Comuna</div>
                                     <div class="form__input">
                                       <select name="#">
-                                        <option value="#">Mi
+                                        <option value="#">Sed
                                         </option>
-                                        <option value="#">Conubia
+                                        <option value="#">Semper
                                         </option>
-                                        <option value="#">Aenean
+                                        <option value="#">Eget
                                         </option>
-                                        <option value="#">Turpis
+                                        <option value="#">Imperdiet
                                         </option>
-                                        <option value="#">Tempus
+                                        <option value="#">Diam
                                         </option>
                                       </select>
                                     </div>
@@ -1208,15 +1214,15 @@
                               <div class="form__title">Región</div>
                               <div class="form__input">
                                 <select name="#">
-                                  <option value="#">Elementum
+                                  <option value="#">Quisque
                                   </option>
-                                  <option value="#">Fermentum
+                                  <option value="#">Justo
                                   </option>
-                                  <option value="#">Tristique
+                                  <option value="#">Quis
                                   </option>
-                                  <option value="#">Sollicitudin
+                                  <option value="#">Nisl
                                   </option>
-                                  <option value="#">Nam
+                                  <option value="#">A
                                   </option>
                                 </select>
                               </div>
@@ -1227,15 +1233,15 @@
                               <div class="form__title">Provincia</div>
                               <div class="form__input">
                                 <select name="#">
-                                  <option value="#">Etiam
+                                  <option value="#">Dapibus
                                   </option>
-                                  <option value="#">Eget
+                                  <option value="#">Volutpat
                                   </option>
-                                  <option value="#">Dictum
+                                  <option value="#">Libero
                                   </option>
-                                  <option value="#">Ut
+                                  <option value="#">Laoreet
                                   </option>
-                                  <option value="#">Massa
+                                  <option value="#">Netus
                                   </option>
                                 </select>
                               </div>
@@ -1246,15 +1252,15 @@
                               <div class="form__title">Comuna</div>
                               <div class="form__input">
                                 <select name="#">
-                                  <option value="#">Aenean
+                                  <option value="#">Diam
                                   </option>
-                                  <option value="#">Cursus
+                                  <option value="#">Hac
                                   </option>
-                                  <option value="#">Class
+                                  <option value="#">Per
                                   </option>
-                                  <option value="#">Etiam
+                                  <option value="#">Fames
                                   </option>
-                                  <option value="#">Platea
+                                  <option value="#">Netus
                                   </option>
                                 </select>
                               </div>
@@ -1384,7 +1390,7 @@
                                     </tr>
                                     <tr> 
                                       <td>Referencia</td>
-                                      <td>Tristique quisque vel ad litora nostra varius habitant ad himenaeos integer viverra.
+                                      <td>Cras hendrerit elementum urna nisi laoreet habitasse adipiscing ac aenean sodales scelerisque.
                                       </td>
                                     </tr>
                                     <tr> 
@@ -1435,7 +1441,7 @@
           <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
           <div class="addcart__box__header"> 
             <h3 class="addcart__title">Agregar nuevo producto </h3>
-            <p class="addcart__description">Leo dictum purus egestas mi lacus phasellus tincidunt primis lectus massa ullamcorper hac etiam aenean.
+            <p class="addcart__description">Velit suscipit nam blandit etiam suspendisse litora nulla tortor aptent elementum tellus fames enim netus.
             </p>
           </div>
           <div class="addcart__box__body">
@@ -1459,9 +1465,9 @@
                   <div class="addcart__tooltip">
                     <div class="addcart__circle"><span>i</span></div>
                     <div class="addcart__tooltip__tooltip">
-                      <h5>Porttitor ullamcorper
+                      <h5>Congue quam
                       </h5>
-                      <p>Diam massa scelerisque pellentesque lectus tempor curabitur rhoncus condimentum ornare. Mi tempus ac ultrices et aenean egestas aptent dapibus lacinia rhoncus nulla risus pellentesque luctus.
+                      <p>Nibh pulvinar turpis arcu vivamus neque habitant condimentum iaculis lacus. Fusce sed luctus molestie fringilla cursus donec primis primis pellentesque aenean mollis ante adipiscing convallis.
                       </p>
                     </div>
                   </div>
@@ -1494,7 +1500,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Iniciar sesión</h3>
-            <p class="section__description">Urna maecenas faucibus donec donec vitae hendrerit proin
+            <p class="section__description">Imperdiet turpis taciti egestas eget placerat fames suscipit
             </p>
           </div>
           <div class="modal__body">
@@ -1579,7 +1585,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Registro</h3>
-            <p class="section__description">Condimentum integer quisque cursus sed etiam nunc fusce
+            <p class="section__description">Morbi consequat curabitur elementum magna lacinia libero cursus
             </p>
           </div>
           <div class="modal__body">
@@ -1651,7 +1657,7 @@
           <div class="modal__close"><span class="fa fa-close"></span></div>
           <div class="modal__header">
             <h3 class="modal__title">Recuperar contraseña</h3>
-            <p class="section__description">Rhoncus augue porttitor tortor egestas tellus cras egestas
+            <p class="section__description">Elementum dui lobortis massa aliquam magna fermentum nunc
             </p>
           </div>
           <div class="modal__body">
