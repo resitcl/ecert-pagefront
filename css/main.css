@@ -7302,6 +7302,10 @@ section.section--singlenew .section__header .section__content {
   max-width: 1000px;
   margin: 0 auto;
 }
+section.section--singlenew .section__body {
+  max-width: 800px;
+  margin: 0 auto;
+}
 section.section--singletutorial {
   background-color: #fbfbfb;
   margin-top: 70px;
