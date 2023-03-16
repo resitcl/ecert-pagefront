@@ -4071,7 +4071,7 @@ var trim = String.prototype.trim ?
 }));
 
 
-var $map, $pines, $pinesMarkers, app;
+var $add_cart_url, $map, $next_path, $pass_resit_p, $pines, $pinesMarkers, $prev_path, $product_final, $user_resit_p, app;
 
 app = [];
 
@@ -4081,17 +4081,178 @@ $pinesMarkers = [];
 
 $map = '';
 
+$next_path = "";
+
+$prev_path = "";
+
+$add_cart_url = "";
+
+$product_final = {};
+
+$user_resit_p = "resit";
+
+$pass_resit_p = "764523Ch3vr0l3t1mp@l@";
+
 app.addcart = {
   init: function() {
+    app.loader["in"]($(".addcart__loader"));
     app.addcart.nav.events();
-    return $("[data-next-question]").click(function(e) {
+    $next_path = URL_SITE + "/questions/";
+    $add_cart_url = URL_SITE + "add-product";
+    app.addcart.ajax_question($next_path, null);
+    $prev_path = "";
+    $("[data-next-question]").click(function(e) {
+      var value_option, value_option_text;
       e.preventDefault();
-      return app.loader["in"]($(".addcart__loader"));
+      if ($('.addcart__options .addcart__option input').is(':checked')) {
+        $(".addcart__alert p").text("");
+        $(".addcart__alert").removeClass("addcart__alert--show");
+        app.loader["in"]($(".addcart__loader"));
+        value_option = $(this).parents(".addcart__question").find(".addcart__question__body input[type='radio'][name='option']:checked").val();
+        value_option_text = $(this).parents(".addcart__question").find(".addcart__question__body input[type='radio'][name='option']:checked").parent("label").text();
+        $next_path = $next_path + value_option;
+        return app.addcart.ajax_question($next_path, value_option_text);
+      } else {
+        $(".addcart__alert p").text("Selecciona una opción para continuar");
+        return $(".addcart__alert").addClass("addcart__alert--show");
+      }
+    });
+    $("[data-prev-question]").click(function(e) {
+      e.preventDefault();
+      app.loader["in"]($(".addcart__loader"));
+      return $.ajax({
+        type: "GET",
+        url: $prev_path,
+        success: function(res) {
+          console.log(res.data);
+          $prev_path = res.data.prev_path;
+          $next_path = res.data.next_path + "/";
+          if ($prev_path === "") {
+            $(".addcart__question__footer__buttons .btn--white").addClass("btn--hidden");
+          }
+          app.addcart.deleteprev_question();
+          app.addcart.next_question(res.data);
+          return app.loader.out($(".addcart__loader"));
+        }
+      });
+    });
+    $("[data-add-cart]").click(function(e) {
+      e.preventDefault();
+      app.loader["in"]($(".addcart__loader"));
+      return app.addcart.add_cart($product_final);
+    });
+    return $("[data-restart-questions]").click(function(e) {
+      e.preventDefault();
+      $(".addcart__product .addcart__details").empty();
+      $(".addcart__box__details").empty();
+      $(".addcart__question__footer__buttons .btn--white").addClass("btn--hidden");
+      app.loader["in"]($(".addcart__loader"));
+      $next_path = URL_SITE + "/questions/";
+      app.addcart.ajax_question($next_path, null);
+      return $prev_path = "";
+    });
+  },
+  next_question: function(res) {
+    $(".addcart__question .addcart__question__header .addcart__title strong").text(res.next_question.step + ":");
+    $(".addcart__question .addcart__question__header .addcart__title span").text(res.next_question.label);
+    $(".addcart__question .addcart__question__body .addcart__options").empty();
+    return $.each(res.options, function(index, value) {
+      var html;
+      console.log(value);
+      html = "";
+      html += "<div class='addcart__option'>";
+      if (value.text) {
+        html += "<div class='addcart__title'>" + value.text + "</div>";
+      }
+      html += "<label>";
+      html += "<input type='radio' name='option' value='" + value.value + "'>" + value.name + "";
+      html += "</label>";
+      html += "</div>";
+      return $(".addcart .addcart__question__body .addcart__options").append(html);
+    });
+  },
+  deleteprev_question: function() {
+    return $(".addcart__box__details").find(".addcart__box__detail:last").remove();
+  },
+  ajax_question: function(next_path, value_option_text) {
+    return $.ajax({
+      type: "GET",
+      url: next_path,
+      success: function(res) {
+        console.log(res.data);
+        if (res.data.product) {
+          $(".addcart__box__body__flow").removeClass("show");
+          $(".addcart__box__body__results").addClass("show");
+          return app.addcart.result_product(res.data);
+        } else {
+          $next_path = res.data.next_path + "/";
+          $prev_path = res.data.prev_path;
+          if ($prev_path !== "") {
+            $(".addcart__question__footer__buttons .btn--white").removeClass("btn--hidden");
+          }
+          if (value_option_text !== null) {
+            app.addcart.prev_question(value_option_text, res);
+          }
+          app.addcart.next_question(res.data);
+          $(".addcart__box__body__results").removeClass("show");
+          $(".addcart__box__body__flow").addClass("show");
+          return app.loader.out($(".addcart__loader"));
+        }
+      }
+    });
+  },
+  prev_question: function(selected, res) {
+    var html, question;
+    question = $(".addcart__question__header .addcart__title span").text();
+    html = "";
+    html += "<div class='addcart__box__detail'>";
+    html += "<h5 class='addcart__box__detail__title'><strong>" + res.data.prev_question.step + ":</strong>" + res.data.prev_question.label + "</h5>";
+    html += "<p class='addcart__box__detail__selected'>" + selected + "<span class='fa fa-check'</p>";
+    html += "</div>";
+    return $(".addcart .addcart__box__details").append(html);
+  },
+  result_product: function(res) {
+    console.log(res);
+    $product_final = res;
+    $(".addcart__box__body__results .addcart__product .addcart__title").text(res.product.title);
+    $(".addcart__box__body__results .addcart__product .addcart__product__price").text(res.product.price);
+    $(".addcart__box__body__results .addcart__product .addcart__bg img").attr("src", res.product.image_src);
+    $.each(res.product.options, function(index, value) {
+      var html;
+      console.log(value);
+      html = "";
+      html += "<div class='addcart__detail'>";
+      html += "<span class='addcart__name'>" + value.name + "</span>";
+      html += "<span class='addcart__value'>" + value.text + "</span>";
+      html += "</div>";
+      return $(".addcart__box__body__results .addcart__product .addcart__details").append(html);
+    });
+    app.loader.out($(".addcart__loader"));
+    return app.bg.init();
+  },
+  add_cart: function(product) {
+    delete product.product.description;
+    delete product.product.image_src;
+    delete product.product.price;
+    delete product.product.title;
+    console.log(product);
+    return $.ajax({
+      type: "POST",
+      url: $add_cart_url,
+      data: JSON.stringify(product),
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      success: function(res) {
+        if (res.success === true) {
+          return location.reload();
+        }
+      }
     });
   },
   nav: {
     events: function() {
       $("[data-modal-addcart]").click(function(e) {
+        console.log("abrir nav questions");
         return app.addcart.nav.toggle();
       });
       return $(".addcart__close , .addcart__opacity").on('click', function() {
@@ -4160,13 +4321,13 @@ app.common = {
       $(".article--option").removeClass("article--option--checked");
       $(".article--option").find(".article__content .btn").text("Seleccionar Producto");
       $(this).parents(".article--option").addClass("article--option--checked");
-      return $(this).parents(".article__body").find(".btn").text("Presiona abajo continuar");
+      return $(this).parents(".article__body").find(".btn").text("Ir al carro de compras");
     });
     $('.radio-options-2').change(function() {
       $(".article--option").removeClass("article--option--checked");
       $(".article--option").find(".article__footer .btn").text("Seleccionar Producto");
       $(this).parents(".article--option").addClass("article--option--checked");
-      return $(this).parents(".article__body").find(".btn").text("Presiona abajo continuar");
+      return $(this).parents(".article__body").find(".btn").text("Ir al carro de compras");
     });
     $("[data-next-1]").click(function(e) {
       e.preventDefault();
@@ -4206,6 +4367,39 @@ app.common = {
     });
     return $('#focusrut').focus(function() {
       return app.modal.open(".modal--focusrut");
+    });
+  }
+};
+
+app.coupon = {
+  init: function() {
+    return $(".form--coupon").submit(function(e) {
+      var coupon, parameters;
+      e.preventDefault();
+      console.log("click cupon");
+      app.loader["in"]($(".section__loader"));
+      coupon = $(this).find("#input__coupon").val();
+      console.log(coupon);
+      parameters = {
+        coupon: coupon
+      };
+      return $.ajax({
+        type: "POST",
+        url: URL_SITE + "add-coupon",
+        data: parameters,
+        dataType: 'json',
+        success: function(res) {
+          console.log(res);
+          return location.reload();
+        },
+        error: function(res) {
+          var message;
+          app.loader.out($(".section__loader"));
+          message = res.responseJSON.message;
+          $(".popup--error .popup__text").text(message);
+          return app.popup.open(".popup--error");
+        }
+      });
     });
   }
 };
@@ -5027,6 +5221,39 @@ app.modal = {
     modal.removeClass("modal--in").addClass("modal--out");
     return setTimeout(function() {
       return modal.removeClass("modal--out");
+    }, 200);
+  }
+};
+
+app.personas = {
+  init: function() {
+    $user_resit_p = "resit";
+    return $pass_resit_p = "764523Ch3vr0l3t1mp@l@";
+  }
+};
+
+app.popup = {
+  init: function() {
+    return $(".popup__close").click(function() {
+      return app.popup.close($(this).closest(".popup"));
+    });
+  },
+  open: function(elementclass) {
+    $(elementclass).addClass("popup--in");
+    return setTimeout(function() {
+      return app.popup.close($(elementclass));
+    }, 5000);
+  },
+  close: function(popup) {
+    if (popup == null) {
+      popup = false;
+    }
+    if (!popup) {
+      popup = $(".popup");
+    }
+    popup.removeClass("popup--in").addClass("popup--out");
+    return setTimeout(function() {
+      return popup.removeClass("popup--out");
     }, 200);
   }
 };

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=90492" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=63443" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=90492" type="text/javascript"></script>
+    <script src="js/main.js?v=63443" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -24,6 +24,11 @@
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
     <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
     <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script>
+      var URL_SITE = "http://54.156.114.186/";
+      var URL_API_PE = "https://certificacion2.ecertchile.cl/";
+      
+    </script>
   </head>
   <body>
     <header>
@@ -49,6 +54,9 @@
             </div>
             <div class="header__right"> 
               <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
+              <div class="header__item"> 
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -69,87 +77,91 @@
                   <div></div>
                   <div></div>
                 </div>
-                <nav>
-                  <ul>
-                    <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
-                      <div class="header__nav__submenu">
-                        <div class="header__nav__submenu__relative">
-                          <div class="header__nav__submenu__header"> 
-                            <h4>Soluciones </h4>
-                            <p>Nos adaptamos al tamaño y formato de tu empresa</p>
-                          </div>
-                          <div class="header__nav__submenu__body"> 
-                            <ul> 
-                              <li> <a href="#">Certificado Digital</a>
-                                <p>Certificado Digital para el SII</p>
-                              </li>
-                              <li><a href="personas.html">Personas</a>
-                                <p>Certificado Digital y Firma Avanzada</p>
-                              </li>
-                              <li><a href="empresas.html">Empresas</a>
-                                <p>Pymes y Corporativo</p>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li><a href="alliances.html">Alianzas</a></li>
-                    <li> <a href="#">Ayuda</a>
-                      <div class="header__nav__submenu">
-                        <div class="header__nav__submenu__relative">
-                          <div class="header__nav__submenu__header"> 
-                            <h4>Ayuda </h4>
-                            <p>Posuere nostra suspendisse urna purus pharetra dui
-                            </p>
-                          </div>
-                          <div class="header__nav__submenu__body"> 
-                            <ul> 
-                              <li> <a href="faq.html">Preguntas frecuentes</a>
-                                <p>Semper nullam proin taciti
-                                </p>
-                              </li>
-                              <li><a href="verification.html">Verificación</a>
-                                <p>Rhoncus auctor consectetur quam ad
-                                </p>
-                              </li>
-                              <li><a href="tutoriales.html">Tutoriales</a>
-                                <p>Libero diam in arcu
-                                </p>
-                              </li>
-                            </ul>
+                <div class="header__menu">
+                  <nav>
+                    <ul>
+                      <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative">
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Soluciones </h4>
+                              <p>Nos adaptamos al tamaño y formato de tu empresa</p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="#">Certificado Digital</a>
+                                  <p>Certificado Digital para el SII</p>
+                                </li>
+                                <li><a href="personas.html">Personas</a>
+                                  <p>Certificado Digital y Firma Avanzada</p>
+                                </li>
+                                <li class="last"><a href="empresas.html">Empresas</a>
+                                  <p>Pymes y Corporativo</p>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </li>
-                    <li><a href="#">Más</a>
-                      <div class="header__nav__submenu">
-                        <div class="header__nav__submenu__relative"> 
-                          <div class="header__nav__submenu__header"> 
-                            <h4>Mas </h4>
-                            <p>Creamos confianza</p>
-                          </div>
-                          <div class="header__nav__submenu__body"> 
-                            <ul> 
-                              <li> <a href="aboutus.html">Quienes somos</a>
-                                <p>Dictum cursus ligula nulla molestie duis
-                                </p>
-                              </li>
-                              <li><a href="news.html">Blog</a>
-                                <p>Primis suscipit porta egestas scelerisque varius mattis
-                                </p>
-                              </li>
-                              <li><a href="red-atencion.html">Red de Atención</a>
-                                <p>Accumsan vulputate eget ultricies curabitur
-                                </p>
-                              </li>
-                            </ul>
+                      </li>
+                      <li><a href="alliances.html">Alianzas</a></li>
+                      <li> <a href="#">Ayuda</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative">
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Ayuda </h4>
+                              <p>Ut sodales at massa hendrerit convallis et
+                              </p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="faq.html">Preguntas frecuentes</a>
+                                  <p>Nostra felis pretium pretium
+                                  </p>
+                                </li>
+                                <li><a href="recursos.html">Recursos</a>
+                                  <p>Proin integer faucibus vivamus
+                                  </p>
+                                </li>
+                                <li class="last"><a href="tutoriales.html">Tutoriales</a>
+                                  <p>Primis diam tortor himenaeos
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </li>
-                  </ul>
-                </nav>
+                      </li>
+                      <li><a href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator">Verifcacion</a></li>
+                      <li><a href="#">Más</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative"> 
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Mas </h4>
+                              <p>Creamos confianza</p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="aboutus.html">Quienes somos</a>
+                                  <p>Luctus torquent posuere sollicitudin lacus elementum
+                                  </p>
+                                </li>
+                                <li><a href="news.html">Blog</a>
+                                  <p>Lectus nisi posuere faucibus ac mi felis
+                                  </p>
+                                </li>
+                                <li class="last"><a href="red-atencion.html">Red de Atención</a>
+                                  <p>Cubilia dictum a dapibus quisque
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
+                </div>
               </div>
             </div>
             <div class="header__nav__mobile">
@@ -182,7 +194,7 @@
                         <ul>
                           <li class="header__nav__title">Ayuda</li>
                           <li><a href="faq.html">Preguntas Frecuentas</a></li>
-                          <li><a href="verification.html">Verificación</a></li>
+                          <li><a href="recursos.html">Recursos</a></li>
                           <li><a href="tutoriales.html">Tutoriales</a></li>
                         </ul>
                       </li>
@@ -211,359 +223,412 @@
                 </div>
               </div>
             </div>
-            <div class="header__right">
-              <div class="header__item"> 
-                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
-              </div>
-              <div class="header__item header__item--ham">
-                <div class="header__ham"><span></span><span></span><span></span></div>
-              </div>
+            <div class="header__item header__item--ham">
+              <div class="header__ham"><span></span><span></span><span></span></div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <div id="sections"></div>
-    <section class="section--header section--header--tutorial">
-      <div class="section__clipath">
-        <div class="section__bg">
-          <div class="bg"><img src="img/uploads/2.jpg"></div>
-        </div>
-        <div class="section__wrap section__wrap--tutorial">
-          <div class="section__body">
-            <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="tutoriales.html">Tutoriales<span class="fa fa-angle-right"></span></a><a href="single-tutorial.html">Cambio de Contraseña Firma Electrónica Avanzada</a></div>
-            <div data-id="YETTKd6Qs6g" class="section__videoyoutube yt-video"> 
-              <div class="section__bg yt-video-inner"> 
-                <div class="bg"> <img src="img/uploads/4.jpg"></div>
+    <div id="sections">
+      <section class="section--singletutorial">
+        <div class="section__wrap section__wrap--sm">
+          <div class="section__header">
+            <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="tutoriales.html">Tutoriales<span class="fa fa-angle-right"></span></a><a href="single-tutorial.html" class="current">Cambio de Contraseña Firma Electrónica Avanzada</a></div>
+            <div class="section__back"> <a href="#" class="btn btn--xs">Volver <span class="fa fa-angle-left"></span></a></div>
+            <div class="section__content"> 
+              <h1 class="h2 section__title">Cambio de Contraseña Firma Electrónica Avanzada</h1>
+              <div data-id="YETTKd6Qs6g" class="section__videoyoutube yt-video"> 
+                <div class="section__bg yt-video-inner"> 
+                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                </div>
+                <div class="section__play play dscroll"> <img src="img/icons/icon-play.png"></div>
               </div>
-              <div class="section__play play dscroll"> <img src="img/icons/icon-play.png"></div>
-            </div>
-            <div class="section__content">
-              <h1 class="section__title">Cambio de Contraseña Firma Electrónica Avanzada</h1>
-              <p class="section__description">Lacus non dui pulvinar integer mattis elementum urna velit blandit. Vestibulum aenean congue fames vivamus placerat nostra quisque cras fames etiam eleifend proin hendrerit consectetur.
+              <p class="section__description">Urna luctus eget luctus torquent sem cubilia sapien donec proin. Aenean class consequat nullam cubilia colus conubia felis sociosqu pellentesque viverra condimentum adipiscing aenean elementum.
+              </p>
+              <p class="section__description">Risus tortor nulla dictum faucibus nisi nam vel torquent primis. Tristique sagittis eu eleifend phasellus libero nisl fames ut sagittis purus neque fames himenaeos commodo.
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section--tutoriales"> 
-      <div class="section__wrap">
-        <div class="section__header">
-          <h3 class="section__title">Tutoriales relacionados </h3>
-          <p class="section__description">Vel elementum sed eget mollis urna donec facilisis odio nunc egestas habitasse lacus donec cras.
-          </p>
-        </div>
-        <div class="section__body">
-          <div class="cols cols-scroll"> 
-            <div class="col-md-4 dscroll">
-              <article class="article--tutorial"> 
-                <div class="article__bg"> 
-                  <div class="article__play"> <img src="img/icons/icon-play.png"></div>
-                  <div class="bg"> <img src="img/uploads/tutorial-1.jpeg"></div>
-                </div>
-                <div class="article__body"> 
+      </section>
+      <section class="section--tutoriales"> 
+        <div class="section__wrap">
+          <div class="section__header">
+            <h3 class="section__title">Tutoriales relacionados </h3>
+            <p class="section__description">Etiam tristique sociosqu sodales tellus adipiscing aliquet massa luctus nostra iaculis velit cubilia at pharetra.
+            </p>
+          </div>
+          <div class="section__body">
+            <div class="cols cols-gutter-2">
+              <div class="col-sm-6 col-md-4 col-lg-3 dscroll">
+                <article class="article--tutorial"> 
                   <div class="article__tag">Categoria 1</div>
-                  <h4 class="article__title">Título tutorial </h4>
-                  <p class="article__description">Praesent netus eros eros nunc interdum dictum sem scelerisque quisque nulla quisque.
-                  </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4 dscroll">
-              <article class="article--tutorial"> 
-                <div class="article__bg"> 
-                  <div class="article__play"> <img src="img/icons/icon-play.png"></div>
-                  <div class="bg"> <img src="img/uploads/tutorial-2.jpeg"></div>
-                </div>
-                <div class="article__body"> 
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/tutorial-1.jpeg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Título tutorial </h4>
+                    <p class="article__description">Class risus hendrerit nisi augue quam commodo velit orci sem himenaeos lectus.
+                    </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 dscroll">
+                <article class="article--tutorial"> 
                   <div class="article__tag">Categoria 2</div>
-                  <h4 class="article__title">Título tutorial </h4>
-                  <p class="article__description">Sed tristique interdum turpis ultrices ultrices ut lectus quam consectetur lobortis facilisis.
-                  </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4 dscroll">
-              <article class="article--tutorial"> 
-                <div class="article__bg"> 
-                  <div class="article__play"> <img src="img/icons/icon-play.png"></div>
-                  <div class="bg"> <img src="img/uploads/tutorial-3.jpeg"></div>
-                </div>
-                <div class="article__body"> 
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/tutorial-2.jpeg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Título tutorial </h4>
+                    <p class="article__description">Iaculis per erat hac sem ut eleifend pretium fusce maecenas ullamcorper purus.
+                    </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 dscroll">
+                <article class="article--tutorial"> 
                   <div class="article__tag">Categoria 3</div>
-                  <h4 class="article__title">Título tutorial </h4>
-                  <p class="article__description">Himenaeos mattis elit aenean nec gravida viverra consectetur eros sed nulla sed.
-                  </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/tutorial-3.jpeg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Título tutorial </h4>
+                    <p class="article__description">Hac ultricies massa tristique quisque nunc nunc consectetur hendrerit nunc praesent conubia.
+                    </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 dscroll">
+                <article class="article--tutorial"> 
+                  <div class="article__tag">Categoria 4</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/tutorial-4.jpeg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Título tutorial </h4>
+                    <p class="article__description">Hac elit potenti felis luctus luctus lacus nullam suscipit porttitor quisque elementum.
+                    </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <div class="addcart"> 
-      <div class="addcart__opacity"></div>
-      <div class="addcart__box">
-        <div class="addcart__loader"></div>
-        <div class="addcart__box__box">
+      </section>
+      <div class="section__loader"></div>
+      <div class="addcart"> 
+        <div class="addcart__opacity"></div>
+        <div class="addcart__box">
           <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
-          <div class="addcart__box__header"> 
-            <h3 class="addcart__title">Agregar nuevo producto </h3>
-            <p class="addcart__description">Iaculis et leo congue lobortis purus venenatis sociosqu curabitur est velit vehicula nibh congue aenean.
-            </p>
-          </div>
-          <div class="addcart__box__body">
-            <div class="addcart__box__details"> 
-              <div class="addcart__box__detail">
-                <h5 class="addcart__box__detail__title"><strong>Paso 1:</strong> Selecciona el tipo de producto</h5>
-                <p class="addcart__box__detail__selected">Firma Electrónica Avanzada<span class="fa fa-check"></span></p>
-              </div>
-              <div class="addcart__box__detail">
-                <h5 class="addcart__box__detail__title"><strong>Paso 2:</strong> Modalidad de Firma</h5>
-                <p class="addcart__box__detail__selected">Token<span class="fa fa-check"></span></p>
-              </div>
-              <div class="addcart__box__detail">
-                <h5 class="addcart__box__detail__title"><strong>Paso 3:</strong> Vigencia</h5>
-                <p class="addcart__box__detail__selected">2 Años<span class="fa fa-check"></span></p>
-              </div>
+          <div class="addcart__loader"></div>
+          <div class="addcart__box__box">
+            <div class="addcart__box__header"> 
+              <h3 class="addcart__title">Agregar nuevo producto </h3>
+              <p class="addcart__description">Nec lectus ad et diam etiam urna euismod aenean libero enim laoreet nam platea scelerisque.
+              </p>
             </div>
-            <div class="addcart__question"> 
-              <div class="addcart__question__header">
-                <h4 class="addcart__title"><strong>Paso 4:</strong> ¿Es usted Notario, Archivero o Conservador?
-                  <div class="addcart__tooltip">
-                    <div class="addcart__circle"><span>i</span></div>
-                    <div class="addcart__tooltip__tooltip">
-                      <h5>Donec tempus
-                      </h5>
-                      <p>Curabitur arcu himenaeos nunc nam eget bibendum arcu mollis velit. Tincidunt volutpat platea quisque fermentum vivamus mollis iaculis erat cras leo tempus leo magna in.
-                      </p>
+            <div class="addcart__box__body">
+              <div class="addcart__box__body__flow show">
+                <div class="addcart__box__details"> 
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 1:</strong> Selecciona el tipo de producto
+                  p.addcart__box__detail__selected Firma Electrónica Avanzada
+                  	span.fa.fa-check
+                  
+                  -->
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 2:</strong> Modalidad de Firma
+                  p.addcart__box__detail__selected Token
+                  	span.fa.fa-check
+                  
+                  -->
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 3:</strong> Vigencia
+                  p.addcart__box__detail__selected 2 Años
+                  	span.fa.fa-check
+                  
+                  -->
+                </div>
+                <div class="addcart__question"> 
+                  <div class="addcart__question__header">
+                    <h4 class="addcart__title"><strong></strong></h4>
+                    <h4 class="addcart__title"><span></span></h4>
+                    <div class="addcart__tooltip">
+                      <div class="addcart__circle"><span>i</span></div>
+                      <div class="addcart__tooltip__tooltip">
+                        <h5>Pharetra at
+                        </h5>
+                        <p>Scelerisque vulputate non mattis libero lacinia vel duis ut mollis. Sociosqu ante per convallis donec mattis egestas hac mattis sem non lacus tincidunt elementum tortor.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </h4>
-              </div>
-              <div class="addcart__question__body">
-                <div class="addcart__options"> 
-                  <div class="addcart__option"> 
-                    <label>
-                      <input type="radio" name="paso1">Sí
-                    </label>
+                  <div class="addcart__question__body">
+                    <div class="addcart__options"></div>
                   </div>
-                  <div class="addcart__option"> 
-                    <label>
-                      <input type="radio" name="paso1">No
-                    </label>
+                  <div class="addcart__question__footer">
+                    <div class="addcart__alert"> <span class="fa fa-exclamation-triangle"></span>
+                      <p></p>
+                    </div>
+                    <div class="addcart__question__footer__buttons"><a data-prev-question class="btn btn--white btn--hidden">Volver a paso anterior</a><a data-next-question class="btn">Continuar</a></div>
                   </div>
                 </div>
               </div>
-              <div class="addcart__question__footer"> <a data-next-question class="btn">Continuar</a></div>
+              <div class="addcart__box__body__results"> 
+                <div class="addcart__box__body__results__header">
+                  <div class="addcart__icon"><img src="img/icons/icon-check.svg"></div>
+                  <h4 class="addcart__subtitle">Ya tienes tu producto seleccionado </h4>
+                </div>
+                <div class="addcart__box__body__results__body">
+                  <div class="addcart__product">
+                    <div class="addcart__bg"> 
+                      <div class="bg"> <img src="#"></div>
+                    </div>
+                    <div class="addcart__body">
+                      <div class="addcart__body__top">
+                        <h4 class="addcart__title"></h4><span class="addcart__product__price"></span>
+                      </div>
+                      <div class="addcart__details"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="addcart__box__body__results__footer"> 
+                  <div class="addcart__buttons"> <a data-add-cart class="btn">Agregar al carrito</a><a data-restart-questions class="btn btn--white">Volver a iniciar</a></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--login">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">Iniciar sesión</h3>
-            <p class="section__description">Cras aliquet habitasse lectus commodo sapien inceptos id
-            </p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__tab"> 
-              <div class="tabs tabs--login">
-                <div class="tabs__header"> 
-                  <div class="tab tab--current">Persona natural</div>
-                  <div class="tab">Contador </div>
+      <div class="modal modal--login">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Iniciar sesión</h3>
+              <p class="section__description">Massa turpis a bibendum eu vitae suscipit sapien
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__tab"> 
+                <div class="tabs tabs--login">
+                  <div class="tabs__header"> 
+                    <div class="tab tab--current">Persona natural</div>
+                    <div class="tab">Contador </div>
+                  </div>
+                  <div class="tabs__body"> 
+                    <div class="tab tab--current dscroll">
+                      <div class="modal__form">
+                        <form>
+                          <div class="cols"> 
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Rut</div>
+                                <div class="form__input">
+                                  <input type="rut" name="#" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Contraseña</div>
+                                <div class="form__input">
+                                  <input type="password" name="#" required>
+                                </div>
+                                <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__buttons">
+                                <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="tab dscroll">
+                      <div class="modal__form">
+                        <form>
+                          <div class="cols"> 
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Email</div>
+                                <div class="form__input">
+                                  <input type="email" name="#" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Contraseña</div>
+                                <div class="form__input">
+                                  <input type="password" name="#" required>
+                                </div>
+                                <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__buttons">
+                                <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="tabs__body"> 
-                  <div class="tab tab--current dscroll">
-                    <div class="modal__form">
-                      <form>
-                        <div class="cols"> 
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Rut</div>
-                              <div class="form__input">
-                                <input type="rut" name="#" required>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Contraseña</div>
-                              <div class="form__input">
-                                <input type="password" name="#" required>
-                              </div>
-                              <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__buttons">
-                              <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
-                            </div>
-                          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--register">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Registro</h3>
+              <p class="section__description">Curabitur habitant varius pretium venenatis morbi metus sodales
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__form">
+                <form>
+                  <div class="cols">
+                    <div class="col-xs-12">
+                      <div class="form__options"> 
+                        <div class="form__option"> 
+                          <label>
+                            <input type="radio" name="profile">Persona natural
+                          </label>
                         </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="tab dscroll">
-                    <div class="modal__form">
-                      <form>
-                        <div class="cols"> 
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Email</div>
-                              <div class="form__input">
-                                <input type="email" name="#" required>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Contraseña</div>
-                              <div class="form__input">
-                                <input type="password" name="#" required>
-                              </div>
-                              <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__buttons">
-                              <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
-                            </div>
-                          </div>
+                        <div class="form__option"> 
+                          <label>
+                            <input type="radio" name="profile">Contador
+                          </label>
                         </div>
-                      </form>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Rut</div>
+                        <div class="form__input">
+                          <input type="rut" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="rut" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Contraseña</div>
+                        <div class="form__input">
+                          <input type="password" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Repetir Contraseña</div>
+                        <div class="form__input">
+                          <input type="password" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__buttons">
+                        <button class="btn">Registrarse</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--register">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">Registro</h3>
-            <p class="section__description">Torquent nunc ultrices lacinia morbi etiam ut euismod
-            </p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__form">
-              <form>
-                <div class="cols">
-                  <div class="col-xs-12">
-                    <div class="form__options"> 
-                      <div class="form__option"> 
-                        <label>
-                          <input type="radio" name="profile">Persona natural
-                        </label>
-                      </div>
-                      <div class="form__option"> 
-                        <label>
-                          <input type="radio" name="profile">Contador
-                        </label>
+      <div class="modal modal--resetpass">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Recuperar contraseña</h3>
+              <p class="section__description">Curae eu purus nisi posuere tristique interdum rhoncus
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__form">
+                <form>
+                  <div class="cols"> 
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="email" name="#" required>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Rut</div>
-                      <div class="form__input">
-                        <input type="rut" name="#" required>
+                    <div class="col-xs-12">
+                      <div class="form__buttons">
+                        <button class="btn">Recuperar</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Email</div>
-                      <div class="form__input">
-                        <input type="rut" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Contraseña</div>
-                      <div class="form__input">
-                        <input type="password" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Repetir Contraseña</div>
-                      <div class="form__input">
-                        <input type="password" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__buttons">
-                      <button class="btn">Registrarse</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
-                    </div>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--resetpass">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">Recuperar contraseña</h3>
-            <p class="section__description">Dapibus quam tristique colus iaculis hendrerit nisi dictumst
-            </p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__form">
-              <form>
-                <div class="cols"> 
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Email</div>
-                      <div class="form__input">
-                        <input type="email" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__buttons">
-                      <button class="btn">Recuperar</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
-                    </div>
-                  </div>
-                </div>
-              </form>
+      <div class="modal modal--focusrut">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">¿Quieres aplicar los mismos datos del primer producto?</h3>
+            </div>
+            <div class="modal__body">
+              <div class="modal__button"><a class="btn">Reutilizar los mismos datos</a><a class="btn btn--white">Continuar con otros datos</a></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--focusrut">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">¿Quieres aplicar los mismos datos del primer producto?</h3>
-          </div>
-          <div class="modal__body">
-            <div class="modal__button"><a class="btn">Reutilizar los mismos datos</a><a class="btn btn--white">Continuar con otros datos</a></div>
-          </div>
+      <div class="popup popup--confirmation">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-check.svg"></div>
+          <div class="popup__text">Producto agregado al carro de compras</div>
+        </div>
+      </div>
+      <div class="popup popup--error">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-error.svg"></div>
+          <div class="popup__text">Ha ocurrido un error</div>
+        </div>
+      </div>
+      <div class="popup popup--alert">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-alert.svg"></div>
+          <div class="popup__text">esto es una alerta</div>
         </div>
       </div>
     </div>
@@ -579,7 +644,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/icon-phone.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/phone-svg.svg"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Atención Comercial y Soporte Técnico </p><span class="footer__value">600 3620 400</span>
                   </div>
@@ -587,7 +652,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/icon-whatsapp.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/whatsapp.svg"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Escríbenos por Whatsapp</p><span class="footer__value">(+56 2) 3340 7500</span>
                   </div>
@@ -595,7 +660,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/icon-mail.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/mail.svg"></div>
                   <div class="footer__info__content"> <span class="footer__value">Contáctanos</span></div>
                 </div>
               </div>
@@ -662,6 +727,7 @@
                 <div class="footer__social"> <a href="#"><span class="fa fa-instagram"></span></a></div>
               </div>
               <div class="footer__certifications">
+                <div class="footer__certification"> <img src="img/icons/SELLO_REL_azul.png"></div>
                 <div class="footer__certification"> <img src="img/icons/certification-1.png"></div>
                 <div class="footer__certification"> <img src="img/icons/certification-2.png"></div>
                 <div class="footer__certification"> <img src="img/icons/certification-3.png"></div>

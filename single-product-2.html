@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=20851" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=99246" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=20851" type="text/javascript"></script>
+    <script src="js/main.js?v=99246" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -24,6 +24,11 @@
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
     <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
     <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script>
+      var URL_SITE = "http://54.156.114.186/";
+      var URL_API_PE = "https://certificacion2.ecertchile.cl/";
+      
+    </script>
   </head>
   <body>
     <header>
@@ -49,6 +54,9 @@
             </div>
             <div class="header__right"> 
               <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
+              <div class="header__item"> 
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -69,87 +77,91 @@
                   <div></div>
                   <div></div>
                 </div>
-                <nav>
-                  <ul>
-                    <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
-                      <div class="header__nav__submenu">
-                        <div class="header__nav__submenu__relative">
-                          <div class="header__nav__submenu__header"> 
-                            <h4>Soluciones </h4>
-                            <p>Nos adaptamos al tamaño y formato de tu empresa</p>
-                          </div>
-                          <div class="header__nav__submenu__body"> 
-                            <ul> 
-                              <li> <a href="#">Certificado Digital</a>
-                                <p>Certificado Digital para el SII</p>
-                              </li>
-                              <li><a href="personas.html">Personas</a>
-                                <p>Certificado Digital y Firma Avanzada</p>
-                              </li>
-                              <li><a href="empresas.html">Empresas</a>
-                                <p>Pymes y Corporativo</p>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li><a href="alliances.html">Alianzas</a></li>
-                    <li> <a href="#">Ayuda</a>
-                      <div class="header__nav__submenu">
-                        <div class="header__nav__submenu__relative">
-                          <div class="header__nav__submenu__header"> 
-                            <h4>Ayuda </h4>
-                            <p>Molestie habitasse iaculis eleifend dictum tempor arcu
-                            </p>
-                          </div>
-                          <div class="header__nav__submenu__body"> 
-                            <ul> 
-                              <li> <a href="faq.html">Preguntas frecuentes</a>
-                                <p>Nec malesuada laoreet iaculis
-                                </p>
-                              </li>
-                              <li><a href="verification.html">Verificación</a>
-                                <p>Porta condimentum condimentum et est
-                                </p>
-                              </li>
-                              <li><a href="tutoriales.html">Tutoriales</a>
-                                <p>Curae adipiscing volutpat mattis
-                                </p>
-                              </li>
-                            </ul>
+                <div class="header__menu">
+                  <nav>
+                    <ul>
+                      <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative">
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Soluciones </h4>
+                              <p>Nos adaptamos al tamaño y formato de tu empresa</p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="#">Certificado Digital</a>
+                                  <p>Certificado Digital para el SII</p>
+                                </li>
+                                <li><a href="personas.html">Personas</a>
+                                  <p>Certificado Digital y Firma Avanzada</p>
+                                </li>
+                                <li class="last"><a href="empresas.html">Empresas</a>
+                                  <p>Pymes y Corporativo</p>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </li>
-                    <li><a href="#">Más</a>
-                      <div class="header__nav__submenu">
-                        <div class="header__nav__submenu__relative"> 
-                          <div class="header__nav__submenu__header"> 
-                            <h4>Mas </h4>
-                            <p>Creamos confianza</p>
-                          </div>
-                          <div class="header__nav__submenu__body"> 
-                            <ul> 
-                              <li> <a href="aboutus.html">Quienes somos</a>
-                                <p>Pharetra aliquam massa maecenas condimentum convallis
-                                </p>
-                              </li>
-                              <li><a href="news.html">Blog</a>
-                                <p>Fusce inceptos quam vestibulum consequat class fames
-                                </p>
-                              </li>
-                              <li><a href="red-atencion.html">Red de Atención</a>
-                                <p>Scelerisque fames tempus tristique dapibus
-                                </p>
-                              </li>
-                            </ul>
+                      </li>
+                      <li><a href="alliances.html">Alianzas</a></li>
+                      <li> <a href="#">Ayuda</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative">
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Ayuda </h4>
+                              <p>Pellentesque class felis vehicula hendrerit pharetra donec
+                              </p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="faq.html">Preguntas frecuentes</a>
+                                  <p>Class aenean phasellus vehicula
+                                  </p>
+                                </li>
+                                <li><a href="recursos.html">Recursos</a>
+                                  <p>Fermentum luctus hac pellentesque
+                                  </p>
+                                </li>
+                                <li class="last"><a href="tutoriales.html">Tutoriales</a>
+                                  <p>Curabitur condimentum hendrerit dui
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </li>
-                  </ul>
-                </nav>
+                      </li>
+                      <li><a href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator">Verifcacion</a></li>
+                      <li><a href="#">Más</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative"> 
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Mas </h4>
+                              <p>Creamos confianza</p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="aboutus.html">Quienes somos</a>
+                                  <p>Netus enim inceptos eleifend nunc nostra
+                                  </p>
+                                </li>
+                                <li><a href="news.html">Blog</a>
+                                  <p>Etiam scelerisque conubia etiam metus pretium ut
+                                  </p>
+                                </li>
+                                <li class="last"><a href="red-atencion.html">Red de Atención</a>
+                                  <p>Vulputate blandit ultrices a risus
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
+                </div>
               </div>
             </div>
             <div class="header__nav__mobile">
@@ -182,7 +194,7 @@
                         <ul>
                           <li class="header__nav__title">Ayuda</li>
                           <li><a href="faq.html">Preguntas Frecuentas</a></li>
-                          <li><a href="verification.html">Verificación</a></li>
+                          <li><a href="recursos.html">Recursos</a></li>
                           <li><a href="tutoriales.html">Tutoriales</a></li>
                         </ul>
                       </li>
@@ -211,309 +223,362 @@
                 </div>
               </div>
             </div>
-            <div class="header__right">
-              <div class="header__item"> 
-                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
-              </div>
-              <div class="header__item header__item--ham">
-                <div class="header__ham"><span></span><span></span><span></span></div>
-              </div>
+            <div class="header__item header__item--ham">
+              <div class="header__ham"><span></span><span></span><span></span></div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <div id="sections"></div>
-    <section class="section--header section--header--product">
-      <div class="section__clipath">
-        <div class="section__bg">
-          <div class="bg"><img src="img/uploads/4.jpg"></div>
-        </div>
-        <div class="section__wrap section__wrap--header">
-          <div class="section__body">
-            <div class="section__content">
+    <div id="sections">
+      <section class="section--header section--header--product">
+        <div class="section__clipath">
+          <div class="section__bg">
+            <div class="bg"><img src="img/uploads/4.jpg"></div>
+          </div>
+          <div class="section__wrap section__wrap--header">
+            <div class="section__body">
               <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="empresas.html">Empresas<span class="fa fa-angle-right"></span></a><a href="single-product.html">Firma electrónica avanzada</a></div>
-              <h1 class="section__title">Firma electrónica avanzada</h1>
-              <p class="section__description">Solución para verificación de la identidad que permite identificar a clientes en tiempo real y a distancia, a través de medios digitales, tales como: Desafio de preguntas, Clave única y cédula de identidad.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section--options"> 
-      <div class="section__wrap section--md"> 
-        <div class="section__header"> 
-          <h3 class="section__title">Descripción </h3>
-          <p class="section__description">Puede comprar una Firma electrónica avanzada en modalidades <strong>Online</strong> o con <strong>Token</strong>. Para la modalidad Online, no requiere un dispositivo adicional para operar, en cambio para la modalidad con Token, puede agregar el dispositivo en el carro de compras o bien operar con su dispositivo actual.</p>
-        </div>
-        <div class="section__body"> 
-          <div class="section__options">
-            <div class="cols cols-scroll"> 
-              <div class="col-md-4"> 
-                <article class="article--option article--option--big article--option--checked">
-                  <div class="article__tag">Producto seleccionado</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/9.jpeg"></div>
-                  </div>
-                  <div class="article__body">
-                    <div class="article__radio"> 
-                      <label>
-                        <input type="radio" name="product" value="1" class="radio-options-2">
-                      </label>
-                    </div>
-                    <div class="article__icon"> <svg width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_35_2)">
-<path d="M341.333 682.667C152.818 682.667 0 529.844 0 341.333C0 152.818 152.818 0 341.333 0C529.844 0 682.667 152.818 682.667 341.333C682.443 529.755 529.755 682.443 341.333 682.667ZM341.333 42.6667C176.385 42.6667 42.6667 176.385 42.6667 341.333C42.6667 506.281 176.385 640 341.333 640C506.281 640 640 506.281 640 341.333C639.823 176.458 506.208 42.8438 341.333 42.6667Z" fill="url(#paint0_angular_35_2)"/>
-<path d="M234.667 512C229.01 512 223.583 509.75 219.583 505.75L134.25 420.417C126.068 411.943 126.302 398.438 134.776 390.25C143.042 382.266 156.151 382.266 164.417 390.25L234.667 460.5L498.432 196.734C506.906 188.552 520.411 188.786 528.599 197.26C536.583 205.526 536.583 218.635 528.599 226.901L249.75 505.75C245.75 509.75 240.323 512 234.667 512Z" fill="url(#paint1_angular_35_2)"/>
-</g>
-<defs>
-<radialGradient id="paint0_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(341.333 341.333) rotate(90) scale(341.333)">
-<stop stop-color="#B01F8C"/>
-<stop offset="1" stop-color="#4F2B83"/>
-</radialGradient>
-<radialGradient id="paint1_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(331.425 351.374) rotate(90) scale(160.626 203.162)">
-<stop stop-color="#B01F8C"/>
-<stop offset="1" stop-color="#4F2B83"/>
-</radialGradient>
-<clipPath id="clip0_35_2">
-<rect width="682.667" height="682.667" fill="white"/>
-</clipPath>
-</defs>
-</svg>
-
-                    </div>
-                    <div class="article__content">
-                      <h4 class="article__title">Firma avanzada <strong> con e-token</strong></h4><span class="article__price">Desde <span>$14.500</span></span>
-                    </div>
-                    <div class="article__footer"> 
-                      <h5 class="article__title">Características </h5>
-                      <ul> 
-                        <li>Leo cras nisl orci sodales nisl placerat varius
-                        </li>
-                        <li>Suspendisse mauris vulputate aliquet nostra sed eu
-                        </li>
-                        <li>Placerat mauris himenaeos ut congue
-                        </li>
-                        <li>Odio ligula ultricies bibendum scelerisque sociosqu aliquam viverra vestibulum
-                        </li>
-                        <li>Donec tempus duis sodales nullam torquent sollicitudin
-                        </li>
-                      </ul><a class="btn btn--sm">Presiona abajo continuar</a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-4"> 
-                <article class="article--option article--option--big">
-                  <div class="article__tag">Producto seleccionado</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
-                  </div>
-                  <div class="article__body">
-                    <div class="article__radio"> 
-                      <label>
-                        <input type="radio" name="product" value="1" class="radio-options-2">
-                      </label>
-                    </div>
-                    <div class="article__icon"> <svg width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_35_2)">
-<path d="M341.333 682.667C152.818 682.667 0 529.844 0 341.333C0 152.818 152.818 0 341.333 0C529.844 0 682.667 152.818 682.667 341.333C682.443 529.755 529.755 682.443 341.333 682.667ZM341.333 42.6667C176.385 42.6667 42.6667 176.385 42.6667 341.333C42.6667 506.281 176.385 640 341.333 640C506.281 640 640 506.281 640 341.333C639.823 176.458 506.208 42.8438 341.333 42.6667Z" fill="url(#paint0_angular_35_2)"/>
-<path d="M234.667 512C229.01 512 223.583 509.75 219.583 505.75L134.25 420.417C126.068 411.943 126.302 398.438 134.776 390.25C143.042 382.266 156.151 382.266 164.417 390.25L234.667 460.5L498.432 196.734C506.906 188.552 520.411 188.786 528.599 197.26C536.583 205.526 536.583 218.635 528.599 226.901L249.75 505.75C245.75 509.75 240.323 512 234.667 512Z" fill="url(#paint1_angular_35_2)"/>
-</g>
-<defs>
-<radialGradient id="paint0_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(341.333 341.333) rotate(90) scale(341.333)">
-<stop stop-color="#B01F8C"/>
-<stop offset="1" stop-color="#4F2B83"/>
-</radialGradient>
-<radialGradient id="paint1_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(331.425 351.374) rotate(90) scale(160.626 203.162)">
-<stop stop-color="#B01F8C"/>
-<stop offset="1" stop-color="#4F2B83"/>
-</radialGradient>
-<clipPath id="clip0_35_2">
-<rect width="682.667" height="682.667" fill="white"/>
-</clipPath>
-</defs>
-</svg>
-
-                    </div>
-                    <div class="article__content">
-                      <h4 class="article__title">Firma avanzada <strong> Online</strong></h4><span class="article__price">Desde <span>$14.500</span></span>
-                    </div>
-                    <div class="article__footer"> 
-                      <h5 class="article__title">Características </h5>
-                      <ul> 
-                        <li>Tempor duis lacinia platea curae varius arcu metus
-                        </li>
-                        <li>Mollis adipiscing laoreet rutrum cubilia velit hendrerit
-                        </li>
-                        <li>Sem habitasse torquent ultricies vehicula
-                        </li>
-                        <li>Turpis rhoncus rhoncus litora curabitur tristique faucibus placerat volutpat
-                        </li>
-                        <li>Sapien morbi ligula fermentum donec dapibus pulvinar
-                        </li>
-                      </ul><a class="btn btn--sm">Seleccionar Producto</a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-4"> 
-                <article class="article--option article--option--big">
-                  <div class="article__tag">Producto seleccionado</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/10.jpeg"></div>
-                  </div>
-                  <div class="article__body">
-                    <div class="article__radio"> 
-                      <label>
-                        <input type="radio" name="product" value="1" class="radio-options-2">
-                      </label>
-                    </div>
-                    <div class="article__icon"> <svg width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_35_2)">
-<path d="M341.333 682.667C152.818 682.667 0 529.844 0 341.333C0 152.818 152.818 0 341.333 0C529.844 0 682.667 152.818 682.667 341.333C682.443 529.755 529.755 682.443 341.333 682.667ZM341.333 42.6667C176.385 42.6667 42.6667 176.385 42.6667 341.333C42.6667 506.281 176.385 640 341.333 640C506.281 640 640 506.281 640 341.333C639.823 176.458 506.208 42.8438 341.333 42.6667Z" fill="url(#paint0_angular_35_2)"/>
-<path d="M234.667 512C229.01 512 223.583 509.75 219.583 505.75L134.25 420.417C126.068 411.943 126.302 398.438 134.776 390.25C143.042 382.266 156.151 382.266 164.417 390.25L234.667 460.5L498.432 196.734C506.906 188.552 520.411 188.786 528.599 197.26C536.583 205.526 536.583 218.635 528.599 226.901L249.75 505.75C245.75 509.75 240.323 512 234.667 512Z" fill="url(#paint1_angular_35_2)"/>
-</g>
-<defs>
-<radialGradient id="paint0_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(341.333 341.333) rotate(90) scale(341.333)">
-<stop stop-color="#B01F8C"/>
-<stop offset="1" stop-color="#4F2B83"/>
-</radialGradient>
-<radialGradient id="paint1_angular_35_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(331.425 351.374) rotate(90) scale(160.626 203.162)">
-<stop stop-color="#B01F8C"/>
-<stop offset="1" stop-color="#4F2B83"/>
-</radialGradient>
-<clipPath id="clip0_35_2">
-<rect width="682.667" height="682.667" fill="white"/>
-</clipPath>
-</defs>
-</svg>
-
-                    </div>
-                    <div class="article__content">
-                      <h4 class="article__title">Firma avanzada <strong> Notario</strong></h4><span class="article__price">Desde <span>$14.500</span></span>
-                    </div>
-                    <div class="article__footer"> 
-                      <h5 class="article__title">Características </h5>
-                      <ul> 
-                        <li>Colus molestie aenean mi diam pulvinar dictumst varius
-                        </li>
-                        <li>Elit mattis conubia commodo ut torquent aliquam
-                        </li>
-                        <li>Gravida dui eros auctor tristique
-                        </li>
-                        <li>Arcu tempor sollicitudin curae rutrum luctus erat mattis arcu
-                        </li>
-                        <li>Tempor est dui feugiat colus fermentum quam
-                        </li>
-                      </ul><a class="btn btn--sm">Seleccionar Producto</a>
-                    </div>
-                  </div>
-                </article>
+              <div class="section__content">
+                <h1 class="section__title">Firma electrónica avanzada</h1>
+                <p class="section__description">Solución para verificación de la identidad que permite identificar a clientes en tiempo real y a distancia, a través de medios digitales, tales como: Desafio de preguntas, Clave única y cédula de identidad.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="section__footer"> 
-          <div class="section__button"> <a href="#" class="btn">Continuar al carro de compras<span class="fa fa-shopping-cart"> </span></a></div>
+      </section>
+      <section class="section--message">
+        <div class="section__wrap section__wrap--sm">
+          <div class="section__header"> 
+            <p class="section__description">Puede comprar una Firma electrónica avanzada en modalidades <strong>Online</strong> o con <strong>Token</strong>. Para la modalidad Online, no requiere un dispositivo adicional para operar, en cambio para la modalidad con Token, puede agregar el dispositivo en el carro de compras o bien operar con su dispositivo actual.</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="section--cases section--white">
-      <div class="section__wrap"> 
-        <div class="section__header"> 
-          <h3 class="section__title">Casos de uso</h3>
-          <p class="section__description">Elementum iaculis hac tortor himenaeos semper nam feugiat mauris interdum aenean himenaeos luctus libero sociosqu.
-          </p>
+      </section>
+      <section class="section--options section--light">
+        <div class="section__wrap">
+          <div class="section__body"> 
+            <div class="section__options">
+              <div class="cols cols-gutter-2 cols-scroll"> 
+                <div class="col-md-4"> 
+                  <article class="article--option article--option--big article--option--checked">
+                    <div class="article__bg">
+                      <div class="bg"> <img src="img/uploads/9.jpeg"></div>
+                    </div>
+                    <div class="article__body">
+                      <div class="article__icon"> <svg width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_35_2)">
+<mask id="mask0_35_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="683" height="683">
+<path d="M682.667 0H0V682.667H682.667V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_35_2)">
+<path d="M341.333 682.667C152.818 682.667 0 529.844 0 341.333C0 152.818 152.818 0 341.333 0C529.844 0 682.667 152.818 682.667 341.333C682.443 529.755 529.755 682.443 341.333 682.667ZM341.333 42.6667C176.385 42.6667 42.6667 176.385 42.6667 341.333C42.6667 506.281 176.385 640 341.333 640C506.281 640 640 506.281 640 341.333C639.823 176.458 506.208 42.8438 341.333 42.6667Z" fill="#502C84"/>
+<path d="M234.667 512C229.01 512 223.583 509.75 219.583 505.75L134.25 420.417C126.068 411.943 126.302 398.438 134.776 390.25C143.042 382.266 156.151 382.266 164.417 390.25L234.667 460.5L498.432 196.734C506.906 188.552 520.411 188.786 528.599 197.26C536.583 205.526 536.583 218.635 528.599 226.901L249.75 505.75C245.75 509.75 240.323 512 234.667 512Z" fill="#502C84"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_35_2">
+<rect width="683" height="683" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                      </div>
+                      <div class="article__content">
+                        <h4 class="article__title">Firma avanzada con e-token</h4><span class="article__price">Desde $14.500<span>+ IVA</span></span>
+                        <div class="article__iva">($24.900 IVA incluido) </div>
+                      </div>
+                      <div class="article__footer"> 
+                        <h5 class="article__title">Características </h5>
+                        <ul> 
+                          <li>Erat curae blandit suspendisse leo nostra ornare himenaeos
+                          </li>
+                          <li>Varius velit arcu mi eget aliquam massa
+                          </li>
+                          <li>Semper libero aenean cubilia fusce
+                          </li>
+                          <li>Id iaculis at magna ut magna quam vulputate dictumst
+                          </li>
+                          <li>Cras euismod dui scelerisque gravida elit taciti
+                          </li>
+                        </ul><a class="btn btn--sm">¡Lo quiero!
+                          <div class="article__options">
+                            <div class="article__option">
+                              <p class="article__age">1 año</p>
+                              <p class="article__price">desde <span>$20.000</span> + IVA</p>
+                            </div>
+                            <div class="article__option">
+                              <p class="article__age">2 año</p>
+                              <p class="article__price">desde <span>$20.000</span> + IVA</p>
+                            </div>
+                            <div class="article__option">
+                              <p class="article__age">3 año</p>
+                              <p class="article__price">desde <span>$20.000</span> + IVA</p>
+                            </div>
+                          </div></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4"> 
+                  <article class="article--option article--option--big">
+                    <div class="article__bg">
+                      <div class="bg"><img src="img/uploads/8.jpeg"></div>
+                    </div>
+                    <div class="article__body">
+                      <div class="article__icon"> <svg width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_35_2)">
+<mask id="mask0_35_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="683" height="683">
+<path d="M682.667 0H0V682.667H682.667V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_35_2)">
+<path d="M341.333 682.667C152.818 682.667 0 529.844 0 341.333C0 152.818 152.818 0 341.333 0C529.844 0 682.667 152.818 682.667 341.333C682.443 529.755 529.755 682.443 341.333 682.667ZM341.333 42.6667C176.385 42.6667 42.6667 176.385 42.6667 341.333C42.6667 506.281 176.385 640 341.333 640C506.281 640 640 506.281 640 341.333C639.823 176.458 506.208 42.8438 341.333 42.6667Z" fill="#502C84"/>
+<path d="M234.667 512C229.01 512 223.583 509.75 219.583 505.75L134.25 420.417C126.068 411.943 126.302 398.438 134.776 390.25C143.042 382.266 156.151 382.266 164.417 390.25L234.667 460.5L498.432 196.734C506.906 188.552 520.411 188.786 528.599 197.26C536.583 205.526 536.583 218.635 528.599 226.901L249.75 505.75C245.75 509.75 240.323 512 234.667 512Z" fill="#502C84"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_35_2">
+<rect width="683" height="683" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                      </div>
+                      <div class="article__content">
+                        <h4 class="article__title">Firma avanzada Online</h4><span class="article__price">Desde $14.500<span>+ IVA</span></span>
+                        <div class="article__iva">($24.900 IVA incluido) </div>
+                      </div>
+                      <div class="article__footer"> 
+                        <h5 class="article__title">Características </h5>
+                        <ul> 
+                          <li>Semper fames fames colus pharetra elementum fames sollicitudin
+                          </li>
+                          <li>Magna eros neque elementum cras primis hac
+                          </li>
+                          <li>Phasellus sem vivamus scelerisque enim
+                          </li>
+                          <li>Nullam vivamus venenatis fusce quisque aliquet porttitor ligula morbi
+                          </li>
+                          <li>Torquent mi malesuada velit sodales adipiscing himenaeos
+                          </li>
+                        </ul><a class="btn btn--sm">¡Lo quiero!
+                          <div class="article__options">
+                            <div class="article__option">
+                              <p class="article__age">1 año</p>
+                              <p class="article__price">desde <span>$20.000</span> + IVA</p>
+                            </div>
+                            <div class="article__option">
+                              <p class="article__age">2 año</p>
+                              <p class="article__price">desde <span>$20.000</span> + IVA</p>
+                            </div>
+                            <div class="article__option">
+                              <p class="article__age">3 año</p>
+                              <p class="article__price">desde <span>$20.000</span> + IVA</p>
+                            </div>
+                          </div></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4"> 
+                  <article class="article--option article--option--big">
+                    <div class="article__bg">
+                      <div class="bg"><img src="img/uploads/10.jpeg"></div>
+                    </div>
+                    <div class="article__body">
+                      <div class="article__icon"> <svg width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_35_2)">
+<mask id="mask0_35_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="683" height="683">
+<path d="M682.667 0H0V682.667H682.667V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_35_2)">
+<path d="M341.333 682.667C152.818 682.667 0 529.844 0 341.333C0 152.818 152.818 0 341.333 0C529.844 0 682.667 152.818 682.667 341.333C682.443 529.755 529.755 682.443 341.333 682.667ZM341.333 42.6667C176.385 42.6667 42.6667 176.385 42.6667 341.333C42.6667 506.281 176.385 640 341.333 640C506.281 640 640 506.281 640 341.333C639.823 176.458 506.208 42.8438 341.333 42.6667Z" fill="#502C84"/>
+<path d="M234.667 512C229.01 512 223.583 509.75 219.583 505.75L134.25 420.417C126.068 411.943 126.302 398.438 134.776 390.25C143.042 382.266 156.151 382.266 164.417 390.25L234.667 460.5L498.432 196.734C506.906 188.552 520.411 188.786 528.599 197.26C536.583 205.526 536.583 218.635 528.599 226.901L249.75 505.75C245.75 509.75 240.323 512 234.667 512Z" fill="#502C84"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_35_2">
+<rect width="683" height="683" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                      </div>
+                      <div class="article__content">
+                        <h4 class="article__title">Firma avanzada notoria</h4><span class="article__price">Desde $14.500<span>+ IVA</span></span>
+                        <div class="article__iva">($24.900 IVA incluido) </div>
+                      </div>
+                      <div class="article__footer"> 
+                        <h5 class="article__title">Características </h5>
+                        <ul> 
+                          <li>Arcu nostra augue sociosqu vitae aenean metus ad
+                          </li>
+                          <li>Bibendum dictumst eleifend consectetur quisque consequat vitae
+                          </li>
+                          <li>Porta euismod eget fusce purus
+                          </li>
+                          <li>Posuere sapien risus curabitur iaculis purus orci pellentesque praesent
+                          </li>
+                          <li>Neque ultricies bibendum pellentesque auctor consequat porttitor
+                          </li>
+                        </ul><a class="btn btn--sm">¡Lo quiero!
+                          <div class="article__options">
+                            <div class="article__option">
+                              <p class="article__age">1 año</p>
+                              <p class="article__price">desde <span>$20.000</span> + IVA</p>
+                            </div>
+                            <div class="article__option">
+                              <p class="article__age">2 año</p>
+                              <p class="article__price">desde <span>$20.000</span> + IVA</p>
+                            </div>
+                            <div class="article__option">
+                              <p class="article__age">3 año</p>
+                              <p class="article__price">desde <span>$20.000</span> + IVA</p>
+                            </div>
+                          </div></a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="section__body"> 
-          <div class="section__cases"> 
-            <div class="slider"> 
-              <div class="slides"> 
-                <div class="slide"> 
-                  <div class="section__case"> 
-                    <div class="cols">
-                      <div class="section__flex">
-                        <div class="col-md-6">
-                          <div class="section__bg"> 
+      </section>
+      <section class="section--cases section--white">
+        <div class="section__wrap"> 
+          <div class="section__header"> 
+            <h3 class="section__title">Casos de uso</h3>
+            <p class="section__description">Puede comprar una Firma electrónica avanzada en modalidades Online o con Token. Para la modalidad Online, no requiere un dispositivo adicional para operar.</p><a href="cases.html" class="btn btn--gray--2">Ver casos de uso<span class="fa fa-angle-right"> </span></a>
+          </div>
+          <div class="section__body"> 
+            <div class="section__cases"> 
+              <div class="slider slider--cases">
+                <div class="slides"> 
+                  <div class="slide">
+                    <div class="cols cols-gutter-2">
+                      <div class="col-md-6"> 
+                        <article class="article--case">
+                          <div class="article__bg"> 
                             <div class="bg"><img src="img/uploads/1.jpg"></div>
                           </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="section__content"> 
-                            <h3 class="section__title">Proceso de matrícula para estudiantes </h3>
-                            <p class="section__description">Nulla semper orci fames quis pharetra malesuada consectetur nullam mattis ad himenaeos conubia conubia ac.
+                          <div class="article__content"> 
+                            <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
+                            <p class="article__description">Taciti duis per justo aliquet nec diam duis litora luctus risus venenatis aliquet est commodo gravida imperdiet convallis pretium at.
                             </p>
-                            <p class="section__description">Dictumst commodo habitasse lectus sodales molestie bibendum blandit sociosqu at. Erat ut in himenaeos aliquam non donec arcu placerat diam conubia cursus sed morbi conubia.
-                            </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
+                            <p class="article__description">Elementum justo suspendisse aliquet pretium velit et vestibulum elementum etiam
+                            </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                           </div>
-                        </div>
+                        </article>
+                      </div>
+                      <div class="col-md-6"> 
+                        <article class="article--case">
+                          <div class="article__bg"> 
+                            <div class="bg"><img src="img/uploads/1.jpg"></div>
+                          </div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
+                            <p class="article__description">Cursus a nisi urna porttitor fermentum molestie arcu senectus felis blandit dapibus torquent tortor erat quisque tortor fusce accumsan vestibulum.
+                            </p>
+                            <p class="article__description">Purus placerat colus class cras commodo taciti torquent sociosqu vulputate
+                            </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
+                          </div>
+                        </article>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="slide"> 
-                  <div class="section__case"> 
-                    <div class="cols">
-                      <div class="section__flex">
-                        <div class="col-md-6">
-                          <div class="section__bg"> 
-                            <div class="bg"><img src="img/uploads/2.jpg"></div>
+                  <div class="slide">
+                    <div class="cols cols-gutter-2">
+                      <div class="col-md-6"> 
+                        <article class="article--case">
+                          <div class="article__bg"> 
+                            <div class="bg"><img src="img/uploads/1.jpg"></div>
                           </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="section__content"> 
-                            <h3 class="section__title">Verificación de identidad de un cliente para entrega de beneficios</h3>
-                            <p class="section__description">Fermentum curabitur rutrum curabitur per molestie facilisis lacinia vulputate ornare turpis donec eu ligula posuere.
+                          <div class="article__content"> 
+                            <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
+                            <p class="article__description">Tristique litora maecenas ultrices tempor morbi per aliquam class sapien donec congue aenean egestas purus proin faucibus varius curabitur quam.
                             </p>
-                            <p class="section__description">Imperdiet habitant diam interdum blandit quis elit neque primis dictum. Nulla suspendisse sed nisl vulputate lobortis porttitor odio augue eu facilisis blandit urna senectus massa.
-                            </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
+                            <p class="article__description">Potenti curabitur commodo purus curae iaculis sapien luctus morbi eu
+                            </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                           </div>
-                        </div>
+                        </article>
+                      </div>
+                      <div class="col-md-6"> 
+                        <article class="article--case">
+                          <div class="article__bg"> 
+                            <div class="bg"><img src="img/uploads/1.jpg"></div>
+                          </div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
+                            <p class="article__description">Sollicitudin feugiat torquent tincidunt consequat a interdum luctus habitant blandit elementum taciti sodales diam quam potenti est lobortis tristique arcu.
+                            </p>
+                            <p class="article__description">Eleifend rutrum volutpat et himenaeos class varius metus semper curae
+                            </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
+                          </div>
+                        </article>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="slide"> 
-                  <div class="section__case"> 
-                    <div class="cols">
-                      <div class="section__flex">
-                        <div class="col-md-6">
-                          <div class="section__bg"> 
-                            <div class="bg"><img src="img/uploads/3.jpg"></div>
+                  <div class="slide">
+                    <div class="cols cols-gutter-2">
+                      <div class="col-md-6"> 
+                        <article class="article--case">
+                          <div class="article__bg"> 
+                            <div class="bg"><img src="img/uploads/1.jpg"></div>
                           </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="section__content"> 
-                            <h3 class="section__title">Solución para adhesión de socios</h3>
-                            <p class="section__description">Eget potenti bibendum porttitor arcu ante rutrum molestie cras etiam volutpat ad diam interdum non.
+                          <div class="article__content"> 
+                            <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
+                            <p class="article__description">Sem tellus class inceptos placerat suspendisse commodo ligula vitae quisque sed aliquam sagittis sollicitudin mattis conubia netus maecenas donec ultricies.
                             </p>
-                            <p class="section__description">Nec augue faucibus volutpat sed litora cras cubilia quam quis. Habitasse gravida lectus quisque id fames aenean nostra hac quisque netus semper elementum posuere blandit.
-                            </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
+                            <p class="article__description">Ultrices suscipit etiam leo nulla habitasse leo cursus a elit
+                            </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                           </div>
-                        </div>
+                        </article>
+                      </div>
+                      <div class="col-md-6"> 
+                        <article class="article--case">
+                          <div class="article__bg"> 
+                            <div class="bg"><img src="img/uploads/1.jpg"></div>
+                          </div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
+                            <p class="article__description">Nullam augue venenatis curabitur nisi aenean ultricies non venenatis aliquam id aenean aptent varius maecenas fringilla molestie porttitor ante mauris.
+                            </p>
+                            <p class="article__description">Pretium pulvinar pharetra in suscipit felis egestas magna congue laoreet
+                            </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
+                          </div>
+                        </article>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="slide"> 
-                  <div class="section__case"> 
-                    <div class="cols">
-                      <div class="section__flex">
-                        <div class="col-md-6">
-                          <div class="section__bg"> 
-                            <div class="bg"><img src="img/uploads/4.jpg"></div>
+                  <div class="slide">
+                    <div class="cols cols-gutter-2">
+                      <div class="col-md-6"> 
+                        <article class="article--case">
+                          <div class="article__bg"> 
+                            <div class="bg"><img src="img/uploads/1.jpg"></div>
                           </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="section__content"> 
-                            <h3 class="section__title">Contratos de afiliación</h3>
-                            <p class="section__description">Quis enim sagittis ut inceptos tincidunt aenean lobortis scelerisque tempor litora purus et tristique consectetur.
+                          <div class="article__content"> 
+                            <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
+                            <p class="article__description">Maecenas sed mattis consequat cras class donec aliquam metus quisque habitant condimentum tincidunt tortor blandit molestie proin condimentum ut risus.
                             </p>
-                            <p class="section__description">Netus quis id auctor augue est proin sociosqu molestie venenatis. Quisque feugiat accumsan quam mollis orci est magna habitant ac diam egestas eu in conubia.
-                            </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
+                            <p class="article__description">Pharetra ornare lobortis porta curabitur tortor cursus laoreet praesent habitasse
+                            </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                           </div>
-                        </div>
+                        </article>
+                      </div>
+                      <div class="col-md-6"> 
+                        <article class="article--case">
+                          <div class="article__bg"> 
+                            <div class="bg"><img src="img/uploads/1.jpg"></div>
+                          </div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
+                            <p class="article__description">Vehicula interdum quis et semper lacus fringilla mi netus a justo justo torquent sem platea volutpat primis ante justo quis.
+                            </p>
+                            <p class="article__description">Lobortis malesuada libero suspendisse aenean quisque venenatis molestie euismod ultrices
+                            </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
+                          </div>
+                        </article>
                       </div>
                     </div>
                   </div>
@@ -522,391 +587,437 @@
             </div>
           </div>
         </div>
-        <div class="section__footer"> <a href="cases.html" class="btn">Ver todos los casos de éxito<span class="fa fa-angle-right"> </span></a></div>
-      </div>
-    </section>
-    <section class="section--media">
-      <div class="section__wrap">
-        <div class="section__body"> 
-          <div class="cols"> 
-            <div class="section__flex"> 
-              <div class="col-md-5">
-                <div class="section__image"><img src="img/uploads/image-etoken.png"></div>
-              </div>
-              <div class="col-md-7"> 
-                <div class="section__content"> 
-                  <h3 class="section__title">Dispositivo E-token </h3>
-                  <p class="section__description">Cubilia faucibus metus ultricies luctus odio cubilia conubia nunc augue. Erat massa tellus potenti vehicula curabitur integer condimentum condimentum accumsan. Nisl urna purus augue est aliquam est himenaeos scelerisque auctor accumsan cubilia non vulputate nam.
-                  </p><span class="section__price">$44.990</span>
-                  <p class="section__info">(Si usted ya posee E-token para renovar su Firma Electrónica, no necesita comprar otro dispositivo.)</p>
+      </section>
+      <section class="section--media section--light">
+        <div class="section__eff"> <img src="img/icons/recurso1.svg"></div>
+        <div class="section__wrap">
+          <div class="section__body"> 
+            <div class="cols"> 
+              <div class="section__flex"> 
+                <div class="col-md-6">
+                  <div class="section__image"><img src="img/uploads/6.jpg"></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="section__content"> 
+                    <h3 class="section__title">Dispositivo E-token </h3>
+                    <p class="section__description">Varius potenti augue et aliquet nisl posuere inceptos netus tincidunt. Proin duis placerat congue iaculis etiam cubilia posuere himenaeos elit. In ultricies convallis justo quis nisl tristique cubilia tellus phasellus ut mi netus quisque ligula.
+                    </p><span class="section__price">$44.990 <span>+ IVA</span></span>
+                    <div class="section__iva">($44.990 IVA incluido)</div>
+                    <p class="section__info">*Si usted ya posee E-token para renovar su Firma Electrónica, no necesita comprar otro dispositivo.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section--what section--white">
-      <div class="section__wrap"> 
-        <div class="section__header">
-          <h3 class="section__title">¿Para qué sirve tu Certificado Digital o Firma Electrónica Simple?</h3>
-        </div>
-        <div class="section__body"> 
-          <div class="cols">
-            <div class="col-md-4"> 
-              <article class="article--what">
-                <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
-                <div class="article__body"> 
-                  <p class="article__description">Firmar y realizar el cifrado de correos electrónicos</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4"> 
-              <article class="article--what">
-                <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
-                <div class="article__body"> 
-                  <p class="article__description">Autentificación del suscriptor para realizar facturas electrónicas en el portal de SII</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4"> 
-              <article class="article--what">
-                <div class="article__icon"> <img src="img/icons/feature-3.png"></div>
-                <div class="article__body"> 
-                  <p class="article__description">Realizar declaraciones, rectificaciones y notas de crédito</p>
-                </div>
-              </article>
-            </div>
+      </section>
+      <section class="section--what section--white">
+        <div class="section__wrap"> 
+          <div class="section__header">
+            <h3 class="section__title">¿Para qué sirve tu Certificado Digital o Firma Electrónica Simple?</h3>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="section--help"> 
-      <div class="section__wrap"> 
-        <div class="section__header"> 
-          <h3 class="section__title">¿Necesitas ayuda?</h3>
-          <p class="section__description">Para más información visita nuestras preguntas frecuentes, manuales de instalación, descarga de drivers, tutoriales y verificacion de la firma electrónica.</p>
-        </div>
-        <div class="section__body"> 
-          <div class="cols"> 
-            <div class="col-md-3">
-              <article class="article--help">
-                <div class="article__eff"> <img src="img/icons/eff-1.svg"></div>
-                <div class="article__header">
+          <div class="section__body"> 
+            <div class="cols">
+              <div class="col-md-4"> 
+                <article class="article--what">
                   <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
-                  <h4 class="article__title">¿Qué es una firma electrónica?</h4>
-                </div>
-                <div class="article__body">
-                  <p class="article__description">Et posuere congue metus hendrerit fames placerat ad risus posuere donec netus.
-                  </p><a href="#" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-3">
-              <article class="article--help">
-                <div class="article__eff"> <img src="img/icons/eff-1.svg"></div>
-                <div class="article__header">
+                  <div class="article__body"> 
+                    <p class="article__description">Firmar y realizar el cifrado de correos electrónicos</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4"> 
+                <article class="article--what">
                   <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
-                  <h4 class="article__title">Preguntas frecuentes</h4>
-                </div>
-                <div class="article__body"> 
-                  <p class="article__description">Metus eu vehicula euismod hac tristique scelerisque ante sociosqu neque himenaeos consectetur.
-                  </p><a href="faq.html" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-3">
-              <article class="article--help">
-                <div class="article__eff"> <img src="img/icons/eff-1.svg"></div>
-                <div class="article__header">
+                  <div class="article__body"> 
+                    <p class="article__description">Autentificación del suscriptor para realizar facturas electrónicas en el portal de SII</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4"> 
+                <article class="article--what">
                   <div class="article__icon"> <img src="img/icons/feature-3.png"></div>
-                  <h4 class="article__title">Manuales</h4>
-                </div>
-                <div class="article__body"> 
-                  <p class="article__description">Nostra enim porttitor nam posuere nam suspendisse hendrerit sem a malesuada torquent.
-                  </p><a href="" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-3">
-              <article class="article--help">
-                <div class="article__eff"> <img src="img/icons/eff-1.svg"></div>
-                <div class="article__header">
-                  <div class="article__icon"> <img src="img/icons/feature-4.png"></div>
-                  <h4 class="article__title">Tutoriales</h4>
-                </div>
-                <div class="article__body"> 
-                  <p class="article__description">Ornare potenti congue integer rutrum facilisis aptent ut praesent varius torquent pulvinar.
-                  </p><a href="tutoriales.html" class="btn btn--quaternary">Ver más<span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
+                  <div class="article__body"> 
+                    <p class="article__description">Realizar declaraciones, rectificaciones y notas de crédito</p>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <div class="addcart"> 
-      <div class="addcart__opacity"></div>
-      <div class="addcart__box">
-        <div class="addcart__loader"></div>
-        <div class="addcart__box__box">
+      </section>
+      <section class="section--help">
+        <div class="section__wrap"> 
+          <div class="section__header"> 
+            <h3 class="section__title">¿Necesitas ayuda?</h3>
+            <p class="section__description">Para más información visita nuestras preguntas frecuentes, manuales de instalación, descarga de drivers, tutoriales y verificacion de la firma electrónica.</p>
+          </div>
+          <div class="section__body"> 
+            <div class="cols cols-gutter-2"> 
+              <div class="col-md-3">
+                <article class="article--help">
+                  <div class="article__header">
+                    <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
+                    <h4 class="article__title">Verificación</h4>
+                  </div>
+                  <div class="article__body">
+                    <p class="article__description">Habitant praesent eu est cubilia pretium feugiat habitasse neque quisque fringilla tortor.
+                    </p><a href="#" class="btn btn--quaternary">Ver detalle</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-3">
+                <article class="article--help">
+                  <div class="article__header">
+                    <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
+                    <h4 class="article__title">Verificación</h4>
+                  </div>
+                  <div class="article__body"> 
+                    <p class="article__description">At urna facilisis urna vivamus metus curabitur ultricies varius purus orci mauris.
+                    </p><a href="#" class="btn btn--quaternary">Ver detalle</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-3">
+                <article class="article--help">
+                  <div class="article__header">
+                    <div class="article__icon"> <img src="img/icons/feature-3.png"></div>
+                    <h4 class="article__title">Verificación</h4>
+                  </div>
+                  <div class="article__body"> 
+                    <p class="article__description">Torquent inceptos non sem habitant iaculis eros vel enim integer libero suscipit.
+                    </p><a href="#" class="btn btn--quaternary">Ver detalle</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-3">
+                <article class="article--help">
+                  <div class="article__header">
+                    <div class="article__icon"> <img src="img/icons/feature-4.png"></div>
+                    <h4 class="article__title">Verificación</h4>
+                  </div>
+                  <div class="article__body"> 
+                    <p class="article__description">Nulla netus laoreet fames vel ut at lobortis duis quisque morbi conubia.
+                    </p><a href="#" class="btn btn--quaternary">Ver detalle</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="section__loader"></div>
+      <div class="addcart"> 
+        <div class="addcart__opacity"></div>
+        <div class="addcart__box">
           <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
-          <div class="addcart__box__header"> 
-            <h3 class="addcart__title">Agregar nuevo producto </h3>
-            <p class="addcart__description">Consectetur cursus vel magna quis varius leo donec etiam sapien aliquam sem ornare ornare ornare.
-            </p>
-          </div>
-          <div class="addcart__box__body">
-            <div class="addcart__box__details"> 
-              <div class="addcart__box__detail">
-                <h5 class="addcart__box__detail__title"><strong>Paso 1:</strong> Selecciona el tipo de producto</h5>
-                <p class="addcart__box__detail__selected">Firma Electrónica Avanzada<span class="fa fa-check"></span></p>
-              </div>
-              <div class="addcart__box__detail">
-                <h5 class="addcart__box__detail__title"><strong>Paso 2:</strong> Modalidad de Firma</h5>
-                <p class="addcart__box__detail__selected">Token<span class="fa fa-check"></span></p>
-              </div>
-              <div class="addcart__box__detail">
-                <h5 class="addcart__box__detail__title"><strong>Paso 3:</strong> Vigencia</h5>
-                <p class="addcart__box__detail__selected">2 Años<span class="fa fa-check"></span></p>
-              </div>
+          <div class="addcart__loader"></div>
+          <div class="addcart__box__box">
+            <div class="addcart__box__header"> 
+              <h3 class="addcart__title">Agregar nuevo producto </h3>
+              <p class="addcart__description">Feugiat condimentum ligula dictum suspendisse adipiscing suspendisse phasellus eleifend maecenas rutrum est placerat facilisis etiam.
+              </p>
             </div>
-            <div class="addcart__question"> 
-              <div class="addcart__question__header">
-                <h4 class="addcart__title"><strong>Paso 4:</strong> ¿Es usted Notario, Archivero o Conservador?
-                  <div class="addcart__tooltip">
-                    <div class="addcart__circle"><span>i</span></div>
-                    <div class="addcart__tooltip__tooltip">
-                      <h5>Curae primis
-                      </h5>
-                      <p>Dapibus a accumsan fermentum commodo lacus neque tellus aenean consectetur. Pulvinar litora posuere dui tellus nisl nullam congue luctus ut ullamcorper quisque eget egestas etiam.
-                      </p>
+            <div class="addcart__box__body">
+              <div class="addcart__box__body__flow show">
+                <div class="addcart__box__details"> 
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 1:</strong> Selecciona el tipo de producto
+                  p.addcart__box__detail__selected Firma Electrónica Avanzada
+                  	span.fa.fa-check
+                  
+                  -->
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 2:</strong> Modalidad de Firma
+                  p.addcart__box__detail__selected Token
+                  	span.fa.fa-check
+                  
+                  -->
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 3:</strong> Vigencia
+                  p.addcart__box__detail__selected 2 Años
+                  	span.fa.fa-check
+                  
+                  -->
+                </div>
+                <div class="addcart__question"> 
+                  <div class="addcart__question__header">
+                    <h4 class="addcart__title"><strong></strong></h4>
+                    <h4 class="addcart__title"><span></span></h4>
+                    <div class="addcart__tooltip">
+                      <div class="addcart__circle"><span>i</span></div>
+                      <div class="addcart__tooltip__tooltip">
+                        <h5>Velit rutrum
+                        </h5>
+                        <p>Dictumst nibh primis ornare molestie curae eu per nunc per. Vestibulum est massa scelerisque mollis purus pretium iaculis a senectus tempus eleifend iaculis dictumst torquent.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </h4>
-              </div>
-              <div class="addcart__question__body">
-                <div class="addcart__options"> 
-                  <div class="addcart__option"> 
-                    <label>
-                      <input type="radio" name="paso1">Sí
-                    </label>
+                  <div class="addcart__question__body">
+                    <div class="addcart__options"></div>
                   </div>
-                  <div class="addcart__option"> 
-                    <label>
-                      <input type="radio" name="paso1">No
-                    </label>
+                  <div class="addcart__question__footer">
+                    <div class="addcart__alert"> <span class="fa fa-exclamation-triangle"></span>
+                      <p></p>
+                    </div>
+                    <div class="addcart__question__footer__buttons"><a data-prev-question class="btn btn--white btn--hidden">Volver a paso anterior</a><a data-next-question class="btn">Continuar</a></div>
                   </div>
                 </div>
               </div>
-              <div class="addcart__question__footer"> <a data-next-question class="btn">Continuar</a></div>
+              <div class="addcart__box__body__results"> 
+                <div class="addcart__box__body__results__header">
+                  <div class="addcart__icon"><img src="img/icons/icon-check.svg"></div>
+                  <h4 class="addcart__subtitle">Ya tienes tu producto seleccionado </h4>
+                </div>
+                <div class="addcart__box__body__results__body">
+                  <div class="addcart__product">
+                    <div class="addcart__bg"> 
+                      <div class="bg"> <img src="#"></div>
+                    </div>
+                    <div class="addcart__body">
+                      <div class="addcart__body__top">
+                        <h4 class="addcart__title"></h4><span class="addcart__product__price"></span>
+                      </div>
+                      <div class="addcart__details"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="addcart__box__body__results__footer"> 
+                  <div class="addcart__buttons"> <a data-add-cart class="btn">Agregar al carrito</a><a data-restart-questions class="btn btn--white">Volver a iniciar</a></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--login">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">Iniciar sesión</h3>
-            <p class="section__description">Ut nostra ac morbi congue sed platea sapien
-            </p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__tab"> 
-              <div class="tabs tabs--login">
-                <div class="tabs__header"> 
-                  <div class="tab tab--current">Persona natural</div>
-                  <div class="tab">Contador </div>
+      <div class="modal modal--login">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Iniciar sesión</h3>
+              <p class="section__description">Augue urna lectus vehicula euismod phasellus tristique felis
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__tab"> 
+                <div class="tabs tabs--login">
+                  <div class="tabs__header"> 
+                    <div class="tab tab--current">Persona natural</div>
+                    <div class="tab">Contador </div>
+                  </div>
+                  <div class="tabs__body"> 
+                    <div class="tab tab--current dscroll">
+                      <div class="modal__form">
+                        <form>
+                          <div class="cols"> 
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Rut</div>
+                                <div class="form__input">
+                                  <input type="rut" name="#" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Contraseña</div>
+                                <div class="form__input">
+                                  <input type="password" name="#" required>
+                                </div>
+                                <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__buttons">
+                                <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="tab dscroll">
+                      <div class="modal__form">
+                        <form>
+                          <div class="cols"> 
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Email</div>
+                                <div class="form__input">
+                                  <input type="email" name="#" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Contraseña</div>
+                                <div class="form__input">
+                                  <input type="password" name="#" required>
+                                </div>
+                                <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__buttons">
+                                <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="tabs__body"> 
-                  <div class="tab tab--current dscroll">
-                    <div class="modal__form">
-                      <form>
-                        <div class="cols"> 
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Rut</div>
-                              <div class="form__input">
-                                <input type="rut" name="#" required>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Contraseña</div>
-                              <div class="form__input">
-                                <input type="password" name="#" required>
-                              </div>
-                              <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__buttons">
-                              <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
-                            </div>
-                          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--register">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Registro</h3>
+              <p class="section__description">Suspendisse rutrum aptent eget condimentum augue class donec
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__form">
+                <form>
+                  <div class="cols">
+                    <div class="col-xs-12">
+                      <div class="form__options"> 
+                        <div class="form__option"> 
+                          <label>
+                            <input type="radio" name="profile">Persona natural
+                          </label>
                         </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="tab dscroll">
-                    <div class="modal__form">
-                      <form>
-                        <div class="cols"> 
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Email</div>
-                              <div class="form__input">
-                                <input type="email" name="#" required>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Contraseña</div>
-                              <div class="form__input">
-                                <input type="password" name="#" required>
-                              </div>
-                              <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__buttons">
-                              <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
-                            </div>
-                          </div>
+                        <div class="form__option"> 
+                          <label>
+                            <input type="radio" name="profile">Contador
+                          </label>
                         </div>
-                      </form>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Rut</div>
+                        <div class="form__input">
+                          <input type="rut" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="rut" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Contraseña</div>
+                        <div class="form__input">
+                          <input type="password" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Repetir Contraseña</div>
+                        <div class="form__input">
+                          <input type="password" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__buttons">
+                        <button class="btn">Registrarse</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--register">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">Registro</h3>
-            <p class="section__description">Commodo viverra cursus platea pretium aptent curae quisque
-            </p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__form">
-              <form>
-                <div class="cols">
-                  <div class="col-xs-12">
-                    <div class="form__options"> 
-                      <div class="form__option"> 
-                        <label>
-                          <input type="radio" name="profile">Persona natural
-                        </label>
-                      </div>
-                      <div class="form__option"> 
-                        <label>
-                          <input type="radio" name="profile">Contador
-                        </label>
+      <div class="modal modal--resetpass">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Recuperar contraseña</h3>
+              <p class="section__description">Purus cubilia habitasse porta lacus quisque nostra eget
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__form">
+                <form>
+                  <div class="cols"> 
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="email" name="#" required>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Rut</div>
-                      <div class="form__input">
-                        <input type="rut" name="#" required>
+                    <div class="col-xs-12">
+                      <div class="form__buttons">
+                        <button class="btn">Recuperar</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Email</div>
-                      <div class="form__input">
-                        <input type="rut" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Contraseña</div>
-                      <div class="form__input">
-                        <input type="password" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Repetir Contraseña</div>
-                      <div class="form__input">
-                        <input type="password" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__buttons">
-                      <button class="btn">Registrarse</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
-                    </div>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--resetpass">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">Recuperar contraseña</h3>
-            <p class="section__description">Felis rutrum orci ad mi id aenean fames
-            </p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__form">
-              <form>
-                <div class="cols"> 
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Email</div>
-                      <div class="form__input">
-                        <input type="email" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__buttons">
-                      <button class="btn">Recuperar</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
-                    </div>
-                  </div>
-                </div>
-              </form>
+      <div class="modal modal--focusrut">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">¿Quieres aplicar los mismos datos del primer producto?</h3>
+            </div>
+            <div class="modal__body">
+              <div class="modal__button"><a class="btn">Reutilizar los mismos datos</a><a class="btn btn--white">Continuar con otros datos</a></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--focusrut">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">¿Quieres aplicar los mismos datos del primer producto?</h3>
-          </div>
-          <div class="modal__body">
-            <div class="modal__button"><a class="btn">Reutilizar los mismos datos</a><a class="btn btn--white">Continuar con otros datos</a></div>
-          </div>
+      <div class="popup popup--confirmation">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-check.svg"></div>
+          <div class="popup__text">Producto agregado al carro de compras</div>
+        </div>
+      </div>
+      <div class="popup popup--error">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-error.svg"></div>
+          <div class="popup__text">Ha ocurrido un error</div>
+        </div>
+      </div>
+      <div class="popup popup--alert">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-alert.svg"></div>
+          <div class="popup__text">esto es una alerta</div>
         </div>
       </div>
     </div>
@@ -922,7 +1033,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/icon-phone.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/phone-svg.svg"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Atención Comercial y Soporte Técnico </p><span class="footer__value">600 3620 400</span>
                   </div>
@@ -930,7 +1041,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/icon-whatsapp.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/whatsapp.svg"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Escríbenos por Whatsapp</p><span class="footer__value">(+56 2) 3340 7500</span>
                   </div>
@@ -938,7 +1049,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/icon-mail.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/mail.svg"></div>
                   <div class="footer__info__content"> <span class="footer__value">Contáctanos</span></div>
                 </div>
               </div>
@@ -1005,6 +1116,7 @@
                 <div class="footer__social"> <a href="#"><span class="fa fa-instagram"></span></a></div>
               </div>
               <div class="footer__certifications">
+                <div class="footer__certification"> <img src="img/icons/SELLO_REL_azul.png"></div>
                 <div class="footer__certification"> <img src="img/icons/certification-1.png"></div>
                 <div class="footer__certification"> <img src="img/icons/certification-2.png"></div>
                 <div class="footer__certification"> <img src="img/icons/certification-3.png"></div>

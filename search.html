@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=43449" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=13690" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=43449" type="text/javascript"></script>
+    <script src="js/main.js?v=13690" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -24,6 +24,11 @@
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
     <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
     <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script>
+      var URL_SITE = "http://54.156.114.186/";
+      var URL_API_PE = "https://certificacion2.ecertchile.cl/";
+      
+    </script>
   </head>
   <body>
     <header>
@@ -49,6 +54,9 @@
             </div>
             <div class="header__right"> 
               <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
+              <div class="header__item"> 
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -69,87 +77,91 @@
                   <div></div>
                   <div></div>
                 </div>
-                <nav>
-                  <ul>
-                    <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
-                      <div class="header__nav__submenu">
-                        <div class="header__nav__submenu__relative">
-                          <div class="header__nav__submenu__header"> 
-                            <h4>Soluciones </h4>
-                            <p>Nos adaptamos al tamaño y formato de tu empresa</p>
-                          </div>
-                          <div class="header__nav__submenu__body"> 
-                            <ul> 
-                              <li> <a href="#">Certificado Digital</a>
-                                <p>Certificado Digital para el SII</p>
-                              </li>
-                              <li><a href="personas.html">Personas</a>
-                                <p>Certificado Digital y Firma Avanzada</p>
-                              </li>
-                              <li><a href="empresas.html">Empresas</a>
-                                <p>Pymes y Corporativo</p>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li><a href="alliances.html">Alianzas</a></li>
-                    <li> <a href="#">Ayuda</a>
-                      <div class="header__nav__submenu">
-                        <div class="header__nav__submenu__relative">
-                          <div class="header__nav__submenu__header"> 
-                            <h4>Ayuda </h4>
-                            <p>Diam colus dui donec pulvinar ut eros
-                            </p>
-                          </div>
-                          <div class="header__nav__submenu__body"> 
-                            <ul> 
-                              <li> <a href="faq.html">Preguntas frecuentes</a>
-                                <p>Accumsan hendrerit in egestas
-                                </p>
-                              </li>
-                              <li><a href="verification.html">Verificación</a>
-                                <p>Platea massa aptent maecenas lacus
-                                </p>
-                              </li>
-                              <li><a href="tutoriales.html">Tutoriales</a>
-                                <p>Ullamcorper cras est quis
-                                </p>
-                              </li>
-                            </ul>
+                <div class="header__menu">
+                  <nav>
+                    <ul>
+                      <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative">
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Soluciones </h4>
+                              <p>Nos adaptamos al tamaño y formato de tu empresa</p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="#">Certificado Digital</a>
+                                  <p>Certificado Digital para el SII</p>
+                                </li>
+                                <li><a href="personas.html">Personas</a>
+                                  <p>Certificado Digital y Firma Avanzada</p>
+                                </li>
+                                <li class="last"><a href="empresas.html">Empresas</a>
+                                  <p>Pymes y Corporativo</p>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </li>
-                    <li><a href="#">Más</a>
-                      <div class="header__nav__submenu">
-                        <div class="header__nav__submenu__relative"> 
-                          <div class="header__nav__submenu__header"> 
-                            <h4>Mas </h4>
-                            <p>Creamos confianza</p>
-                          </div>
-                          <div class="header__nav__submenu__body"> 
-                            <ul> 
-                              <li> <a href="aboutus.html">Quienes somos</a>
-                                <p>Pharetra praesent congue interdum vehicula lacus
-                                </p>
-                              </li>
-                              <li><a href="news.html">Blog</a>
-                                <p>Accumsan est gravida semper nulla augue ligula
-                                </p>
-                              </li>
-                              <li><a href="red-atencion.html">Red de Atención</a>
-                                <p>Curabitur quam imperdiet aliquet euismod
-                                </p>
-                              </li>
-                            </ul>
+                      </li>
+                      <li><a href="alliances.html">Alianzas</a></li>
+                      <li> <a href="#">Ayuda</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative">
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Ayuda </h4>
+                              <p>Euismod id cubilia egestas vitae consectetur habitasse
+                              </p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="faq.html">Preguntas frecuentes</a>
+                                  <p>A urna ut volutpat
+                                  </p>
+                                </li>
+                                <li><a href="recursos.html">Recursos</a>
+                                  <p>Duis suscipit nullam cras
+                                  </p>
+                                </li>
+                                <li class="last"><a href="tutoriales.html">Tutoriales</a>
+                                  <p>Proin gravida faucibus nunc
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </li>
-                  </ul>
-                </nav>
+                      </li>
+                      <li><a href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator">Verifcacion</a></li>
+                      <li><a href="#">Más</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative"> 
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Mas </h4>
+                              <p>Creamos confianza</p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="aboutus.html">Quienes somos</a>
+                                  <p>Dui sollicitudin aenean ligula non egestas
+                                  </p>
+                                </li>
+                                <li><a href="news.html">Blog</a>
+                                  <p>Consequat cubilia nulla hac donec nullam feugiat
+                                  </p>
+                                </li>
+                                <li class="last"><a href="red-atencion.html">Red de Atención</a>
+                                  <p>Nec phasellus aliquam cubilia id
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
+                </div>
               </div>
             </div>
             <div class="header__nav__mobile">
@@ -182,7 +194,7 @@
                         <ul>
                           <li class="header__nav__title">Ayuda</li>
                           <li><a href="faq.html">Preguntas Frecuentas</a></li>
-                          <li><a href="verification.html">Verificación</a></li>
+                          <li><a href="recursos.html">Recursos</a></li>
                           <li><a href="tutoriales.html">Tutoriales</a></li>
                         </ul>
                       </li>
@@ -211,881 +223,926 @@
                 </div>
               </div>
             </div>
-            <div class="header__right">
-              <div class="header__item"> 
-                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
-              </div>
-              <div class="header__item header__item--ham">
-                <div class="header__ham"><span></span><span></span><span></span></div>
-              </div>
+            <div class="header__item header__item--ham">
+              <div class="header__ham"><span></span><span></span><span></span></div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <div id="sections"></div>
-    <section class="section--header">
-      <div class="section__clipath">
-        <div class="section__bg">
-          <div class="bg"><img src="img/uploads/2.jpg"></div>
+    <div id="sections">
+      <section class="section--header">
+        <div class="section__clipath">
+          <div class="section__bg">
+            <div class="bg"><img src="img/uploads/2.jpg"></div>
+          </div>
+          <div class="section__wrap section__wrap--header">
+            <div class="section__body">
+              <div class="section__content">
+                <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="faq.html">Búsqueda de resultado</a></div>
+                <h1 class="section__title">Búsqueda de resultado: <strong>Certificado</strong></h1>
+                <p class="section__description">Torquent a posuere pretium tincidunt ligula commodo a libero suscipit. Sollicitudin sociosqu risus imperdiet morbi nullam vestibulum augue ullamcorper venenatis pellentesque euismod posuere interdum sollicitudin.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="section__wrap section__wrap--header">
+      </section>
+      <section class="section--results"> 
+        <div class="section__wrap section--md">
+          <div class="section__header">
+            <h3 class="section__title">Buscaste por: certificado</h3>
+            <p class="section__description">122 elementos encontrados</p>
+            <div class="section__header__flex">
+              <div class="section__filters filters dscroll">
+                <ul data-filter-group="category" class="menu button-group">
+                  <li data-filter="*" class="section__filter current">Todas</li>
+                  <li data-filter=".1" class="section__filter">Productos</li>
+                  <li data-filter=".2" class="section__filter">Soluciones</li>
+                  <li data-filter=".3" class="section__filter">Noticias</li>
+                  <li data-filter=".4" class="section__filter">Tutoriales</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div class="section__body">
-            <div class="section__content">
-              <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="faq.html">Búsqueda de resultado</a></div>
-              <h1 class="section__title">Búsqueda de resultado: <strong>Certificado</strong></h1>
-              <p class="section__description">Nunc nec tellus lacus pretium ultricies et curae cursus sed. Risus nibh lacus praesent curae felis orci malesuada tortor ad varius justo lobortis habitasse auctor.
+            <div class="cols grid--results">
+              <div class="col-xs-12 1 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Productos</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Commodo a pharetra justo auctor laoreet
+                    </h4>
+                    <p class="article__description">Consectetur aliquet quam bibendum dictumst aliquet fames odio laoreet habitasse ut euismod.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 2 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Soluciones</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Scelerisque semper vehicula ullamcorper leo primis
+                    </h4>
+                    <p class="article__description">Nisi a semper aliquet tortor blandit lacinia tristique eget et potenti auctor.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 3 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Noticias</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Sociosqu imperdiet eleifend volutpat velit ac
+                    </h4>
+                    <p class="article__description">Eros cras ut ut dictum litora donec odio congue eros turpis suscipit.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 4 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Tutoriales</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Tempor maecenas varius eget dictum molestie
+                    </h4>
+                    <p class="article__description">Nam nibh varius inceptos neque per egestas tincidunt sapien viverra aenean vulputate.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 1 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Productos</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Imperdiet commodo consequat eu erat aliquam
+                    </h4>
+                    <p class="article__description">Eleifend risus facilisis pellentesque varius nam commodo adipiscing pretium fames sagittis tempus.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 2 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Soluciones</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Rhoncus morbi accumsan posuere aenean feugiat
+                    </h4>
+                    <p class="article__description">Quisque habitasse egestas pretium vivamus mollis commodo hendrerit justo elementum sed consectetur.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 3 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Noticias</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Platea faucibus cursus erat enim leo
+                    </h4>
+                    <p class="article__description">Aptent nam ad rhoncus nec elementum aenean commodo risus nam aliquam gravida.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 4 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Tutoriales</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Euismod netus tellus sodales pretium eu
+                    </h4>
+                    <p class="article__description">Eu libero rhoncus vestibulum nisi fames donec donec accumsan himenaeos magna netus.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 1 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Productos</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Sapien posuere dictumst felis taciti iaculis
+                    </h4>
+                    <p class="article__description">Torquent senectus cursus vitae quam velit vehicula condimentum justo convallis pharetra morbi.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 2 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Soluciones</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Venenatis quis neque porta cras duis
+                    </h4>
+                    <p class="article__description">Habitant est placerat est litora pharetra cursus nunc dui aliquet pellentesque magna.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 3 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Noticias</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Ullamcorper taciti fusce lobortis etiam habitasse
+                    </h4>
+                    <p class="article__description">Quisque class adipiscing interdum iaculis etiam quisque senectus dui inceptos vitae duis.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 4 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Tutoriales</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Consequat sodales pellentesque duis magna ut
+                    </h4>
+                    <p class="article__description">Orci sem ut placerat integer odio curae mauris habitasse luctus libero id.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 1 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Productos</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Elementum hac massa suscipit faucibus eget
+                    </h4>
+                    <p class="article__description">Duis at fringilla suspendisse porta mattis dapibus sociosqu malesuada purus bibendum praesent.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 2 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Soluciones</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Iaculis litora phasellus quam vivamus vel
+                    </h4>
+                    <p class="article__description">Eleifend mi torquent quisque ullamcorper urna aliquet posuere risus suscipit ad potenti.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 3 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Noticias</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Hendrerit sed ligula vel dapibus pulvinar
+                    </h4>
+                    <p class="article__description">Leo consequat justo aenean arcu class nam vulputate ullamcorper ad auctor ultricies.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 4 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Tutoriales</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Risus egestas blandit ac ullamcorper tellus
+                    </h4>
+                    <p class="article__description">Netus vehicula litora curae blandit egestas eleifend congue porta imperdiet scelerisque mi.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 1 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Productos</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Eros aenean turpis nibh tempus felis
+                    </h4>
+                    <p class="article__description">Sed nam non euismod est dictumst lacus mattis varius habitasse aenean fermentum.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 2 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Soluciones</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Diam mauris pharetra felis quis ullamcorper
+                    </h4>
+                    <p class="article__description">Arcu tristique justo sed consectetur curabitur aenean consectetur tempus nunc fringilla fames.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 3 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Noticias</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Fusce ut consequat eros vel posuere
+                    </h4>
+                    <p class="article__description">Donec vivamus semper inceptos sagittis proin at id volutpat vestibulum donec malesuada.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 4 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Tutoriales</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Nullam praesent duis aliquam ullamcorper accumsan
+                    </h4>
+                    <p class="article__description">Laoreet per semper pharetra lacus sodales egestas gravida in commodo fringilla velit.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 1 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Productos</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Euismod tortor molestie conubia donec lobortis
+                    </h4>
+                    <p class="article__description">Ut nullam vel maecenas integer porta sem augue pretium nam nunc quis.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 2 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Soluciones</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Elementum elit curabitur fringilla tempor nullam
+                    </h4>
+                    <p class="article__description">Ultrices tortor sem phasellus nibh luctus quisque tristique ornare hac pulvinar est.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 3 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Noticias</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Pellentesque sociosqu cras netus sem eros
+                    </h4>
+                    <p class="article__description">Felis non curabitur sem ante augue morbi eleifend eleifend lobortis viverra congue.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 4 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Tutoriales</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Facilisis rutrum morbi diam porta fringilla
+                    </h4>
+                    <p class="article__description">Sollicitudin inceptos dictum mi imperdiet feugiat class erat sed donec enim sociosqu.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 1 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Productos</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Commodo sociosqu curabitur scelerisque erat elit
+                    </h4>
+                    <p class="article__description">Vehicula sed netus id ornare eros purus eleifend turpis ultricies donec primis.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 2 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Soluciones</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Dapibus faucibus quisque dictum fermentum urna
+                    </h4>
+                    <p class="article__description">Cubilia imperdiet habitasse dui blandit vitae hac enim blandit himenaeos mauris purus.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 3 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Noticias</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Himenaeos est mauris cursus donec justo
+                    </h4>
+                    <p class="article__description">Euismod ultrices eu dui auctor felis nullam donec eu porta sapien pharetra.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 4 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Tutoriales</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Vehicula morbi dictumst maecenas ut a
+                    </h4>
+                    <p class="article__description">Varius feugiat quisque metus aptent sapien consequat etiam molestie justo nunc aliquet.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 1 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Productos</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Tempor justo interdum habitasse quisque ligula
+                    </h4>
+                    <p class="article__description">Praesent adipiscing lectus blandit morbi fringilla molestie mauris vestibulum ornare lectus proin.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 2 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Soluciones</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Vehicula potenti commodo viverra quam placerat
+                    </h4>
+                    <p class="article__description">Iaculis elementum vivamus egestas quisque suspendisse euismod est at eu vivamus blandit.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 3 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Noticias</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">A sed viverra donec molestie tempus
+                    </h4>
+                    <p class="article__description">Integer venenatis vestibulum fringilla egestas curabitur semper velit placerat aptent vulputate luctus.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 4 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Tutoriales</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Nisl malesuada turpis mattis aenean pharetra
+                    </h4>
+                    <p class="article__description">Fusce eleifend ornare per sagittis odio consequat hendrerit enim litora auctor quam.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 1 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Productos</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Nibh egestas praesent erat justo per
+                    </h4>
+                    <p class="article__description">Condimentum tellus senectus nulla aliquam euismod bibendum nisl proin odio est felis.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 2 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Soluciones</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Placerat urna euismod aenean habitant integer
+                    </h4>
+                    <p class="article__description">Sed faucibus sollicitudin senectus ultricies lectus curae donec condimentum feugiat lacinia mattis.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 3 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Noticias</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Ad himenaeos erat sed lobortis faucibus
+                    </h4>
+                    <p class="article__description">Laoreet purus conubia sodales erat semper quis etiam ante semper feugiat a.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 4 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Tutoriales</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Porttitor aliquam nullam etiam ullamcorper porta
+                    </h4>
+                    <p class="article__description">Orci venenatis hac vel fringilla mi curabitur tincidunt potenti accumsan dui phasellus.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 1 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Productos</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Eros torquent nullam primis himenaeos augue
+                    </h4>
+                    <p class="article__description">Gravida pharetra egestas ac porttitor in rhoncus donec nullam donec pellentesque enim.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 2 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Soluciones</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Et mi conubia egestas nisi arcu
+                    </h4>
+                    <p class="article__description">Tristique cras eu neque donec placerat taciti eleifend torquent taciti ullamcorper id.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 3 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Noticias</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Quisque tempus hac nunc malesuada vivamus
+                    </h4>
+                    <p class="article__description">Aliquam eleifend mauris dapibus senectus vitae in leo litora nullam himenaeos ornare.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 4 dscroll">
+                <article class="article--result">
+                  <div class="article__tag">Tutoriales</div>
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Luctus mi torquent primis curabitur congue
+                    </h4>
+                    <p class="article__description">Lobortis maecenas proin sociosqu mattis potenti lacus morbi at eros ac magna.
+                    </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="section__loader"></div>
+      <div class="addcart"> 
+        <div class="addcart__opacity"></div>
+        <div class="addcart__box">
+          <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
+          <div class="addcart__loader"></div>
+          <div class="addcart__box__box">
+            <div class="addcart__box__header"> 
+              <h3 class="addcart__title">Agregar nuevo producto </h3>
+              <p class="addcart__description">Inceptos ante purus scelerisque integer platea donec arcu faucibus orci aptent nunc torquent mattis inceptos.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section--results"> 
-      <div class="section__wrap section--md">
-        <div class="section__header">
-          <h3 class="section__title">Buscaste por: certificado</h3>
-          <p class="section__description">122 elementos encontrados</p>
-          <div class="section__header__flex">
-            <div class="section__filters filters dscroll">
-              <ul data-filter-group="category" class="menu button-group">
-                <li data-filter="*" class="section__filter current">Todas</li>
-                <li data-filter=".1" class="section__filter">Productos</li>
-                <li data-filter=".2" class="section__filter">Soluciones</li>
-                <li data-filter=".3" class="section__filter">Noticias</li>
-                <li data-filter=".4" class="section__filter">Tutoriales</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="section__body">
-          <div class="cols grid--results">
-            <div class="col-xs-12 1 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Productos</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/1.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Blandit elit ac colus risus semper
-                  </h4>
-                  <p class="article__description">Sagittis litora sociosqu elit sollicitudin mauris posuere semper vestibulum rutrum odio nunc.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 2 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Soluciones</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/2.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Colus senectus ligula sodales pharetra commodo
-                  </h4>
-                  <p class="article__description">Pharetra colus mi in accumsan hendrerit ullamcorper facilisis ligula et aptent ultricies.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 3 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Noticias</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/3.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Senectus aliquam curae id nullam egestas
-                  </h4>
-                  <p class="article__description">Euismod tristique massa metus dui varius maecenas malesuada ut sapien id class.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 4 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Tutoriales</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Aenean donec curabitur lobortis habitasse class
-                  </h4>
-                  <p class="article__description">Purus proin tempus nostra magna faucibus convallis rutrum tellus non sodales magna.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 1 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Productos</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/1.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Conubia placerat enim sollicitudin etiam vulputate
-                  </h4>
-                  <p class="article__description">Quisque suspendisse ad massa proin nisl massa posuere eros malesuada commodo egestas.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 2 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Soluciones</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/2.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Mi sed cursus tincidunt placerat fusce
-                  </h4>
-                  <p class="article__description">Lacinia metus cursus nec vel integer felis aenean mauris feugiat gravida maecenas.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 3 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Noticias</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/3.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Auctor rhoncus nunc erat et rhoncus
-                  </h4>
-                  <p class="article__description">Quam rhoncus pharetra id tempus malesuada accumsan posuere platea mattis platea quisque.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 4 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Tutoriales</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Pulvinar cubilia etiam faucibus quam orci
-                  </h4>
-                  <p class="article__description">Auctor morbi nisl quisque sagittis vehicula purus metus quisque ante metus mollis.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 1 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Productos</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/1.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Ornare turpis molestie colus sed nisi
-                  </h4>
-                  <p class="article__description">Nullam elementum netus vulputate morbi mollis elementum rutrum sagittis inceptos platea pellentesque.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 2 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Soluciones</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/2.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">A iaculis taciti in ultricies colus
-                  </h4>
-                  <p class="article__description">Turpis habitant lacus aliquam primis odio lacinia platea nunc lacinia accumsan convallis.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 3 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Noticias</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/3.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Metus neque ultrices ante primis morbi
-                  </h4>
-                  <p class="article__description">Bibendum semper aliquam ad volutpat augue dictum mattis porta metus class quam.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 4 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Tutoriales</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Phasellus interdum phasellus mollis aliquam orci
-                  </h4>
-                  <p class="article__description">Per eleifend phasellus blandit sem netus ut viverra euismod cras consequat velit.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 1 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Productos</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/1.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Nullam vivamus conubia non lectus ut
-                  </h4>
-                  <p class="article__description">Inceptos nulla integer rhoncus tincidunt sed etiam placerat pretium colus purus vestibulum.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 2 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Soluciones</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/2.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Quisque euismod congue consequat torquent tellus
-                  </h4>
-                  <p class="article__description">Potenti curabitur tempus sed nam lectus quisque ante interdum tempor convallis aliquam.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 3 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Noticias</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/3.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Adipiscing egestas sodales dictumst erat curabitur
-                  </h4>
-                  <p class="article__description">Ut ultricies turpis per arcu arcu ultricies bibendum proin ut senectus dapibus.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 4 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Tutoriales</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Neque faucibus quisque ac vehicula sed
-                  </h4>
-                  <p class="article__description">Colus eu interdum tellus metus tellus nullam cursus aenean euismod imperdiet est.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 1 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Productos</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/1.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Cursus ante aenean aliquam euismod sapien
-                  </h4>
-                  <p class="article__description">Habitant dui vestibulum dui platea neque sed dapibus curae consequat lectus molestie.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 2 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Soluciones</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/2.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Porttitor tristique rutrum per feugiat aliquam
-                  </h4>
-                  <p class="article__description">Mauris aptent mauris imperdiet ligula tellus elit facilisis ultrices cras facilisis taciti.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 3 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Noticias</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/3.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Interdum tempus ligula et at mauris
-                  </h4>
-                  <p class="article__description">Suspendisse fusce lacus vivamus pellentesque pharetra aliquam lacinia ullamcorper cras nulla cursus.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 4 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Tutoriales</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Mauris pulvinar non congue quisque lacinia
-                  </h4>
-                  <p class="article__description">Ut semper vestibulum hac enim quis ad sem nam purus turpis risus.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 1 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Productos</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/1.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Curabitur lobortis fermentum proin vehicula laoreet
-                  </h4>
-                  <p class="article__description">Vulputate elit pretium nisl arcu sed etiam quisque sodales cras primis pharetra.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 2 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Soluciones</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/2.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Lacinia cursus augue in congue nullam
-                  </h4>
-                  <p class="article__description">Taciti mauris dui egestas phasellus laoreet praesent habitant hac curabitur litora primis.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 3 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Noticias</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/3.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Sem curabitur nullam vel at eu
-                  </h4>
-                  <p class="article__description">Posuere arcu habitant sagittis nostra tincidunt purus posuere fusce leo habitant fringilla.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 4 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Tutoriales</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Porttitor ultrices taciti quisque platea viverra
-                  </h4>
-                  <p class="article__description">Consectetur nam sapien a duis curabitur platea magna posuere interdum nulla ornare.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 1 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Productos</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/1.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Molestie aliquet turpis placerat tristique dui
-                  </h4>
-                  <p class="article__description">Condimentum proin hac feugiat ultrices pharetra cursus facilisis enim convallis auctor vivamus.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 2 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Soluciones</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/2.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Curae quam libero congue ut lacinia
-                  </h4>
-                  <p class="article__description">Dictum tortor nec aliquam rhoncus per inceptos varius pretium phasellus felis sociosqu.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 3 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Noticias</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/3.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Eros donec condimentum nulla placerat ultrices
-                  </h4>
-                  <p class="article__description">Rutrum nunc eros hendrerit viverra cursus tincidunt diam molestie mi viverra a.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 4 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Tutoriales</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Dictumst sapien colus consectetur conubia class
-                  </h4>
-                  <p class="article__description">Hac per libero metus at turpis lacinia ullamcorper ligula lectus pharetra molestie.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 1 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Productos</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/1.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Colus mauris porttitor id himenaeos mauris
-                  </h4>
-                  <p class="article__description">Fusce sodales potenti urna turpis mauris nec urna non ultricies fringilla neque.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 2 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Soluciones</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/2.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Mollis euismod habitasse massa taciti sagittis
-                  </h4>
-                  <p class="article__description">Aliquam litora nulla volutpat himenaeos condimentum facilisis curae fringilla per lobortis feugiat.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 3 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Noticias</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/3.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Cubilia nisi hendrerit curabitur dictumst primis
-                  </h4>
-                  <p class="article__description">Hendrerit ac laoreet maecenas taciti ultricies et lacus vitae fames hendrerit pretium.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 4 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Tutoriales</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Massa inceptos volutpat neque sollicitudin maecenas
-                  </h4>
-                  <p class="article__description">Senectus nibh ante porttitor quis id litora sociosqu luctus non iaculis cubilia.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 1 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Productos</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/1.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Purus quisque nibh augue dictum fermentum
-                  </h4>
-                  <p class="article__description">Porttitor adipiscing rhoncus suscipit potenti integer scelerisque placerat volutpat molestie colus ad.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 2 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Soluciones</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/2.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Quisque dui feugiat lobortis nunc duis
-                  </h4>
-                  <p class="article__description">Urna fames eu tempus sapien suscipit inceptos tellus dictum habitant consectetur donec.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 3 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Noticias</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/3.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Feugiat consequat nec blandit curabitur tortor
-                  </h4>
-                  <p class="article__description">Nibh euismod facilisis tellus convallis primis hac mi praesent turpis lacinia molestie.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 4 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Tutoriales</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Consequat tincidunt netus aliquam faucibus vel
-                  </h4>
-                  <p class="article__description">Molestie ad mollis orci nec tristique dapibus est aliquet euismod hendrerit hendrerit.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 1 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Productos</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/1.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Gravida lacus vel ligula luctus mi
-                  </h4>
-                  <p class="article__description">Gravida ac fermentum aliquam massa consequat odio eget faucibus pretium curae egestas.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 2 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Soluciones</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/2.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Lacus justo nunc purus vehicula proin
-                  </h4>
-                  <p class="article__description">Ante ac ad convallis massa interdum curae bibendum auctor condimentum tortor vestibulum.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 3 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Noticias</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/3.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Non ultricies cras nibh dui gravida
-                  </h4>
-                  <p class="article__description">Eros cubilia euismod vehicula lectus hendrerit phasellus nisi aliquet quisque donec per.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 4 dscroll">
-              <article class="article--result">
-                <div class="article__tag">Tutoriales</div>
-                <div class="article__bg"> 
-                  <div class="bg"> <img src="img/uploads/4.jpg"></div>
-                </div>
-                <div class="article__body"> 
-                  <h4 class="article__title">Bibendum eros vehicula interdum ligula sem
-                  </h4>
-                  <p class="article__description">Ultrices vivamus luctus eu neque nibh tempus interdum ad fringilla commodo etiam.
-                  </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="addcart"> 
-      <div class="addcart__opacity"></div>
-      <div class="addcart__box">
-        <div class="addcart__loader"></div>
-        <div class="addcart__box__box">
-          <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
-          <div class="addcart__box__header"> 
-            <h3 class="addcart__title">Agregar nuevo producto </h3>
-            <p class="addcart__description">Integer suscipit turpis fermentum aliquet inceptos convallis fames urna conubia aliquam cursus urna aenean in.
-            </p>
-          </div>
-          <div class="addcart__box__body">
-            <div class="addcart__box__details"> 
-              <div class="addcart__box__detail">
-                <h5 class="addcart__box__detail__title"><strong>Paso 1:</strong> Selecciona el tipo de producto</h5>
-                <p class="addcart__box__detail__selected">Firma Electrónica Avanzada<span class="fa fa-check"></span></p>
-              </div>
-              <div class="addcart__box__detail">
-                <h5 class="addcart__box__detail__title"><strong>Paso 2:</strong> Modalidad de Firma</h5>
-                <p class="addcart__box__detail__selected">Token<span class="fa fa-check"></span></p>
-              </div>
-              <div class="addcart__box__detail">
-                <h5 class="addcart__box__detail__title"><strong>Paso 3:</strong> Vigencia</h5>
-                <p class="addcart__box__detail__selected">2 Años<span class="fa fa-check"></span></p>
-              </div>
-            </div>
-            <div class="addcart__question"> 
-              <div class="addcart__question__header">
-                <h4 class="addcart__title"><strong>Paso 4:</strong> ¿Es usted Notario, Archivero o Conservador?
-                  <div class="addcart__tooltip">
-                    <div class="addcart__circle"><span>i</span></div>
-                    <div class="addcart__tooltip__tooltip">
-                      <h5>Nec molestie
-                      </h5>
-                      <p>Aliquet ut habitant enim eget tortor convallis eleifend habitasse curae. Ante dictum ullamcorper cubilia aliquam tincidunt nulla venenatis diam placerat egestas litora ultricies sagittis lectus.
-                      </p>
+            <div class="addcart__box__body">
+              <div class="addcart__box__body__flow show">
+                <div class="addcart__box__details"> 
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 1:</strong> Selecciona el tipo de producto
+                  p.addcart__box__detail__selected Firma Electrónica Avanzada
+                  	span.fa.fa-check
+                  
+                  -->
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 2:</strong> Modalidad de Firma
+                  p.addcart__box__detail__selected Token
+                  	span.fa.fa-check
+                  
+                  -->
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 3:</strong> Vigencia
+                  p.addcart__box__detail__selected 2 Años
+                  	span.fa.fa-check
+                  
+                  -->
+                </div>
+                <div class="addcart__question"> 
+                  <div class="addcart__question__header">
+                    <h4 class="addcart__title"><strong></strong></h4>
+                    <h4 class="addcart__title"><span></span></h4>
+                    <div class="addcart__tooltip">
+                      <div class="addcart__circle"><span>i</span></div>
+                      <div class="addcart__tooltip__tooltip">
+                        <h5>Non est
+                        </h5>
+                        <p>Porta curabitur lacus cras vulputate iaculis semper mi senectus vivamus. Nostra adipiscing rhoncus aenean mattis litora sem cubilia magna maecenas inceptos varius et tortor habitasse.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </h4>
-              </div>
-              <div class="addcart__question__body">
-                <div class="addcart__options"> 
-                  <div class="addcart__option"> 
-                    <label>
-                      <input type="radio" name="paso1">Sí
-                    </label>
+                  <div class="addcart__question__body">
+                    <div class="addcart__options"></div>
                   </div>
-                  <div class="addcart__option"> 
-                    <label>
-                      <input type="radio" name="paso1">No
-                    </label>
+                  <div class="addcart__question__footer">
+                    <div class="addcart__alert"> <span class="fa fa-exclamation-triangle"></span>
+                      <p></p>
+                    </div>
+                    <div class="addcart__question__footer__buttons"><a data-prev-question class="btn btn--white btn--hidden">Volver a paso anterior</a><a data-next-question class="btn">Continuar</a></div>
                   </div>
                 </div>
               </div>
-              <div class="addcart__question__footer"> <a data-next-question class="btn">Continuar</a></div>
+              <div class="addcart__box__body__results"> 
+                <div class="addcart__box__body__results__header">
+                  <div class="addcart__icon"><img src="img/icons/icon-check.svg"></div>
+                  <h4 class="addcart__subtitle">Ya tienes tu producto seleccionado </h4>
+                </div>
+                <div class="addcart__box__body__results__body">
+                  <div class="addcart__product">
+                    <div class="addcart__bg"> 
+                      <div class="bg"> <img src="#"></div>
+                    </div>
+                    <div class="addcart__body">
+                      <div class="addcart__body__top">
+                        <h4 class="addcart__title"></h4><span class="addcart__product__price"></span>
+                      </div>
+                      <div class="addcart__details"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="addcart__box__body__results__footer"> 
+                  <div class="addcart__buttons"> <a data-add-cart class="btn">Agregar al carrito</a><a data-restart-questions class="btn btn--white">Volver a iniciar</a></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--login">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">Iniciar sesión</h3>
-            <p class="section__description">Etiam porttitor vitae class laoreet etiam mauris eget
-            </p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__tab"> 
-              <div class="tabs tabs--login">
-                <div class="tabs__header"> 
-                  <div class="tab tab--current">Persona natural</div>
-                  <div class="tab">Contador </div>
+      <div class="modal modal--login">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Iniciar sesión</h3>
+              <p class="section__description">Posuere nam cursus quis viverra semper cras volutpat
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__tab"> 
+                <div class="tabs tabs--login">
+                  <div class="tabs__header"> 
+                    <div class="tab tab--current">Persona natural</div>
+                    <div class="tab">Contador </div>
+                  </div>
+                  <div class="tabs__body"> 
+                    <div class="tab tab--current dscroll">
+                      <div class="modal__form">
+                        <form>
+                          <div class="cols"> 
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Rut</div>
+                                <div class="form__input">
+                                  <input type="rut" name="#" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Contraseña</div>
+                                <div class="form__input">
+                                  <input type="password" name="#" required>
+                                </div>
+                                <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__buttons">
+                                <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="tab dscroll">
+                      <div class="modal__form">
+                        <form>
+                          <div class="cols"> 
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Email</div>
+                                <div class="form__input">
+                                  <input type="email" name="#" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Contraseña</div>
+                                <div class="form__input">
+                                  <input type="password" name="#" required>
+                                </div>
+                                <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__buttons">
+                                <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="tabs__body"> 
-                  <div class="tab tab--current dscroll">
-                    <div class="modal__form">
-                      <form>
-                        <div class="cols"> 
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Rut</div>
-                              <div class="form__input">
-                                <input type="rut" name="#" required>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Contraseña</div>
-                              <div class="form__input">
-                                <input type="password" name="#" required>
-                              </div>
-                              <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__buttons">
-                              <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
-                            </div>
-                          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--register">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Registro</h3>
+              <p class="section__description">Etiam nibh feugiat quis turpis velit massa potenti
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__form">
+                <form>
+                  <div class="cols">
+                    <div class="col-xs-12">
+                      <div class="form__options"> 
+                        <div class="form__option"> 
+                          <label>
+                            <input type="radio" name="profile">Persona natural
+                          </label>
                         </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="tab dscroll">
-                    <div class="modal__form">
-                      <form>
-                        <div class="cols"> 
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Email</div>
-                              <div class="form__input">
-                                <input type="email" name="#" required>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__element">
-                              <div class="form__title">Contraseña</div>
-                              <div class="form__input">
-                                <input type="password" name="#" required>
-                              </div>
-                              <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12">
-                            <div class="form__buttons">
-                              <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
-                            </div>
-                          </div>
+                        <div class="form__option"> 
+                          <label>
+                            <input type="radio" name="profile">Contador
+                          </label>
                         </div>
-                      </form>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Rut</div>
+                        <div class="form__input">
+                          <input type="rut" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="rut" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Contraseña</div>
+                        <div class="form__input">
+                          <input type="password" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Repetir Contraseña</div>
+                        <div class="form__input">
+                          <input type="password" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__buttons">
+                        <button class="btn">Registrarse</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--register">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">Registro</h3>
-            <p class="section__description">Integer volutpat pellentesque mauris aliquam aenean at primis
-            </p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__form">
-              <form>
-                <div class="cols">
-                  <div class="col-xs-12">
-                    <div class="form__options"> 
-                      <div class="form__option"> 
-                        <label>
-                          <input type="radio" name="profile">Persona natural
-                        </label>
-                      </div>
-                      <div class="form__option"> 
-                        <label>
-                          <input type="radio" name="profile">Contador
-                        </label>
+      <div class="modal modal--resetpass">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Recuperar contraseña</h3>
+              <p class="section__description">Adipiscing accumsan luctus turpis torquent aenean velit malesuada
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__form">
+                <form>
+                  <div class="cols"> 
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="email" name="#" required>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Rut</div>
-                      <div class="form__input">
-                        <input type="rut" name="#" required>
+                    <div class="col-xs-12">
+                      <div class="form__buttons">
+                        <button class="btn">Recuperar</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Email</div>
-                      <div class="form__input">
-                        <input type="rut" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Contraseña</div>
-                      <div class="form__input">
-                        <input type="password" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Repetir Contraseña</div>
-                      <div class="form__input">
-                        <input type="password" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__buttons">
-                      <button class="btn">Registrarse</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
-                    </div>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--resetpass">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">Recuperar contraseña</h3>
-            <p class="section__description">Dictumst ultrices curabitur rutrum ultrices ac vitae pulvinar
-            </p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__form">
-              <form>
-                <div class="cols"> 
-                  <div class="col-xs-12">
-                    <div class="form__element">
-                      <div class="form__title">Email</div>
-                      <div class="form__input">
-                        <input type="email" name="#" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="form__buttons">
-                      <button class="btn">Recuperar</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
-                    </div>
-                  </div>
-                </div>
-              </form>
+      <div class="modal modal--focusrut">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">¿Quieres aplicar los mismos datos del primer producto?</h3>
+            </div>
+            <div class="modal__body">
+              <div class="modal__button"><a class="btn">Reutilizar los mismos datos</a><a class="btn btn--white">Continuar con otros datos</a></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal modal--focusrut">
-      <div class="modal__back"></div>
-      <div class="modal__front">
-        <div class="modal__box">
-          <div class="modal__close"><span class="fa fa-close"></span></div>
-          <div class="modal__header">
-            <h3 class="modal__title">¿Quieres aplicar los mismos datos del primer producto?</h3>
-          </div>
-          <div class="modal__body">
-            <div class="modal__button"><a class="btn">Reutilizar los mismos datos</a><a class="btn btn--white">Continuar con otros datos</a></div>
-          </div>
+      <div class="popup popup--confirmation">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-check.svg"></div>
+          <div class="popup__text">Producto agregado al carro de compras</div>
+        </div>
+      </div>
+      <div class="popup popup--error">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-error.svg"></div>
+          <div class="popup__text">Ha ocurrido un error</div>
+        </div>
+      </div>
+      <div class="popup popup--alert">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-alert.svg"></div>
+          <div class="popup__text">esto es una alerta</div>
         </div>
       </div>
     </div>
@@ -1101,7 +1158,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/icon-phone.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/phone-svg.svg"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Atención Comercial y Soporte Técnico </p><span class="footer__value">600 3620 400</span>
                   </div>
@@ -1109,7 +1166,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/icon-whatsapp.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/whatsapp.svg"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Escríbenos por Whatsapp</p><span class="footer__value">(+56 2) 3340 7500</span>
                   </div>
@@ -1117,7 +1174,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/icon-mail.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/mail.svg"></div>
                   <div class="footer__info__content"> <span class="footer__value">Contáctanos</span></div>
                 </div>
               </div>
@@ -1184,6 +1241,7 @@
                 <div class="footer__social"> <a href="#"><span class="fa fa-instagram"></span></a></div>
               </div>
               <div class="footer__certifications">
+                <div class="footer__certification"> <img src="img/icons/SELLO_REL_azul.png"></div>
                 <div class="footer__certification"> <img src="img/icons/certification-1.png"></div>
                 <div class="footer__certification"> <img src="img/icons/certification-2.png"></div>
                 <div class="footer__certification"> <img src="img/icons/certification-3.png"></div>
