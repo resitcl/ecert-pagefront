@@ -4128,7 +4128,7 @@ app.addcart = {
           $prev_path = res.data.prev_path;
           $next_path = res.data.next_path + "/";
           if ($prev_path === "") {
-            $(".addcart__question__footer__buttons .btn--white").addClass("btn--hidden");
+            $(".addcart__question__footer__buttons .btn--primary--white").addClass("btn--hidden");
           }
           app.addcart.deleteprev_question();
           app.addcart.next_question(res.data);
@@ -4145,7 +4145,7 @@ app.addcart = {
       e.preventDefault();
       $(".addcart__product .addcart__details").empty();
       $(".addcart__box__details").empty();
-      $(".addcart__question__footer__buttons .btn--white").addClass("btn--hidden");
+      $(".addcart__question__footer__buttons .btn--primary--white").addClass("btn--hidden");
       app.loader["in"]($(".addcart__loader"));
       $next_path = URL_SITE + "/questions/";
       app.addcart.ajax_question($next_path, null);
@@ -4188,7 +4188,7 @@ app.addcart = {
           $next_path = res.data.next_path + "/";
           $prev_path = res.data.prev_path;
           if ($prev_path !== "") {
-            $(".addcart__question__footer__buttons .btn--white").removeClass("btn--hidden");
+            $(".addcart__question__footer__buttons .btn--primary--white").removeClass("btn--hidden");
           }
           if (value_option_text !== null) {
             app.addcart.prev_question(value_option_text, res);
@@ -4215,8 +4215,7 @@ app.addcart = {
     console.log(res);
     $product_final = res;
     $(".addcart__box__body__results .addcart__product .addcart__title").text(res.product.title);
-    $(".addcart__box__body__results .addcart__product .addcart__product__price").text(res.product.price);
-    $(".addcart__box__body__results .addcart__product .addcart__bg img").attr("src", res.product.image_src);
+    $(".addcart__box__body__results .addcart__product .addcart__price__total .addcart__price__price").text(res.product.price);
     $.each(res.product.options, function(index, value) {
       var html;
       console.log(value);
