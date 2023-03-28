@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=66614" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=82828" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=66614" type="text/javascript"></script>
+    <script src="js/main.js?v=82828" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -35,27 +35,28 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
-            <div class="header__search">
-              <form action="search.html" method="get">
-                <input type="text" name="s" placeholder="Buscar producto">
-                <button><span class="fa fa-search"></span></button>
-              </form>
-            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
                   <ul> 
                     <li><a href="#">Portal Empresa</a></li>
-                    <li><a href="#">migrup.cl</a></li>
+                    <li><a href="#">Grup</a></li>
                     <li><a href="#">Firma Documento Online</a></li>
+                    <li><a href="#">Verificar firma</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="header__right"> 
+            <div class="header__right">
+              <div class="header__search">
+                <form action="search.html" method="get">
+                  <input type="text" name="s" placeholder="Buscar producto">
+                  <button><span class="fa fa-search"></span></button>
+                </form>
+              </div>
               <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
               <div class="header__item"> 
-                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--transparent">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
-                                <li> <a href="#">Certificado Digital</a>
+                                <li> <a href="single-product.html">Certificado Digital</a>
                                   <p>Certificado Digital para el SII</p>
                                 </li>
                                 <li><a href="personas.html">Personas</a>
@@ -111,21 +112,21 @@
                             <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
                             <div class="header__nav__submenu__header"> 
                               <h4>Ayuda </h4>
-                              <p>Metus ullamcorper venenatis hac augue est pulvinar
+                              <p>Fusce aptent felis curabitur tempus ac fusce
                               </p>
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="faq.html">Preguntas frecuentes</a>
-                                  <p>Elementum eleifend libero auctor
+                                  <p>Rhoncus adipiscing nisi mauris
                                   </p>
                                 </li>
-                                <li><a href="recursos.html">Recursos</a>
-                                  <p>Neque eleifend luctus aptent
+                                <li><a href="tools.html">Herramientas</a>
+                                  <p>Curabitur urna curabitur semper
                                   </p>
                                 </li>
                                 <li class="last"><a href="tutoriales.html">Tutoriales</a>
-                                  <p>Mattis aenean in eros
+                                  <p>Lobortis id id nisl
                                   </p>
                                 </li>
                               </ul>
@@ -133,7 +134,7 @@
                           </div>
                         </div>
                       </li>
-                      <li><a href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator">Validar firmas</a></li>
+                      <!--li: a(href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator") Validar firmas-->
                       <li><a href="#">Más</a>
                         <div class="header__nav__submenu">
                           <div class="header__nav__submenu__relative">
@@ -145,15 +146,15 @@
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="aboutus.html">Quiénes somos</a>
-                                  <p>Duis consequat netus dui convallis nisi
+                                  <p>Porta commodo blandit ullamcorper ornare tempor
                                   </p>
                                 </li>
                                 <li><a href="news.html">Blog</a>
-                                  <p>Adipiscing a fermentum fermentum dapibus ultricies sapien
+                                  <p>Pharetra urna commodo turpis lectus curae libero
                                   </p>
                                 </li>
                                 <li class="last"><a href="red-atencion.html">Red de Atención</a>
-                                  <p>Interdum aptent netus mi interdum
+                                  <p>Blandit luctus vestibulum class nulla
                                   </p>
                                 </li>
                               </ul>
@@ -161,6 +162,7 @@
                           </div>
                         </div>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </nav>
                   <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
@@ -188,6 +190,7 @@
                       <li><a href="#">Soluciones</a>
                         <ul>
                           <li class="header__nav__title">Soluciones</li>
+                          <li><a href="single-product.html">Certificado digital</a></li>
                           <li><a href="personas.html">Personas</a></li>
                           <li><a href="empresas.html">Empresas</a></li>
                         </ul>
@@ -197,7 +200,7 @@
                         <ul>
                           <li class="header__nav__title">Ayuda</li>
                           <li><a href="faq.html">Preguntas Frecuentas</a></li>
-                          <li><a href="recursos.html">Recursos</a></li>
+                          <li><a href="tools.html">Herramientas</a></li>
                           <li><a href="tutoriales.html">Tutoriales</a></li>
                         </ul>
                       </li>
@@ -209,20 +212,22 @@
                           <li><a href="red-atencion.html">Red de Atención</a></li>
                         </ul>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__body">
                   <div class="header__nav__nav__menu"> 
                     <ul> 
-                      <li><a href="alliances.html">Portal Empresa</a></li>
-                      <li><a href="alliances.html">migrup.cl</a></li>
-                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                      <li><a href="#">Portal Empresa</a></li>
+                      <li><a href="#">Grup</a></li>
+                      <li><a href="#">Firma Documento Online</a></li>
+                      <li><a href="#">Verificar firma</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__footer"> 
-                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
                 </div>
               </div>
             </div>
@@ -244,7 +249,7 @@
               <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html">Carro de compras</a></div>
               <div class="section__content">			
                 <h1 class="section__title">Carro de compras</h1>
-                <p class="section__description">Sem duis sociosqu nec odio nisl feugiat etiam suspendisse netus volutpat massa dapibus rhoncus eget.
+                <p class="section__description">Fames congue senectus aenean commodo integer conubia fringilla nunc etiam aliquet varius etiam torquent nostra.
                 </p>
               </div>
             </div>
@@ -399,15 +404,15 @@
                                 <div class="form__title">Región</div>
                                 <div class="form__input">
                                   <select name="#">
-                                    <option value="#">At
+                                    <option value="#">Nullam
                                     </option>
-                                    <option value="#">Ut
+                                    <option value="#">Hendrerit
                                     </option>
-                                    <option value="#">Cubilia
+                                    <option value="#">Posuere
                                     </option>
-                                    <option value="#">Auctor
+                                    <option value="#">Pretium
                                     </option>
-                                    <option value="#">Convallis
+                                    <option value="#">Mattis
                                     </option>
                                   </select>
                                 </div>
@@ -418,15 +423,15 @@
                                 <div class="form__title">Comuna</div>
                                 <div class="form__input">
                                   <select name="#">
-                                    <option value="#">Ullamcorper
+                                    <option value="#">Velit
+                                    </option>
+                                    <option value="#">Morbi
                                     </option>
                                     <option value="#">Aenean
                                     </option>
-                                    <option value="#">Sodales
+                                    <option value="#">Malesuada
                                     </option>
-                                    <option value="#">A
-                                    </option>
-                                    <option value="#">Commodo
+                                    <option value="#">Ultricies
                                     </option>
                                   </select>
                                 </div>
@@ -490,451 +495,32 @@
                                   <select name="#">
                                     <option value="#">Sem
                                     </option>
-                                    <option value="#">Gravida
-                                    </option>
-                                    <option value="#">Vehicula
-                                    </option>
-                                    <option value="#">Hac
-                                    </option>
-                                    <option value="#">Lobortis
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Provincia</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Nullam
-                                    </option>
-                                    <option value="#">Cras
-                                    </option>
-                                    <option value="#">Scelerisque
-                                    </option>
-                                    <option value="#">Ac
-                                    </option>
-                                    <option value="#">Neque
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Comuna</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Accumsan
-                                    </option>
-                                    <option value="#">Iaculis
-                                    </option>
-                                    <option value="#">Vehicula
-                                    </option>
-                                    <option value="#">Phasellus
-                                    </option>
-                                    <option value="#">Mollis
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Teléfono Contacto 1</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Teléfono Contacto 2</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons"><a data-next-4 class="btn">Guardar</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__resumen">
-                          <div class="section__form__product__finish"> 
-                            <div class="section__form__product__header"> 
-                              <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
-                              <h4>Informacíon del producto finalizada </h4>
-                              <p>Corrobora tu información antes de continuar con tu compra.</p>
-                            </div>
-                            <div class="section__form__product__body">
-                              <div class="cols"> 
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4"> 1.      Datos Personales</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Rut </td>
-                                        <td>18.094.500-8</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Nombre </td>
-                                        <td>Eduardo</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Apellido paterno </td>
-                                        <td>Acevedo</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Apellido Materno </td>
-                                        <td>Roman</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Nacionalidad </td>
-                                        <td>Chilena</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Movil Titular </td>
-                                        <td>971479272</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Email</td>
-                                        <td>Eduacevedoroman@gmail.com</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4">2. Datos de facturación</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Nombre Empresa</td>
-                                        <td>Frontback</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Rut </td>
-                                        <td>66.666.666-6</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Dirección </td>
-                                        <td>Primera transversal #1921</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Región </td>
-                                        <td>Metropolitana</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Provicia  </td>
-                                        <td>Santiago</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Comuna </td>
-                                        <td>Maipú</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Email Facturación </td>
-                                        <td>eduardo@frontback.cl</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Giro empresa</td>
-                                        <td>Desarrollo de software</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4">3. Datos de despacho</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Nombre quien recibe</td>
-                                        <td>Frontback</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Dirección </td>
-                                        <td>Primera transversal #1921</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Referencia</td>
-                                        <td>Sollicitudin id maecenas fermentum malesuada sollicitudin id proin ullamcorper tortor auctor nulla.
-                                        </td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Región</td>
-                                        <td>Metropolitana</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Provicia  </td>
-                                        <td>Santiago</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Comuna </td>
-                                        <td>Maipú</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Contacto 1 </td>
-                                        <td>971479272</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Contacto 2 </td>
-                                        <td>974458963</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="section__form__product__footer"> 
-                              <div class="form__buttons"> <a href="#" class="btn btn--white">Editar información</a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="section__form__product">
-                      <div class="section__form__product__header"> 
-                        <h5 class="section__title">Firma Electrónica Avanzada - 1 año</h5>
-                        <div class="article__trash"> <span class="fa fa-trash"></span></div>
-                      </div>
-                      <div class="section__form__product__body">
-                        <div class="section__steploader"></div>
-                        <div class="section__form__product__search stepshow">
-                          <div class="cols"> 
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Rut </div>
-                                <div class="form__input"> 
-                                  <input id="focusrut" type="text" name="#" placeholder="12.876.907-0">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">N° de serie </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="Ingresa tu N°de 9 digitos">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons">				<a data-next-1 class="btn btn--gray">Siguiente</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__personal">
-                          <h5 class="section__title">1. Datos Personales (Porfavor ingresar los datos para el dueño del certificado)</h5>
-                          <div class="cols">
-                            <div class="col-xs-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Nombre</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Apellido Paterno </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Apellido Materno </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Teléfono Movil Titular</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Email</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Confirmación Email</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-2 class="btn">Continuar</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__payment">
-                          <h5 class="section__title">2. Datos de facturación</h5>
-                          <input type="hidden" name="profile" value="empresa">
-                          <div class="cols">
-                            <div class="col-xs-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Nombre o Razón social</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Rut </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Dirección </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Región</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Aenean
-                                    </option>
-                                    <option value="#">Hendrerit
-                                    </option>
-                                    <option value="#">Facilisis
-                                    </option>
-                                    <option value="#">Eu
-                                    </option>
-                                    <option value="#">Accumsan
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Comuna</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Eleifend
-                                    </option>
-                                    <option value="#">Donec
-                                    </option>
-                                    <option value="#">Hac
-                                    </option>
-                                    <option value="#">Elementum
-                                    </option>
-                                    <option value="#">Cras
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Email Facturación</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Giro</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-3 class="btn">Continuar							</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__delivery">
-                          <h5 class="section__title">3. Datos de despacho</h5>
-                          <div class="cols">
-                            <div class="col-xs-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Nombre quien recibe</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Dirección</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Referencia</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__button"> <a href="#" target="_blank" class="btn btn--quaternary btn--sm">Conozca cobertura Chilexpress acá<img src="img/icons/icon-chilexpress.ico"></a></div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Región</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Cubilia
-                                    </option>
-                                    <option value="#">Gravida
-                                    </option>
-                                    <option value="#">Mauris
-                                    </option>
-                                    <option value="#">Libero
-                                    </option>
-                                    <option value="#">Orci
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Provincia</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Neque
-                                    </option>
                                     <option value="#">Habitant
                                     </option>
-                                    <option value="#">Vulputate
+                                    <option value="#">Praesent
                                     </option>
-                                    <option value="#">Hac
+                                    <option value="#">Rutrum
                                     </option>
-                                    <option value="#">Ullamcorper
+                                    <option value="#">Non
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Provincia</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Elementum
+                                    </option>
+                                    <option value="#">Sapien
+                                    </option>
+                                    <option value="#">Torquent
+                                    </option>
+                                    <option value="#">Habitasse
+                                    </option>
+                                    <option value="#">Et
                                     </option>
                                   </select>
                                 </div>
@@ -945,15 +531,15 @@
                                 <div class="form__title">Comuna</div>
                                 <div class="form__input">
                                   <select name="#">
-                                    <option value="#">Tortor
+                                    <option value="#">Netus
                                     </option>
-                                    <option value="#">Nostra
+                                    <option value="#">Nisi
                                     </option>
-                                    <option value="#">Porttitor
+                                    <option value="#">Colus
                                     </option>
-                                    <option value="#">Integer
+                                    <option value="#">Nunc
                                     </option>
-                                    <option value="#">Lacinia
+                                    <option value="#">Dictum
                                     </option>
                                   </select>
                                 </div>
@@ -1083,7 +669,7 @@
                                       </tr>
                                       <tr> 
                                         <td>Referencia</td>
-                                        <td>Non magna taciti tempor hendrerit potenti praesent eros vivamus dictumst condimentum sem.
+                                        <td>Cursus nam quam non sociosqu enim enim facilisis neque facilisis proin vehicula.
                                         </td>
                                       </tr>
                                       <tr> 
@@ -1237,104 +823,104 @@
                                 <div class="form__title">Región</div>
                                 <div class="form__input">
                                   <select name="#">
-                                    <option value="#">Magna
+                                    <option value="#">Suscipit
                                     </option>
-                                    <option value="#">Netus
+                                    <option value="#">Turpis
                                     </option>
-                                    <option value="#">Lacinia
-                                    </option>
-                                    <option value="#">Facilisis
-                                    </option>
-                                    <option value="#">Sed
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Comuna</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Est
-                                    </option>
-                                    <option value="#">Id
-                                    </option>
-                                    <option value="#">Elit
-                                    </option>
-                                    <option value="#">Enim
-                                    </option>
-                                    <option value="#">Lobortis
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Email Facturación</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Giro</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-3 class="btn">Continuar							</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__delivery">
-                          <h5 class="section__title">3. Datos de despacho</h5>
-                          <div class="cols">
-                            <div class="col-xs-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Nombre quien recibe</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Dirección</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Referencia</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__button"> <a href="#" target="_blank" class="btn btn--quaternary btn--sm">Conozca cobertura Chilexpress acá<img src="img/icons/icon-chilexpress.ico"></a></div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Región</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Odio
-                                    </option>
-                                    <option value="#">Purus
-                                    </option>
-                                    <option value="#">Mollis
+                                    <option value="#">Pharetra
                                     </option>
                                     <option value="#">Etiam
                                     </option>
-                                    <option value="#">Tempus
+                                    <option value="#">Sem
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Comuna</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Egestas
+                                    </option>
+                                    <option value="#">Pharetra
+                                    </option>
+                                    <option value="#">Pulvinar
+                                    </option>
+                                    <option value="#">Consectetur
+                                    </option>
+                                    <option value="#">Class
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Email Facturación</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Giro</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-3 class="btn">Continuar							</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__form__product__delivery">
+                          <h5 class="section__title">3. Datos de despacho</h5>
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Nombre quien recibe</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Dirección</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Referencia</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__button"> <a href="#" target="_blank" class="btn btn--quaternary btn--sm">Conozca cobertura Chilexpress acá<img src="img/icons/icon-chilexpress.ico"></a></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Región</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Colus
+                                    </option>
+                                    <option value="#">Laoreet
+                                    </option>
+                                    <option value="#">Fusce
+                                    </option>
+                                    <option value="#">Habitant
+                                    </option>
+                                    <option value="#">Bibendum
                                     </option>
                                   </select>
                                 </div>
@@ -1345,13 +931,32 @@
                                 <div class="form__title">Provincia</div>
                                 <div class="form__input">
                                   <select name="#">
-                                    <option value="#">Nec
+                                    <option value="#">Duis
                                     </option>
-                                    <option value="#">Morbi
+                                    <option value="#">Tristique
                                     </option>
-                                    <option value="#">Condimentum
+                                    <option value="#">Phasellus
                                     </option>
-                                    <option value="#">Mattis
+                                    <option value="#">Mauris
+                                    </option>
+                                    <option value="#">Etiam
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Comuna</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Ut
+                                    </option>
+                                    <option value="#">Nunc
+                                    </option>
+                                    <option value="#">Netus
+                                    </option>
+                                    <option value="#">Nam
                                     </option>
                                     <option value="#">Justo
                                     </option>
@@ -1361,18 +966,418 @@
                             </div>
                             <div class="col-xs-12 col-md-6">
                               <div class="form__element"> 
-                                <div class="form__title">Comuna</div>
+                                <div class="form__title">Teléfono Contacto 1</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Teléfono Contacto 2</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a data-next-4 class="btn">Guardar</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__form__product__resumen">
+                          <div class="section__form__product__finish"> 
+                            <div class="section__form__product__header"> 
+                              <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
+                              <h4>Informacíon del producto finalizada </h4>
+                              <p>Corrobora tu información antes de continuar con tu compra.</p>
+                            </div>
+                            <div class="section__form__product__body">
+                              <div class="cols"> 
+                                <div class="col-xs-12">
+                                  <table>
+                                    <thead>
+                                      <th colspan="4"> 1.      Datos Personales</th>
+                                    </thead>
+                                    <tbody>
+                                      <tr> 
+                                        <td>Rut </td>
+                                        <td>18.094.500-8</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Nombre </td>
+                                        <td>Eduardo</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Apellido paterno </td>
+                                        <td>Acevedo</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Apellido Materno </td>
+                                        <td>Roman</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Nacionalidad </td>
+                                        <td>Chilena</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Teléfono Movil Titular </td>
+                                        <td>971479272</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Email</td>
+                                        <td>Eduacevedoroman@gmail.com</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <div class="col-xs-12">
+                                  <table>
+                                    <thead>
+                                      <th colspan="4">2. Datos de facturación</th>
+                                    </thead>
+                                    <tbody>
+                                      <tr> 
+                                        <td>Nombre Empresa</td>
+                                        <td>Frontback</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Rut </td>
+                                        <td>66.666.666-6</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Dirección </td>
+                                        <td>Primera transversal #1921</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Región </td>
+                                        <td>Metropolitana</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Provicia  </td>
+                                        <td>Santiago</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Comuna </td>
+                                        <td>Maipú</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Email Facturación </td>
+                                        <td>eduardo@frontback.cl</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Giro empresa</td>
+                                        <td>Desarrollo de software</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <div class="col-xs-12">
+                                  <table>
+                                    <thead>
+                                      <th colspan="4">3. Datos de despacho</th>
+                                    </thead>
+                                    <tbody>
+                                      <tr> 
+                                        <td>Nombre quien recibe</td>
+                                        <td>Frontback</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Dirección </td>
+                                        <td>Primera transversal #1921</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Referencia</td>
+                                        <td>Ut duis ullamcorper erat lacus accumsan class netus lobortis ornare taciti aptent.
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Región</td>
+                                        <td>Metropolitana</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Provicia  </td>
+                                        <td>Santiago</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Comuna </td>
+                                        <td>Maipú</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Teléfono Contacto 1 </td>
+                                        <td>971479272</td>
+                                      </tr>
+                                      <tr> 
+                                        <td>Teléfono Contacto 2 </td>
+                                        <td>974458963</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="section__form__product__footer"> 
+                              <div class="form__buttons"> <a href="#" class="btn btn--white">Editar información</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__form__product">
+                      <div class="section__form__product__header"> 
+                        <h5 class="section__title">Firma Electrónica Avanzada - 1 año</h5>
+                        <div class="article__trash"> <span class="fa fa-trash"></span></div>
+                      </div>
+                      <div class="section__form__product__body">
+                        <div class="section__steploader"></div>
+                        <div class="section__form__product__search stepshow">
+                          <div class="cols"> 
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Rut </div>
+                                <div class="form__input"> 
+                                  <input id="focusrut" type="text" name="#" placeholder="12.876.907-0">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">N° de serie </div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="Ingresa tu N°de 9 digitos">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons">				<a data-next-1 class="btn btn--gray">Siguiente</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__form__product__personal">
+                          <h5 class="section__title">1. Datos Personales (Porfavor ingresar los datos para el dueño del certificado)</h5>
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Nombre</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Apellido Paterno </div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Apellido Materno </div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Teléfono Movil Titular</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Email</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Confirmación Email</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-2 class="btn">Continuar</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__form__product__payment">
+                          <h5 class="section__title">2. Datos de facturación</h5>
+                          <input type="hidden" name="profile" value="empresa">
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Nombre o Razón social</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Rut </div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Dirección </div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Región</div>
                                 <div class="form__input">
                                   <select name="#">
-                                    <option value="#">Nulla
+                                    <option value="#">Egestas
+                                    </option>
+                                    <option value="#">Urna
+                                    </option>
+                                    <option value="#">Aenean
+                                    </option>
+                                    <option value="#">Urna
                                     </option>
                                     <option value="#">Nam
                                     </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Comuna</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Hac
+                                    </option>
+                                    <option value="#">Ultricies
+                                    </option>
+                                    <option value="#">Quisque
+                                    </option>
+                                    <option value="#">Habitasse
+                                    </option>
+                                    <option value="#">Senectus
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Email Facturación</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Giro</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-3 class="btn">Continuar							</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__form__product__delivery">
+                          <h5 class="section__title">3. Datos de despacho</h5>
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Nombre quien recibe</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Dirección</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Referencia</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__button"> <a href="#" target="_blank" class="btn btn--quaternary btn--sm">Conozca cobertura Chilexpress acá<img src="img/icons/icon-chilexpress.ico"></a></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Región</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Erat
+                                    </option>
+                                    <option value="#">Curabitur
+                                    </option>
+                                    <option value="#">Porta
+                                    </option>
+                                    <option value="#">Erat
+                                    </option>
                                     <option value="#">Lacus
                                     </option>
-                                    <option value="#">Blandit
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Provincia</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Sapien
                                     </option>
-                                    <option value="#">Faucibus
+                                    <option value="#">Dictumst
+                                    </option>
+                                    <option value="#">Netus
+                                    </option>
+                                    <option value="#">Nisi
+                                    </option>
+                                    <option value="#">Fringilla
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <div class="form__element"> 
+                                <div class="form__title">Comuna</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Ultricies
+                                    </option>
+                                    <option value="#">Urna
+                                    </option>
+                                    <option value="#">Non
+                                    </option>
+                                    <option value="#">Magna
+                                    </option>
+                                    <option value="#">Tempor
                                     </option>
                                   </select>
                                 </div>
@@ -1502,7 +1507,7 @@
                                       </tr>
                                       <tr> 
                                         <td>Referencia</td>
-                                        <td>Class sociosqu nam leo cras orci tellus pulvinar consectetur enim sed turpis.
+                                        <td>Eget colus sodales porttitor placerat praesent nullam duis dictum felis pulvinar vehicula.
                                         </td>
                                       </tr>
                                       <tr> 
@@ -1641,7 +1646,7 @@
           <div class="addcart__box__box">
             <div class="addcart__box__header"> 
               <h3 class="addcart__title">Agregar nuevo producto </h3>
-              <p class="addcart__description">Pellentesque ornare vel hac condimentum urna nisi pellentesque habitant velit molestie nostra ligula cras risus.
+              <p class="addcart__description">Gravida nunc mollis lectus purus curabitur hac egestas lobortis fringilla class aliquam lobortis porta lobortis.
               </p>
             </div>
             <div class="addcart__box__body">
@@ -1673,9 +1678,9 @@
                     <div class="addcart__tooltip">
                       <div class="addcart__circle"><span>?</span></div>
                       <div class="addcart__tooltip__tooltip">
-                        <h5>Auctor consequat
+                        <h5>Fermentum luctus
                         </h5>
-                        <p>Duis eget morbi consectetur himenaeos tempor velit eleifend eleifend adipiscing. Nam nostra elementum in condimentum vulputate praesent suscipit cubilia velit pharetra ante etiam urna placerat.
+                        <p>Ligula condimentum taciti senectus sem elementum vehicula phasellus potenti ac. Ullamcorper sagittis tristique mauris sociosqu etiam luctus ultrices interdum nisl himenaeos molestie nulla neque interdum.
                         </p>
                       </div>
                     </div>
@@ -1724,7 +1729,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Iniciar sesión</h3>
-              <p class="section__description">Praesent sapien facilisis habitant tristique vivamus aliquam quam
+              <p class="section__description">Lacinia facilisis tellus lobortis semper potenti etiam pretium
               </p>
             </div>
             <div class="modal__body">
@@ -1809,7 +1814,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Registro</h3>
-              <p class="section__description">Dapibus aliquam conubia auctor aenean at quisque vel
+              <p class="section__description">Imperdiet feugiat pretium convallis erat neque metus vitae
               </p>
             </div>
             <div class="modal__body">
@@ -1881,7 +1886,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Recuperar contraseña</h3>
-              <p class="section__description">Lectus justo vel quam consequat elit vehicula habitasse
+              <p class="section__description">Nam quam phasellus malesuada augue euismod iaculis curabitur
               </p>
             </div>
             <div class="modal__body">

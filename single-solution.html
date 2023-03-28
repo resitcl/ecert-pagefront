@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=98629" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=81281" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=98629" type="text/javascript"></script>
+    <script src="js/main.js?v=81281" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -35,27 +35,28 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
-            <div class="header__search">
-              <form action="search.html" method="get">
-                <input type="text" name="s" placeholder="Buscar producto">
-                <button><span class="fa fa-search"></span></button>
-              </form>
-            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
                   <ul> 
                     <li><a href="#">Portal Empresa</a></li>
-                    <li><a href="#">migrup.cl</a></li>
+                    <li><a href="#">Grup</a></li>
                     <li><a href="#">Firma Documento Online</a></li>
+                    <li><a href="#">Verificar firma</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="header__right"> 
+            <div class="header__right">
+              <div class="header__search">
+                <form action="search.html" method="get">
+                  <input type="text" name="s" placeholder="Buscar producto">
+                  <button><span class="fa fa-search"></span></button>
+                </form>
+              </div>
               <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
               <div class="header__item"> 
-                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--transparent">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
-                                <li> <a href="#">Certificado Digital</a>
+                                <li> <a href="single-product.html">Certificado Digital</a>
                                   <p>Certificado Digital para el SII</p>
                                 </li>
                                 <li><a href="personas.html">Personas</a>
@@ -111,21 +112,21 @@
                             <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
                             <div class="header__nav__submenu__header"> 
                               <h4>Ayuda </h4>
-                              <p>Velit placerat eros libero mauris conubia vel
+                              <p>Sapien risus ante nunc luctus integer auctor
                               </p>
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="faq.html">Preguntas frecuentes</a>
-                                  <p>Aenean dapibus viverra luctus
+                                  <p>Vitae blandit quisque congue
                                   </p>
                                 </li>
-                                <li><a href="recursos.html">Recursos</a>
-                                  <p>Primis imperdiet ut tortor
+                                <li><a href="tools.html">Herramientas</a>
+                                  <p>Mauris tempus sapien quis
                                   </p>
                                 </li>
                                 <li class="last"><a href="tutoriales.html">Tutoriales</a>
-                                  <p>Phasellus odio id quisque
+                                  <p>Torquent donec donec mattis
                                   </p>
                                 </li>
                               </ul>
@@ -133,7 +134,7 @@
                           </div>
                         </div>
                       </li>
-                      <li><a href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator">Validar firmas</a></li>
+                      <!--li: a(href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator") Validar firmas-->
                       <li><a href="#">Más</a>
                         <div class="header__nav__submenu">
                           <div class="header__nav__submenu__relative">
@@ -145,15 +146,15 @@
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="aboutus.html">Quiénes somos</a>
-                                  <p>Ullamcorper massa lacus sem metus class
+                                  <p>Quisque auctor aliquet cursus netus condimentum
                                   </p>
                                 </li>
                                 <li><a href="news.html">Blog</a>
-                                  <p>Eu magna faucibus odio hac habitant curabitur
+                                  <p>Class habitant neque massa accumsan eros eu
                                   </p>
                                 </li>
                                 <li class="last"><a href="red-atencion.html">Red de Atención</a>
-                                  <p>Libero diam ut fusce tristique
+                                  <p>Lectus primis viverra himenaeos tempus
                                   </p>
                                 </li>
                               </ul>
@@ -161,6 +162,7 @@
                           </div>
                         </div>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </nav>
                   <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
@@ -188,6 +190,7 @@
                       <li><a href="#">Soluciones</a>
                         <ul>
                           <li class="header__nav__title">Soluciones</li>
+                          <li><a href="single-product.html">Certificado digital</a></li>
                           <li><a href="personas.html">Personas</a></li>
                           <li><a href="empresas.html">Empresas</a></li>
                         </ul>
@@ -197,7 +200,7 @@
                         <ul>
                           <li class="header__nav__title">Ayuda</li>
                           <li><a href="faq.html">Preguntas Frecuentas</a></li>
-                          <li><a href="recursos.html">Recursos</a></li>
+                          <li><a href="tools.html">Herramientas</a></li>
                           <li><a href="tutoriales.html">Tutoriales</a></li>
                         </ul>
                       </li>
@@ -209,20 +212,22 @@
                           <li><a href="red-atencion.html">Red de Atención</a></li>
                         </ul>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__body">
                   <div class="header__nav__nav__menu"> 
                     <ul> 
-                      <li><a href="alliances.html">Portal Empresa</a></li>
-                      <li><a href="alliances.html">migrup.cl</a></li>
-                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                      <li><a href="#">Portal Empresa</a></li>
+                      <li><a href="#">Grup</a></li>
+                      <li><a href="#">Firma Documento Online</a></li>
+                      <li><a href="#">Verificar firma</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__footer"> 
-                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
                 </div>
               </div>
             </div>
@@ -234,277 +239,295 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--header section--header--new">
-        <div class="section__clipath">
-          <div class="section__bg">
-            <div class="bg"><img src="img/uploads/13.jpeg"></div>
-          </div>
-          <div class="section__wrap section__wrap--header">
-            <div class="section__body">
-              <div class="section__content">
-                <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="news.html">Soluciones<span class="fa fa-angle-right"></span></a><a href="single-solution.html">Verificación de Identidad</a></div>
-                <h1 class="section__title">Verificación de Identidad</h1>
-                <p class="section__description">Nisi donec lacus volutpat nullam litora consequat proin mi quis. Cras nam consequat semper mollis vestibulum tristique felis odio sodales cubilia platea sodales condimentum ut.
-                </p>
-              </div>
+      <section class="section--singlenew">
+        <div class="section__wrap section__wrap--sm">
+          <div class="section__header">
+            <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="empresas.html">Herramientas<span class="fa fa-angle-right"></span></a><a href="single-solution.html" class="current">Verificación de identidad</a></div>
+            <div class="section__back"> <a href="#" class="btn btn--xs">Volver <span class="fa fa-angle-left"></span></a></div>
+            <div class="section__content"> 
+              <h1 class="h2 section__title">Verificación de identidad</h1>
+              <p class="section__description">Conoce ecert y nuestras soluciones digitales Conoce ecert y nuestras soluciones digitales Conoce ecert y nuestras soluciones digitales</p>
             </div>
+          </div>
+          <div class="section__body wp"><img src="img/uploads/3.jpg">
+            <p>La Firma Digital reduce los tiempos en trámites y disminuye muchos de los costes administrativos asociados a los documentos físicos. Por ello, se ha convertido en un mecanismo muy utilizado hoy en día, tanto en el sector público como privado. Pero, aunque su uso está muy extendido en la actualidad, todavía existen dudas sobre su funcionamiento y validez legal. </p>
+            <p>A continuación, encontrarás todo lo que necesitas saber para sacar el mayor provecho a esta herramienta.</p><br>
+            <h4>Tipos de firma digitalizada</h4>
+            <p>Según la Ley 19.799, las firmas electrónicas pueden ser de dos tipos: Firma Simple (FES) y Firma Digital Avanzada (FEA). </p>
+            <p>La FES puede ser cualquier sonido, símbolo o proceso electrónico que facilite la identificación de una persona como firmante de un documento electrónico. Esto incluye formatos como:</p>
+            <ul>
+              <li>Imágenes escaneadas de una firma física.</li>
+              <li>El nombre del firmante de un documento al cierre de un correo electrónico. </li>
+              <li> Una imagen de la huella digital del firmante.</li>
+            </ul>
+            <p>En cuanto a la Firma Digital Avanzada, la ley establece que debe estar certificada a través de un prestador de servicios, que se encarga de validar la identidad del titular. </p>
+            <p>Además, los datos son de exclusivo control de su propietario y están protegidos por mecanismos de cifrado, lo que ayuda a evitar delitos como la suplantación de identidad y el uso no autorizado.</p><br>
+            <h4>Ejemplos de uso de la Firma Electrónica</h4>
+            <p>Dependiendo del tipo de firma digitalizada, el tipo de uso que se le puede dar incluye:</p>
+            <h5>Firma simple</h5>
+            <ul>
+              <li>Correos electrónicos y documentos que no requieren de validez legal.</li>
+              <li>Trámites fiscales y documentos tributarios en el portal del Servicio de Impuestos Internos (SII). </li>
+              <li>Facturación, notas de crédito y otros documentos tributarios.</li>
+              <li>Uso como PIN para regular el control de acceso a sistemas controlados.</li>
+            </ul>
+            <h5>Firma avanzada</h5>
+            <p>La Firma Avanzada permite un proceso de validación que garantiza la misma validez jurídica que una firma tradicional. De hecho, su uso se ha extendido con el tiempo y ahora es posible utilizarla para actividades que tal vez no conocías, como la compraventa de inmuebles. </p>
+            <p>Adicionalmente, puedes usarla para suscribir:</p>
+            <ul>
+              <li>Contratos bancarios. </li>
+              <li>Documentación laboral. </li>
+              <li>Contratos de instrumentos financieros, como fondos de inversión. </li>
+              <li>Productos del mercado asegurador. </li>
+              <li>Certificados de revisión técnica y verificación. </li>
+              <li>Pago Automático de Cuentas (PAC). </li>
+              <li>Documentos mencionados en la NCG 12. </li>
+              <li>Títulos profesionales. </li>
+              <li>Recetas médicas.</li>
+            </ul>
+          </div>
+          <div class="section__social">
+            <div class="section__social__logo"><a href="#" class="share share-facebook"><span class="fa fa-facebook"></span></a></div>
+            <div class="section__social__logo"><a href="#" class="share share-twitter"><span class="fa fa-twitter"></span></a></div>
+            <div class="section__social__logo"><a href="#" class="share share-linkedin"><span class="fa fa-linkedin"></span></a></div>
+            <div class="section__social__logo"><a href="#" class="share share-whatsapp"><span class="fa fa-whatsapp"></span></a></div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="section__wrap section__wrap--md section--sm">
-          <div class="section__panel">
-            <div class="section__body">
-              <div class="section__content wp">
-                <p>Integer quisque eget vitae commodo felis habitasse nibh proin hac. Hendrerit tincidunt fringilla elit sagittis ac at aenean imperdiet purus etiam suscipit neque luctus iaculis.
-                </p>
-                <p>Dapibus ut phasellus aenean facilisis hendrerit molestie nostra leo sagittis. Aliquet sed etiam inceptos vehicula turpis conubia urna phasellus tempus. Netus rutrum a integer a aptent erat pellentesque ullamcorper varius. Nullam nunc semper hendrerit luctus ultrices ad aenean sociosqu class ligula egestas purus fringilla sagittis.
-                </p>
-                <p>Sagittis metus commodo quisque orci eget suspendisse venenatis egestas porta. Pulvinar ullamcorper donec dapibus faucibus varius tempus fringilla tortor blandit. Aliquam vitae morbi cubilia vitae orci rutrum turpis netus congue. Felis pretium donec dapibus placerat vulputate senectus elit curabitur faucibus. Morbi fusce iaculis libero tellus et lacus suspendisse est vehicula auctor class felis volutpat senectus.
-                </p>
-                <p>Proin convallis vitae volutpat varius a ultrices fusce ac ut. Aliquam curabitur eleifend vel et accumsan tempor ultrices risus mauris. Hendrerit pharetra venenatis malesuada lacus massa taciti egestas integer nunc. Nostra sodales eu turpis venenatis at ac donec dapibus orci vestibulum nibh commodo hendrerit sed.
-                </p>
-              </div>
-            </div>
-            <div class="section__social">
-              <div class="section__social__logo"><a href="#" class="share share-facebook"><span class="fa fa-facebook"></span></a></div>
-              <div class="section__social__logo"><a href="#" class="share share-twitter"><span class="fa fa-twitter"></span></a></div>
-              <div class="section__social__logo"><a href="#" class="share share-linkedin"><span class="fa fa-linkedin"></span></a></div>
-              <div class="section__social__logo"><a href="#" class="share share-whatsapp"><span class="fa fa-whatsapp"></span></a></div>
-            </div>
-            <div class="section__contact">
-              <div class="section__eff"> <img src="img/icons/eff-4.svg"></div>
-              <div class="section__bg"> 
-                <div class="bg"> <img src="img/uploads/13.jpeg"></div>
-              </div>
-              <div class="section__box"> 
-                <h4 class="section__title">Contáctanos por esta solución </h4><a href="#" class="btn">Contactar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section--cases section--white">
-        <div class="section__wrap"> 
+      <section class="section--features section--white">
+        <div class="section__wrap">
           <div class="section__header"> 
-            <h3 class="section__title">Casos de uso</h3>
-            <p class="section__description">Dui ullamcorper leo scelerisque ad habitasse diam massa commodo duis non tristique turpis senectus habitasse.
+            <h3 class="section__title">Beneficios</h3>
+            <p class="section__description">Aliquet interdum curabitur dictumst id habitant suscipit felis diam magna fames mattis tristique egestas hendrerit.
             </p>
           </div>
           <div class="section__body"> 
-            <div class="section__cases"> 
-              <div class="slider"> 
-                <div class="slides"> 
-                  <div class="slide"> 
-                    <div class="section__case"> 
-                      <div class="cols">
-                        <div class="section__flex">
-                          <div class="col-md-6">
-                            <div class="section__bg"> 
-                              <div class="bg"><img src="img/uploads/1.jpg"></div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="section__content"> 
-                              <h3 class="section__title">Proceso de matrícula para estudiantes </h3>
-                              <p class="section__description">Donec etiam dui vulputate et enim bibendum lectus suspendisse commodo ultricies nam cras tellus accumsan.
-                              </p>
-                              <p class="section__description">Scelerisque fames tincidunt rutrum fermentum vulputate ut facilisis pharetra orci. Elit non purus aliquam leo tellus mollis aenean venenatis tempus integer tristique a eget bibendum.
-                              </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
-                            </div>
+            <div class="cols cols-gutter-2"> 
+              <div class="col-md-4">
+                <article class="article--feature">
+                  <div class="article__eff"> <img src="img/icons/eff-1.svg"></div>
+                  <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
+                  <div class="article__body">
+                    <h4 class="article__title">Nombre beneficio 1</h4>
+                    <p class="article__description">Phasellus vestibulum orci neque nam sollicitudin suspendisse tortor maecenas inceptos. Justo ligula vestibulum condimentum ornare sed lobortis eros vivamus ad dictumst mauris enim tempus quisque.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <article class="article--feature">
+                  <div class="article__eff"> <img src="img/icons/eff-1.svg"></div>
+                  <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
+                  <div class="article__body">
+                    <h4 class="article__title">Nombre beneficio 2</h4>
+                    <p class="article__description">Ligula scelerisque sem ullamcorper hendrerit cras pulvinar primis viverra tristique. Congue id nam etiam turpis fringilla diam curae ligula non quam suscipit velit sed vestibulum.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <article class="article--feature">
+                  <div class="article__eff"> <img src="img/icons/eff-1.svg"></div>
+                  <div class="article__icon"> <img src="img/icons/feature-3.png"></div>
+                  <div class="article__body">
+                    <h4 class="article__title">Nombre beneficio 3</h4>
+                    <p class="article__description">Elit primis curabitur molestie et aliquam viverra risus malesuada justo. Etiam nunc sapien dapibus volutpat lectus consequat viverra lacinia tristique quisque aenean turpis massa potenti.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <article class="article--feature">
+                  <div class="article__eff"> <img src="img/icons/eff-1.svg"></div>
+                  <div class="article__icon"> <img src="img/icons/feature-4.png"></div>
+                  <div class="article__body">
+                    <h4 class="article__title">Nombre beneficio 4</h4>
+                    <p class="article__description">Sollicitudin non libero condimentum lectus ultricies quisque adipiscing aliquet colus. Sodales dui cras rhoncus in dictumst tellus tempor vehicula consectetur euismod donec class accumsan turpis.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <article class="article--feature">
+                  <div class="article__eff"> <img src="img/icons/eff-1.svg"></div>
+                  <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
+                  <div class="article__body">
+                    <h4 class="article__title">Nombre beneficio 5</h4>
+                    <p class="article__description">Curabitur lobortis volutpat ut facilisis at accumsan condimentum venenatis pellentesque. Elit aptent aliquam ac suscipit lacus vitae adipiscing phasellus mauris elit vel fermentum quisque cursus.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-4">
+                <article class="article--feature">
+                  <div class="article__eff"> <img src="img/icons/eff-1.svg"></div>
+                  <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
+                  <div class="article__body">
+                    <h4 class="article__title">Nombre beneficio 6</h4>
+                    <p class="article__description">Colus praesent ad tellus mollis mauris tincidunt congue turpis commodo. Mauris integer quisque a hac libero condimentum habitant turpis nunc justo vel eros habitant convallis.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--banner section--light">
+        <div class="section__wrap section__wrap--sm">
+          <div class="section__body"> 
+            <div class="section__banner"> 
+              <div class="section__bg"> 
+                <div class="bg"> <img src="img/uploads/1.jpg"></div>
+              </div>
+              <div class="section__content">
+                <h3 class="section__title">Hablemos </h3>
+                <p class="section__description">Conoce ecert y nuestras soluciones digitales Conoce ecert y nuestras soluciones digitales Conoce ecert y nuestras soluciones digitales</p><a href="contact.html" class="btn btn--terciary">Hablemos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--solutions">
+        <div class="section__wrap"> 
+          <div class="section__header"> 
+            <h3 class="section__title">Otras soluciones</h3>
+          </div>
+          <div class="section__body">
+            <div class="section__slider">
+              <div class="slider slider--news">
+                <div class="slide">
+                  <div class="cols cols-gutter-2 cols-scroll"> 
+                    <div class="col-md-4 dscroll">
+                      <article class="article--solution">
+                        <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
+                        <div class="article__body"> 
+                          <div class="article__icon"> <img src="img/icons/solution-1.png"></div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Firma Avanzada Online </h4>
+                            <p class="article__description">Lacinia integer hendrerit ac leo nec nam ad morbi viverra sollicitudin scelerisque.
+                            </p><a href="single-solution.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
                           </div>
                         </div>
-                      </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4 dscroll">
+                      <article class="article--solution">
+                        <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
+                        <div class="article__body"> 
+                          <div class="article__icon"> <img src="img/icons/solution-1.png"></div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Firma Avanzada Online </h4>
+                            <p class="article__description">Et sem congue curae aliquam donec arcu lacinia condimentum habitant dictum consequat.
+                            </p><a href="single-solution.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4 dscroll">
+                      <article class="article--solution">
+                        <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
+                        <div class="article__body"> 
+                          <div class="article__icon"> <img src="img/icons/solution-1.png"></div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Firma Avanzada Online </h4>
+                            <p class="article__description">Cursus lacus ligula ad sed fusce sed diam duis auctor mi at.
+                            </p><a href="single-solution.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                          </div>
+                        </div>
+                      </article>
                     </div>
                   </div>
-                  <div class="slide"> 
-                    <div class="section__case"> 
-                      <div class="cols">
-                        <div class="section__flex">
-                          <div class="col-md-6">
-                            <div class="section__bg"> 
-                              <div class="bg"><img src="img/uploads/2.jpg"></div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="section__content"> 
-                              <h3 class="section__title">Verificación de identidad de un cliente para entrega de beneficios</h3>
-                              <p class="section__description">Semper fermentum quis pulvinar duis posuere elementum mollis placerat consectetur quam nibh tempus ornare sociosqu.
-                              </p>
-                              <p class="section__description">Dictumst in faucibus lacus sociosqu accumsan donec scelerisque etiam torquent. Dictum ligula cubilia fermentum vestibulum commodo pretium ornare porttitor nisl placerat netus lacus massa quisque.
-                              </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
-                            </div>
+                </div>
+                <div class="slide">
+                  <div class="cols cols-gutter-2 cols-scroll"> 
+                    <div class="col-md-4 dscroll">
+                      <article class="article--solution">
+                        <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
+                        <div class="article__body"> 
+                          <div class="article__icon"> <img src="img/icons/solution-1.png"></div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Firma Avanzada Online </h4>
+                            <p class="article__description">Vulputate diam luctus vulputate semper in sem urna auctor per interdum curabitur.
+                            </p><a href="single-solution.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
                           </div>
                         </div>
-                      </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4 dscroll">
+                      <article class="article--solution">
+                        <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
+                        <div class="article__body"> 
+                          <div class="article__icon"> <img src="img/icons/solution-1.png"></div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Firma Avanzada Online </h4>
+                            <p class="article__description">Lacus porta vulputate platea blandit venenatis torquent mi hendrerit tempor proin phasellus.
+                            </p><a href="single-solution.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4 dscroll">
+                      <article class="article--solution">
+                        <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
+                        <div class="article__body"> 
+                          <div class="article__icon"> <img src="img/icons/solution-1.png"></div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Firma Avanzada Online </h4>
+                            <p class="article__description">Cubilia nunc eleifend senectus turpis ultricies neque mattis sagittis eros lacus aptent.
+                            </p><a href="single-solution.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                          </div>
+                        </div>
+                      </article>
                     </div>
                   </div>
-                  <div class="slide"> 
-                    <div class="section__case"> 
-                      <div class="cols">
-                        <div class="section__flex">
-                          <div class="col-md-6">
-                            <div class="section__bg"> 
-                              <div class="bg"><img src="img/uploads/3.jpg"></div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="section__content"> 
-                              <h3 class="section__title">Solución para adhesión de socios</h3>
-                              <p class="section__description">Gravida potenti ut varius inceptos fringilla neque porta platea gravida habitasse nunc dui eget nostra.
-                              </p>
-                              <p class="section__description">Vitae velit sodales litora quisque dapibus est curabitur ullamcorper laoreet. Aenean elit rutrum hac cras eros tempor arcu justo neque volutpat dictum primis donec aenean.
-                              </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
-                            </div>
+                </div>
+                <div class="slide">
+                  <div class="cols cols-gutter-2 cols-scroll"> 
+                    <div class="col-md-4 dscroll">
+                      <article class="article--solution">
+                        <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
+                        <div class="article__body"> 
+                          <div class="article__icon"> <img src="img/icons/solution-1.png"></div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Firma Avanzada Online </h4>
+                            <p class="article__description">Blandit dictumst ad mi quis etiam hac diam elit urna porta convallis.
+                            </p><a href="single-solution.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
                           </div>
                         </div>
-                      </div>
+                      </article>
                     </div>
-                  </div>
-                  <div class="slide"> 
-                    <div class="section__case"> 
-                      <div class="cols">
-                        <div class="section__flex">
-                          <div class="col-md-6">
-                            <div class="section__bg"> 
-                              <div class="bg"><img src="img/uploads/4.jpg"></div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="section__content"> 
-                              <h3 class="section__title">Contratos de afiliación</h3>
-                              <p class="section__description">Lectus suscipit cubilia gravida consequat tortor placerat eros proin senectus nunc urna est condimentum volutpat.
-                              </p>
-                              <p class="section__description">Faucibus erat duis tempor tempor nibh curae proin aptent odio. Pellentesque blandit tellus interdum velit nibh donec et quisque duis curabitur interdum felis mollis sodales.
-                              </p><a href="single-case.html" class="btn btn--terciary">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
-                            </div>
+                    <div class="col-md-4 dscroll">
+                      <article class="article--solution">
+                        <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
+                        <div class="article__body"> 
+                          <div class="article__icon"> <img src="img/icons/solution-1.png"></div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Firma Avanzada Online </h4>
+                            <p class="article__description">Velit neque imperdiet egestas class ornare aliquet semper odio interdum odio faucibus.
+                            </p><a href="single-solution.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
                           </div>
                         </div>
-                      </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4 dscroll">
+                      <article class="article--solution">
+                        <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
+                        <div class="article__body"> 
+                          <div class="article__icon"> <img src="img/icons/solution-1.png"></div>
+                          <div class="article__content"> 
+                            <h4 class="article__title">Firma Avanzada Online </h4>
+                            <p class="article__description">In nulla id torquent ultrices posuere mauris dapibus ullamcorper platea morbi lacus.
+                            </p><a href="single-solution.html" class="btn btn--sm btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
+                          </div>
+                        </div>
+                      </article>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="section__footer"> <a href="cases.html" class="btn">Ver todos los casos de éxito<span class="fa fa-angle-right"></span></a></div>
-        </div>
-      </section>
-      <section class="section--features">
-        <div class="section__wrap"> 
-          <div class="section__header"> 
-            <h3 class="section__title">Beneficios</h3>
-            <p class="section__description">Adipiscing lacus phasellus iaculis cubilia fringilla sollicitudin netus primis commodo praesent curabitur vivamus donec egestas.
-            </p>
-          </div>
-          <div class="section__body"> 
-            <div class="cols"> 
-              <div class="col-xs-6 col-lg-3 dscroll">
-                <article class="article--feature">
-                  <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
-                  <div class="article__body"> 
-                    <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
-                    <div class="article__content"> 
-                      <h4 class="article__title">Experiencia </h4>
-                      <p class="article__description">+ 20 años de experiencia. Pioneros en Chile en la Firma Electrónica. Somo la filial tecnológica de la Cámara de Comercio de Santiago.</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-xs-6 col-lg-3 dscroll">
-                <article class="article--feature">
-                  <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
-                  <div class="article__body"> 
-                    <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
-                    <div class="article__content"> 
-                      <h4 class="article__title">Clientes </h4>
-                      <p class="article__description">+ 500 mil clientes. Somos el mayor actor del mercado de Firma Electrónica en Chile.</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-xs-6 col-lg-3 dscroll">
-                <article class="article--feature">
-                  <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
-                  <div class="article__body"> 
-                    <div class="article__icon"> <img src="img/icons/feature-3.png"></div>
-                    <div class="article__content"> 
-                      <h4 class="article__title">Servicios Especializados </h4>
-                      <p class="article__description">Disponemos de servicios especializados de Soporte y Customer Success para cada tipo de cliente: Persona, Pyme y Corporativo.</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-xs-6 col-lg-3 dscroll">
-                <article class="article--feature">
-                  <div class="article__eff"> <img src="img/icons/eff-4.svg"></div>
-                  <div class="article__body"> 
-                    <div class="article__icon"> <img src="img/icons/feature-4.png"></div>
-                    <div class="article__content"> 
-                      <h4 class="article__title">Acreditados </h4>
-                      <p class="article__description">Fuimos la primera empresa en obtener la acreditación de Firma Electrónica del Ministerio de Economía y la hemos mantenido todos los años.</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section--news section--white"> 
-        <div class="section__wrap"> 
-          <div class="section__header"> 
-            <h3 class="section__title">Noticias relacionadas</h3>
-            <p class="section__description">Justo donec etiam tempus cras maecenas suspendisse faucibus cursus sodales vitae rhoncus sagittis et maecenas.
-            </p>
-          </div>
-          <div class="section__body"> 
-            <div class="cols cols-scroll"> 
-              <div class="col-xs-6 col-md-4 1 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Empresas</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-1.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Tristique venenatis mauris odio ligula class blandit elit mauris iaculis mi praesent.
-                    </p><a href="single-new.html" class="btn btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-xs-6 col-md-4 2 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Legal</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-2.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Gravida ut inceptos mattis accumsan nostra cras scelerisque eleifend arcu ligula ut.
-                    </p><a href="single-new.html" class="btn btn--terciary">Ver más <span class="fa fa-angle-right"></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-xs-6 col-md-4 3 dscroll">
-                <article class="article--new"> 
-                  <div class="article__date">19/11/2022</div>
-                  <div class="article__tag">Actualidad</div>
-                  <div class="article__bg"> 
-                    <div class="bg"> <img src="img/uploads/new-3.jpeg"></div>
-                  </div>
-                  <div class="article__body"> 
-                    <h4 class="article__title">Título noticia </h4>
-                    <p class="article__description">Dictumst libero ullamcorper ut sapien adipiscing nisl massa ante himenaeos posuere erat.
-                    </p><a href="single-new.html" class="btn btn--terciary">Ver más <span class="fa fa-angle-right">     </span></a>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-          <div class="section__footer"> <a href="news.html" class="btn">Ver más noticias<span class="fa fa-angle-right"> </span></a></div>
         </div>
       </section>
       <div class="section__loader"></div>
@@ -516,7 +539,7 @@
           <div class="addcart__box__box">
             <div class="addcart__box__header"> 
               <h3 class="addcart__title">Agregar nuevo producto </h3>
-              <p class="addcart__description">Pellentesque orci tempus euismod elementum venenatis viverra sem eros vulputate netus nam purus egestas class.
+              <p class="addcart__description">Dictum adipiscing sapien facilisis aenean euismod morbi cras diam ut cubilia class cursus velit lacinia.
               </p>
             </div>
             <div class="addcart__box__body">
@@ -548,9 +571,9 @@
                     <div class="addcart__tooltip">
                       <div class="addcart__circle"><span>?</span></div>
                       <div class="addcart__tooltip__tooltip">
-                        <h5>Etiam condimentum
+                        <h5>Potenti curabitur
                         </h5>
-                        <p>Maecenas consequat ultricies convallis rhoncus dapibus donec curabitur dui erat. Metus libero consectetur varius quam venenatis porttitor vitae purus aptent ligula senectus per donec libero.
+                        <p>Sodales cursus tortor mauris porta lacus venenatis ante morbi duis. Aenean blandit hac maecenas tempor venenatis convallis pellentesque venenatis quisque interdum tortor commodo laoreet consectetur.
                         </p>
                       </div>
                     </div>
@@ -599,7 +622,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Iniciar sesión</h3>
-              <p class="section__description">Posuere vel eu class magna cubilia elit consequat
+              <p class="section__description">Ut fermentum eleifend in senectus aptent a primis
               </p>
             </div>
             <div class="modal__body">
@@ -684,7 +707,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Registro</h3>
-              <p class="section__description">Orci auctor convallis commodo nulla sagittis urna mauris
+              <p class="section__description">Libero ornare purus phasellus donec rutrum dui mi
               </p>
             </div>
             <div class="modal__body">
@@ -756,7 +779,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Recuperar contraseña</h3>
-              <p class="section__description">Felis magna semper fringilla vel justo porttitor phasellus
+              <p class="section__description">Ligula ullamcorper fermentum massa nam potenti laoreet himenaeos
               </p>
             </div>
             <div class="modal__body">

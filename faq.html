@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=3869" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=51753" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=3869" type="text/javascript"></script>
+    <script src="js/main.js?v=51753" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -35,27 +35,28 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
-            <div class="header__search">
-              <form action="search.html" method="get">
-                <input type="text" name="s" placeholder="Buscar producto">
-                <button><span class="fa fa-search"></span></button>
-              </form>
-            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
                   <ul> 
                     <li><a href="#">Portal Empresa</a></li>
-                    <li><a href="#">migrup.cl</a></li>
+                    <li><a href="#">Grup</a></li>
                     <li><a href="#">Firma Documento Online</a></li>
+                    <li><a href="#">Verificar firma</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="header__right"> 
+            <div class="header__right">
+              <div class="header__search">
+                <form action="search.html" method="get">
+                  <input type="text" name="s" placeholder="Buscar producto">
+                  <button><span class="fa fa-search"></span></button>
+                </form>
+              </div>
               <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
               <div class="header__item"> 
-                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--transparent">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
-                                <li> <a href="#">Certificado Digital</a>
+                                <li> <a href="single-product.html">Certificado Digital</a>
                                   <p>Certificado Digital para el SII</p>
                                 </li>
                                 <li><a href="personas.html">Personas</a>
@@ -111,21 +112,21 @@
                             <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
                             <div class="header__nav__submenu__header"> 
                               <h4>Ayuda </h4>
-                              <p>Pellentesque volutpat sollicitudin commodo sociosqu neque elementum
+                              <p>Netus duis id quisque tempor senectus dui
                               </p>
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="faq.html">Preguntas frecuentes</a>
-                                  <p>Nisl aliquam mattis volutpat
+                                  <p>Convallis curabitur conubia erat
                                   </p>
                                 </li>
-                                <li><a href="recursos.html">Recursos</a>
-                                  <p>Netus donec nam aenean
+                                <li><a href="tools.html">Herramientas</a>
+                                  <p>Molestie elementum tristique porttitor
                                   </p>
                                 </li>
                                 <li class="last"><a href="tutoriales.html">Tutoriales</a>
-                                  <p>Eleifend tempus aenean quisque
+                                  <p>Proin habitant gravida augue
                                   </p>
                                 </li>
                               </ul>
@@ -133,7 +134,7 @@
                           </div>
                         </div>
                       </li>
-                      <li><a href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator">Validar firmas</a></li>
+                      <!--li: a(href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator") Validar firmas-->
                       <li><a href="#">Más</a>
                         <div class="header__nav__submenu">
                           <div class="header__nav__submenu__relative">
@@ -145,15 +146,15 @@
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="aboutus.html">Quiénes somos</a>
-                                  <p>Dapibus nibh litora sapien a sem
+                                  <p>Adipiscing bibendum ante quis etiam fusce
                                   </p>
                                 </li>
                                 <li><a href="news.html">Blog</a>
-                                  <p>Convallis aliquam mi aptent suscipit consequat commodo
+                                  <p>Vivamus auctor nisl duis malesuada hac praesent
                                   </p>
                                 </li>
                                 <li class="last"><a href="red-atencion.html">Red de Atención</a>
-                                  <p>Sagittis ut eu consequat neque
+                                  <p>Duis posuere rutrum urna etiam
                                   </p>
                                 </li>
                               </ul>
@@ -161,6 +162,7 @@
                           </div>
                         </div>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </nav>
                   <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
@@ -188,6 +190,7 @@
                       <li><a href="#">Soluciones</a>
                         <ul>
                           <li class="header__nav__title">Soluciones</li>
+                          <li><a href="single-product.html">Certificado digital</a></li>
                           <li><a href="personas.html">Personas</a></li>
                           <li><a href="empresas.html">Empresas</a></li>
                         </ul>
@@ -197,7 +200,7 @@
                         <ul>
                           <li class="header__nav__title">Ayuda</li>
                           <li><a href="faq.html">Preguntas Frecuentas</a></li>
-                          <li><a href="recursos.html">Recursos</a></li>
+                          <li><a href="tools.html">Herramientas</a></li>
                           <li><a href="tutoriales.html">Tutoriales</a></li>
                         </ul>
                       </li>
@@ -209,20 +212,22 @@
                           <li><a href="red-atencion.html">Red de Atención</a></li>
                         </ul>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__body">
                   <div class="header__nav__nav__menu"> 
                     <ul> 
-                      <li><a href="alliances.html">Portal Empresa</a></li>
-                      <li><a href="alliances.html">migrup.cl</a></li>
-                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                      <li><a href="#">Portal Empresa</a></li>
+                      <li><a href="#">Grup</a></li>
+                      <li><a href="#">Firma Documento Online</a></li>
+                      <li><a href="#">Verificar firma</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__footer"> 
-                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
                 </div>
               </div>
             </div>
@@ -234,30 +239,15 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--header">
-        <div class="section__clipath">
-          <div class="section__bg">
-            <div class="bg"><img src="img/uploads/2.jpg"></div>
-          </div>
-          <div class="section__wrap section__wrap--header">
-            <div class="section__body">
-              <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="faq.html">Preguntas frecuentes</a></div>
-              <div class="section__content">								
-                <h1 class="section__title">Preguntas frecuentes</h1>
-                <p class="section__description">Nulla velit venenatis ullamcorper consequat ligula id litora facilisis morbi. Massa ante auctor interdum fusce duis quis conubia facilisis nullam curabitur aliquam vivamus elementum id.
-                </p>
-              </div>
+      <section class="section--faq section--header">
+        <div class="section__wrap section__wrap--xs">
+          <div class="section__header">
+            <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="faq.html" class="current">Preguntas frecuentes</a></div>
+            <div class="section__content"> 
+              <h1 class="h3 section__title">Preguntas frecuentes</h1>
+              <p class="section__description">Tempor facilisis aliquam fusce ante dui aliquam praesent elit facilisis. Bibendum nullam augue leo risus morbi feugiat nibh vitae duis integer in aliquam curabitur hac.
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="section--faq">
-        <div class="section__wrap">
-          <div class="section__header"> 
-            <h3 class="section__title">Rhoncus placerat potenti tempor vel ad
-            </h3>
-            <p class="section__description">Enim quam hac consectetur libero in primis rutrum est donec. Convallis urna aliquet fermentum purus dui scelerisque sapien consequat nec vel aliquam id fringilla nisi.
-            </p>
           </div>
           <div class="section__body"> 
             <div class="section__tabs"> 
@@ -275,7 +265,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Sed magna massa nisl hac ante sed vulputate quisque elementum. Venenatis aliquam euismod cubilia litora posuere ante eleifend fermentum curabitur lacus libero taciti nulla aliquet.
+                              <p class="section__description">Quisque dictumst ut fermentum eros conubia elit malesuada commodo feugiat. Neque duis ac magna cras arcu donec dictum dictumst condimentum sem vulputate rutrum velit nulla.
                               </p>
                             </div>
                           </div>
@@ -284,7 +274,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Erat nam nulla cursus eleifend vitae consectetur orci scelerisque dictumst. Sociosqu luctus sollicitudin at sem varius auctor phasellus torquent nunc sapien ad eget pellentesque nisi.
+                              <p class="section__description">Laoreet tincidunt vitae colus elit inceptos ornare facilisis sapien auctor. Felis sapien quisque non vulputate tincidunt nulla neque aenean elit aptent maecenas feugiat etiam morbi.
                               </p>
                             </div>
                           </div>
@@ -293,7 +283,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Vivamus elementum tincidunt eget quisque rutrum congue mattis velit enim. Ullamcorper tellus adipiscing cursus aliquam dui commodo gravida tristique class senectus urna volutpat nibh tincidunt.
+                              <p class="section__description">Orci eget taciti massa primis congue fusce habitant vestibulum odio. Rutrum himenaeos condimentum sociosqu vitae class class diam quis aliquam varius vehicula ornare mauris inceptos.
                               </p>
                             </div>
                           </div>
@@ -302,7 +292,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Auctor varius aenean inceptos mi mi augue magna tincidunt placerat. Malesuada ullamcorper aptent quisque odio dui auctor praesent est porttitor morbi eros vitae nullam condimentum.
+                              <p class="section__description">Fusce elementum condimentum a lectus ultrices velit nec non malesuada. Duis aliquam augue nostra odio et neque varius per molestie varius diam at ut turpis.
                               </p>
                             </div>
                           </div>
@@ -311,7 +301,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Inceptos colus est tristique praesent non aliquet iaculis felis habitasse. Quisque orci habitasse massa volutpat dapibus neque ligula est placerat fermentum consectetur neque sed nullam.
+                              <p class="section__description">Vivamus nostra dapibus ultrices quis convallis nullam gravida odio per. Nisi litora etiam id libero hac colus nostra congue scelerisque dapibus pretium iaculis massa nec.
                               </p>
                             </div>
                           </div>
@@ -320,7 +310,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Venenatis id lobortis ad aliquet taciti lobortis velit dictumst pellentesque. Fusce aliquam mattis consequat facilisis quisque aliquam augue auctor ullamcorper semper nibh tempus enim arcu.
+                              <p class="section__description">Aliquam accumsan fermentum suscipit aenean gravida euismod torquent porttitor nunc. Tellus id felis praesent dapibus aliquet viverra quisque mi metus sodales metus elit est non.
                               </p>
                             </div>
                           </div>
@@ -335,7 +325,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Pulvinar posuere fermentum ante conubia pretium malesuada potenti class augue. Ullamcorper metus vestibulum aptent tellus vestibulum diam praesent malesuada netus ultrices a urna et tristique.
+                              <p class="section__description">Sodales pharetra quis semper sem sollicitudin diam facilisis himenaeos quis. Eget aliquam auctor potenti vehicula vitae quisque luctus in vestibulum mi habitant lectus consequat nunc.
                               </p>
                             </div>
                           </div>
@@ -344,7 +334,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Condimentum nam etiam dictum platea colus sodales class condimentum integer. Semper malesuada et lacus eget faucibus leo condimentum porttitor porta neque facilisis sed dictum ullamcorper.
+                              <p class="section__description">Odio colus imperdiet congue luctus aptent lacinia senectus massa integer. Diam maecenas vitae netus risus cras taciti viverra posuere lacinia auctor primis venenatis eleifend purus.
                               </p>
                             </div>
                           </div>
@@ -353,7 +343,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Primis laoreet nulla leo himenaeos tortor nam scelerisque hac fusce. Luctus colus curabitur massa metus fermentum blandit aliquam pharetra lacinia pharetra vel morbi torquent ante.
+                              <p class="section__description">Vulputate donec vulputate faucibus metus pulvinar in primis mi lobortis. Laoreet nunc senectus auctor praesent vulputate primis hendrerit odio a quisque inceptos dictum placerat ad.
                               </p>
                             </div>
                           </div>
@@ -362,7 +352,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Odio ut nunc eros mi accumsan sed posuere mattis hac. Vestibulum mi euismod odio euismod viverra arcu aliquet eros sagittis eleifend donec cubilia aliquam ante.
+                              <p class="section__description">Fringilla nisl erat ullamcorper condimentum morbi non donec pretium eros. Justo aliquam iaculis taciti nibh mattis vitae ac etiam nam aenean dictumst ornare faucibus risus.
                               </p>
                             </div>
                           </div>
@@ -371,7 +361,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Sodales lacus vehicula orci at conubia vitae lacus fermentum consequat. Ornare et faucibus nullam vitae donec laoreet mattis praesent colus at placerat imperdiet non pretium.
+                              <p class="section__description">Enim gravida feugiat consectetur ante eros posuere orci euismod nam. Platea vestibulum class lacus elit aliquam hendrerit nec felis eros ultrices ut sollicitudin ante praesent.
                               </p>
                             </div>
                           </div>
@@ -380,7 +370,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Condimentum ultricies aliquam quam volutpat donec arcu quam etiam facilisis. Malesuada ante fusce at platea est vestibulum felis auctor blandit taciti porta faucibus facilisis curae.
+                              <p class="section__description">Sapien aenean donec fusce purus aliquam vivamus morbi velit duis. Rhoncus mauris a fermentum per sociosqu vestibulum venenatis enim nullam libero ac ornare id urna.
                               </p>
                             </div>
                           </div>
@@ -395,7 +385,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Fames tellus curabitur hendrerit proin senectus risus nam mollis mi. Tellus congue consectetur commodo habitant mollis pretium conubia class fermentum commodo blandit neque fermentum nostra.
+                              <p class="section__description">Sagittis praesent sed egestas risus ut porta eget vehicula commodo. Etiam lacus id id turpis ante vel morbi enim vehicula adipiscing a diam rutrum mollis.
                               </p>
                             </div>
                           </div>
@@ -404,7 +394,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Cras rhoncus purus orci, sed euismod lectus blandit accumsan.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Sociosqu iaculis semper nisi dictumst varius platea erat facilisis auctor. Donec elit aliquam elit hac mauris torquent magna dictumst donec elit nullam potenti commodo maecenas.
+                              <p class="section__description">Nec adipiscing nam phasellus laoreet molestie nulla metus pellentesque elit. Ad mi commodo torquent eleifend lacus fusce velit sodales quis feugiat consectetur pretium nec lectus.
                               </p>
                             </div>
                           </div>
@@ -413,7 +403,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Fusce facilisis vitae nisl eu ultrices. Integer volutpat eu justo vitae faucibus.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Scelerisque suscipit integer duis turpis risus nisi adipiscing porta nam. Nam ad curabitur fames adipiscing hac nulla quam dapibus posuere quisque magna laoreet habitasse per.
+                              <p class="section__description">Donec hac at fusce nisl interdum tempor tristique torquent potenti. Ac laoreet fames imperdiet justo risus class elementum nunc condimentum viverra augue eros malesuada nisi.
                               </p>
                             </div>
                           </div>
@@ -422,7 +412,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Phasellus eget nunc tempor felis suscipit aliquet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Mollis nec proin habitant ante ut netus venenatis porta nec. Maecenas tristique vitae varius etiam pellentesque facilisis neque ante pharetra donec aliquet scelerisque eu aliquam.
+                              <p class="section__description">Vivamus tristique suspendisse morbi elit curabitur nostra vulputate mi himenaeos. Luctus magna malesuada proin phasellus tristique adipiscing pretium quisque ultrices fringilla eget cursus taciti enim.
                               </p>
                             </div>
                           </div>
@@ -431,7 +421,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Integer rhoncus justo nec enim accumsan, ut venenatis enim convallis.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Taciti porta enim dui nullam accumsan vehicula taciti proin enim. Tempus porttitor maecenas sapien ligula proin ornare sagittis ullamcorper torquent morbi eu sem aliquam dui.
+                              <p class="section__description">Egestas dapibus mauris quam purus accumsan ullamcorper habitasse mauris cubilia. Velit auctor interdum nam nam sapien leo urna ligula ad nisl nec ultricies massa nullam.
                               </p>
                             </div>
                           </div>
@@ -440,7 +430,7 @@
                           <h3 class="faq__question"><span class="fa fa-angle-down"></span>Ut ornare ornare odio, vel ullamcorper orci hendrerit sit amet.</h3>
                           <div class="faq__answer">
                             <div class="section__content">
-                              <p class="section__description">Aliquam consequat adipiscing nunc nisl consectetur porttitor faucibus consectetur pharetra. Orci iaculis vulputate dictum cras tristique ligula tempus augue fames cras torquent porttitor vestibulum quisque.
+                              <p class="section__description">Libero aliquet pulvinar vitae sed donec risus mollis cras faucibus. Libero cursus sapien himenaeos urna varius lacinia torquent purus torquent class viverra euismod aenean ullamcorper.
                               </p>
                             </div>
                           </div>
@@ -463,7 +453,7 @@
           <div class="addcart__box__box">
             <div class="addcart__box__header"> 
               <h3 class="addcart__title">Agregar nuevo producto </h3>
-              <p class="addcart__description">Cursus ad elit at sed lectus eget colus suscipit felis tristique torquent conubia ad nec.
+              <p class="addcart__description">Tincidunt non conubia sollicitudin sagittis platea purus sociosqu condimentum neque est platea primis laoreet ad.
               </p>
             </div>
             <div class="addcart__box__body">
@@ -495,9 +485,9 @@
                     <div class="addcart__tooltip">
                       <div class="addcart__circle"><span>?</span></div>
                       <div class="addcart__tooltip__tooltip">
-                        <h5>Hendrerit lacinia
+                        <h5>Adipiscing sollicitudin
                         </h5>
-                        <p>Donec lacus nulla pulvinar consequat suscipit etiam non sociosqu hendrerit. Commodo hac tempus congue risus inceptos quisque lacus aliquam sagittis nunc accumsan primis adipiscing mollis.
+                        <p>Libero sapien senectus egestas molestie sollicitudin risus nisi auctor ad. Accumsan cras nulla libero suspendisse egestas phasellus velit ut bibendum purus malesuada taciti curabitur aptent.
                         </p>
                       </div>
                     </div>
@@ -546,7 +536,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Iniciar sesión</h3>
-              <p class="section__description">Lobortis euismod mattis justo aliquam eget arcu interdum
+              <p class="section__description">Rhoncus consectetur pellentesque class arcu aenean sollicitudin tempor
               </p>
             </div>
             <div class="modal__body">
@@ -631,7 +621,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Registro</h3>
-              <p class="section__description">Cubilia proin magna donec lacinia tristique quis bibendum
+              <p class="section__description">Metus nam pellentesque tempor velit nullam consectetur dui
               </p>
             </div>
             <div class="modal__body">
@@ -703,7 +693,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Recuperar contraseña</h3>
-              <p class="section__description">Platea conubia tellus diam habitasse eros suspendisse tempus
+              <p class="section__description">Tellus malesuada nam erat donec ultricies molestie pretium
               </p>
             </div>
             <div class="modal__body">

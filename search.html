@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=12911" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=21533" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=12911" type="text/javascript"></script>
+    <script src="js/main.js?v=21533" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -35,27 +35,28 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
-            <div class="header__search">
-              <form action="search.html" method="get">
-                <input type="text" name="s" placeholder="Buscar producto">
-                <button><span class="fa fa-search"></span></button>
-              </form>
-            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
                   <ul> 
                     <li><a href="#">Portal Empresa</a></li>
-                    <li><a href="#">migrup.cl</a></li>
+                    <li><a href="#">Grup</a></li>
                     <li><a href="#">Firma Documento Online</a></li>
+                    <li><a href="#">Verificar firma</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="header__right"> 
+            <div class="header__right">
+              <div class="header__search">
+                <form action="search.html" method="get">
+                  <input type="text" name="s" placeholder="Buscar producto">
+                  <button><span class="fa fa-search"></span></button>
+                </form>
+              </div>
               <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
               <div class="header__item"> 
-                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--transparent">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
-                                <li> <a href="#">Certificado Digital</a>
+                                <li> <a href="single-product.html">Certificado Digital</a>
                                   <p>Certificado Digital para el SII</p>
                                 </li>
                                 <li><a href="personas.html">Personas</a>
@@ -111,21 +112,21 @@
                             <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
                             <div class="header__nav__submenu__header"> 
                               <h4>Ayuda </h4>
-                              <p>Commodo posuere ultrices odio inceptos nisl sociosqu
+                              <p>Maecenas posuere cubilia torquent est lobortis at
                               </p>
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="faq.html">Preguntas frecuentes</a>
-                                  <p>Arcu conubia imperdiet et
+                                  <p>Euismod quisque himenaeos litora
                                   </p>
                                 </li>
-                                <li><a href="recursos.html">Recursos</a>
-                                  <p>Ornare dapibus enim velit
+                                <li><a href="tools.html">Herramientas</a>
+                                  <p>Hac justo vel magna
                                   </p>
                                 </li>
                                 <li class="last"><a href="tutoriales.html">Tutoriales</a>
-                                  <p>Habitasse nulla fames lacinia
+                                  <p>Molestie blandit purus senectus
                                   </p>
                                 </li>
                               </ul>
@@ -133,7 +134,7 @@
                           </div>
                         </div>
                       </li>
-                      <li><a href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator">Validar firmas</a></li>
+                      <!--li: a(href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator") Validar firmas-->
                       <li><a href="#">Más</a>
                         <div class="header__nav__submenu">
                           <div class="header__nav__submenu__relative">
@@ -145,15 +146,15 @@
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="aboutus.html">Quiénes somos</a>
-                                  <p>Gravida gravida ut aenean quisque interdum
+                                  <p>Nunc et est tortor blandit per
                                   </p>
                                 </li>
                                 <li><a href="news.html">Blog</a>
-                                  <p>Curae cubilia viverra aliquam aenean nibh aliquam
+                                  <p>Suspendisse at tristique congue purus ut porttitor
                                   </p>
                                 </li>
                                 <li class="last"><a href="red-atencion.html">Red de Atención</a>
-                                  <p>Neque lectus vivamus varius semper
+                                  <p>Ut curabitur posuere mauris ad
                                   </p>
                                 </li>
                               </ul>
@@ -161,6 +162,7 @@
                           </div>
                         </div>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </nav>
                   <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
@@ -188,6 +190,7 @@
                       <li><a href="#">Soluciones</a>
                         <ul>
                           <li class="header__nav__title">Soluciones</li>
+                          <li><a href="single-product.html">Certificado digital</a></li>
                           <li><a href="personas.html">Personas</a></li>
                           <li><a href="empresas.html">Empresas</a></li>
                         </ul>
@@ -197,7 +200,7 @@
                         <ul>
                           <li class="header__nav__title">Ayuda</li>
                           <li><a href="faq.html">Preguntas Frecuentas</a></li>
-                          <li><a href="recursos.html">Recursos</a></li>
+                          <li><a href="tools.html">Herramientas</a></li>
                           <li><a href="tutoriales.html">Tutoriales</a></li>
                         </ul>
                       </li>
@@ -209,20 +212,22 @@
                           <li><a href="red-atencion.html">Red de Atención</a></li>
                         </ul>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__body">
                   <div class="header__nav__nav__menu"> 
                     <ul> 
-                      <li><a href="alliances.html">Portal Empresa</a></li>
-                      <li><a href="alliances.html">migrup.cl</a></li>
-                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                      <li><a href="#">Portal Empresa</a></li>
+                      <li><a href="#">Grup</a></li>
+                      <li><a href="#">Firma Documento Online</a></li>
+                      <li><a href="#">Verificar firma</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__footer"> 
-                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
                 </div>
               </div>
             </div>
@@ -234,28 +239,14 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--header">
-        <div class="section__clipath">
-          <div class="section__bg">
-            <div class="bg"><img src="img/uploads/2.jpg"></div>
-          </div>
-          <div class="section__wrap section__wrap--header">
-            <div class="section__body">
-              <div class="section__content">
-                <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="faq.html">Búsqueda de resultado</a></div>
-                <h1 class="section__title">Búsqueda de resultado: <strong>Certificado</strong></h1>
-                <p class="section__description">Mollis aliquam vestibulum aliquet suspendisse nec etiam odio commodo ligula. Posuere lacus ad tincidunt duis auctor sodales elementum massa aliquam nisl interdum orci nulla neque.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section--results"> 
-        <div class="section__wrap section--md">
+      <section class="section--results section--header">
+        <div class="section__wrap section__wrap--xs">
           <div class="section__header">
-            <h3 class="section__title">Buscaste por: certificado</h3>
-            <p class="section__description">122 elementos encontrados</p>
+            <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="empresas.html" class="current">Empresas</a></div>
+            <div class="section__content"> 
+              <h1 class="h3 section__title">Buscaste por: <strong>certificado</strong></h1>
+              <p class="section__description">122 elementos encontrados</p>
+            </div>
             <div class="section__header__flex">
               <div class="section__filters filters dscroll">
                 <ul data-filter-group="category" class="menu button-group">
@@ -277,9 +268,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Id fringilla adipiscing vestibulum netus ut
+                    <h4 class="article__title">Ad nunc bibendum ligula porta hendrerit
                     </h4>
-                    <p class="article__description">Nunc pellentesque turpis sodales duis scelerisque proin phasellus fringilla ut a sociosqu.
+                    <p class="article__description">Curae lacus tortor convallis elit eget augue neque elit magna convallis nostra.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -291,9 +282,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Curae risus venenatis varius erat metus
+                    <h4 class="article__title">Fusce vestibulum luctus pellentesque litora venenatis
                     </h4>
-                    <p class="article__description">Vivamus vivamus scelerisque iaculis inceptos est leo rhoncus morbi tincidunt tellus proin.
+                    <p class="article__description">A mauris risus donec platea mauris mi id platea suscipit litora commodo.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -305,9 +296,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Hendrerit metus ultricies netus duis vivamus
+                    <h4 class="article__title">Faucibus fusce sollicitudin lacinia proin vitae
                     </h4>
-                    <p class="article__description">Feugiat vitae fermentum pharetra faucibus pretium vulputate ad morbi sed magna in.
+                    <p class="article__description">Ultrices hendrerit himenaeos curabitur nisi imperdiet enim nisi primis metus curabitur vehicula.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -319,9 +310,9 @@
                     <div class="bg"> <img src="img/uploads/4.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Proin varius senectus turpis phasellus duis
+                    <h4 class="article__title">Aenean vivamus ligula fermentum tortor et
                     </h4>
-                    <p class="article__description">Curabitur lacinia purus elementum taciti quam accumsan erat donec curabitur duis varius.
+                    <p class="article__description">Inceptos hac purus torquent adipiscing venenatis duis etiam et netus ac mattis.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -333,9 +324,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Risus augue ultricies dictumst nisl et
+                    <h4 class="article__title">Maecenas curae enim sagittis quisque feugiat
                     </h4>
-                    <p class="article__description">Augue consectetur donec convallis nec nam laoreet torquent fringilla est etiam est.
+                    <p class="article__description">Suspendisse imperdiet dictumst netus suscipit felis ornare enim sagittis eu libero vitae.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -347,9 +338,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Pellentesque nisl viverra a arcu dapibus
+                    <h4 class="article__title">Proin placerat primis justo fames molestie
                     </h4>
-                    <p class="article__description">Inceptos taciti varius gravida magna hendrerit bibendum eu rhoncus nullam mauris mi.
+                    <p class="article__description">Adipiscing cras nec duis quisque luctus vivamus elit diam ullamcorper diam gravida.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -361,9 +352,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Vitae etiam pharetra pretium ligula nisi
+                    <h4 class="article__title">Vivamus euismod velit tincidunt lectus lobortis
                     </h4>
-                    <p class="article__description">Aliquet pretium mollis inceptos nulla elementum posuere platea convallis eu cursus metus.
+                    <p class="article__description">Pulvinar potenti blandit cras porttitor metus erat auctor blandit dapibus ut diam.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -375,9 +366,9 @@
                     <div class="bg"> <img src="img/uploads/4.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Convallis non lacinia viverra est curabitur
+                    <h4 class="article__title">Pretium praesent senectus etiam luctus placerat
                     </h4>
-                    <p class="article__description">In molestie fames nullam quis posuere massa auctor eros velit tincidunt torquent.
+                    <p class="article__description">Consectetur rutrum sapien ut lobortis porttitor justo taciti sem vitae aenean ad.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -389,9 +380,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Tellus aliquam aliquam aenean feugiat ac
+                    <h4 class="article__title">Felis condimentum vulputate litora proin hendrerit
                     </h4>
-                    <p class="article__description">Netus donec cursus tempor turpis nullam turpis tincidunt elementum mauris ligula cursus.
+                    <p class="article__description">Ornare porta est etiam turpis eleifend purus consequat proin velit arcu donec.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -403,9 +394,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Habitasse tincidunt rhoncus magna class est
+                    <h4 class="article__title">Dictumst vulputate tempor erat nullam volutpat
                     </h4>
-                    <p class="article__description">Integer laoreet congue posuere sed ultricies donec gravida cursus pharetra fermentum ac.
+                    <p class="article__description">Rutrum feugiat neque interdum id tortor class neque ut aptent dictumst placerat.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -417,9 +408,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Vivamus aptent mattis quis senectus nostra
+                    <h4 class="article__title">Primis et fermentum dapibus malesuada ac
                     </h4>
-                    <p class="article__description">Lectus torquent fames lacinia diam adipiscing quisque elit gravida scelerisque netus ante.
+                    <p class="article__description">At maecenas arcu proin primis commodo suscipit diam eget consectetur semper ut.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -431,9 +422,9 @@
                     <div class="bg"> <img src="img/uploads/4.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Id netus consequat augue ullamcorper nunc
+                    <h4 class="article__title">Curabitur elit scelerisque convallis semper metus
                     </h4>
-                    <p class="article__description">Nullam blandit luctus tellus fringilla odio ad eros taciti turpis primis maecenas.
+                    <p class="article__description">Nam eros sociosqu vivamus risus iaculis molestie massa litora phasellus neque laoreet.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -445,9 +436,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Feugiat imperdiet interdum primis venenatis lectus
+                    <h4 class="article__title">Cursus erat diam tellus per ac
                     </h4>
-                    <p class="article__description">Adipiscing gravida metus fames erat eu torquent ligula vitae senectus netus proin.
+                    <p class="article__description">Aenean himenaeos nisi mi et a eros tincidunt quis massa scelerisque aliquam.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -459,9 +450,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Tempor velit aliquam a faucibus massa
+                    <h4 class="article__title">Elit aenean mi dapibus habitant iaculis
                     </h4>
-                    <p class="article__description">Dui pellentesque lectus libero vitae vel nullam sapien congue sed orci massa.
+                    <p class="article__description">Netus vehicula torquent porta aliquam hendrerit euismod dictumst dui habitant consectetur volutpat.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -473,9 +464,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Pharetra ornare potenti erat vivamus nulla
+                    <h4 class="article__title">Etiam suscipit mollis velit habitasse metus
                     </h4>
-                    <p class="article__description">Posuere eget suscipit curabitur vestibulum rhoncus at aenean turpis porta gravida colus.
+                    <p class="article__description">Ad gravida eget sem facilisis cras sed mollis ultrices fusce donec luctus.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -487,9 +478,9 @@
                     <div class="bg"> <img src="img/uploads/4.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Risus hac dictumst diam cubilia sollicitudin
+                    <h4 class="article__title">Fringilla euismod urna iaculis colus congue
                     </h4>
-                    <p class="article__description">Magna mi curabitur placerat suspendisse sed feugiat nulla semper arcu maecenas tempor.
+                    <p class="article__description">Auctor cras molestie hac curabitur aliquam blandit sagittis donec iaculis blandit sagittis.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -501,9 +492,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Malesuada turpis varius praesent convallis etiam
+                    <h4 class="article__title">Vitae feugiat senectus nibh donec gravida
                     </h4>
-                    <p class="article__description">Facilisis senectus sociosqu iaculis blandit orci aliquam orci venenatis pretium pellentesque euismod.
+                    <p class="article__description">Bibendum purus molestie semper porttitor lacus torquent primis mauris sodales litora massa.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -515,9 +506,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Molestie quisque rhoncus convallis proin interdum
+                    <h4 class="article__title">Urna mattis fames eleifend morbi duis
                     </h4>
-                    <p class="article__description">Maecenas suscipit quisque nullam accumsan ultricies pulvinar netus nulla at adipiscing hendrerit.
+                    <p class="article__description">Ultrices nisl phasellus etiam sollicitudin nullam tortor colus elementum nullam fames et.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -529,9 +520,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Viverra senectus leo per sollicitudin cubilia
+                    <h4 class="article__title">Ante quam non dictumst praesent aptent
                     </h4>
-                    <p class="article__description">Eros at et vel elementum proin pellentesque pharetra ornare tempus aliquet lacinia.
+                    <p class="article__description">Venenatis interdum aliquam curabitur bibendum ultricies netus odio sed non consequat pretium.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -543,9 +534,9 @@
                     <div class="bg"> <img src="img/uploads/4.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Sem odio congue cubilia tortor bibendum
+                    <h4 class="article__title">Accumsan fusce etiam malesuada vulputate morbi
                     </h4>
-                    <p class="article__description">Taciti phasellus ornare arcu purus semper cras praesent consectetur neque phasellus magna.
+                    <p class="article__description">In donec placerat lacus lobortis elit pretium tincidunt neque facilisis ac faucibus.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -557,9 +548,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Vulputate erat metus molestie nibh vulputate
+                    <h4 class="article__title">Consectetur luctus feugiat quisque enim porttitor
                     </h4>
-                    <p class="article__description">Aptent platea vulputate nunc curabitur iaculis proin nostra eros mollis sollicitudin lacinia.
+                    <p class="article__description">Libero taciti fames iaculis risus iaculis potenti tempus nam himenaeos ligula potenti.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -571,9 +562,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Interdum nec phasellus eleifend fames dictumst
+                    <h4 class="article__title">Vestibulum cras ut arcu gravida luctus
                     </h4>
-                    <p class="article__description">Dictumst cursus condimentum faucibus dictumst gravida pellentesque pharetra erat suscipit eleifend aenean.
+                    <p class="article__description">Etiam dictum ad dapibus cras volutpat pellentesque libero eget proin primis potenti.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -585,9 +576,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Tellus aenean viverra nam vehicula risus
+                    <h4 class="article__title">Etiam quisque tortor aptent posuere ante
                     </h4>
-                    <p class="article__description">Hac suscipit fringilla primis proin eros etiam proin egestas quam hendrerit elementum.
+                    <p class="article__description">Sem vehicula nisl viverra elementum quisque nunc eleifend per placerat hac commodo.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -599,9 +590,9 @@
                     <div class="bg"> <img src="img/uploads/4.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Accumsan iaculis ligula curae cursus libero
+                    <h4 class="article__title">Sollicitudin ligula diam platea imperdiet auctor
                     </h4>
-                    <p class="article__description">Ut tincidunt scelerisque aenean himenaeos accumsan id leo sodales pellentesque elementum dui.
+                    <p class="article__description">Sed lacinia rutrum maecenas dapibus imperdiet elit eleifend maecenas ad nibh sem.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -613,9 +604,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Erat ligula quisque mauris purus quisque
+                    <h4 class="article__title">Quisque proin sociosqu mollis dapibus netus
                     </h4>
-                    <p class="article__description">Nulla orci donec tristique aliquam dictum semper massa mauris quisque pulvinar gravida.
+                    <p class="article__description">Elit pulvinar est dui molestie et leo accumsan nunc elit cubilia metus.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -627,9 +618,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Cursus justo donec massa lobortis elit
+                    <h4 class="article__title">Vehicula varius ornare massa quam iaculis
                     </h4>
-                    <p class="article__description">Nec integer eleifend pretium sapien pulvinar eget senectus platea sociosqu libero inceptos.
+                    <p class="article__description">Semper justo duis est libero mi aenean fringilla augue rhoncus inceptos donec.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -641,9 +632,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Pulvinar primis torquent tincidunt vehicula diam
+                    <h4 class="article__title">Inceptos senectus et etiam quisque risus
                     </h4>
-                    <p class="article__description">Aenean viverra eleifend pretium arcu egestas senectus lacinia leo placerat a etiam.
+                    <p class="article__description">Blandit nullam etiam sapien tempor blandit nisl nulla per eleifend posuere justo.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -655,9 +646,9 @@
                     <div class="bg"> <img src="img/uploads/4.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Cursus elit elementum consequat purus litora
+                    <h4 class="article__title">Praesent quisque ultricies iaculis taciti at
                     </h4>
-                    <p class="article__description">Aliquet augue varius mauris elementum ut duis mi litora a pharetra sem.
+                    <p class="article__description">Id inceptos cras nunc justo habitasse curabitur vivamus vehicula nullam eu habitant.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -669,9 +660,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Eget sem blandit habitant gravida bibendum
+                    <h4 class="article__title">Suscipit curabitur lacus malesuada netus porttitor
                     </h4>
-                    <p class="article__description">Dictumst senectus suscipit nisl imperdiet aliquet tellus arcu vehicula senectus taciti lacinia.
+                    <p class="article__description">Conubia mi cras tempus convallis colus risus sed potenti mauris tempus leo.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -683,9 +674,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Aliquam litora aenean vestibulum dapibus eget
+                    <h4 class="article__title">Laoreet cras urna curabitur elementum per
                     </h4>
-                    <p class="article__description">Tortor dictumst augue ultrices turpis integer laoreet neque risus nullam eu interdum.
+                    <p class="article__description">Fermentum odio enim commodo vivamus tincidunt donec aenean vitae curae suscipit nec.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -697,9 +688,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Id imperdiet posuere fames curae suspendisse
+                    <h4 class="article__title">Etiam tincidunt dapibus faucibus suscipit porta
                     </h4>
-                    <p class="article__description">Metus cras pharetra elementum at bibendum id fames lacinia ultrices sociosqu arcu.
+                    <p class="article__description">Sociosqu sagittis elit posuere posuere adipiscing consequat integer hac est sodales lacus.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -711,9 +702,9 @@
                     <div class="bg"> <img src="img/uploads/4.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Fames morbi tincidunt pretium convallis donec
+                    <h4 class="article__title">Semper condimentum nibh egestas iaculis sollicitudin
                     </h4>
-                    <p class="article__description">Ornare sagittis suscipit porta himenaeos vulputate hendrerit conubia etiam fringilla curabitur orci.
+                    <p class="article__description">Congue dapibus aenean purus varius venenatis vivamus risus odio diam rutrum etiam.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -725,9 +716,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Pharetra eget tincidunt egestas iaculis curae
+                    <h4 class="article__title">Sagittis donec ut donec gravida laoreet
                     </h4>
-                    <p class="article__description">Hendrerit elit habitasse faucibus nullam curabitur euismod inceptos ultrices posuere eros condimentum.
+                    <p class="article__description">Euismod pellentesque orci felis consequat malesuada lacinia aliquam litora proin cras fames.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -739,9 +730,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Tincidunt hac aliquet potenti donec ornare
+                    <h4 class="article__title">Aliquet vehicula class metus ut arcu
                     </h4>
-                    <p class="article__description">Fames sem pellentesque per aliquam venenatis turpis bibendum orci dictumst elit libero.
+                    <p class="article__description">Sagittis sollicitudin conubia rhoncus commodo massa ultricies proin aliquet curabitur sociosqu fusce.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -753,9 +744,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Ut ad ultrices lacinia conubia interdum
+                    <h4 class="article__title">Convallis maecenas vitae nunc suscipit erat
                     </h4>
-                    <p class="article__description">Quis ut est ultricies nisi bibendum suscipit nostra donec ultrices colus libero.
+                    <p class="article__description">Curabitur tempus fames at tempor sagittis quisque risus etiam etiam libero tellus.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -767,9 +758,9 @@
                     <div class="bg"> <img src="img/uploads/4.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Pellentesque pharetra pharetra posuere non dictum
+                    <h4 class="article__title">Nisi quis interdum elementum suspendisse nec
                     </h4>
-                    <p class="article__description">Erat egestas habitasse viverra orci justo dui nostra odio dictumst habitant risus.
+                    <p class="article__description">Sapien cras nunc class facilisis ultrices quis varius tristique dui volutpat sagittis.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -781,9 +772,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Fusce accumsan elementum dui quam enim
+                    <h4 class="article__title">Egestas proin odio duis nisi luctus
                     </h4>
-                    <p class="article__description">Rutrum fusce in aliquam quisque lacinia litora dictumst pharetra rutrum aenean sem.
+                    <p class="article__description">Condimentum morbi arcu dictum et fringilla sem hendrerit metus auctor ullamcorper eleifend.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -795,9 +786,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Habitasse justo etiam vivamus eros nibh
+                    <h4 class="article__title">Morbi tellus pretium rutrum proin luctus
                     </h4>
-                    <p class="article__description">Neque gravida platea pellentesque consectetur vulputate habitant porttitor inceptos ornare sollicitudin malesuada.
+                    <p class="article__description">Neque quis per donec porta ultrices adipiscing metus aenean mi porttitor nibh.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -809,9 +800,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Euismod id luctus himenaeos orci aliquam
+                    <h4 class="article__title">Lacus justo etiam elit viverra pulvinar
                     </h4>
-                    <p class="article__description">Tincidunt consectetur in leo nam vitae in praesent pellentesque habitant pretium nisi.
+                    <p class="article__description">Accumsan ornare enim vestibulum nostra facilisis ac inceptos condimentum posuere dictumst sapien.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -823,9 +814,9 @@
                     <div class="bg"> <img src="img/uploads/4.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Sociosqu potenti odio vivamus tempus rhoncus
+                    <h4 class="article__title">Consequat platea venenatis sociosqu sem curabitur
                     </h4>
-                    <p class="article__description">Vehicula nunc elementum viverra himenaeos eget dui etiam quisque mattis nam rhoncus.
+                    <p class="article__description">Quisque justo dictum varius praesent habitant odio hendrerit luctus lobortis malesuada maecenas.
                     </p><a href="#" class="btn btn--terciary btn--xs">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -843,7 +834,7 @@
           <div class="addcart__box__box">
             <div class="addcart__box__header"> 
               <h3 class="addcart__title">Agregar nuevo producto </h3>
-              <p class="addcart__description">Erat etiam erat molestie placerat cras etiam lacus pharetra elit dictum etiam id integer colus.
+              <p class="addcart__description">Accumsan justo nibh ut egestas odio massa feugiat elit tristique maecenas morbi urna habitasse suscipit.
               </p>
             </div>
             <div class="addcart__box__body">
@@ -875,9 +866,9 @@
                     <div class="addcart__tooltip">
                       <div class="addcart__circle"><span>?</span></div>
                       <div class="addcart__tooltip__tooltip">
-                        <h5>Mauris quisque
+                        <h5>Purus habitant
                         </h5>
-                        <p>Class molestie torquent enim phasellus etiam aenean arcu molestie mauris. Venenatis diam in phasellus ultricies dictum class venenatis conubia eros elementum tincidunt ullamcorper proin platea.
+                        <p>Semper ullamcorper commodo sapien vehicula erat adipiscing fames fermentum suscipit. Duis nisl justo etiam sagittis posuere quisque viverra colus colus suscipit viverra tortor pharetra lacus.
                         </p>
                       </div>
                     </div>
@@ -926,7 +917,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Iniciar sesión</h3>
-              <p class="section__description">Faucibus torquent tempus diam platea aptent nisl molestie
+              <p class="section__description">Donec cras laoreet interdum platea non etiam dapibus
               </p>
             </div>
             <div class="modal__body">
@@ -1011,7 +1002,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Registro</h3>
-              <p class="section__description">Sem ut a felis mattis facilisis platea conubia
+              <p class="section__description">Iaculis ad tellus nec consectetur vitae erat nec
               </p>
             </div>
             <div class="modal__body">
@@ -1083,7 +1074,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Recuperar contraseña</h3>
-              <p class="section__description">Malesuada curabitur odio auctor maecenas suscipit dapibus dictum
+              <p class="section__description">Habitant nec taciti vitae proin fringilla tempus suscipit
               </p>
             </div>
             <div class="modal__body">

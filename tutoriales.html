@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=30764" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=2398" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=30764" type="text/javascript"></script>
+    <script src="js/main.js?v=2398" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -35,27 +35,28 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
-            <div class="header__search">
-              <form action="search.html" method="get">
-                <input type="text" name="s" placeholder="Buscar producto">
-                <button><span class="fa fa-search"></span></button>
-              </form>
-            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
                   <ul> 
                     <li><a href="#">Portal Empresa</a></li>
-                    <li><a href="#">migrup.cl</a></li>
+                    <li><a href="#">Grup</a></li>
                     <li><a href="#">Firma Documento Online</a></li>
+                    <li><a href="#">Verificar firma</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="header__right"> 
+            <div class="header__right">
+              <div class="header__search">
+                <form action="search.html" method="get">
+                  <input type="text" name="s" placeholder="Buscar producto">
+                  <button><span class="fa fa-search"></span></button>
+                </form>
+              </div>
               <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
               <div class="header__item"> 
-                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--transparent">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
-                                <li> <a href="#">Certificado Digital</a>
+                                <li> <a href="single-product.html">Certificado Digital</a>
                                   <p>Certificado Digital para el SII</p>
                                 </li>
                                 <li><a href="personas.html">Personas</a>
@@ -111,21 +112,21 @@
                             <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
                             <div class="header__nav__submenu__header"> 
                               <h4>Ayuda </h4>
-                              <p>Interdum posuere enim massa adipiscing quisque condimentum
+                              <p>Nulla suspendisse curae litora senectus himenaeos praesent
                               </p>
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="faq.html">Preguntas frecuentes</a>
-                                  <p>Ultricies integer adipiscing cursus
+                                  <p>Nostra sapien dictum interdum
                                   </p>
                                 </li>
-                                <li><a href="recursos.html">Recursos</a>
-                                  <p>Aliquam consectetur felis mollis
+                                <li><a href="tools.html">Herramientas</a>
+                                  <p>Vestibulum luctus ad litora
                                   </p>
                                 </li>
                                 <li class="last"><a href="tutoriales.html">Tutoriales</a>
-                                  <p>Eros curabitur sagittis inceptos
+                                  <p>Etiam orci euismod non
                                   </p>
                                 </li>
                               </ul>
@@ -133,7 +134,7 @@
                           </div>
                         </div>
                       </li>
-                      <li><a href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator">Validar firmas</a></li>
+                      <!--li: a(href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator") Validar firmas-->
                       <li><a href="#">Más</a>
                         <div class="header__nav__submenu">
                           <div class="header__nav__submenu__relative">
@@ -145,15 +146,15 @@
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="aboutus.html">Quiénes somos</a>
-                                  <p>Sem suspendisse accumsan a colus quis
+                                  <p>Vehicula velit class eu urna egestas
                                   </p>
                                 </li>
                                 <li><a href="news.html">Blog</a>
-                                  <p>Nullam cubilia maecenas interdum eros faucibus netus
+                                  <p>Curabitur commodo proin elementum diam litora odio
                                   </p>
                                 </li>
                                 <li class="last"><a href="red-atencion.html">Red de Atención</a>
-                                  <p>Sodales nostra nostra fringilla fermentum
+                                  <p>Phasellus leo nisl integer sollicitudin
                                   </p>
                                 </li>
                               </ul>
@@ -161,6 +162,7 @@
                           </div>
                         </div>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </nav>
                   <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
@@ -188,6 +190,7 @@
                       <li><a href="#">Soluciones</a>
                         <ul>
                           <li class="header__nav__title">Soluciones</li>
+                          <li><a href="single-product.html">Certificado digital</a></li>
                           <li><a href="personas.html">Personas</a></li>
                           <li><a href="empresas.html">Empresas</a></li>
                         </ul>
@@ -197,7 +200,7 @@
                         <ul>
                           <li class="header__nav__title">Ayuda</li>
                           <li><a href="faq.html">Preguntas Frecuentas</a></li>
-                          <li><a href="recursos.html">Recursos</a></li>
+                          <li><a href="tools.html">Herramientas</a></li>
                           <li><a href="tutoriales.html">Tutoriales</a></li>
                         </ul>
                       </li>
@@ -209,20 +212,22 @@
                           <li><a href="red-atencion.html">Red de Atención</a></li>
                         </ul>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__body">
                   <div class="header__nav__nav__menu"> 
                     <ul> 
-                      <li><a href="alliances.html">Portal Empresa</a></li>
-                      <li><a href="alliances.html">migrup.cl</a></li>
-                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                      <li><a href="#">Portal Empresa</a></li>
+                      <li><a href="#">Grup</a></li>
+                      <li><a href="#">Firma Documento Online</a></li>
+                      <li><a href="#">Verificar firma</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__footer"> 
-                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
                 </div>
               </div>
             </div>
@@ -263,7 +268,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Libero libero nam rutrum sollicitudin purus hendrerit malesuada dapibus nisi vitae senectus.
+                    <p class="article__description">Mollis adipiscing justo tempor ligula quis orci dictum sollicitudin fringilla lacus etiam.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -277,7 +282,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Donec aliquam sed lacinia bibendum congue nibh dictum dapibus arcu velit malesuada.
+                    <p class="article__description">Ullamcorper senectus posuere volutpat malesuada eget tempor phasellus sem torquent id massa.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -291,7 +296,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Semper laoreet eu cubilia faucibus diam ac ligula mi urna fringilla risus.
+                    <p class="article__description">Ac risus nulla nisi accumsan laoreet mi ligula dui non conubia dictum.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -305,7 +310,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Vitae eu neque praesent adipiscing in habitasse senectus phasellus diam eget aliquet.
+                    <p class="article__description">Dui litora taciti eros eros mollis tortor sociosqu malesuada commodo vel bibendum.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -319,7 +324,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Adipiscing risus conubia vitae hendrerit purus auctor vitae volutpat donec orci non.
+                    <p class="article__description">Vitae felis turpis ad donec nec tortor sollicitudin quam nullam vivamus elit.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -333,7 +338,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Nunc curabitur fermentum ut quis praesent aenean mauris praesent etiam eros diam.
+                    <p class="article__description">Condimentum praesent nam facilisis hendrerit placerat etiam risus tortor ullamcorper porta pretium.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -347,7 +352,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Suspendisse faucibus euismod nam quisque sagittis netus netus mattis nullam pharetra curae.
+                    <p class="article__description">Suscipit neque sed cubilia auctor interdum facilisis pellentesque etiam class tempor fermentum.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -361,7 +366,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Sapien class leo tellus class mattis eros massa enim molestie scelerisque suscipit.
+                    <p class="article__description">Sollicitudin rutrum suspendisse platea sem nostra placerat tincidunt rhoncus elementum nulla ut.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -375,7 +380,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Duis volutpat sollicitudin etiam donec per nulla sem cursus pellentesque tempus accumsan.
+                    <p class="article__description">Fusce phasellus eget consectetur diam varius nisl accumsan dui aliquet ornare facilisis.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -389,7 +394,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Ultricies morbi cursus tincidunt eget aliquet etiam ante vel hendrerit arcu neque.
+                    <p class="article__description">Mi ultricies nunc porta semper a ante litora tortor tristique non ut.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -403,7 +408,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Et pharetra proin quisque vel congue litora morbi pharetra pellentesque orci ultricies.
+                    <p class="article__description">Pretium aptent metus tempus mi ut suspendisse eu malesuada eros euismod consequat.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -417,7 +422,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">At fusce est nullam cras suspendisse aliquam quam feugiat proin habitasse senectus.
+                    <p class="article__description">Volutpat dui pulvinar felis blandit cras ut erat hendrerit blandit at molestie.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -431,7 +436,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Conubia lobortis tristique egestas gravida a libero inceptos volutpat felis nisi potenti.
+                    <p class="article__description">Blandit orci elementum ultrices rhoncus quisque platea congue massa laoreet duis tempus.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -445,7 +450,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Mattis habitasse torquent sem viverra enim iaculis conubia mi quam metus inceptos.
+                    <p class="article__description">Fames justo cras volutpat integer feugiat suspendisse rhoncus maecenas pretium convallis condimentum.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -459,7 +464,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Netus fermentum tempus elit cras curabitur mauris nisi lobortis risus porta curabitur.
+                    <p class="article__description">Egestas platea quam consequat lacus tincidunt mollis cursus et vehicula in ac.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -473,7 +478,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Faucibus suspendisse neque aliquet interdum aptent mi orci justo himenaeos habitant nunc.
+                    <p class="article__description">Potenti velit ac nisl fringilla mattis magna semper etiam curae cursus bibendum.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -487,7 +492,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Ut erat enim dui morbi cras ultrices eleifend id quis laoreet lobortis.
+                    <p class="article__description">Nibh etiam sollicitudin curae morbi arcu tempor semper velit nostra mauris lacinia.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -501,7 +506,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Class proin id colus orci venenatis duis fames lacinia nisi donec rutrum.
+                    <p class="article__description">Adipiscing habitasse ornare cras praesent risus etiam nullam orci odio justo aliquam.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -515,7 +520,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Ut iaculis metus magna metus adipiscing mattis vel vel ornare volutpat justo.
+                    <p class="article__description">Est varius a platea taciti curabitur ultricies luctus at rhoncus lacus dapibus.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -529,7 +534,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Sem facilisis dictum nisi iaculis maecenas etiam potenti curabitur quis nostra augue.
+                    <p class="article__description">Mauris tellus nec eget auctor justo dapibus tristique odio sodales suspendisse suspendisse.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -543,7 +548,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Quis viverra lobortis adipiscing dictumst habitasse ac gravida aliquam porta tempor mauris.
+                    <p class="article__description">Inceptos erat blandit est per feugiat venenatis hendrerit primis elit fermentum leo.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -557,7 +562,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Euismod sapien turpis vestibulum vitae leo non facilisis eros lacinia gravida donec.
+                    <p class="article__description">Magna nisi feugiat sagittis ut vel tristique urna interdum dictum etiam nibh.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -571,7 +576,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Eleifend phasellus fames mi consectetur ut scelerisque et tincidunt quisque curabitur dapibus.
+                    <p class="article__description">Adipiscing elit pellentesque orci vitae posuere dapibus habitant magna ultrices nulla congue.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -585,7 +590,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Tincidunt et morbi primis vivamus pretium commodo donec himenaeos eget per conubia.
+                    <p class="article__description">Auctor gravida quisque himenaeos aliquet pharetra leo taciti vivamus quisque dictum porta.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -599,7 +604,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Luctus tempus nisi posuere inceptos viverra mattis inceptos praesent proin nostra sapien.
+                    <p class="article__description">Suspendisse imperdiet class nostra morbi laoreet aliquet ac vitae habitasse pharetra tortor.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -613,7 +618,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Neque quisque nullam dapibus phasellus lacus nulla phasellus laoreet tempor interdum senectus.
+                    <p class="article__description">Litora condimentum sapien praesent nulla ac scelerisque proin primis commodo nullam dictumst.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -627,7 +632,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Nunc etiam rutrum non porttitor ultrices adipiscing enim molestie inceptos praesent platea.
+                    <p class="article__description">Urna pretium pulvinar ante cursus nullam fermentum posuere ultricies semper auctor tortor.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -641,7 +646,7 @@
                   </div>
                   <div class="article__body"> 
                     <h4 class="article__title">Título tutorial </h4>
-                    <p class="article__description">Leo ornare fusce integer ut rutrum sem cras massa ultrices etiam velit.
+                    <p class="article__description">Cras interdum mollis ullamcorper per sociosqu adipiscing eros fusce semper nibh dictumst.
                     </p><a href="single-tutorial.html" class="btn btn--terciary btn--sm">Ver tutorial <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -659,7 +664,7 @@
           <div class="addcart__box__box">
             <div class="addcart__box__header"> 
               <h3 class="addcart__title">Agregar nuevo producto </h3>
-              <p class="addcart__description">Torquent ornare conubia maecenas mollis sapien turpis pulvinar ornare maecenas purus nibh sollicitudin consectetur proin.
+              <p class="addcart__description">Curabitur per aliquam vel imperdiet placerat rhoncus varius sodales tempus senectus potenti accumsan orci pulvinar.
               </p>
             </div>
             <div class="addcart__box__body">
@@ -691,9 +696,9 @@
                     <div class="addcart__tooltip">
                       <div class="addcart__circle"><span>?</span></div>
                       <div class="addcart__tooltip__tooltip">
-                        <h5>Massa mollis
+                        <h5>Iaculis tempus
                         </h5>
-                        <p>Facilisis nulla viverra est facilisis in massa semper accumsan vulputate. Condimentum nisi taciti odio varius eleifend semper vel augue colus platea suspendisse lobortis nostra tortor.
+                        <p>Dictumst vulputate ut tristique posuere lacus curabitur pretium ultricies maecenas. Donec gravida elit vestibulum turpis quam eleifend blandit ligula convallis interdum fermentum habitasse hac ac.
                         </p>
                       </div>
                     </div>
@@ -742,7 +747,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Iniciar sesión</h3>
-              <p class="section__description">Id libero suscipit nisl primis lobortis netus blandit
+              <p class="section__description">Consectetur a fames in suspendisse integer nam tristique
               </p>
             </div>
             <div class="modal__body">
@@ -827,7 +832,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Registro</h3>
-              <p class="section__description">Eleifend dapibus dui inceptos torquent at fames lectus
+              <p class="section__description">Donec fames risus diam tellus quam purus cubilia
               </p>
             </div>
             <div class="modal__body">
@@ -899,7 +904,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Recuperar contraseña</h3>
-              <p class="section__description">Erat ultricies ante pretium sed quis dictumst tellus
+              <p class="section__description">Luctus torquent facilisis litora faucibus porttitor libero maecenas
               </p>
             </div>
             <div class="modal__body">

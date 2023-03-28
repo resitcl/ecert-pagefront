@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=94586" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=58677" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=94586" type="text/javascript"></script>
+    <script src="js/main.js?v=58677" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -35,27 +35,28 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
-            <div class="header__search">
-              <form action="search.html" method="get">
-                <input type="text" name="s" placeholder="Buscar producto">
-                <button><span class="fa fa-search"></span></button>
-              </form>
-            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
                   <ul> 
                     <li><a href="#">Portal Empresa</a></li>
-                    <li><a href="#">migrup.cl</a></li>
+                    <li><a href="#">Grup</a></li>
                     <li><a href="#">Firma Documento Online</a></li>
+                    <li><a href="#">Verificar firma</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="header__right"> 
+            <div class="header__right">
+              <div class="header__search">
+                <form action="search.html" method="get">
+                  <input type="text" name="s" placeholder="Buscar producto">
+                  <button><span class="fa fa-search"></span></button>
+                </form>
+              </div>
               <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
               <div class="header__item"> 
-                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--transparent">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
-                                <li> <a href="#">Certificado Digital</a>
+                                <li> <a href="single-product.html">Certificado Digital</a>
                                   <p>Certificado Digital para el SII</p>
                                 </li>
                                 <li><a href="personas.html">Personas</a>
@@ -111,21 +112,21 @@
                             <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
                             <div class="header__nav__submenu__header"> 
                               <h4>Ayuda </h4>
-                              <p>Per dictum netus fermentum ante eget interdum
+                              <p>Non vehicula vitae inceptos potenti tristique curae
                               </p>
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="faq.html">Preguntas frecuentes</a>
-                                  <p>Fermentum quisque molestie ligula
+                                  <p>Adipiscing consectetur aenean interdum
                                   </p>
                                 </li>
-                                <li><a href="recursos.html">Recursos</a>
-                                  <p>Per libero maecenas semper
+                                <li><a href="tools.html">Herramientas</a>
+                                  <p>Sem morbi morbi blandit
                                   </p>
                                 </li>
                                 <li class="last"><a href="tutoriales.html">Tutoriales</a>
-                                  <p>Tristique purus volutpat placerat
+                                  <p>Facilisis erat pellentesque varius
                                   </p>
                                 </li>
                               </ul>
@@ -133,7 +134,7 @@
                           </div>
                         </div>
                       </li>
-                      <li><a href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator">Validar firmas</a></li>
+                      <!--li: a(href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator") Validar firmas-->
                       <li><a href="#">Más</a>
                         <div class="header__nav__submenu">
                           <div class="header__nav__submenu__relative">
@@ -145,15 +146,15 @@
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="aboutus.html">Quiénes somos</a>
-                                  <p>Habitant ultricies mattis sagittis varius mauris
+                                  <p>Ligula non habitasse sem magna sollicitudin
                                   </p>
                                 </li>
                                 <li><a href="news.html">Blog</a>
-                                  <p>Fermentum habitasse iaculis fermentum semper facilisis magna
+                                  <p>Risus blandit colus ornare mauris ut malesuada
                                   </p>
                                 </li>
                                 <li class="last"><a href="red-atencion.html">Red de Atención</a>
-                                  <p>Lacinia cras lacus nec elit
+                                  <p>Erat at inceptos convallis taciti
                                   </p>
                                 </li>
                               </ul>
@@ -161,6 +162,7 @@
                           </div>
                         </div>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </nav>
                   <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
@@ -188,6 +190,7 @@
                       <li><a href="#">Soluciones</a>
                         <ul>
                           <li class="header__nav__title">Soluciones</li>
+                          <li><a href="single-product.html">Certificado digital</a></li>
                           <li><a href="personas.html">Personas</a></li>
                           <li><a href="empresas.html">Empresas</a></li>
                         </ul>
@@ -197,7 +200,7 @@
                         <ul>
                           <li class="header__nav__title">Ayuda</li>
                           <li><a href="faq.html">Preguntas Frecuentas</a></li>
-                          <li><a href="recursos.html">Recursos</a></li>
+                          <li><a href="tools.html">Herramientas</a></li>
                           <li><a href="tutoriales.html">Tutoriales</a></li>
                         </ul>
                       </li>
@@ -209,20 +212,22 @@
                           <li><a href="red-atencion.html">Red de Atención</a></li>
                         </ul>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__body">
                   <div class="header__nav__nav__menu"> 
                     <ul> 
-                      <li><a href="alliances.html">Portal Empresa</a></li>
-                      <li><a href="alliances.html">migrup.cl</a></li>
-                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                      <li><a href="#">Portal Empresa</a></li>
+                      <li><a href="#">Grup</a></li>
+                      <li><a href="#">Firma Documento Online</a></li>
+                      <li><a href="#">Verificar firma</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__footer"> 
-                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
                 </div>
               </div>
             </div>
@@ -244,7 +249,7 @@
               <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html">Carro de compras</a></div>
               <div class="section__content">		
                 <h1 class="section__title">Carro de compras</h1>
-                <p class="section__description">Viverra malesuada ornare sodales risus laoreet aenean arcu metus sociosqu himenaeos commodo elit colus conubia.
+                <p class="section__description">Ut at phasellus nulla cras pharetra eu fames pharetra adipiscing fringilla sed class accumsan ante.
                 </p>
               </div>
             </div>
@@ -270,7 +275,7 @@
             </div>
             <div class="section__cart"> 
               <h3 class="section__title">Compra Firma Electrónica</h3>
-              <p class="section__description">Dapibus auctor pellentesque donec tellus nam sed non volutpat eu ligula et non curabitur duis.
+              <p class="section__description">In nisi morbi gravida felis tincidunt ullamcorper cras nibh lobortis nisl malesuada potenti libero elementum.
               </p>
             </div>
           </div>
@@ -371,7 +376,7 @@
           <div class="addcart__box__box">
             <div class="addcart__box__header"> 
               <h3 class="addcart__title">Agregar nuevo producto </h3>
-              <p class="addcart__description">Class vel aptent curabitur tristique fringilla est colus tristique tellus varius semper porttitor curabitur adipiscing.
+              <p class="addcart__description">Ultrices scelerisque feugiat suspendisse posuere himenaeos maecenas praesent mauris curae etiam convallis mi ornare mollis.
               </p>
             </div>
             <div class="addcart__box__body">
@@ -403,9 +408,9 @@
                     <div class="addcart__tooltip">
                       <div class="addcart__circle"><span>?</span></div>
                       <div class="addcart__tooltip__tooltip">
-                        <h5>Conubia posuere
+                        <h5>Eros nullam
                         </h5>
-                        <p>Cubilia porta diam dui nullam fringilla cras tellus vel in. Congue suspendisse praesent integer litora cursus viverra etiam sagittis primis diam integer fermentum interdum donec.
+                        <p>Pellentesque accumsan tempus cubilia aliquam quam augue libero elit et. Arcu sem erat feugiat donec at aliquam gravida porta turpis mattis eros himenaeos torquent aptent.
                         </p>
                       </div>
                     </div>
@@ -454,7 +459,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Iniciar sesión</h3>
-              <p class="section__description">Ut donec tempus dui massa neque adipiscing pharetra
+              <p class="section__description">Habitant sociosqu risus tortor aliquam lectus augue pellentesque
               </p>
             </div>
             <div class="modal__body">
@@ -539,7 +544,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Registro</h3>
-              <p class="section__description">Ut augue et feugiat ornare est litora curabitur
+              <p class="section__description">Urna ullamcorper curabitur condimentum ultricies fringilla augue egestas
               </p>
             </div>
             <div class="modal__body">
@@ -611,7 +616,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Recuperar contraseña</h3>
-              <p class="section__description">Varius ut rutrum tellus urna conubia sollicitudin euismod
+              <p class="section__description">Class volutpat pellentesque ante mollis rhoncus aenean velit
               </p>
             </div>
             <div class="modal__body">

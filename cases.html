@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=73608" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=74187" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=73608" type="text/javascript"></script>
+    <script src="js/main.js?v=74187" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -35,27 +35,28 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
-            <div class="header__search">
-              <form action="search.html" method="get">
-                <input type="text" name="s" placeholder="Buscar producto">
-                <button><span class="fa fa-search"></span></button>
-              </form>
-            </div>
             <div class="header__left">
               <div class="header__actions">
                 <div class="header__nav">
                   <ul> 
                     <li><a href="#">Portal Empresa</a></li>
-                    <li><a href="#">migrup.cl</a></li>
+                    <li><a href="#">Grup</a></li>
                     <li><a href="#">Firma Documento Online</a></li>
+                    <li><a href="#">Verificar firma</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="header__right"> 
+            <div class="header__right">
+              <div class="header__search">
+                <form action="search.html" method="get">
+                  <input type="text" name="s" placeholder="Buscar producto">
+                  <button><span class="fa fa-search"></span></button>
+                </form>
+              </div>
               <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
               <div class="header__item"> 
-                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--transparent">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
-                                <li> <a href="#">Certificado Digital</a>
+                                <li> <a href="single-product.html">Certificado Digital</a>
                                   <p>Certificado Digital para el SII</p>
                                 </li>
                                 <li><a href="personas.html">Personas</a>
@@ -111,21 +112,21 @@
                             <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
                             <div class="header__nav__submenu__header"> 
                               <h4>Ayuda </h4>
-                              <p>Ac eu cubilia curae pulvinar commodo tempor
+                              <p>Ullamcorper dapibus rutrum integer habitasse neque porttitor
                               </p>
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="faq.html">Preguntas frecuentes</a>
-                                  <p>Pretium quam purus vestibulum
+                                  <p>Enim congue ut mi
                                   </p>
                                 </li>
-                                <li><a href="recursos.html">Recursos</a>
-                                  <p>Gravida at sodales mauris
+                                <li><a href="tools.html">Herramientas</a>
+                                  <p>Massa orci turpis ut
                                   </p>
                                 </li>
                                 <li class="last"><a href="tutoriales.html">Tutoriales</a>
-                                  <p>Pretium nunc eu blandit
+                                  <p>Nec nibh ultrices congue
                                   </p>
                                 </li>
                               </ul>
@@ -133,7 +134,7 @@
                           </div>
                         </div>
                       </li>
-                      <li><a href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator">Validar firmas</a></li>
+                      <!--li: a(href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator") Validar firmas-->
                       <li><a href="#">Más</a>
                         <div class="header__nav__submenu">
                           <div class="header__nav__submenu__relative">
@@ -145,15 +146,15 @@
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="aboutus.html">Quiénes somos</a>
-                                  <p>Donec urna justo potenti venenatis feugiat
+                                  <p>Dapibus nisl porttitor class mauris primis
                                   </p>
                                 </li>
                                 <li><a href="news.html">Blog</a>
-                                  <p>Habitasse phasellus praesent ullamcorper velit aliquam tempor
+                                  <p>Lectus felis tellus interdum euismod turpis hac
                                   </p>
                                 </li>
                                 <li class="last"><a href="red-atencion.html">Red de Atención</a>
-                                  <p>Sollicitudin blandit donec litora dictumst
+                                  <p>Semper duis gravida non primis
                                   </p>
                                 </li>
                               </ul>
@@ -161,6 +162,7 @@
                           </div>
                         </div>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </nav>
                   <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
@@ -188,6 +190,7 @@
                       <li><a href="#">Soluciones</a>
                         <ul>
                           <li class="header__nav__title">Soluciones</li>
+                          <li><a href="single-product.html">Certificado digital</a></li>
                           <li><a href="personas.html">Personas</a></li>
                           <li><a href="empresas.html">Empresas</a></li>
                         </ul>
@@ -197,7 +200,7 @@
                         <ul>
                           <li class="header__nav__title">Ayuda</li>
                           <li><a href="faq.html">Preguntas Frecuentas</a></li>
-                          <li><a href="recursos.html">Recursos</a></li>
+                          <li><a href="tools.html">Herramientas</a></li>
                           <li><a href="tutoriales.html">Tutoriales</a></li>
                         </ul>
                       </li>
@@ -209,20 +212,22 @@
                           <li><a href="red-atencion.html">Red de Atención</a></li>
                         </ul>
                       </li>
+                      <li><a href="contact.html">Hablemos</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__body">
                   <div class="header__nav__nav__menu"> 
                     <ul> 
-                      <li><a href="alliances.html">Portal Empresa</a></li>
-                      <li><a href="alliances.html">migrup.cl</a></li>
-                      <li><a href="alliances.html">Firma Documento Online</a></li>
+                      <li><a href="#">Portal Empresa</a></li>
+                      <li><a href="#">Grup</a></li>
+                      <li><a href="#">Firma Documento Online</a></li>
+                      <li><a href="#">Verificar firma</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__nav__nav__footer"> 
-                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Crea tu cuenta</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
                 </div>
               </div>
             </div>
@@ -244,7 +249,7 @@
               <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cases.html">Casos de éxito</a></div>
               <div class="section__content">		
                 <h1 class="section__title">Casos de éxito</h1>
-                <p class="section__description">Metus senectus nisi quam nostra etiam taciti ornare leo felis. Senectus ullamcorper varius tempor quisque iaculis eget erat erat diam hac risus mi pretium duis.
+                <p class="section__description">Lacinia sollicitudin luctus sollicitudin habitasse tempus turpis a felis in. Massa praesent vitae ultrices mattis turpis netus himenaeos dapibus placerat phasellus consequat torquent himenaeos vitae.
                 </p>
               </div>
             </div>
@@ -263,9 +268,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Cras orci velit felis aenean curae vehicula sagittis ante fames curae litora tincidunt aliquam leo euismod faucibus arcu habitant inceptos.
+                      <p class="article__description">Etiam in quis praesent rhoncus justo nam ante tellus potenti cras faucibus nostra aliquam tristique scelerisque mi cubilia urna class.
                       </p>
-                      <p class="article__description">Scelerisque orci consectetur turpis mauris arcu malesuada placerat molestie etiam
+                      <p class="article__description">Turpis dui etiam sollicitudin sem accumsan mi nam mauris vehicula
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -277,9 +282,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Consequat ut orci laoreet aliquet integer tempor vel egestas vestibulum himenaeos scelerisque class sed facilisis venenatis quisque erat morbi sed.
+                      <p class="article__description">Hac dictum conubia pellentesque hendrerit colus iaculis egestas suscipit aenean ultrices vestibulum congue suscipit habitant tristique mattis netus vivamus fermentum.
                       </p>
-                      <p class="article__description">Primis feugiat venenatis curae hendrerit eu sodales per luctus aptent
+                      <p class="article__description">Dui sociosqu lacinia faucibus sapien class justo turpis tempus massa
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -291,9 +296,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Litora vestibulum malesuada diam gravida dictum nec fermentum pretium tempor class imperdiet nostra aliquam senectus porta augue aenean taciti commodo.
+                      <p class="article__description">Aptent laoreet tortor nulla aenean odio sociosqu ultricies lectus vivamus neque ornare purus quisque habitant eleifend vestibulum ullamcorper tristique faucibus.
                       </p>
-                      <p class="article__description">Ante purus velit at volutpat vehicula ligula netus inceptos aliquam
+                      <p class="article__description">Conubia senectus risus rhoncus sem felis sem id himenaeos dui
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -305,9 +310,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Quisque commodo vel vestibulum eget fames lacinia risus malesuada eros lacus integer maecenas et primis molestie pretium morbi quis ac.
+                      <p class="article__description">Feugiat quisque nibh porta nisi fermentum augue pulvinar tellus tempus et aliquet conubia metus laoreet morbi vulputate potenti lectus dui.
                       </p>
-                      <p class="article__description">Vehicula eleifend etiam dapibus risus bibendum ut nam maecenas aenean
+                      <p class="article__description">Litora tellus inceptos elementum aliquam sodales leo odio pulvinar praesent
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -319,9 +324,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Mauris velit justo felis mattis donec malesuada molestie lectus aenean aenean primis quisque turpis fermentum sem habitant cubilia urna dui.
+                      <p class="article__description">Mauris etiam cras elit curabitur habitant sem tellus ut sapien habitant integer aliquet suspendisse posuere proin euismod curabitur venenatis laoreet.
                       </p>
-                      <p class="article__description">Turpis facilisis id dictumst sapien ultrices placerat convallis sem litora
+                      <p class="article__description">Sapien curabitur volutpat curabitur mauris taciti luctus eros nec magna
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -333,9 +338,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Nam inceptos vel curabitur elit arcu scelerisque sed etiam porttitor venenatis accumsan aptent nisl fusce urna diam suscipit lacinia pharetra.
+                      <p class="article__description">Aenean mattis tortor eros praesent laoreet volutpat mauris fusce taciti platea proin nulla vitae integer dictumst vivamus venenatis lacus primis.
                       </p>
-                      <p class="article__description">Est porttitor erat quisque rhoncus duis dictum libero donec gravida
+                      <p class="article__description">Fames at leo massa vehicula nam a hendrerit et et
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -347,9 +352,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Euismod dui auctor ac arcu cursus feugiat porta lacus viverra lectus per vel iaculis vel sem nibh taciti curabitur lacinia.
+                      <p class="article__description">Ad eu auctor dictumst aptent pellentesque nam primis nunc curae dictumst urna senectus curabitur id himenaeos phasellus lacinia hac at.
                       </p>
-                      <p class="article__description">Mauris in sem consequat fermentum faucibus elit molestie nec pulvinar
+                      <p class="article__description">Netus id laoreet lectus massa quisque sapien ut accumsan faucibus
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -361,9 +366,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Dapibus sem integer ad ullamcorper placerat vitae dapibus imperdiet torquent placerat cubilia nisi donec faucibus tellus suscipit inceptos quisque pharetra.
+                      <p class="article__description">Aliquet pretium colus primis mattis hendrerit erat faucibus semper maecenas curae vivamus pharetra massa id praesent taciti potenti enim suspendisse.
                       </p>
-                      <p class="article__description">Lobortis cubilia venenatis vehicula ultricies dictumst eget egestas potenti dictum
+                      <p class="article__description">Eget torquent non habitant torquent iaculis bibendum taciti condimentum primis
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -375,9 +380,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Iaculis vivamus ornare vestibulum elementum sagittis velit metus consectetur proin class cursus dictumst fermentum convallis vehicula mollis habitant rhoncus mattis.
+                      <p class="article__description">Aliquam magna congue augue sem risus porta quisque nam tincidunt condimentum vivamus in mauris integer tempus imperdiet duis morbi iaculis.
                       </p>
-                      <p class="article__description">Nisi ante justo quisque sodales donec platea tortor nec donec
+                      <p class="article__description">Inceptos maecenas donec aliquet hendrerit orci sem scelerisque commodo eget
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -389,9 +394,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Class fringilla tristique mi mauris ullamcorper sagittis class quisque congue sodales hac hac leo pretium dui nisl eros mollis cubilia.
+                      <p class="article__description">Orci sagittis nostra luctus molestie varius ornare mattis accumsan convallis arcu lacinia maecenas erat scelerisque conubia integer sodales ligula vehicula.
                       </p>
-                      <p class="article__description">Eget molestie ad bibendum duis habitant curae fermentum litora aliquam
+                      <p class="article__description">Egestas egestas porttitor arcu nulla aliquam massa felis erat fringilla
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -403,9 +408,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Curabitur egestas aenean laoreet metus taciti cras interdum dictum interdum purus rhoncus velit urna eleifend facilisis condimentum donec convallis proin.
+                      <p class="article__description">Accumsan cras conubia platea donec maecenas varius torquent nibh gravida phasellus curabitur nullam morbi ut curabitur nibh nullam quisque dapibus.
                       </p>
-                      <p class="article__description">Cubilia est turpis potenti sodales habitant duis tempor iaculis pharetra
+                      <p class="article__description">Elementum mattis eget eu velit aliquet litora sed nunc varius
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -417,9 +422,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">A tincidunt ultricies pulvinar imperdiet felis eu non etiam pulvinar torquent tempus cras mattis quam dictum malesuada integer pellentesque vestibulum.
+                      <p class="article__description">Volutpat in sodales felis id fringilla libero consequat proin vestibulum venenatis turpis donec per hendrerit sodales venenatis inceptos risus massa.
                       </p>
-                      <p class="article__description">Suspendisse praesent senectus blandit aliquam egestas id ad et luctus
+                      <p class="article__description">Accumsan pretium cubilia iaculis class urna magna phasellus eleifend volutpat
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -431,9 +436,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Nam quam condimentum senectus fames at nibh sociosqu habitasse sollicitudin interdum himenaeos imperdiet nostra vehicula porta a mi netus tempor.
+                      <p class="article__description">Dapibus dictum at quam sagittis vitae sem ut platea interdum feugiat mauris id donec elit habitasse vitae hendrerit nisl vulputate.
                       </p>
-                      <p class="article__description">Ullamcorper urna class odio lacinia vivamus curabitur eget habitasse sed
+                      <p class="article__description">Dictum nisl elit ullamcorper venenatis sem vel a leo venenatis
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -445,9 +450,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Colus ut fringilla nisi consequat nunc fermentum sed placerat posuere felis consectetur iaculis habitasse eros maecenas phasellus ut tincidunt elit.
+                      <p class="article__description">Taciti quisque porttitor ultricies diam varius suspendisse donec dictum sagittis aliquet facilisis imperdiet id ac odio curae felis pharetra at.
                       </p>
-                      <p class="article__description">Netus erat nam tellus suspendisse luctus iaculis etiam mollis senectus
+                      <p class="article__description">Scelerisque facilisis facilisis lacinia aliquet porttitor nec facilisis aliquet nam
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -459,9 +464,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Velit placerat tellus netus eleifend laoreet at volutpat quis aptent velit ad ut nunc suscipit porta per porttitor morbi vitae.
+                      <p class="article__description">Porta libero auctor orci pulvinar eleifend morbi vehicula rhoncus vehicula cubilia diam in curabitur viverra augue maecenas dapibus dictumst luctus.
                       </p>
-                      <p class="article__description">At metus habitasse velit proin condimentum etiam lacus nisl conubia
+                      <p class="article__description">Accumsan aliquam ac rutrum mi laoreet ultrices platea nisi pretium
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -473,9 +478,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Cubilia venenatis molestie ante libero augue habitasse nibh aenean platea habitant feugiat cubilia at tempus nulla mauris primis auctor curae.
+                      <p class="article__description">Nunc primis hac dictumst senectus curabitur ante quis nec a ultricies arcu iaculis urna in vivamus duis posuere ante integer.
                       </p>
-                      <p class="article__description">Fringilla facilisis senectus a augue pulvinar etiam felis sapien vitae
+                      <p class="article__description">Habitant nunc per mauris sodales aliquet odio dictumst mollis porta
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -487,9 +492,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Dictumst aliquam potenti etiam mi commodo ante vehicula tempor sodales porta donec ornare turpis posuere quisque purus dictumst semper leo.
+                      <p class="article__description">Ullamcorper id platea vehicula massa nec justo blandit imperdiet imperdiet dictum pulvinar ut libero id urna dui potenti fermentum pellentesque.
                       </p>
-                      <p class="article__description">Platea netus imperdiet habitant luctus curabitur tristique purus dapibus gravida
+                      <p class="article__description">Primis ad justo cubilia commodo purus at blandit luctus tristique
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -501,9 +506,9 @@
                     </div>
                     <div class="article__content"> 
                       <h4 class="article__title">Proceso de matrícula para estudiantes </h4>
-                      <p class="article__description">Justo magna morbi aptent urna fermentum congue lectus dictumst auctor ante nostra suspendisse eros aenean nibh cras pharetra dui sodales.
+                      <p class="article__description">Scelerisque ligula integer curae tellus sapien massa quis semper tellus habitant at sem vehicula mauris curabitur donec fames ad purus.
                       </p>
-                      <p class="article__description">Ad eu tempor aliquam faucibus sem felis sodales dui pharetra
+                      <p class="article__description">Eleifend tellus hendrerit rhoncus et et proin purus etiam sed
                       </p><a href="single-case.html" class="btn btn--sm">Ver caso de éxito <span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -522,7 +527,7 @@
           <div class="addcart__box__box">
             <div class="addcart__box__header"> 
               <h3 class="addcart__title">Agregar nuevo producto </h3>
-              <p class="addcart__description">Maecenas netus senectus mattis mi massa enim tellus imperdiet inceptos tellus eu donec ullamcorper habitant.
+              <p class="addcart__description">Varius fames himenaeos luctus commodo porta ante praesent ante sodales cubilia curabitur in fringilla imperdiet.
               </p>
             </div>
             <div class="addcart__box__body">
@@ -554,9 +559,9 @@
                     <div class="addcart__tooltip">
                       <div class="addcart__circle"><span>?</span></div>
                       <div class="addcart__tooltip__tooltip">
-                        <h5>Interdum blandit
+                        <h5>Tincidunt molestie
                         </h5>
-                        <p>Porta ornare erat vel lobortis blandit nisl nibh tortor scelerisque. Sem curabitur facilisis fermentum convallis habitasse nisi aptent posuere quisque quam aptent primis torquent vehicula.
+                        <p>Posuere leo interdum lobortis maecenas vehicula augue eget imperdiet luctus. Vehicula porta mattis litora donec ligula tristique suscipit cubilia varius primis per pharetra augue non.
                         </p>
                       </div>
                     </div>
@@ -605,7 +610,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Iniciar sesión</h3>
-              <p class="section__description">Urna vestibulum mattis ut pellentesque class odio curabitur
+              <p class="section__description">Libero pulvinar fusce porta velit sociosqu viverra arcu
               </p>
             </div>
             <div class="modal__body">
@@ -690,7 +695,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Registro</h3>
-              <p class="section__description">Sapien consequat habitasse tempor porttitor praesent non imperdiet
+              <p class="section__description">Mauris interdum erat leo congue faucibus curabitur faucibus
               </p>
             </div>
             <div class="modal__body">
@@ -762,7 +767,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Recuperar contraseña</h3>
-              <p class="section__description">Aliquet elementum ut varius interdum tincidunt fermentum fusce
+              <p class="section__description">Sociosqu quisque quam varius feugiat netus ultrices egestas
               </p>
             </div>
             <div class="modal__body">

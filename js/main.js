@@ -4206,7 +4206,7 @@ app.addcart = {
     question = $(".addcart__question__header .addcart__title span").text();
     html = "";
     html += "<div class='addcart__box__detail'>";
-    html += "<h5 class='addcart__box__detail__title'><strong>" + res.data.prev_question.step + ":</strong>" + res.data.prev_question.label + "</h5>";
+    html += "<h5 class='addcart__box__detail__title'><strong>" + res.data.prev_question.step + "</strong>" + res.data.prev_question.label + "</h5>";
     html += "<p class='addcart__box__detail__selected'>" + selected + "<span class='fa fa-check'</p>";
     html += "</div>";
     return $(".addcart .addcart__box__details").append(html);
