@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Soluciones Digitales | e-certchile</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=78199" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=78199" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script>
+      var URL_SITE = "http://54.156.114.186/";
+      var URL_API_PE = "https://certificacion2.ecertchile.cl/";
+      
+    </script>
+  </head>
+  <body>
+    <header class="header--renovation">
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__left">
+              <div class="header__actions">
+                <div class="header__nav">
+                  <ul> 
+                    <li><a href="#">Portal Empresa</a></li>
+                    <li><a href="#">Grup</a></li>
+                    <li><a href="#">Firma Documento Online</a></li>
+                    <li><a href="#">Verificar firma</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__secondary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-ecert.png"></a></div>
+            <div class="header__nav__mobile">
+              <div class="header__nav__opacity"> </div>
+              <div class="header__nav__nav"> 
+                <div class="header__nav__nav__header"> 
+                  <div class="header__nav__isotipo"> <img src="img/icons/logo-ecert.png"></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="header__nav__back">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="#">Portal Empresa</a></li>
+                      <li><a href="#">Grup</a></li>
+                      <li><a href="#">Firma Documento Online</a></li>
+                      <li><a href="#">Verificar firma</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__item header__item--ham">
+              <div class="header__ham"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <div class="section__loadercart"></div>
+      <section class="section--cart">
+        <div class="section__wrap section__wrap--sm">
+          <div class="section__header">
+            <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html" class="current">Carro de compras</a></div>
+            <div class="section__steps">
+              <div class="section__step section__step--current">
+                <div class="section__step__number">1</div>
+                <div class="section__step__text">Seleccion de productos						</div>
+              </div>
+              <div class="section__step">
+                <div class="section__step__number">2</div>
+                <div class="section__step__text">Formulario		</div>
+              </div>
+              <div class="section__step">
+                <div class="section__step__number">3</div>
+                <div class="section__step__text">Compra</div>
+              </div>
+            </div>
+            <div class="section__cart"> 
+              <h3 class="section__title">Renovación express</h3>
+            </div>
+            <!--.section__info 
+            .section__image 
+            	img(src="img/uploads/image-etoken.png")
+            .section__text 
+            	p <strong>Nota:</strong> Si compra una <strong>Firma Electrónica Avanzada</strong> o de <strong>Notario</strong>, debe contar con un dispositivo e-token para poder operar con su firma electrónica. <br> Si ya posee este dispositivo para renovar su firma electrónica, no necesita comprar otro dispositivo.
+            
+            -->
+          </div>
+          <div class="section__body"> 
+            <div class="cols cols-gutter-2"> 
+              <div class="col-md-6">
+                <div class="section__products"> 
+                  <div class="section__product__header"> 
+                    <h4 class="section__title">Mi carro de compras</h4>
+                  </div>
+                  <div class="section__product__body">
+                    <article class="article--productcart">
+                      <div class="article__header">
+                        <h4 class="article__title">Certificado digital</h4>
+                        <div class="article__trash"><a href="#"><span class="fa fa-trash"></span></a></div>
+                      </div>
+                      <div class="article__body"> 
+                        <div class="article__details"> 
+                          <div class="article__detail"> <span class="article__name">Tipo de producto</span><span class="article__value">Certificado digital</span></div>
+                          <div class="article__detail"> <span class="article__name">Vigencia</span><span class="article__value">1 año</span></div>
+                          <div class="article__detail"> <span class="article__name">Garantia extendida</span><span class="article__value">No</span></div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="section__result">
+                  <div class="section__result__header"> 
+                    <h4 class="section__title">Resumen de compra </h4>
+                  </div>
+                  <div class="section__result__body">
+                    <div class="section__result__products">							
+                      <div class="section__labels"> 
+                        <p class="section__type">Producto</p>
+                        <div class="section__info">
+                          <p class="section__quantity">Cantidad</p>
+                          <p class="section__guaranty">Garantia</p>
+                          <p class="section__total">Total</p>
+                        </div>
+                      </div>
+                      <div class="section__product"> 
+                        <p class="section__name">Certificado Digital</p>
+                        <div class="section__info">
+                          <p class="section__cant">1 Unid</p>
+                          <p class="section__guaranty">Sin garantia</p>
+                          <p class="section__value">$23.680</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__result__desc">
+                      <form class="form--coupon">
+                        <div class="form__element">
+                          <div class="form__title">¿Tienes un código de descuento?</div>
+                          <div class="form__input"> 
+                            <input id="input__coupon" type="text" name="#" placeholder="Ingresa tu código aquí" required>
+                          </div>
+                          <div class="form__button"> 
+                            <button class="btn btn--gray">Validar	</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="section__result__footer"> 
+                    <div class="section__subtotal"> 
+                      <p class="section__name">Subtotal:</p>
+                      <p class="section__value">$33.109</p>
+                    </div>
+                    <div class="section__subtotal"> 
+                      <p class="section__name">IVA:</p>
+                      <p class="section__value">$6.291</p>
+                    </div>
+                    <div class="section__total">
+                      <p class="section__name">Total:</p>
+                      <p class="section__value">$39.400</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__buttons"> <a href="renovation-2.html" class="btn">Continuar</a><a href="#" class="btn btn--white">Cancelar</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="popup popup--confirmation">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-check.svg"></div>
+          <div class="popup__text">Producto agregado al carro de compras</div>
+        </div>
+      </div>
+      <div class="popup popup--error">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-error.svg"></div>
+          <div class="popup__text">Ha ocurrido un error</div>
+        </div>
+      </div>
+      <div class="popup popup--alert">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-alert.svg"></div>
+          <div class="popup__text">esto es una alerta</div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer--renovation">
+      <div class="footer__wrap">
+        <div class="footer__primary">
+          <div class="footer__top">
+            <div class="cols">
+              <div class="col-xs-12 col-md-4">
+                <div class="footer__logo"><a href="#"><img src="img/icons/ecert-footer.svg"></a></div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="footer__info"> 
+                  <div class="footer__icon"> <img src="img/icons/phone.png"></div>
+                  <div class="footer__info__content"> 
+                    <p class="footer__description">Atención Comercial y Soporte Técnico </p><span class="footer__value">600 3620 400</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="footer__info"> 
+                  <div class="footer__icon"> <img src="img/icons/whatsapp.png"></div>
+                  <div class="footer__info__content"> 
+                    <p class="footer__description">Escríbenos por Whatsapp</p><span class="footer__value">(+56 2) 3340 7500</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__secondary">
+          <div class="footer__bottom">
+            <div class="footer__flex">
+              <div class="footer__socials"> 
+                <div class="footer__social"> <a href="https://www.linkedin.com/company/e-certchile/mycompany/?viewAsMember=true" target="_blank"><span class="fa fa-linkedin"></span></a></div>
+                <div class="footer__social"> <a href="https://www.facebook.com/ecertla?_rdc=2&amp;_rdr" target="_blank"><span class="fa fa-facebook"></span></a></div>
+                <div class="footer__social"> <a href="https://www.youtube.com/channel/UC9whVrAV_jlNif3Evo9LQXQ/videos" target="_blank"><span class="fa fa-youtube"></span></a></div>
+                <div class="footer__social"> <a href="https://www.instagram.com/ecert_la/" target="_blank"><span class="fa fa-instagram"></span></a></div>
+              </div>
+              <div class="footer__certifications">
+                <div class="footer__certification"> <img src="img/icons/icon-footer-1.svg"></div>
+                <div class="footer__certification"> <img src="img/icons/icon-footer-2.svg"></div>
+                <div class="footer__certification"> <img src="img/icons/icon-footer-4.svg"></div>
+                <div class="footer__certification"> <img src="img/icons/icon-footer-3.svg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

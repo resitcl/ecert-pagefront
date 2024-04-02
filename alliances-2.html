@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Soluciones Digitales | e-certchile</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=19704" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=19704" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script>
+      var URL_SITE = "http://54.156.114.186/";
+      var URL_API_PE = "https://certificacion2.ecertchile.cl/";
+      
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__left">
+              <div class="header__actions">
+                <div class="header__nav">
+                  <ul> 
+                    <li><a href="#">Portal Empresa</a></li>
+                    <li><a href="#">Grup</a></li>
+                    <li><a href="#">Firma Documento Online</a></li>
+                    <li><a href="#">Verificar firma</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__search">
+                <form action="search.html" method="get">
+                  <input type="text" name="s" placeholder="Buscar producto">
+                  <button><span class="fa fa-search"></span></button>
+                </form>
+              </div>
+              <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
+              <div class="header__item"> 
+                <div class="header__buttons"> <a data-modal-register class="btn btn--xs btn--transparent">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__secondary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-ecert.png"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__close">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="header__menu">
+                  <nav>
+                    <ul>
+                      <li class="header__nav__li header__nav__li--digtrans"><a href="#">Soluciones</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative">
+                            <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Soluciones </h4>
+                              <p>Nos adaptamos al tamaño y formato de tu empresa</p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="single-product.html">Certificado Digital</a>
+                                  <p>Certificado Digital para el SII</p>
+                                </li>
+                                <li><a href="personas.html">Personas</a>
+                                  <p>Certificado Digital y Firma Avanzada</p>
+                                </li>
+                                <li class="last"><a href="empresas.html">Empresas</a>
+                                  <p>Pymes y Corporativo</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li><a href="alliances.html">Alianzas</a></li>
+                      <li> <a href="#">Ayuda</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative">
+                            <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Ayuda </h4>
+                              <p>Ultrices integer ac massa suspendisse class odio
+                              </p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="faq.html">Preguntas frecuentes</a>
+                                  <p>Cubilia aliquam sed primis
+                                  </p>
+                                </li>
+                                <li><a href="tools.html">Herramientas</a>
+                                  <p>Mauris cubilia colus blandit
+                                  </p>
+                                </li>
+                                <li class="last"><a href="tutoriales.html">Tutoriales</a>
+                                  <p>Semper mauris potenti quisque
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <!--li: a(href="https://api.ecertchile.cl/WebSignValidator/public/signature-validator") Validar firmas-->
+                      <li><a href="#">Más</a>
+                        <div class="header__nav__submenu">
+                          <div class="header__nav__submenu__relative">
+                            <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
+                            <div class="header__nav__submenu__header"> 
+                              <h4>Mas </h4>
+                              <p>Creamos confianza</p>
+                            </div>
+                            <div class="header__nav__submenu__body"> 
+                              <ul> 
+                                <li> <a href="aboutus.html">Quiénes somos</a>
+                                  <p>Sollicitudin aliquam venenatis tellus non purus
+                                  </p>
+                                </li>
+                                <li><a href="news.html">Blog</a>
+                                  <p>Quis est dictumst quisque nulla eleifend bibendum
+                                  </p>
+                                </li>
+                                <li class="last"><a href="red-atencion.html">Red de Atención</a>
+                                  <p>Vestibulum mattis libero integer dictumst
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li><a href="contact.html">Hablemos</a></li>
+                    </ul>
+                  </nav>
+                  <div class="header__cart"><a href="cart-1.html"> <img src="img/icons/cart2-svgrepo-com.svg" alt=""><span class="header__cart__cant">3</span></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="header__nav__mobile">
+              <div class="header__nav__opacity"> </div>
+              <div class="header__nav__nav"> 
+                <div class="header__nav__nav__header"> 
+                  <div class="header__nav__isotipo"> <img src="img/icons/logo-ecert.png"></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="header__nav__back">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="#">Soluciones</a>
+                        <ul>
+                          <li class="header__nav__title">Soluciones</li>
+                          <li><a href="single-product.html">Certificado digital</a></li>
+                          <li><a href="personas.html">Personas</a></li>
+                          <li><a href="empresas.html">Empresas</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="alliances.html">Alianzas</a></li>
+                      <li><a href="#">Ayuda</a>
+                        <ul>
+                          <li class="header__nav__title">Ayuda</li>
+                          <li><a href="faq.html">Preguntas Frecuentas</a></li>
+                          <li><a href="tools.html">Herramientas</a></li>
+                          <li><a href="tutoriales.html">Tutoriales</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Más</a>
+                        <ul>
+                          <li class="header__nav__title">Más</li>
+                          <li><a href="aboutus.html">Quienes Somos</a></li>
+                          <li><a href="news.html">Blog</a></li>
+                          <li><a href="red-atencion.html">Red de Atención</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">Hablemos</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body header__nav__nav__body--light">
+                  <h4>Links de interés</h4>
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="#">Portal Empresa</a></li>
+                      <li><a href="#">Grup</a></li>
+                      <li><a href="#">Firma Documento Online</a></li>
+                      <li><a href="#">Verificar firma</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__nav__nav__footer"> 
+                  <div class="header__nav__buttons"><a data-modal-register class="btn btn--xs btn--white">Regístrate</a><a data-modal-login class="btn btn--xs">Ingresar</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="header__item header__item--ham">
+              <div class="header__ham"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <!--section.section--content 
+      .section__wrap 
+      	.section__body 
+      		.section__content.section--center
+      			h2.section__title: +lorem(5)
+      			p.section__description: +lorem(25)
+      			p.section__description: +lorem(35)
+      
+      -->
+      <section class="section--alliances section--header section--white"> 
+        <div class="section__wrap section__wrap--xs">
+          <div class="section__header">
+            <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="alliances.html" class="current">Alianzas</a></div>
+            <div class="section__content"> 
+              <h1 class="h3 section__title">Nuestros programas</h1>
+              <p class="section__description">Conviértete en nuestro aliado estratégico y únete a la empresa líder en generación de acuerdos digitales en Chile.</p>
+            </div>
+          </div>
+          <div class="section__body"> 
+            <div class="cols cols-gutter-2"> 
+              <div class="col-md-4"> 
+                <article class="article--alliance">
+                  <div class="article__svg"> <img src="img/icons/line-colors-purple.svg"></div>
+                  <h3 class="article__title">ISV</h3>
+                  <h4 class="article__subtitle article__subtitle--purple">Partner</h4>
+                  <p class="article__description">Agrega valor a tus productos o software con nuestras soluciones, diferénciate de la competencia. Permite a tus clientes digitalizar sus procesos de firma, mejorar la eficiencia y experiencia del usuario</p>
+                </article>
+              </div>
+              <div class="col-md-4"> 
+                <article class="article--alliance">
+                  <div class="article__svg"> <img src="img/icons/line-colors-green.svg"></div>
+                  <h3 class="article__title">Reseller</h3>
+                  <h4 class="article__subtitle article__subtitle--green">Partner</h4>
+                  <p class="article__description">Distribuye las soluciones de ecert teniendo el control de tus procesos de negocio. Incorpora un softwarwe líder de firma y validación de identidad a tu oferta como empresa.</p>
+                </article>
+              </div>
+              <div class="col-md-4"> 
+                <article class="article--alliance">
+                  <div class="article__svg"> <img src="img/icons/line-colors-pink.svg"></div>
+                  <h3 class="article__title">Referall</h3>
+                  <h4 class="article__subtitle article__subtitle--pink">Partner</h4>
+                  <p class="article__description">Promueve ecert entre tus contactos o clientes, ofreciéndoles la oportunidad de digitalizar todos sus procesos de firma.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="section__footer"> 
+            <div class="section__button"> <a href="#" class="btn btn--terciary">¡Sé un partner!</a></div>
+          </div>
+        </div>
+      </section>
+      <section class="section--media section--media--alliances">
+        <div class="section__wrap"> 
+          <div class="section__header"> 
+            <h3 class="section__title">¿Por qué ser <strong>partner</strong> de ecert?</h3>
+          </div>
+          <div class="section__body"> 
+            <div class="cols">
+              <div class="section__flex">
+                <div class="col-md-6"> 
+                  <div class="section__avatar"><img src="img/avatars/testimony.jpeg"></div>
+                </div>
+                <div class="col-md-6"> 
+                  <div class="section__body__body">
+                    <h3 class="section__title">Genera más negocios</h3>
+                    <p class="section__description">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis”</p>
+                    <p class="section__disclaimer">*Si usted ya posee token para renovar su Firma Electrónica, no necesita comprar otro dispositivo.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="section__flex">
+                <div class="col-md-6 col-md-push-6">
+                  <div class="section__avatar"><img src="img/avatars/testimony.jpeg"></div>
+                </div>
+                <div class="col-md-6 col-md-pull-6">
+                  <div class="section__body__body">
+                    <h3 class="section__title">Aumenta el valor a tu negocios</h3>
+                    <p class="section__description">Ofrece a tus clientes servicios de confianza, seguros y legales para:</p>
+                    <ul> 
+                      <li>Cierre inmediatamente las ventas en línea</li>
+                      <li>Ayúdalos a ahorrar tiempo y costes</li>
+                      <li>Reducir su impacto ambiental</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--services section--light">
+        <div class="section__wrap">
+          <div class="section__header"> 
+            <h3 class="section__title">Nuestras soluciones</h3>
+            <p class="section__description">Conoce ecert y nuestras soluciones digitales Conoce ecert y nuestras soluciones digitales Conoce ecert y nuestras soluciones digitales</p>
+          </div>
+          <div class="section__body"> 
+            <div class="cols cols-gutter-2"> 
+              <div class="slider"> 
+                <div class="slides"> 
+                  <div class="slide">
+                    <div class="col-md-4">
+                      <article class="article--feature">
+                        <div class="article__icon"> <img src="img/icons/feature-4.png"></div>
+                        <div class="article__body">
+                          <h4 class="article__title">Firma Avanzada Online</h4>
+                          <p class="article__subtitle article__subtitle--purple">Partner</p>
+                          <p class="article__description">Rutrum maecenas faucibus auctor facilisis colus tincidunt venenatis aenean curae. Ornare tristique leo tincidunt metus urna neque vel himenaeos inceptos neque donec inceptos nullam lobortis.
+                          </p>
+                        </div>
+                        <div class="article__footer"> 
+                          <div class="article__button"> <a href="#" class="btn btn--terciary">Más información</a></div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4">
+                      <article class="article--feature">
+                        <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
+                        <div class="article__body">
+                          <h4 class="article__title">Firma Avanzada Online</h4>
+                          <p class="article__subtitle article__subtitle--purple">Partner</p>
+                          <p class="article__description">Tellus ut fusce tempus senectus aliquam donec aenean dapibus condimentum. Egestas sociosqu class maecenas in elit risus suspendisse est nibh lobortis sociosqu consequat velit varius.
+                          </p>
+                        </div>
+                        <div class="article__footer"> 
+                          <div class="article__button"> <a href="#" class="btn btn--terciary">Más información</a></div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4">
+                      <article class="article--feature">
+                        <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
+                        <div class="article__body">
+                          <h4 class="article__title">Firma Avanzada Online</h4>
+                          <p class="article__subtitle article__subtitle--purple">Partner</p>
+                          <p class="article__description">Phasellus erat luctus semper bibendum ac quisque semper eu pharetra. Cubilia aliquam condimentum molestie nulla conubia vel condimentum ac purus lacinia dictum nisi etiam condimentum.
+                          </p>
+                        </div>
+                        <div class="article__footer"> 
+                          <div class="article__button"> <a href="#" class="btn btn--terciary">Más información</a></div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="col-md-4">
+                      <article class="article--feature">
+                        <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
+                        <div class="article__body">
+                          <h4 class="article__title">Firma Avanzada Online</h4>
+                          <p class="article__subtitle article__subtitle--purple">Partner</p>
+                          <p class="article__description">Hac mauris malesuada ad mollis eu maecenas commodo sem est. Vitae orci viverra sem primis eu pharetra luctus varius hac metus dapibus sollicitudin egestas himenaeos.
+                          </p>
+                        </div>
+                        <div class="article__footer"> 
+                          <div class="article__button"> <a href="#" class="btn btn--terciary">Más información</a></div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4">
+                      <article class="article--feature">
+                        <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
+                        <div class="article__body">
+                          <h4 class="article__title">Firma Avanzada Online</h4>
+                          <p class="article__subtitle article__subtitle--purple">Partner</p>
+                          <p class="article__description">Varius primis curabitur consequat libero iaculis senectus ad curae arcu. Cubilia felis vivamus rhoncus morbi leo mollis tempor potenti habitasse eros luctus consequat aenean ut.
+                          </p>
+                        </div>
+                        <div class="article__footer"> 
+                          <div class="article__button"> <a href="#" class="btn btn--terciary">Más información</a></div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4">
+                      <article class="article--feature">
+                        <div class="article__icon"> <img src="img/icons/feature-3.png"></div>
+                        <div class="article__body">
+                          <h4 class="article__title">Firma Avanzada Online</h4>
+                          <p class="article__subtitle article__subtitle--purple">Partner</p>
+                          <p class="article__description">Molestie tempor pharetra lacus interdum neque tempus porttitor dapibus ullamcorper. Eu pharetra nisl odio donec vitae vulputate donec eros etiam elit conubia molestie ut augue.
+                          </p>
+                        </div>
+                        <div class="article__footer"> 
+                          <div class="article__button"> <a href="#" class="btn btn--terciary">Más información</a></div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="col-md-4">
+                      <article class="article--feature">
+                        <div class="article__icon"> <img src="img/icons/feature-4.png"></div>
+                        <div class="article__body">
+                          <h4 class="article__title">Firma Avanzada Online</h4>
+                          <p class="article__subtitle article__subtitle--purple">Partner</p>
+                          <p class="article__description">Sociosqu id maecenas velit tellus consequat tincidunt proin purus taciti. Torquent eget primis phasellus cursus diam facilisis faucibus leo vehicula lacinia semper hendrerit dui scelerisque.
+                          </p>
+                        </div>
+                        <div class="article__footer"> 
+                          <div class="article__button"> <a href="#" class="btn btn--terciary">Más información</a></div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4">
+                      <article class="article--feature">
+                        <div class="article__icon"> <img src="img/icons/feature-1.png"></div>
+                        <div class="article__body">
+                          <h4 class="article__title">Firma Avanzada Online</h4>
+                          <p class="article__subtitle article__subtitle--purple">Partner</p>
+                          <p class="article__description">Volutpat augue pretium cras tempus consectetur lectus nibh in curae. Nam at pulvinar aenean tincidunt duis proin magna ut curabitur molestie tincidunt malesuada malesuada eleifend.
+                          </p>
+                        </div>
+                        <div class="article__footer"> 
+                          <div class="article__button"> <a href="#" class="btn btn--terciary">Más información</a></div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4">
+                      <article class="article--feature">
+                        <div class="article__icon"> <img src="img/icons/feature-2.png"></div>
+                        <div class="article__body">
+                          <h4 class="article__title">Firma Avanzada Online</h4>
+                          <p class="article__subtitle article__subtitle--purple">Partner</p>
+                          <p class="article__description">Malesuada neque donec tempus tempor morbi vehicula rhoncus habitant ornare. Rhoncus placerat justo nisi torquent a sapien magna mi vitae class nulla arcu etiam sollicitudin.
+                          </p>
+                        </div>
+                        <div class="article__footer"> 
+                          <div class="article__button"> <a href="#" class="btn btn--terciary">Más información</a></div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--benefits section--white">
+        <div class="section__wrap"> 
+          <div class="section__header">
+            <h3 class="section__title">Beneficios de ser un partner de ecert</h3>
+            <p class="section__description">Disfrutarás de un Account Executive especializado en partners, enfocado en impulsar la colaboración y el crecimiento conjunto. Además, contarás con el respaldo de nuestro equipo de consultoría ecert durante la integración, asegurando un proceso sin problemas.</p>
+          </div>
+          <div class="section__body"> 
+            <div class="cols cols-gutter-2">
+              <div class="slider"> 
+                <div class="slides"> 
+                  <div class="slide">
+                    <div class="col-md-4"> 
+                      <article class="article--what">
+                        <div class="article__body"> 
+                          <h4 class="article__title">ERP</h4>
+                          <div class="article__paragraph">
+                            <div class="article__icon"> <img src="img/icons/confirm.svg" alt="" srcset=""></div>
+                            <p class="article__description">Curabitur facilisis tempor blandit eros sed imperdiet hendrerit mi nam
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4"> 
+                      <article class="article--what">
+                        <div class="article__body">
+                          <h4 class="article__title">Integradores de firma</h4>
+                          <div class="article__paragraph">
+                            <div class="article__icon"> <img src="img/icons/confirm.svg" alt="" srcset=""></div>
+                            <p class="article__description">Bibendum primis dictum libero rutrum leo aenean placerat
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4"> 
+                      <article class="article--what">
+                        <div class="article__body">
+                          <h4 class="article__title">Ligula justo tempus
+                          </h4>
+                          <div class="article__paragraph">
+                            <div class="article__icon"> <img src="img/icons/confirm.svg" alt="" srcset=""></div>
+                            <p class="article__description">Platea vel nam malesuada a fusce senectus etiam lacus pharetra
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="col-md-4"> 
+                      <article class="article--what">
+                        <div class="article__body"> 
+                          <h4 class="article__title">ERP </h4>
+                          <div class="article__paragraph">
+                            <div class="article__icon"> <img src="img/icons/confirm.svg" alt="" srcset=""></div>
+                            <p class="article__description">Sociosqu aenean tellus placerat bibendum auctor mattis sodales lobortis platea
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4"> 
+                      <article class="article--what">
+                        <div class="article__body">
+                          <h4 class="article__title">Integradores de firma</h4>
+                          <div class="article__paragraph">
+                            <div class="article__icon"> <img src="img/icons/confirm.svg" alt="" srcset=""></div>
+                            <p class="article__description">Et odio facilisis velit ac etiam phasellus dapibus
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4"> 
+                      <article class="article--what">
+                        <div class="article__body">
+                          <h4 class="article__title">Ornare donec hac
+                          </h4>
+                          <div class="article__paragraph">
+                            <div class="article__icon"> <img src="img/icons/confirm.svg" alt="" srcset=""></div>
+                            <p class="article__description">Vestibulum molestie posuere malesuada pharetra aenean vehicula suscipit curabitur sapien
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div class="col-md-4"> 
+                      <article class="article--what">
+                        <div class="article__body"> 
+                          <h4 class="article__title">ERP</h4>
+                          <div class="article__paragraph">
+                            <div class="article__icon"> <img src="img/icons/confirm.svg" alt="" srcset=""></div>
+                            <p class="article__description">Vulputate diam interdum congue etiam tempus a nec porttitor aliquet
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4"> 
+                      <article class="article--what">
+                        <div class="article__body">
+                          <h4 class="article__title">Integradores de firma</h4>
+                          <div class="article__paragraph">
+                            <div class="article__icon"> <img src="img/icons/confirm.svg" alt="" srcset=""></div>
+                            <p class="article__description">Est placerat iaculis id porttitor pharetra magna etiam
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-4"> 
+                      <article class="article--what">
+                        <div class="article__body">
+                          <h4 class="article__title">Sociosqu pulvinar ac
+                          </h4>
+                          <div class="article__paragraph">
+                            <div class="article__icon"> <img src="img/icons/confirm.svg" alt="" srcset=""></div>
+                            <p class="article__description">Adipiscing odio erat lacus feugiat aptent tristique semper platea lectus
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--joinus"> 
+        <div class="section__wrap section__wrap--md"> 
+          <div class="section__body"> 
+            <h4 class="section__title">Únete a nuestra red de partner <br><strong> y crezcamos juntos </strong> </h4><a class="btn">¡Hazte socio!</a>
+          </div>
+        </div>
+      </section>
+      <section class="section--clients section--light">
+        <div class="section__wrap"> 
+          <div class="section__header"> 
+            <h3 class="section__title">Ellos confían en nosotros </h3>
+            <p class="section__description">Nunc ultrices vehicula fames fames vehicula elementum tristique nunc in molestie lacus.
+            </p>
+          </div>
+          <div class="section__body"> 
+            <div class="section__clients">
+              <div class="section__wrapper">
+                <div class="swiper-container swiper-clients">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide dscroll">
+                      <div class="section__client"> 
+                        <div class="section__img"> <a href="#"><img src="img/clients/1.png"></a></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <div class="section__client">
+                        <div class="section__img"> <a href="#"><img src="img/clients/6.png"></a></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <div class="section__client">
+                        <div class="section__img"> <a href="#"><img src="img/clients/3.png"></a></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <div class="section__client">
+                        <div class="section__img"> <a href="#"><img src="img/clients/4.png"></a></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <div class="section__client">
+                        <div class="section__img"> <a href="#"><img src="img/clients/5.png"></a></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <div class="section__client">
+                        <div class="section__img"> <a href="#"><img src="img/clients/1.png"></a></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <div class="section__client">
+                        <div class="section__img"> <a href="#"><img src="img/clients/6.png"></a></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <div class="section__client">
+                        <div class="section__img"> <a href="#"><img src="img/clients/3.png"></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--section.section--clients.section--white
+      .section__wrap 
+      	.section__header 
+      		h3.section__title Ellos confían en nosotros 
+      		p.section__description: +lorem(12)
+      	
+      	.section__body 
+      		.section__clients
+      			.section__wrapper
+      				.swiper-container.swiper-clients
+      					.swiper-wrapper
+      						.swiper-slide.dscroll
+      							.section__client 
+      								.section__img 
+      									a(href="#")
+      										img(src="img/clients/1.png")
+      						.swiper-slide.dscroll
+      							.section__client
+      								.section__img 
+      									a(href="#")
+      										img(src="img/clients/6.png")
+      						.swiper-slide.dscroll
+      							.section__client
+      								.section__img 
+      									a(href="#")
+      										img(src="img/clients/3.png")
+      						.swiper-slide.dscroll
+      							.section__client
+      								.section__img 
+      									a(href="#")
+      										img(src="img/clients/4.png")
+      						.swiper-slide.dscroll
+      							.section__client
+      								.section__img 
+      									a(href="#")
+      										img(src="img/clients/5.png")
+      						.swiper-slide.dscroll
+      							.section__client
+      								.section__img 
+      									a(href="#")
+      										img(src="img/clients/1.png")
+      						.swiper-slide.dscroll
+      							.section__client
+      								.section__img 
+      									a(href="#")
+      										img(src="img/clients/6.png")
+      						.swiper-slide.dscroll
+      							.section__client
+      								.section__img 
+      									a(href="#")
+      										img(src="img/clients/3.png")
+      -->
+      <div class="addcart"> 
+        <div class="addcart__opacity"></div>
+        <div class="addcart__box">
+          <div class="addcart__close"> <img src="img/icons/close-addcart.png"></div>
+          <div class="addcart__loader"></div>
+          <div class="addcart__box__box">
+            <div class="addcart__box__header"> 
+              <h3 class="addcart__title">Agregar nuevo producto </h3>
+              <p class="addcart__description">Ante ultrices mauris etiam libero nec nullam semper massa fringilla ligula urna accumsan nulla purus.
+              </p>
+            </div>
+            <div class="addcart__box__body">
+              <div class="addcart__box__body__flow show">
+                <div class="addcart__box__details"> 
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 1:</strong> Selecciona el tipo de producto
+                  p.addcart__box__detail__selected Firma Electrónica Avanzada
+                  	span.fa.fa-check
+                  
+                  -->
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 2:</strong> Modalidad de Firma
+                  p.addcart__box__detail__selected Token
+                  	span.fa.fa-check
+                  
+                  -->
+                  <!--.addcart__box__detail
+                  h5.addcart__box__detail__title <strong>Paso 3:</strong> Vigencia
+                  p.addcart__box__detail__selected 2 Años
+                  	span.fa.fa-check
+                  
+                  -->
+                </div>
+                <div class="addcart__question"> 
+                  <div class="addcart__question__header">
+                    <h4 class="addcart__title"><strong></strong></h4>
+                    <h4 class="addcart__title"><span></span></h4>
+                    <div class="addcart__tooltip">
+                      <div class="addcart__circle"><span>?</span></div>
+                      <div class="addcart__tooltip__tooltip">
+                        <h5>Faucibus sed
+                        </h5>
+                        <p>Egestas sollicitudin molestie mauris hendrerit laoreet et conubia eleifend luctus. Porta quis fames nostra vel erat vitae laoreet est urna metus ullamcorper sollicitudin blandit fames.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="addcart__question__body">
+                    <div special_form="false" class="addcart__options"></div>
+                  </div>
+                  <div class="addcart__question__footer">
+                    <div class="addcart__alert"><span class="fa fa-exclamation-triangle"></span>
+                      <div class="addcart__alert__content"></div>
+                    </div>
+                    <div class="addcart__question__footer__buttons"><a data-prev-question class="btn btn--primary--white btn--hidden">Volver a paso anterior</a><a data-next-question class="btn">Continuar</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="addcart__box__body__results"> 
+                <div class="addcart__box__body__results__header">
+                  <h4 class="addcart__subtitle">Tu producto ya se encuentra listo</h4>
+                </div>
+                <div class="addcart__box__body__results__body">
+                  <div class="addcart__product">
+                    <div class="addcart__body">
+                      <div class="addcart__body__top">
+                        <h4 class="addcart__title"></h4><span class="addcart__product__price"></span>
+                      </div>
+                      <div class="addcart__details"></div>
+                      <div class="addcart__prices"> 
+                        <div class="addcart__price__subtotal"><span class="addcart__price__title">Subtotal (Sin IVA)</span><span class="addcart__price__price">$14.500</span></div>
+                        <div class="addcart__price__total"><span class="addcart__price__title">Total</span><span class="addcart__price__price"> </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="addcart__box__body__results__footer"> 
+                  <div class="addcart__buttons"> <a data-add-cart class="btn">Agregar al carrito</a><a data-restart-questions class="btn btn--primary--white">Volver a iniciar</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--login">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Iniciar sesión</h3>
+              <p class="section__description">Ultricies accumsan mi metus tellus praesent blandit lacus
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__tab"> 
+                <div class="tabs tabs--login">
+                  <div class="tabs__header"> 
+                    <div class="tab tab--current">Persona natural</div>
+                    <div class="tab">Contador </div>
+                  </div>
+                  <div class="tabs__body"> 
+                    <div class="tab tab--current dscroll">
+                      <div class="modal__form">
+                        <form>
+                          <div class="cols"> 
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Rut</div>
+                                <div class="form__input">
+                                  <input type="rut" name="#" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Contraseña</div>
+                                <div class="form__input">
+                                  <input type="password" name="#" required>
+                                </div>
+                                <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__buttons">
+                                <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="tab dscroll">
+                      <div class="modal__form">
+                        <form>
+                          <div class="cols"> 
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Email</div>
+                                <div class="form__input">
+                                  <input type="email" name="#" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Contraseña</div>
+                                <div class="form__input">
+                                  <input type="password" name="#" required>
+                                </div>
+                                <div class="form__resetpass"> <a data-modal-resetpass>¿Has olvidado la contraseña?</a></div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__buttons">
+                                <button class="btn">Iniciar sesión</button><a data-modal-register class="btn btn--white">Crea tu cuenta</a>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--register">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Registro</h3>
+              <p class="section__description">Egestas et elit etiam hendrerit imperdiet lacinia massa
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__form">
+                <form>
+                  <div class="cols">
+                    <div class="col-xs-12">
+                      <div class="form__options"> 
+                        <div class="form__option"> 
+                          <label>
+                            <input type="radio" name="profile">Persona natural
+                          </label>
+                        </div>
+                        <div class="form__option"> 
+                          <label>
+                            <input type="radio" name="profile">Contador
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Rut</div>
+                        <div class="form__input">
+                          <input type="rut" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="rut" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Contraseña</div>
+                        <div class="form__input">
+                          <input type="password" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Repetir Contraseña</div>
+                        <div class="form__input">
+                          <input type="password" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__buttons">
+                        <button class="btn">Registrarse</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--resetpass">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <h3 class="modal__title">Recuperar contraseña</h3>
+              <p class="section__description">Massa cursus nisl lacinia mattis integer ad aliquam
+              </p>
+            </div>
+            <div class="modal__body">
+              <div class="modal__form">
+                <form>
+                  <div class="cols"> 
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="email" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__buttons">
+                        <button class="btn">Recuperar</button><a data-modal-login class="btn btn--white">Iniciar sesión</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup--confirmation">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-check.svg"></div>
+          <div class="popup__text">Producto agregado al carro de compras</div>
+        </div>
+      </div>
+      <div class="popup popup--error">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-error.svg"></div>
+          <div class="popup__text">Ha ocurrido un error</div>
+        </div>
+      </div>
+      <div class="popup popup--alert">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-alert.svg"></div>
+          <div class="popup__text">esto es una alerta</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__wrap">
+        <div class="footer__primary">
+          <div class="footer__top">
+            <div class="cols">
+              <div class="col-xs-12 col-md-3">
+                <div class="footer__logo"><a href="#"><img src="img/icons/logo-ecert-white.svg"></a></div>
+              </div>
+              <div class="col-xs-12 col-md-3">
+                <div class="footer__info"> 
+                  <div class="footer__icon"> <img src="img/icons/phone.png"></div>
+                  <div class="footer__info__content"> 
+                    <p class="footer__description">Atención Comercial y Soporte Técnico </p><span class="footer__value">600 3620 400</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-3">
+                <div class="footer__info"> 
+                  <div class="footer__icon"> <img src="img/icons/whatsapp.png"></div>
+                  <div class="footer__info__content"> 
+                    <p class="footer__description">Escríbenos por Whatsapp</p><span class="footer__value">(+56 2) 3340 7500</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-3">
+                <div class="footer__info"> 
+                  <div class="footer__button"><a href="contact.html" class="btn btn--secondary">Hablemos<img src="img/icons/icon-contact.png"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__center">
+            <div class="cols">
+              <div class="col-xs-12 col-md-3">
+                <div class="footer__links">
+                  <h4 class="footer__title">E-CERTCHILE</h4>
+                  <ul>
+                    <li><a href="#">Quienes Somos</a></li>
+                    <li><a href="#">Blog de Noticias</a></li>
+                    <li><a href="#">Verificación y Ayuda</a></li>
+                    <li><a href="#">Firmas Electrónicas</a></li>
+                    <li><a href="#">Empresa Digital</a></li>
+                    <li><a href="#">Convenios</a></li>
+                    <li><a href="#">Red de Atención</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-3">
+                <div class="footer__links">
+                  <h4 class="footer__title">Personas</h4>
+                  <ul>
+                    <li><a href="#">Beneficios</a></li>
+                    <li><a href="#">Firma Electrónica</a></li>
+                    <li><a href="#">Firma de Documentos Online</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-3">
+                <div class="footer__links">
+                  <h4 class="footer__title">PYMES</h4>
+                  <ul>
+                    <li><a href="#">Beneficios</a></li>
+                    <li><a href="#">Firma Electrónica</a></li>
+                    <li><a href="#">Grup</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-3">
+                <div class="footer__links">
+                  <h4 class="footer__title">Empresas</h4>
+                  <ul>
+                    <li><a href="#">Plataforma de Servicios</a></li>
+                    <li><a href="#">Portal Empresas</a></li>
+                    <li><a href="#">Soluciones</a></li>
+                    <li><a href="#">Casos de Éxito</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__secondary">
+          <div class="footer__bottom">
+            <div class="footer__flex">
+              <div class="footer__socials"> 
+                <div class="footer__social"> <a href="#"><span class="fa fa-linkedin"></span></a></div>
+                <div class="footer__social"> <a href="#"><span class="fa fa-facebook"></span></a></div>
+                <div class="footer__social"> <a href="#"><span class="fa fa-youtube"></span></a></div>
+                <div class="footer__social"> <a href="#"><span class="fa fa-instagram"></span></a></div>
+              </div>
+              <div class="footer__certifications">
+                <div class="footer__certification"> <img src="img/icons/SELLO_REL_azul.png"></div>
+                <div class="footer__certification"> <img src="img/icons/certification-1.png"></div>
+                <div class="footer__certification"> <img src="img/icons/certification-2.png"></div>
+                <div class="footer__certification"> <img src="img/icons/certification-3.png"></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright"> 
+            <p class="footer__description">Políticas y Prácticas - Politíca General de Seguridad - Política de Calidad.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

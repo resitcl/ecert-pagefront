@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=82828" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=91438" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=82828" type="text/javascript"></script>
+    <script src="js/main.js?v=91438" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -112,21 +112,21 @@
                             <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
                             <div class="header__nav__submenu__header"> 
                               <h4>Ayuda </h4>
-                              <p>Fusce aptent felis curabitur tempus ac fusce
+                              <p>Interdum tortor tincidunt aliquet velit ultricies taciti
                               </p>
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="faq.html">Preguntas frecuentes</a>
-                                  <p>Rhoncus adipiscing nisi mauris
+                                  <p>Iaculis laoreet aliquam massa
                                   </p>
                                 </li>
                                 <li><a href="tools.html">Herramientas</a>
-                                  <p>Curabitur urna curabitur semper
+                                  <p>Vivamus magna euismod rutrum
                                   </p>
                                 </li>
                                 <li class="last"><a href="tutoriales.html">Tutoriales</a>
-                                  <p>Lobortis id id nisl
+                                  <p>Maecenas metus venenatis porta
                                   </p>
                                 </li>
                               </ul>
@@ -146,15 +146,15 @@
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="aboutus.html">Quiénes somos</a>
-                                  <p>Porta commodo blandit ullamcorper ornare tempor
+                                  <p>Libero ultrices eros sodales cubilia suscipit
                                   </p>
                                 </li>
                                 <li><a href="news.html">Blog</a>
-                                  <p>Pharetra urna commodo turpis lectus curae libero
+                                  <p>Fames molestie quisque torquent mattis pharetra bibendum
                                   </p>
                                 </li>
                                 <li class="last"><a href="red-atencion.html">Red de Atención</a>
-                                  <p>Blandit luctus vestibulum class nulla
+                                  <p>Class integer class felis tempus
                                   </p>
                                 </li>
                               </ul>
@@ -216,7 +216,8 @@
                     </ul>
                   </div>
                 </div>
-                <div class="header__nav__nav__body">
+                <div class="header__nav__nav__body header__nav__nav__body--light">
+                  <h4>Links de interés</h4>
                   <div class="header__nav__nav__menu"> 
                     <ul> 
                       <li><a href="#">Portal Empresa</a></li>
@@ -239,27 +240,11 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--header section--header--cart">
-        <div class="section__clipath">
-          <div class="section__bg">
-            <div class="bg"><img src="img/uploads/2.jpg"></div>
-          </div>
-          <div class="section__wrap section__wrap--header--cart">
-            <div class="section__body">
-              <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html">Carro de compras</a></div>
-              <div class="section__content">			
-                <h1 class="section__title">Carro de compras</h1>
-                <p class="section__description">Fames congue senectus aenean commodo integer conubia fringilla nunc etiam aliquet varius etiam torquent nostra.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="section--cart">
-        <div class="section__wrap section--md">
+        <div class="section__wrap section__wrap--sm">
           <div class="section__header">
-            <div class="section__steps section__steps--2">
+            <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html" class="current">Carro de compras</a></div>
+            <div class="section__steps">
               <div class="section__step section__step--current">
                 <div class="section__step__number">1</div>
                 <div class="section__step__text">Seleccion de productos						</div>
@@ -277,559 +262,294 @@
               <h3 class="section__title">Compra Firma Electrónica</h3>
             </div>
           </div>
-          <div class="section__body section__body--xs"> 
+          <div class="section__body section__body--show section__body--xs section__body--step2">
             <div class="cols">
               <div class="col-xs-12"> 
                 <div class="section__form">
                   <div class="section__form__header"> 
-                    <h4 class="section__title">Complete la información para cada producto seleccionado</h4>
+                    <h4 class="section__title">Completa la información para cada producto</h4>
                   </div>
                   <div class="section__form__body">
+                    <div class="section__loader"></div>
                     <div class="section__form__product">
                       <div class="section__form__product__header"> 
                         <h5 class="section__title">Certificado Digital</h5>
-                        <div class="article__trash"> <span class="fa fa-trash"></span></div>
+                        <div class="section__elements">
+                          <div class="section__steps"> 
+                            <div class="section__step section__step--current"> <span>1</span></div>
+                            <div class="section__step"> <span>2</span></div>
+                            <div class="section__step"> <span>3</span></div>
+                          </div>
+                          <div class="section__trash"><a href="#"> <span class="fa fa-trash"></span></a></div>
+                        </div>
                       </div>
                       <div class="section__form__product__body">
-                        <div class="section__steploader"></div>
-                        <div class="section__form__product__search stepshow">
+                        <div data-next-form="personal" class="section__form__product__item section__form__product__item--current">
+                          <div class="cols">
+                            <form class="form--validapersona form--validation">
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element"> 
+                                  <div class="form__title">Rut </div>
+                                  <div class="form__input"> 
+                                    <input type="rut" name="#" required placeholder="12.876.907-0" class="input-rut">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element">
+                                  <div class="form__title">N° de serie</div>
+                                  <div class="form__tooltip form__tooltip--ci">
+                                    <div class="form__circle"><span>?</span></div>
+                                    <div class="form__tooltip__tooltip">
+                                      <h5>Número de documento o Número de serie</h5><img src="img/uploads/image-carnet-example.png">
+                                      <p>Cédula nueva 00000000 (cara Frontal C.I)</p>
+                                      <p>Cédula antigua A000000 (cara Posterior C.I)</p>
+                                    </div>
+                                  </div>
+                                  <div class="form__input"> 
+                                    <input type="text" name="#" number="nserie" placeholder="Ingresa tu N°de 9 digitos" required class="input-nserie">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12"> 
+                                <div class="form__message"><span class="fa fa-exclamation-triangle"></span>
+                                  <p>*El proceso de validación fehaciente de identidad se realizará en los pasos siguientes de acuerdo a nuestros procedimientos indicados en las <a href="#" target="_blank">Políticas y Prácticas de ecert</a></p>
+                                </div>
+                              </div>
+                              <div class="col-xs-12"> 
+                                <div class="form__buttons">
+                                  <div class="form__alert"> <span class="fa fa-exclamation-triangle"></span>
+                                    <div class="form__alert__content">
+                                      <p>Ornare auctor a lectus consectetur lectus fermentum aliquet vehicula aptent duis imperdiet.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <button class="btn btn--gray">Siguiente</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div data-next-form="finish" class="section__form__product__item">
+                          <h5 class="section__title">1. Datos Personales</h5>
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Nombres</div>
+                                <div class="form__input form__input__names">
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Primer apellido </div>
+                                <div class="form__input form__input__lastname01">
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Segundo apellido</div>
+                                <div class="form__input form__input__lastname02">
+                                  <input type="text" name="#" placeholder="Ej: Perez">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
+                                <div class="form__input form__input__phone"> 
+                                  <input type="tel" name="#" value="+56">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Confirmar correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__form__product__item">
+                          <div class="section__form__product__resumen">
+                            <div class="section__form__product__finish"> 
+                              <div class="section__form__product__header"> 
+                                <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
+                                <h4>Informacíon del producto finalizada </h4>
+                                <p>Corrobora tu información antes de continuar con tu compra.</p>
+                                <!--.section__form__switch
+                                .switch
+                                	input(type="checkbox" id="switch-2")
+                                	label(for="switch-2") Toggle
+                                p.section__form__switch__text Utiliza los mismos datos personales para todos los productos restantes
+                                
+                                -->
+                              </div>
+                              <div class="section__form__product__body">
+                                <div class="cols"> </div>
+                              </div>
+                              <div class="section__form__product__footer"> 
+                                <div class="form__buttons"> <a event-prev-item class="btn btn--white--2">Volver</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__form__product">
+                      <div class="section__form__product__header"> 
+                        <h5 class="section__title">Firma electrónica avanzada</h5>
+                        <div class="section__elements">
+                          <div class="section__steps"> 
+                            <div class="section__step section__step--current"> <span>1</span></div>
+                            <div class="section__step"> <span>2</span></div>
+                            <div class="section__step"> <span>3</span></div>
+                            <div class="section__step"> <span>4</span></div>
+                          </div>
+                          <div class="section__trash"><a href="#"> <span class="fa fa-trash"></span></a></div>
+                        </div>
+                      </div>
+                      <div class="section__form__product__body">
+                        <div data-next-form="personal" class="section__form__product__item section__form__product__item--current">
                           <div class="cols"> 
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Rut </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="12.876.907-0">
+                            <form class="form--validapersona form--validation">
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element"> 
+                                  <div class="form__title">Rut </div>
+                                  <div class="form__input"> 
+                                    <input type="rut" name="#" required placeholder="12.876.907-0" class="input-rut">
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">N° de serie </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="Ingresa tu N°de 9 digitos">
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element">
+                                  <div class="form__title">N° de serie</div>
+                                  <div class="form__tooltip form__tooltip--ci">
+                                    <div class="form__circle"><span>?</span></div>
+                                    <div class="form__tooltip__tooltip">
+                                      <h5>Urna suspendisse
+                                      </h5>
+                                      <p>Iaculis sollicitudin fusce nam ultrices congue id nullam faucibus molestie. Curabitur elementum aenean congue egestas imperdiet tellus odio sapien cubilia quisque convallis et malesuada aenean.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="form__input"> 
+                                    <input type="text" name="#" number="nserie" placeholder="Ingresa tu N°de 9 digitos" required class="input-nserie">
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons">				<a data-next-1 class="btn btn--gray">Siguiente</a></div>
-                            </div>
+                              <div class="col-xs-12"> 
+                                <div class="form__buttons">
+                                  <div class="form__alert"> <span class="fa fa-exclamation-triangle"></span>
+                                    <div class="form__alert__content">
+                                      <p>Pellentesque rutrum libero ad aenean torquent tincidunt suspendisse etiam scelerisque vitae vestibulum.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <button class="btn btn--gray">Siguiente</button>
+                                </div>
+                              </div>
+                            </form>
                           </div>
                         </div>
-                        <div class="section__form__product__personal">
-                          <h5 class="section__title">1. Datos Personales (Porfavor ingresar los datos para el dueño del certificado)</h5>
+                        <div data-next-form="delivery" class="section__form__product__item">
+                          <h5 class="section__title">1. Datos Personales</h5>
                           <div class="cols">
                             <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Nombre</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                <div class="form__title">Nombres</div>
+                                <div class="form__input form__input__names"> 
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Apellido Paterno </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Apellido Materno </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Teléfono Movil Titular</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Email</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Confirmación Email</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-2 class="btn">Continuar</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__payment">
-                          <h5 class="section__title">2. Datos de facturación</h5>
-                          <input type="hidden" name="profile" value="empresa">
-                          <div class="cols">
                             <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Nombre o Razón social</div>
-                                <div class="form__input"> 
+                                <div class="form__title">Primer apellido </div>
+                                <div class="form__input form__input__lastname01"> 
                                   <input type="text" name="#" placeholder="">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Rut </div>
+                                <div class="form__title">Segundo apellido</div>
+                                <div class="form__input form__input__lastname02"> 
+                                  <input type="text" name="#" placeholder="Ej: Perez">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
                                 <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                  <input type="tel" name="#" value="" required>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Dirección </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                <div class="form__title">Correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Región</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Nullam
-                                    </option>
-                                    <option value="#">Hendrerit
-                                    </option>
-                                    <option value="#">Posuere
-                                    </option>
-                                    <option value="#">Pretium
-                                    </option>
-                                    <option value="#">Mattis
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Comuna</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Velit
-                                    </option>
-                                    <option value="#">Morbi
-                                    </option>
-                                    <option value="#">Aenean
-                                    </option>
-                                    <option value="#">Malesuada
-                                    </option>
-                                    <option value="#">Ultricies
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Email Facturación</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Giro</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                <div class="form__title">Confirmar correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
                                 </div>
                               </div>
                             </div>
                             <div class="col-xs-12"> 
-                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-3 class="btn">Continuar</a></div>
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
                             </div>
                           </div>
                         </div>
-                        <div class="section__form__product__delivery">
-                          <h5 class="section__title">3. Datos de despacho</h5>
+                        <div data-next-form="finish" class="section__form__product__item">
+                          <div class="section__form__product__payment__header">
+                            <h5 class="section__title">Datos de despacho</h5>
+                            <div class="section__form__button"><a href="#" class="btn btn--sm btn--gray">Cobertura Chilexpress</a></div>
+                          </div>
                           <div class="cols">
                             <div class="col-xs-12">
                               <div class="form__element"> 
                                 <div class="form__title">Nombre quien recibe</div>
                                 <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Dirección</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Referencia</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__button"> <a href="#" target="_blank" class="btn btn--quaternary btn--sm">Conozca cobertura Chilexpress acá<img src="img/icons/icon-chilexpress.ico"></a></div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
                                 <div class="form__title">Región</div>
                                 <div class="form__input">
                                   <select name="#">
-                                    <option value="#">Sem
-                                    </option>
-                                    <option value="#">Habitant
-                                    </option>
-                                    <option value="#">Praesent
-                                    </option>
-                                    <option value="#">Rutrum
-                                    </option>
-                                    <option value="#">Non
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Provincia</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Elementum
-                                    </option>
-                                    <option value="#">Sapien
-                                    </option>
-                                    <option value="#">Torquent
-                                    </option>
-                                    <option value="#">Habitasse
+                                    <option value="#">Ullamcorper
                                     </option>
                                     <option value="#">Et
                                     </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Comuna</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Netus
+                                    <option value="#">Pellentesque
                                     </option>
-                                    <option value="#">Nisi
-                                    </option>
-                                    <option value="#">Colus
-                                    </option>
-                                    <option value="#">Nunc
-                                    </option>
-                                    <option value="#">Dictum
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Teléfono Contacto 1</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Teléfono Contacto 2</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons"><a data-next-4 class="btn">Guardar</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__resumen">
-                          <div class="section__form__product__finish"> 
-                            <div class="section__form__product__header"> 
-                              <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
-                              <h4>Informacíon del producto finalizada </h4>
-                              <p>Corrobora tu información antes de continuar con tu compra.</p>
-                            </div>
-                            <div class="section__form__product__body">
-                              <div class="cols"> 
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4"> 1.      Datos Personales</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Rut </td>
-                                        <td>18.094.500-8</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Nombre </td>
-                                        <td>Eduardo</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Apellido paterno </td>
-                                        <td>Acevedo</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Apellido Materno </td>
-                                        <td>Roman</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Nacionalidad </td>
-                                        <td>Chilena</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Movil Titular </td>
-                                        <td>971479272</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Email</td>
-                                        <td>Eduacevedoroman@gmail.com</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4">2. Datos de facturación</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Nombre Empresa</td>
-                                        <td>Frontback</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Rut </td>
-                                        <td>66.666.666-6</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Dirección </td>
-                                        <td>Primera transversal #1921</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Región </td>
-                                        <td>Metropolitana</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Provicia  </td>
-                                        <td>Santiago</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Comuna </td>
-                                        <td>Maipú</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Email Facturación </td>
-                                        <td>eduardo@frontback.cl</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Giro empresa</td>
-                                        <td>Desarrollo de software</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4">3. Datos de despacho</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Nombre quien recibe</td>
-                                        <td>Frontback</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Dirección </td>
-                                        <td>Primera transversal #1921</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Referencia</td>
-                                        <td>Cursus nam quam non sociosqu enim enim facilisis neque facilisis proin vehicula.
-                                        </td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Región</td>
-                                        <td>Metropolitana</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Provicia  </td>
-                                        <td>Santiago</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Comuna </td>
-                                        <td>Maipú</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Contacto 1 </td>
-                                        <td>971479272</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Contacto 2 </td>
-                                        <td>974458963</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="section__form__product__footer"> 
-                              <div class="form__buttons"> <a href="#" class="btn btn--white">Editar información</a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="section__form__product">
-                      <div class="section__form__product__header"> 
-                        <h5 class="section__title">Firma Electrónica Avanzada - 1 año</h5>
-                        <div class="article__trash"> <span class="fa fa-trash"></span></div>
-                      </div>
-                      <div class="section__form__product__body">
-                        <div class="section__steploader"></div>
-                        <div class="section__form__product__search stepshow">
-                          <div class="cols"> 
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Rut </div>
-                                <div class="form__input"> 
-                                  <input id="focusrut" type="text" name="#" placeholder="12.876.907-0">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">N° de serie </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="Ingresa tu N°de 9 digitos">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons">				<a data-next-1 class="btn btn--gray">Siguiente</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__personal">
-                          <h5 class="section__title">1. Datos Personales (Porfavor ingresar los datos para el dueño del certificado)</h5>
-                          <div class="cols">
-                            <div class="col-xs-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Nombre</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Apellido Paterno </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Apellido Materno </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Teléfono Movil Titular</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Email</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Confirmación Email</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-2 class="btn">Continuar</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__payment">
-                          <h5 class="section__title">2. Datos de facturación</h5>
-                          <input type="hidden" name="profile" value="empresa">
-                          <div class="cols">
-                            <div class="col-xs-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Nombre o Razón social</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Rut </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Dirección </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Región</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Suscipit
-                                    </option>
-                                    <option value="#">Turpis
-                                    </option>
-                                    <option value="#">Pharetra
-                                    </option>
-                                    <option value="#">Etiam
+                                    <option value="#">Sollicitudin
                                     </option>
                                     <option value="#">Sem
                                     </option>
@@ -837,66 +557,34 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
                                 <div class="form__title">Comuna</div>
                                 <div class="form__input">
                                   <select name="#">
-                                    <option value="#">Egestas
+                                    <option value="#">Justo
                                     </option>
-                                    <option value="#">Pharetra
+                                    <option value="#">Praesent
                                     </option>
-                                    <option value="#">Pulvinar
+                                    <option value="#">Proin
                                     </option>
-                                    <option value="#">Consectetur
+                                    <option value="#">Orci
                                     </option>
-                                    <option value="#">Class
+                                    <option value="#">Aliquet
                                     </option>
                                   </select>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Email Facturación</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Giro</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-3 class="btn">Continuar							</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__delivery">
-                          <h5 class="section__title">3. Datos de despacho</h5>
-                          <div class="cols">
                             <div class="col-xs-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Nombre quien recibe</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
                               <div class="form__element"> 
                                 <div class="form__title">Dirección</div>
                                 <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                  <input type="text" name="#" placeholder="Escribe tu dirección">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
                                 <div class="form__title">Referencia</div>
                                 <div class="form__input"> 
@@ -904,220 +592,48 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__button"> <a href="#" target="_blank" class="btn btn--quaternary btn--sm">Conozca cobertura Chilexpress acá<img src="img/icons/icon-chilexpress.ico"></a></div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Región</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Colus
-                                    </option>
-                                    <option value="#">Laoreet
-                                    </option>
-                                    <option value="#">Fusce
-                                    </option>
-                                    <option value="#">Habitant
-                                    </option>
-                                    <option value="#">Bibendum
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Provincia</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Duis
-                                    </option>
-                                    <option value="#">Tristique
-                                    </option>
-                                    <option value="#">Phasellus
-                                    </option>
-                                    <option value="#">Mauris
-                                    </option>
-                                    <option value="#">Etiam
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Comuna</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Ut
-                                    </option>
-                                    <option value="#">Nunc
-                                    </option>
-                                    <option value="#">Netus
-                                    </option>
-                                    <option value="#">Nam
-                                    </option>
-                                    <option value="#">Justo
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Teléfono Contacto 1</div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
                                 <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                  <input type="tel" name="#" value="" required>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Teléfono Contacto 2</div>
+                                <div class="form__title">Celular alternativo</div>
                                 <div class="form__input"> 
                                   <input type="text" name="#" placeholder="">
                                 </div>
                               </div>
                             </div>
                             <div class="col-xs-12"> 
-                              <div class="form__buttons"><a data-next-4 class="btn">Guardar</a></div>
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
                             </div>
                           </div>
                         </div>
-                        <div class="section__form__product__resumen">
-                          <div class="section__form__product__finish"> 
-                            <div class="section__form__product__header"> 
-                              <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
-                              <h4>Informacíon del producto finalizada </h4>
-                              <p>Corrobora tu información antes de continuar con tu compra.</p>
-                            </div>
-                            <div class="section__form__product__body">
-                              <div class="cols"> 
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4"> 1.      Datos Personales</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Rut </td>
-                                        <td>18.094.500-8</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Nombre </td>
-                                        <td>Eduardo</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Apellido paterno </td>
-                                        <td>Acevedo</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Apellido Materno </td>
-                                        <td>Roman</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Nacionalidad </td>
-                                        <td>Chilena</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Movil Titular </td>
-                                        <td>971479272</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Email</td>
-                                        <td>Eduacevedoroman@gmail.com</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4">2. Datos de facturación</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Nombre Empresa</td>
-                                        <td>Frontback</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Rut </td>
-                                        <td>66.666.666-6</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Dirección </td>
-                                        <td>Primera transversal #1921</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Región </td>
-                                        <td>Metropolitana</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Provicia  </td>
-                                        <td>Santiago</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Comuna </td>
-                                        <td>Maipú</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Email Facturación </td>
-                                        <td>eduardo@frontback.cl</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Giro empresa</td>
-                                        <td>Desarrollo de software</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4">3. Datos de despacho</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Nombre quien recibe</td>
-                                        <td>Frontback</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Dirección </td>
-                                        <td>Primera transversal #1921</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Referencia</td>
-                                        <td>Ut duis ullamcorper erat lacus accumsan class netus lobortis ornare taciti aptent.
-                                        </td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Región</td>
-                                        <td>Metropolitana</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Provicia  </td>
-                                        <td>Santiago</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Comuna </td>
-                                        <td>Maipú</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Contacto 1 </td>
-                                        <td>971479272</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Contacto 2 </td>
-                                        <td>974458963</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
+                        <div class="section__form__product__item">
+                          <div class="section__form__product__resumen">
+                            <div class="section__form__product__finish"> 
+                              <div class="section__form__product__header"> 
+                                <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
+                                <h4>Informacíon del producto finalizada </h4>
+                                <p>Corrobora tu información antes de continuar con tu compra.</p>
+                                <!--.section__form__switch
+                                .switch
+                                	input(type="checkbox" id="switch-2")
+                                	label(for="switch-2") Toggle
+                                p.section__form__switch__text Utiliza los mismos datos personales para todos los productos restantes
+                                
+                                -->
                               </div>
-                            </div>
-                            <div class="section__form__product__footer"> 
-                              <div class="form__buttons"> <a href="#" class="btn btn--white">Editar información</a></div>
+                              <div class="section__form__product__body">
+                                <div class="cols"> </div>
+                              </div>
+                              <div class="section__form__product__footer"> 
+                                <div class="form__buttons"> <a event-prev-item class="btn btn--white--2">Volver</a></div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1125,197 +641,237 @@
                     </div>
                     <div class="section__form__product">
                       <div class="section__form__product__header"> 
-                        <h5 class="section__title">Firma Electrónica Avanzada - 1 año</h5>
-                        <div class="article__trash"> <span class="fa fa-trash"></span></div>
+                        <h5 class="section__title">Firma electrónica avanzada</h5>
+                        <div class="section__elements">
+                          <div class="section__steps"> 
+                            <div class="section__step section__step--current"> <span>1</span></div>
+                            <div class="section__step"> <span>2</span></div>
+                            <div class="section__step"> <span>3</span></div>
+                            <div class="section__step"> <span>4</span></div>
+                          </div>
+                          <div class="section__trash"><a href="#"> <span class="fa fa-trash"></span></a></div>
+                        </div>
                       </div>
                       <div class="section__form__product__body">
-                        <div class="section__steploader"></div>
-                        <div class="section__form__product__search stepshow">
+                        <div data-next-form="personal" class="section__form__product__item section__form__product__item--current">
                           <div class="cols"> 
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Rut </div>
-                                <div class="form__input"> 
-                                  <input id="focusrut" type="text" name="#" placeholder="12.876.907-0">
+                            <form class="form--validapersona form--validation">
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element"> 
+                                  <div class="form__title">Rut </div>
+                                  <div class="form__input"> 
+                                    <input type="rut" name="#" required placeholder="12.876.907-0" class="input-rut">
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">N° de serie </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="Ingresa tu N°de 9 digitos">
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element">
+                                  <div class="form__title">N° de serie</div>
+                                  <div class="form__tooltip">
+                                    <div class="form__circle"><span>?</span></div>
+                                    <div class="form__tooltip__tooltip">
+                                      <h5>Torquent bibendum
+                                      </h5>
+                                      <p>Nam purus nunc ut cubilia vestibulum posuere id aptent himenaeos. Sociosqu feugiat porttitor vulputate morbi posuere viverra proin tincidunt aliquam turpis convallis erat lectus tempus.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="form__input"> 
+                                    <input type="text" name="#" number="nserie" placeholder="Ingresa tu N°de 9 digitos" required class="input-nserie">
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons">				<a data-next-1 class="btn btn--gray">Siguiente</a></div>
-                            </div>
+                              <div class="col-xs-12"> 
+                                <div class="form__buttons">
+                                  <div class="form__alert"> <span class="fa fa-exclamation-triangle"></span>
+                                    <div class="form__alert__content">
+                                      <p>Eros feugiat habitant lobortis feugiat suscipit id placerat consectetur enim fringilla dapibus.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <button class="btn btn--gray">Siguiente</button>
+                                </div>
+                              </div>
+                            </form>
                           </div>
                         </div>
-                        <div class="section__form__product__personal">
-                          <h5 class="section__title">1. Datos Personales (Porfavor ingresar los datos para el dueño del certificado)</h5>
+                        <div data-next-form="delivery" class="section__form__product__item">
+                          <h5 class="section__title">1. Datos Personales</h5>
                           <div class="cols">
                             <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Nombre</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                <div class="form__title">Nombres</div>
+                                <div class="form__input form__input__names"> 
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Apellido Paterno </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Apellido Materno </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Teléfono Movil Titular</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Email</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Confirmación Email</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12"> 
-                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-2 class="btn">Continuar</a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="section__form__product__payment">
-                          <h5 class="section__title">2. Datos de facturación</h5>
-                          <input type="hidden" name="profile" value="empresa">
-                          <div class="cols">
                             <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Nombre o Razón social</div>
-                                <div class="form__input"> 
+                                <div class="form__title">Primer apellido </div>
+                                <div class="form__input form__input__lastname01"> 
                                   <input type="text" name="#" placeholder="">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Rut </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                <div class="form__title">Segundo apellido</div>
+                                <div class="form__input form__input__lastname02"> 
+                                  <input type="text" name="#" placeholder="Ej: Perez">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Dirección </div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
+                                <div class="form__input form__input__phone"> 
+                                  <input type="tel" name="#" value="+56">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Región</div>
+                                <div class="form__title">Correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Confirmar correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="section__infonotario">
+                                <h5 class="section__title">Validación de Notario</h5>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Certificado corte de apelaciones</div>
+                                <div class="form__tooltip">
+                                  <div class="form__circle"><span>?</span></div>
+                                  <div class="form__tooltip__tooltip">
+                                    <h5>Turpis litora
+                                    </h5>
+                                    <p>Platea vitae tristique eleifend pretium ante aliquam varius curae inceptos. Condimentum ante dapibus massa senectus nostra augue leo per netus mollis lacinia sodales nec nibh.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="form__input"> 
+                                  <input type="number" name="#" placeholder="Ingresa el numero de certificado">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Cargo</div>
                                 <div class="form__input">
                                   <select name="#">
-                                    <option value="#">Egestas
+                                    <option value="#">Porta
                                     </option>
-                                    <option value="#">Urna
+                                    <option value="#">Tellus
                                     </option>
-                                    <option value="#">Aenean
+                                    <option value="#">Ornare
                                     </option>
-                                    <option value="#">Urna
+                                    <option value="#">Netus
                                     </option>
-                                    <option value="#">Nam
+                                    <option value="#">Interdum
                                     </option>
                                   </select>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Comuna</div>
+                                <div class="form__title">Instancia</div>
                                 <div class="form__input">
                                   <select name="#">
-                                    <option value="#">Hac
+                                    <option value="#">Porta
                                     </option>
-                                    <option value="#">Ultricies
+                                    <option value="#">Diam
                                     </option>
-                                    <option value="#">Quisque
+                                    <option value="#">Nisl
                                     </option>
-                                    <option value="#">Habitasse
+                                    <option value="#">Torquent
                                     </option>
-                                    <option value="#">Senectus
+                                    <option value="#">A
                                     </option>
                                   </select>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Email Facturación</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-12">
-                              <div class="form__element"> 
-                                <div class="form__title">Giro</div>
-                                <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
-                                </div>
-                              </div>
-                            </div>
                             <div class="col-xs-12"> 
-                              <div class="form__buttons"><a href="#" class="btn btn--white">Volver</a><a data-next-3 class="btn">Continuar							</a></div>
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
                             </div>
                           </div>
                         </div>
-                        <div class="section__form__product__delivery">
-                          <h5 class="section__title">3. Datos de despacho</h5>
+                        <div class="section__form__product__item">
+                          <div class="section__form__product__payment__header">
+                            <h5 class="section__title">Datos de despacho</h5>
+                            <div class="section__form__button"><a href="#" class="btn btn--sm btn--gray">Cobertura Chilexpress</a></div>
+                          </div>
                           <div class="cols">
                             <div class="col-xs-12">
                               <div class="form__element"> 
                                 <div class="form__title">Nombre quien recibe</div>
                                 <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Región</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Dapibus
+                                    </option>
+                                    <option value="#">Aenean
+                                    </option>
+                                    <option value="#">Dictumst
+                                    </option>
+                                    <option value="#">Cubilia
+                                    </option>
+                                    <option value="#">Diam
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Comuna</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Adipiscing
+                                    </option>
+                                    <option value="#">Imperdiet
+                                    </option>
+                                    <option value="#">Tempus
+                                    </option>
+                                    <option value="#">Enim
+                                    </option>
+                                    <option value="#">Mollis
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
                               <div class="form__element"> 
                                 <div class="form__title">Dirección</div>
                                 <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                  <input type="text" name="#" placeholder="Escribe tu dirección">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
                                 <div class="form__title">Referencia</div>
                                 <div class="form__input"> 
@@ -1323,220 +879,48 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__button"> <a href="#" target="_blank" class="btn btn--quaternary btn--sm">Conozca cobertura Chilexpress acá<img src="img/icons/icon-chilexpress.ico"></a></div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Región</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Erat
-                                    </option>
-                                    <option value="#">Curabitur
-                                    </option>
-                                    <option value="#">Porta
-                                    </option>
-                                    <option value="#">Erat
-                                    </option>
-                                    <option value="#">Lacus
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Provincia</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Sapien
-                                    </option>
-                                    <option value="#">Dictumst
-                                    </option>
-                                    <option value="#">Netus
-                                    </option>
-                                    <option value="#">Nisi
-                                    </option>
-                                    <option value="#">Fringilla
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Comuna</div>
-                                <div class="form__input">
-                                  <select name="#">
-                                    <option value="#">Ultricies
-                                    </option>
-                                    <option value="#">Urna
-                                    </option>
-                                    <option value="#">Non
-                                    </option>
-                                    <option value="#">Magna
-                                    </option>
-                                    <option value="#">Tempor
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <div class="form__element"> 
-                                <div class="form__title">Teléfono Contacto 1</div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
                                 <div class="form__input"> 
-                                  <input type="text" name="#" placeholder="">
+                                  <input type="tel" name="#" value="+56">
                                 </div>
                               </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-xs-12">
                               <div class="form__element"> 
-                                <div class="form__title">Teléfono Contacto 2</div>
+                                <div class="form__title">Celular alternativo</div>
                                 <div class="form__input"> 
                                   <input type="text" name="#" placeholder="">
                                 </div>
                               </div>
                             </div>
                             <div class="col-xs-12"> 
-                              <div class="form__buttons"><a data-next-4 class="btn">Guardar</a></div>
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
                             </div>
                           </div>
                         </div>
-                        <div class="section__form__product__resumen">
-                          <div class="section__form__product__finish"> 
-                            <div class="section__form__product__header"> 
-                              <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
-                              <h4>Informacíon del producto finalizada </h4>
-                              <p>Corrobora tu información antes de continuar con tu compra.</p>
-                            </div>
-                            <div class="section__form__product__body">
-                              <div class="cols"> 
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4"> 1.      Datos Personales</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Rut </td>
-                                        <td>18.094.500-8</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Nombre </td>
-                                        <td>Eduardo</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Apellido paterno </td>
-                                        <td>Acevedo</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Apellido Materno </td>
-                                        <td>Roman</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Nacionalidad </td>
-                                        <td>Chilena</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Movil Titular </td>
-                                        <td>971479272</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Email</td>
-                                        <td>Eduacevedoroman@gmail.com</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4">2. Datos de facturación</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Nombre Empresa</td>
-                                        <td>Frontback</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Rut </td>
-                                        <td>66.666.666-6</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Dirección </td>
-                                        <td>Primera transversal #1921</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Región </td>
-                                        <td>Metropolitana</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Provicia  </td>
-                                        <td>Santiago</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Comuna </td>
-                                        <td>Maipú</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Email Facturación </td>
-                                        <td>eduardo@frontback.cl</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Giro empresa</td>
-                                        <td>Desarrollo de software</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <div class="col-xs-12">
-                                  <table>
-                                    <thead>
-                                      <th colspan="4">3. Datos de despacho</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr> 
-                                        <td>Nombre quien recibe</td>
-                                        <td>Frontback</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Dirección </td>
-                                        <td>Primera transversal #1921</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Referencia</td>
-                                        <td>Eget colus sodales porttitor placerat praesent nullam duis dictum felis pulvinar vehicula.
-                                        </td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Región</td>
-                                        <td>Metropolitana</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Provicia  </td>
-                                        <td>Santiago</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Comuna </td>
-                                        <td>Maipú</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Contacto 1 </td>
-                                        <td>971479272</td>
-                                      </tr>
-                                      <tr> 
-                                        <td>Teléfono Contacto 2 </td>
-                                        <td>974458963</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
+                        <div next-item-finish class="section__form__product__item">
+                          <div class="section__form__product__resumen">
+                            <div class="section__form__product__finish"> 
+                              <div class="section__form__product__header"> 
+                                <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
+                                <h4>Informacíon del producto finalizada </h4>
+                                <p>Corrobora tu información antes de continuar con tu compra.</p>
+                                <!--.section__form__switch
+                                .switch
+                                	input(type="checkbox" id="switch-2")
+                                	label(for="switch-2") Toggle
+                                p.section__form__switch__text Utiliza los mismos datos personales para todos los productos restantes
+                                
+                                -->
                               </div>
-                            </div>
-                            <div class="section__form__product__footer"> 
-                              <div class="form__buttons"> <a href="#" class="btn btn--white">Editar información</a></div>
+                              <div class="section__form__product__body">
+                                <div class="cols"> </div>
+                              </div>
+                              <div class="section__form__product__footer"> 
+                                <div class="form__buttons"> <a event-prev-item class="btn btn--white--2">Volver</a></div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1545,7 +929,103 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-12">
+              <div class="col-xs-12"> 
+                <div class="section__form">
+                  <div class="section__form__header"> 
+                    <h4 class="section__title">Completa tu información de facturación</h4>
+                  </div>
+                  <div class="section__form__body">
+                    <div class="section__form__product">
+                      <div class="section__form__product__header"> 
+                        <h5 class="section__title">Completa tu información de facturación</h5>
+                      </div>
+                      <div class="section__form__product__body">
+                        <div class="cols">
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Nombre o Razón social</div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="Escribe tu nombre o la razón social que estaba esta factura">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Rut </div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="Ej: 12.345.678-9">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Correo facturación </div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Giro persona o de la empresa</div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Región</div>
+                              <div class="form__input">
+                                <select name="#">
+                                  <option value="#">Rutrum
+                                  </option>
+                                  <option value="#">Donec
+                                  </option>
+                                  <option value="#">Primis
+                                  </option>
+                                  <option value="#">Eget
+                                  </option>
+                                  <option value="#">Lacus
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Comuna</div>
+                              <div class="form__input">
+                                <select name="#">
+                                  <option value="#">Habitasse
+                                  </option>
+                                  <option value="#">Arcu
+                                  </option>
+                                  <option value="#">Rhoncus
+                                  </option>
+                                  <option value="#">Ullamcorper
+                                  </option>
+                                  <option value="#">Conubia
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Dirección </div>
+                              <div class="form__input"> 
+                                <input type="text" name="Escribe tu dirección" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">
                 <div class="section__result">
                   <div class="section__result__header"> 
                     <h4 class="section__title">Resumen de compra</h4>
@@ -1593,51 +1073,822 @@
                     </div>
                   </div>
                 </div>
-                <!--.section__buttons 
-                a.btn.btn--white(href="#") Seleccion de productos
-                a.btn(href="#") Continuar
-                
-                -->
+                <div class="section__buttons"> <a href="#" class="btn btn--white">Seleccion de productos</a><a event-next-cart-3 class="btn">Continuar</a></div>
               </div>
-              <div class="col-md-12">
-                <!--.section__init 
-                .section__init__header 
-                	h4.section__title Selecciona una opción para continuar
-                
-                .section__init__body
-                	.section__buttons 
-                		a.btn(data-modal-login) Iniciar sesión 
-                		a.btn.btn--white(href="#") Continuar como invitado
-                
-                -->
-                <!--.section__form
-                .section__form__header 
-                	h4.section__title Ingresa tu N° de Serie y Rut
-                
-                .section__form__body
-                	.cols 
-                		.col-xs-12 
-                			.form__element 
-                				.form__title Rut 
-                				.form__input 
-                					input(type="text" name="#" placeholder="")
-                
-                		.col-xs-12 
-                			.form__element 
-                				.form__title N° de serie 
-                				.form__input 
-                					input(type="text" name="#" placeholder="")
-                		
-                		.col-xs-12 
-                			.form__buttons
-                				a.btn(href="#") Continuar
-                -->
+            </div>
+          </div>
+          <div class="section__body section__body--show section__body--xs section__body--step2">
+            <div class="cols">
+              <div class="col-xs-12"> 
+                <div class="section__form">
+                  <div class="section__form__header"> 
+                    <h4 class="section__title">Completa la información para cada producto</h4>
+                  </div>
+                  <div class="section__form__body">
+                    <div class="section__loader"></div>
+                    <div class="section__form__product">
+                      <div class="section__form__product__header"> 
+                        <h5 class="section__title">Certificado Digital</h5>
+                        <div class="section__elements">
+                          <div class="section__steps"> 
+                            <div class="section__step section__step--current"> <span>1</span></div>
+                            <div class="section__step"> <span>2</span></div>
+                            <div class="section__step"> <span>3</span></div>
+                          </div>
+                          <div class="section__trash"><a href="#"> <span class="fa fa-trash"></span></a></div>
+                        </div>
+                      </div>
+                      <div class="section__form__product__body">
+                        <div data-next-form="personal" class="section__form__product__item section__form__product__item--current">
+                          <div class="cols">
+                            <form class="form--validapersona form--validation">
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element"> 
+                                  <div class="form__title">Rut </div>
+                                  <div class="form__input"> 
+                                    <input type="rut" name="#" required placeholder="12.876.907-0" class="input-rut">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element">
+                                  <div class="form__title">N° de serie</div>
+                                  <div class="form__tooltip form__tooltip--ci">
+                                    <div class="form__circle"><span>?</span></div>
+                                    <div class="form__tooltip__tooltip">
+                                      <h5>Número de documento o Número de serie</h5><img src="img/uploads/image-carnet-example.png">
+                                      <p>Cédula nueva 00000000 (cara Frontal C.I)</p>
+                                      <p>Cédula antigua A000000 (cara Posterior C.I)</p>
+                                    </div>
+                                  </div>
+                                  <div class="form__input"> 
+                                    <input type="text" name="#" number="nserie" placeholder="Ingresa tu N°de 9 digitos" required class="input-nserie">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12"> 
+                                <div class="form__buttons">
+                                  <div class="form__alert"> <span class="fa fa-exclamation-triangle"></span>
+                                    <div class="form__alert__content">
+                                      <p>Aenean eleifend himenaeos per suscipit aliquam integer eros cubilia nec viverra venenatis.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <button class="btn btn--gray">Siguiente</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div data-next-form="finish" class="section__form__product__item">
+                          <h5 class="section__title">1. Datos Personales</h5>
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Nombres</div>
+                                <div class="form__input form__input__names">
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Primer apellido </div>
+                                <div class="form__input form__input__lastname01">
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Segundo apellido</div>
+                                <div class="form__input form__input__lastname02">
+                                  <input type="text" name="#" placeholder="Ej: Perez">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
+                                <div class="form__input form__input__phone"> 
+                                  <input type="tel" name="#" value="+56">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Confirmar correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__form__product__item">
+                          <div class="section__form__product__resumen">
+                            <div class="section__form__product__finish"> 
+                              <div class="section__form__product__header"> 
+                                <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
+                                <h4>Informacíon del producto finalizada </h4>
+                                <p>Corrobora tu información antes de continuar con tu compra.</p>
+                                <!--.section__form__switch
+                                .switch
+                                	input(type="checkbox" id="switch-2")
+                                	label(for="switch-2") Toggle
+                                p.section__form__switch__text Utiliza los mismos datos personales para todos los productos restantes
+                                
+                                -->
+                              </div>
+                              <div class="section__form__product__body">
+                                <div class="cols"> </div>
+                              </div>
+                              <div class="section__form__product__footer"> 
+                                <div class="form__buttons"> <a event-prev-item class="btn btn--white--2">Volver</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__form__product">
+                      <div class="section__form__product__header"> 
+                        <h5 class="section__title">Firma electrónica avanzada</h5>
+                        <div class="section__elements">
+                          <div class="section__steps"> 
+                            <div class="section__step section__step--current"> <span>1</span></div>
+                            <div class="section__step"> <span>2</span></div>
+                            <div class="section__step"> <span>3</span></div>
+                            <div class="section__step"> <span>4</span></div>
+                          </div>
+                          <div class="section__trash"><a href="#"> <span class="fa fa-trash"></span></a></div>
+                        </div>
+                      </div>
+                      <div class="section__form__product__body">
+                        <div data-next-form="personal" class="section__form__product__item section__form__product__item--current">
+                          <div class="cols"> 
+                            <form class="form--validapersona form--validation">
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element"> 
+                                  <div class="form__title">Rut </div>
+                                  <div class="form__input"> 
+                                    <input type="rut" name="#" required placeholder="12.876.907-0" class="input-rut">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element">
+                                  <div class="form__title">N° de serie</div>
+                                  <div class="form__tooltip form__tooltip--ci">
+                                    <div class="form__circle"><span>?</span></div>
+                                    <div class="form__tooltip__tooltip">
+                                      <h5>Morbi hendrerit
+                                      </h5>
+                                      <p>Hendrerit aliquam litora arcu cras quisque enim fames auctor tincidunt. Tristique viverra conubia morbi elit neque diam cubilia rutrum mattis enim sagittis tempor pulvinar morbi.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="form__input"> 
+                                    <input type="text" name="#" number="nserie" placeholder="Ingresa tu N°de 9 digitos" required class="input-nserie">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12"> 
+                                <div class="form__buttons">
+                                  <div class="form__alert"> <span class="fa fa-exclamation-triangle"></span>
+                                    <div class="form__alert__content">
+                                      <p>Feugiat tellus phasellus eu ad et nullam aenean pharetra consequat porta suscipit.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <button class="btn btn--gray">Siguiente</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div data-next-form="delivery" class="section__form__product__item">
+                          <h5 class="section__title">1. Datos Personales</h5>
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Nombres</div>
+                                <div class="form__input form__input__names"> 
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Primer apellido </div>
+                                <div class="form__input form__input__lastname01"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Segundo apellido</div>
+                                <div class="form__input form__input__lastname02"> 
+                                  <input type="text" name="#" placeholder="Ej: Perez">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
+                                <div class="form__input"> 
+                                  <input type="tel" name="#" value="+56">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Confirmar correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-next-form="finish" class="section__form__product__item">
+                          <div class="section__form__product__payment__header">
+                            <h5 class="section__title">Datos de despacho</h5>
+                            <div class="section__form__button"><a href="#" class="btn btn--sm btn--gray">Cobertura Chilexpress</a></div>
+                          </div>
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Nombre quien recibe</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Región</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Mauris
+                                    </option>
+                                    <option value="#">Mi
+                                    </option>
+                                    <option value="#">Euismod
+                                    </option>
+                                    <option value="#">Hac
+                                    </option>
+                                    <option value="#">Commodo
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Comuna</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Platea
+                                    </option>
+                                    <option value="#">Placerat
+                                    </option>
+                                    <option value="#">Varius
+                                    </option>
+                                    <option value="#">Egestas
+                                    </option>
+                                    <option value="#">Hac
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Dirección</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="Escribe tu dirección">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Referencia</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
+                                <div class="form__input"> 
+                                  <input type="tel" name="#" value="+56">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Celular alternativo</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__form__product__item">
+                          <div class="section__form__product__resumen">
+                            <div class="section__form__product__finish"> 
+                              <div class="section__form__product__header"> 
+                                <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
+                                <h4>Informacíon del producto finalizada </h4>
+                                <p>Corrobora tu información antes de continuar con tu compra.</p>
+                                <!--.section__form__switch
+                                .switch
+                                	input(type="checkbox" id="switch-2")
+                                	label(for="switch-2") Toggle
+                                p.section__form__switch__text Utiliza los mismos datos personales para todos los productos restantes
+                                
+                                -->
+                              </div>
+                              <div class="section__form__product__body">
+                                <div class="cols"> </div>
+                              </div>
+                              <div class="section__form__product__footer"> 
+                                <div class="form__buttons"> <a event-prev-item class="btn btn--white--2">Volver</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__form__product">
+                      <div class="section__form__product__header"> 
+                        <h5 class="section__title">Firma electrónica avanzada</h5>
+                        <div class="section__elements">
+                          <div class="section__steps"> 
+                            <div class="section__step section__step--current"> <span>1</span></div>
+                            <div class="section__step"> <span>2</span></div>
+                            <div class="section__step"> <span>3</span></div>
+                            <div class="section__step"> <span>4</span></div>
+                          </div>
+                          <div class="section__trash"><a href="#"> <span class="fa fa-trash"></span></a></div>
+                        </div>
+                      </div>
+                      <div class="section__form__product__body">
+                        <div data-next-form="personal" class="section__form__product__item section__form__product__item--current">
+                          <div class="cols"> 
+                            <form class="form--validapersona form--validation">
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element"> 
+                                  <div class="form__title">Rut </div>
+                                  <div class="form__input"> 
+                                    <input type="rut" name="#" required placeholder="12.876.907-0" class="input-rut">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element">
+                                  <div class="form__title">N° de serie</div>
+                                  <div class="form__tooltip">
+                                    <div class="form__circle"><span>?</span></div>
+                                    <div class="form__tooltip__tooltip">
+                                      <h5>Pulvinar urna
+                                      </h5>
+                                      <p>Erat gravida tempus vestibulum integer aliquet mi odio nibh sodales. Eget egestas suscipit semper litora quam colus inceptos libero blandit pellentesque platea nam senectus nunc.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="form__input"> 
+                                    <input type="text" name="#" number="nserie" placeholder="Ingresa tu N°de 9 digitos" required class="input-nserie">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12"> 
+                                <div class="form__buttons">
+                                  <div class="form__alert"> <span class="fa fa-exclamation-triangle"></span>
+                                    <div class="form__alert__content">
+                                      <p>Enim luctus turpis a rhoncus fusce egestas semper nullam etiam eros ac.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <button class="btn btn--gray">Siguiente</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div data-next-form="delivery" class="section__form__product__item">
+                          <h5 class="section__title">1. Datos Personales</h5>
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Nombres</div>
+                                <div class="form__input form__input__names"> 
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Primer apellido </div>
+                                <div class="form__input form__input__lastname01"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Segundo apellido</div>
+                                <div class="form__input form__input__lastname02"> 
+                                  <input type="text" name="#" placeholder="Ej: Perez">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
+                                <div class="form__input form__input__phone"> 
+                                  <input type="tel" name="#" value="+56">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Confirmar correo</div>
+                                <div class="form__input form__input__email"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="section__infonotario">
+                                <h5 class="section__title">Validación de Notario</h5>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Certificado corte de apelaciones</div>
+                                <div class="form__tooltip">
+                                  <div class="form__circle"><span>?</span></div>
+                                  <div class="form__tooltip__tooltip">
+                                    <h5>Facilisis nullam
+                                    </h5>
+                                    <p>Curabitur cubilia sociosqu sem tellus bibendum at interdum morbi purus. Vel ante cubilia arcu mauris posuere torquent vehicula sollicitudin sodales in euismod per nam torquent.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="form__input"> 
+                                  <input type="number" name="#" placeholder="Ingresa el numero de certificado">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Cargo</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Hac
+                                    </option>
+                                    <option value="#">Quisque
+                                    </option>
+                                    <option value="#">Urna
+                                    </option>
+                                    <option value="#">Magna
+                                    </option>
+                                    <option value="#">Viverra
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Instancia</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Augue
+                                    </option>
+                                    <option value="#">Rhoncus
+                                    </option>
+                                    <option value="#">Potenti
+                                    </option>
+                                    <option value="#">Molestie
+                                    </option>
+                                    <option value="#">Tellus
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__form__product__item">
+                          <div class="section__form__product__payment__header">
+                            <h5 class="section__title">Datos de despacho</h5>
+                            <div class="section__form__button"><a href="#" class="btn btn--sm btn--gray">Cobertura Chilexpress</a></div>
+                          </div>
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Nombre quien recibe</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Región</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Pretium
+                                    </option>
+                                    <option value="#">Mattis
+                                    </option>
+                                    <option value="#">Mattis
+                                    </option>
+                                    <option value="#">Inceptos
+                                    </option>
+                                    <option value="#">Faucibus
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Comuna</div>
+                                <div class="form__input">
+                                  <select name="#">
+                                    <option value="#">Netus
+                                    </option>
+                                    <option value="#">Porta
+                                    </option>
+                                    <option value="#">Proin
+                                    </option>
+                                    <option value="#">Habitant
+                                    </option>
+                                    <option value="#">Quis
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Dirección</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="Escribe tu dirección">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Referencia</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
+                                <div class="form__input"> 
+                                  <input type="tel" name="#" value="+56">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Celular alternativo</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div next-item-finish class="section__form__product__item">
+                          <div class="section__form__product__resumen">
+                            <div class="section__form__product__finish"> 
+                              <div class="section__form__product__header"> 
+                                <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
+                                <h4>Informacíon del producto finalizada </h4>
+                                <p>Corrobora tu información antes de continuar con tu compra.</p>
+                                <!--.section__form__switch
+                                .switch
+                                	input(type="checkbox" id="switch-2")
+                                	label(for="switch-2") Toggle
+                                p.section__form__switch__text Utiliza los mismos datos personales para todos los productos restantes
+                                
+                                -->
+                              </div>
+                              <div class="section__form__product__body">
+                                <div class="cols"> </div>
+                              </div>
+                              <div class="section__form__product__footer"> 
+                                <div class="form__buttons"> <a event-prev-item class="btn btn--white--2">Volver</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12"> 
+                <div class="section__form">
+                  <div class="section__form__header"> 
+                    <h4 class="section__title">Completa tu información de facturación</h4>
+                  </div>
+                  <div class="section__form__body">
+                    <div class="section__form__product">
+                      <div class="section__form__product__header"> 
+                        <h5 class="section__title">Completa tu información de facturación</h5>
+                      </div>
+                      <div class="section__form__product__body">
+                        <div class="cols">
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Nombre o Razón social</div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="Escribe tu nombre o la razón social que estaba esta factura">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Rut </div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="Ej: 12.345.678-9">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Correo facturación </div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Giro persona o de la empresa</div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Región</div>
+                              <div class="form__input">
+                                <select name="#">
+                                  <option value="#">Integer
+                                  </option>
+                                  <option value="#">Tempor
+                                  </option>
+                                  <option value="#">Donec
+                                  </option>
+                                  <option value="#">Condimentum
+                                  </option>
+                                  <option value="#">Laoreet
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Comuna</div>
+                              <div class="form__input">
+                                <select name="#">
+                                  <option value="#">Venenatis
+                                  </option>
+                                  <option value="#">Rhoncus
+                                  </option>
+                                  <option value="#">Pharetra
+                                  </option>
+                                  <option value="#">Molestie
+                                  </option>
+                                  <option value="#">Magna
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Dirección </div>
+                              <div class="form__input"> 
+                                <input type="text" name="Escribe tu dirección" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="section__result">
+                  <div class="section__result__header"> 
+                    <h4 class="section__title">Resumen de compra</h4>
+                  </div>
+                  <div class="section__result__body">
+                    <div class="section__result__products">
+                      <div class="section__labels"> 
+                        <p class="section__type">Producto</p>
+                        <div class="section__info">
+                          <p class="section__quantity">Cantidad</p>
+                          <p class="section__guaranty">Garantia</p>
+                          <p class="section__total">Total</p>
+                        </div>
+                      </div>
+                      <div class="section__product"> 
+                        <p class="section__name">Certificado Digital</p>
+                        <div class="section__info">
+                          <p class="section__cant">1 Unid</p>
+                          <p class="section__guaranty">Sin garantia</p>
+                          <p class="section__value">$23.680</p>
+                        </div>
+                      </div>
+                      <div class="section__product"> 
+                        <p class="section__name">Firma Electrónica Avanzada - 1 año</p>
+                        <div class="section__info">
+                          <p class="section__cant">1 Unid</p>
+                          <p class="section__guaranty">Sin garantia</p>
+                          <p class="section__value">$23.680</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__result__footer"> 
+                    <div class="section__subtotal"> 
+                      <p class="section__name">Subtotal:</p>
+                      <p class="section__value">$33.109</p>
+                    </div>
+                    <div class="section__subtotal"> 
+                      <p class="section__name">IVA:</p>
+                      <p class="section__value">$6.291</p>
+                    </div>
+                    <div class="section__total section__total--cart2">
+                      <p class="section__name">Total:</p>
+                      <p class="section__value">$39.400</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__buttons"> <a href="#" class="btn btn--white">Seleccion de productos</a><a event-next-cart-3 class="btn">Continuar</a></div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="section__loader"></div>
       <div class="addcart"> 
         <div class="addcart__opacity"></div>
         <div class="addcart__box">
@@ -1646,7 +1897,7 @@
           <div class="addcart__box__box">
             <div class="addcart__box__header"> 
               <h3 class="addcart__title">Agregar nuevo producto </h3>
-              <p class="addcart__description">Gravida nunc mollis lectus purus curabitur hac egestas lobortis fringilla class aliquam lobortis porta lobortis.
+              <p class="addcart__description">Vulputate tortor mauris maecenas purus nisi netus aliquet aenean vivamus odio porttitor augue auctor mattis.
               </p>
             </div>
             <div class="addcart__box__body">
@@ -1678,19 +1929,19 @@
                     <div class="addcart__tooltip">
                       <div class="addcart__circle"><span>?</span></div>
                       <div class="addcart__tooltip__tooltip">
-                        <h5>Fermentum luctus
+                        <h5>Dapibus maecenas
                         </h5>
-                        <p>Ligula condimentum taciti senectus sem elementum vehicula phasellus potenti ac. Ullamcorper sagittis tristique mauris sociosqu etiam luctus ultrices interdum nisl himenaeos molestie nulla neque interdum.
+                        <p>Taciti vitae nec eleifend commodo cursus pharetra vehicula placerat tortor. Varius pellentesque pellentesque lobortis integer suscipit torquent nisl tristique auctor vehicula facilisis enim quis ante.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="addcart__question__body">
-                    <div class="addcart__options"></div>
+                    <div special_form="false" class="addcart__options"></div>
                   </div>
                   <div class="addcart__question__footer">
-                    <div class="addcart__alert"> <span class="fa fa-exclamation-triangle"></span>
-                      <p></p>
+                    <div class="addcart__alert"><span class="fa fa-exclamation-triangle"></span>
+                      <div class="addcart__alert__content"></div>
                     </div>
                     <div class="addcart__question__footer__buttons"><a data-prev-question class="btn btn--primary--white btn--hidden">Volver a paso anterior</a><a data-next-question class="btn">Continuar</a></div>
                   </div>
@@ -1729,7 +1980,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Iniciar sesión</h3>
-              <p class="section__description">Lacinia facilisis tellus lobortis semper potenti etiam pretium
+              <p class="section__description">Erat elementum commodo senectus libero nullam duis consectetur
               </p>
             </div>
             <div class="modal__body">
@@ -1814,7 +2065,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Registro</h3>
-              <p class="section__description">Imperdiet feugiat pretium convallis erat neque metus vitae
+              <p class="section__description">Taciti pharetra nec dui mattis aptent adipiscing sem
               </p>
             </div>
             <div class="modal__body">
@@ -1886,7 +2137,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Recuperar contraseña</h3>
-              <p class="section__description">Nam quam phasellus malesuada augue euismod iaculis curabitur
+              <p class="section__description">Condimentum egestas nec ultricies posuere non neque senectus
               </p>
             </div>
             <div class="modal__body">
@@ -1909,20 +2160,6 @@
                   </div>
                 </form>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal modal--focusrut">
-        <div class="modal__back"></div>
-        <div class="modal__front">
-          <div class="modal__box">
-            <div class="modal__close"><span class="fa fa-close"></span></div>
-            <div class="modal__header">
-              <h3 class="modal__title">¿Quieres aplicar los mismos datos del primer producto?</h3>
-            </div>
-            <div class="modal__body">
-              <div class="modal__button"><a class="btn">Reutilizar los mismos datos</a><a class="btn btn--white">Continuar con otros datos</a></div>
             </div>
           </div>
         </div>
@@ -1953,18 +2190,16 @@
       </div>
     </div>
     <footer>
-      <div class="footer__bar"> <img src="img/icons/line-colors.svg"></div>
       <div class="footer__wrap">
-        <div class="footer__svg"> <img src="img/icons/eff-white.svg"></div>
         <div class="footer__primary">
           <div class="footer__top">
             <div class="cols">
               <div class="col-xs-12 col-md-3">
-                <div class="footer__logo"><a href="#"><img src="img/icons/logo-ecert.png"></a></div>
+                <div class="footer__logo"><a href="#"><img src="img/icons/logo-ecert-white.svg"></a></div>
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/phone-svg.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/phone.png"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Atención Comercial y Soporte Técnico </p><span class="footer__value">600 3620 400</span>
                   </div>
@@ -1972,7 +2207,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/whatsapp.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/whatsapp.png"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Escríbenos por Whatsapp</p><span class="footer__value">(+56 2) 3340 7500</span>
                   </div>
@@ -1980,15 +2215,14 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/mail.svg"></div>
-                  <div class="footer__info__content"> <span class="footer__value">Contáctanos</span></div>
+                  <div class="footer__button"><a href="contact.html" class="btn btn--secondary">Hablemos<img src="img/icons/icon-contact.png"></a></div>
                 </div>
               </div>
             </div>
           </div>
           <div class="footer__center">
             <div class="cols">
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">E-CERTCHILE</h4>
                   <ul>
@@ -2002,7 +2236,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">Personas</h4>
                   <ul>
@@ -2012,7 +2246,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">PYMES</h4>
                   <ul>
@@ -2022,7 +2256,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">Empresas</h4>
                   <ul>

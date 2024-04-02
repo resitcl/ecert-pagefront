@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Soluciones Digitales | e-certchile</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=17994" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=17994" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script>
+      var URL_SITE = "http://54.156.114.186/";
+      var URL_API_PE = "https://certificacion2.ecertchile.cl/";
+      
+    </script>
+  </head>
+  <body>
+    <header class="header--renovation">
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__left">
+              <div class="header__actions">
+                <div class="header__nav">
+                  <ul> 
+                    <li><a href="#">Portal Empresa</a></li>
+                    <li><a href="#">Grup</a></li>
+                    <li><a href="#">Firma Documento Online</a></li>
+                    <li><a href="#">Verificar firma</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__secondary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-ecert.png"></a></div>
+            <div class="header__nav__mobile">
+              <div class="header__nav__opacity"> </div>
+              <div class="header__nav__nav"> 
+                <div class="header__nav__nav__header"> 
+                  <div class="header__nav__isotipo"> <img src="img/icons/logo-ecert.png"></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="header__nav__back">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul> 
+                      <li><a href="#">Portal Empresa</a></li>
+                      <li><a href="#">Grup</a></li>
+                      <li><a href="#">Firma Documento Online</a></li>
+                      <li><a href="#">Verificar firma</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__item header__item--ham">
+              <div class="header__ham"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <div class="section__loadercart"></div>
+      <section class="section--cart">
+        <div class="section__wrap section__wrap--sm">
+          <div class="section__header">
+            <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html" class="current">Carro de compras</a></div>
+            <div class="section__steps section__steps--2">
+              <div class="section__step section__step--current">
+                <div class="section__step__number">1</div>
+                <div class="section__step__text">Seleccion de productos						</div>
+              </div>
+              <div class="section__step section__step--current">
+                <div class="section__step__number">2</div>
+                <div class="section__step__text">Formulario		</div>
+              </div>
+              <div class="section__step">
+                <div class="section__step__number">3</div>
+                <div class="section__step__text">Compra</div>
+              </div>
+            </div>
+            <div class="section__cart"> 
+              <h3 class="section__title">Renovación express</h3>
+            </div>
+          </div>
+          <div class="section__body section__body--xs"> 
+            <div class="cols">
+              <div class="col-xs-12"> 
+                <div class="section__form section__form--products">
+                  <div class="section__form__header"> 
+                    <h4 class="section__title">Completa la información para cada producto</h4>
+                  </div>
+                  <div class="section__form__body">
+                    <div class="section__loader"></div>
+                    <div data-checked-form="false" class="section__form__product">
+                      <div class="section__form__product__header"> 
+                        <h5 class="section__title">Certificado Digital</h5>
+                        <div class="section__elements section__elements--nonetrash">
+                          <div class="section__steps"> 
+                            <div class="section__step section__step--current"> <span>1</span></div>
+                            <div class="section__step"> <span>2</span></div>
+                            <div class="section__step"> <span>3</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section__form__product__body">
+                        <div data-next-form="personal" class="section__form__product__item section__form__product__item--current">
+                          <div class="cols">
+                            <form class="form--validapersona form--validation">
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element"> 
+                                  <div class="form__title">Rut </div>
+                                  <div class="form__input"> 
+                                    <input type="rut" name="#" required placeholder="12.876.907-0" oninput="app.form.validarInputRut(this)" class="input-rut">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6">
+                                <div class="form__element">
+                                  <div class="form__title">N° de serie</div>
+                                  <div class="form__tooltip">
+                                    <div class="form__circle"><span>?</span></div>
+                                    <div class="form__tooltip__tooltip">
+                                      <h5>Eleifend nisl
+                                      </h5>
+                                      <p>Aptent dictumst suscipit aptent eu congue duis nunc vulputate suspendisse. Integer vestibulum convallis platea nisi nullam ante lectus tempor ultrices a fusce urna ac pellentesque.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="form__input"> 
+                                    <input type="text" name="#" number="nserie" placeholder="Ingresa tu N°de 9 digitos" required class="input-nserie">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12"> 
+                                <div class="form__buttons">
+                                  <div class="form__alert"> <span class="fa fa-exclamation-triangle"></span>
+                                    <div class="form__alert__content">
+                                      <p>Nisl turpis maecenas lacinia eros bibendum etiam est eu morbi metus lacinia.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <button class="btn btn--gray">Siguiente</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div data-next-form="finish" class="section__form__product__item form--validation">
+                          <h5 class="section__title">1. Datos Personales</h5>
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--required"> 
+                                <div class="form__title">Nombres</div>
+                                <div class="form__input form__input__names">
+                                  <input type="text" name="#" placeholder="Ej: Juan Ignacio">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--required"> 
+                                <div class="form__title">Primer apellido </div>
+                                <div class="form__input form__input__lastname01">
+                                  <input type="text" name="#" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element"> 
+                                <div class="form__title">Segundo apellido</div>
+                                <div class="form__input form__input__lastname02">
+                                  <input type="text" name="#" placeholder="Ej: Perez">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--codephone"> 
+                                <div class="form__title">Celular</div>
+                                <div class="form__input"> 
+                                  <input type="tel" name="#" value="+56" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--required"> 
+                                <div class="form__title">Correo</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__element form__element--required"> 
+                                <div class="form__title">Confirmar correo</div>
+                                <div class="form__input"> 
+                                  <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12"> 
+                              <div class="form__buttons"><a event-next-item class="btn btn--gray">Siguiente</a><a event-prev-item class="btn btn--white--2">Volver</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__form__product__item">
+                          <div class="section__form__product__resumen">
+                            <div class="section__form__product__finish"> 
+                              <div class="section__form__product__header"> 
+                                <div class="section__form__product__icon"> <img src="img/icons/icon-check.png"></div>
+                                <h4>Informacíon del producto finalizada </h4>
+                                <p>Corrobora tu información antes de continuar con tu compra.</p>
+                                <!--.section__form__switch
+                                .switch
+                                	input(type="checkbox" id="switch-2")
+                                	label(for="switch-2") Toggle
+                                p.section__form__switch__text Utiliza los mismos datos personales para todos los productos restantes
+                                
+                                -->
+                              </div>
+                              <div class="section__form__product__body">
+                                <div class="cols"> </div>
+                              </div>
+                              <div class="section__form__product__footer"> 
+                                <div class="form__buttons"> <a event-prev-item class="btn btn--white--2">Volver</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__form__footer"> 
+                    <p class="section__message">* Campos obligatorios</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12"> 
+                <div class="section__form">
+                  <div class="section__form__header"> 
+                    <h4 class="section__title">Completa tu información de facturación</h4>
+                  </div>
+                  <div class="section__form__body">
+                    <div class="section__form__product">
+                      <div class="section__form__product__header"> 
+                        <h5 class="section__title">Completa tu información de facturación</h5>
+                      </div>
+                      <div class="section__form__product__body">
+                        <div class="cols">
+                          <div class="col-xs-12">
+                            <div class="form__element form__element--required"> 
+                              <div class="form__title">Nombre o Razón social</div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="Escribe tu nombre o la razón social que estaba esta factura">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element form__element--required"> 
+                              <div class="form__title">Rut </div>
+                              <div class="form__input"> 
+                                <input type="rut" name="#" placeholder="Ej: 12.345.678-9" class="input-rut">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 form__element--required">
+                            <div class="form__element"> 
+                              <div class="form__title">Correo facturación </div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="Ej: correo@dominio.cl">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Giro persona o de la empresa</div>
+                              <div class="form__input"> 
+                                <input type="text" name="#" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Región</div>
+                              <div class="form__input">
+                                <select name="#">
+                                  <option value="#">Nam
+                                  </option>
+                                  <option value="#">Ut
+                                  </option>
+                                  <option value="#">Lacus
+                                  </option>
+                                  <option value="#">Ornare
+                                  </option>
+                                  <option value="#">Netus
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Comuna</div>
+                              <div class="form__input">
+                                <select name="#">
+                                  <option value="#">Tincidunt
+                                  </option>
+                                  <option value="#">Vitae
+                                  </option>
+                                  <option value="#">Faucibus
+                                  </option>
+                                  <option value="#">Nibh
+                                  </option>
+                                  <option value="#">Porta
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Dirección </div>
+                              <div class="form__input"> 
+                                <input type="text" name="Escribe tu dirección" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__form__footer"> 
+                    <p class="section__message">* Campos obligatorios</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="section__result">
+                  <div class="section__result__header"> 
+                    <h4 class="section__title">Resumen de compra</h4>
+                  </div>
+                  <div class="section__result__body">
+                    <div class="section__result__products">
+                      <div class="section__labels"> 
+                        <p class="section__type">Producto</p>
+                        <div class="section__info">
+                          <p class="section__quantity">Cantidad</p>
+                          <p class="section__guaranty">Garantia</p>
+                          <p class="section__total">Total</p>
+                        </div>
+                      </div>
+                      <div class="section__product"> 
+                        <p class="section__name">Certificado Digital de un solo uso</p>
+                        <div class="section__info">
+                          <p class="section__cant">1 Unid</p>
+                          <p class="section__guaranty">Sin garantia</p>
+                          <p class="section__value">$23.680</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__result__footer"> 
+                    <div class="section__subtotal"> 
+                      <p class="section__name">Subtotal:</p>
+                      <p class="section__value">$33.109</p>
+                    </div>
+                    <div class="section__subtotal"> 
+                      <p class="section__name">IVA:</p>
+                      <p class="section__value">$6.291</p>
+                    </div>
+                    <div class="section__total section__total--cart2">
+                      <p class="section__name">Total:</p>
+                      <p class="section__value">$39.400</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__buttons">
+                  <div class="section__alert"> <span class="fa fa-exclamation-triangle"></span>
+                    <div class="section__alert__content">
+                      <p>Euismod magna hac taciti aliquam porta venenatis laoreet eros sodales lobortis in.
+                      </p>
+                    </div>
+                  </div><a event-next-cart-3 class="btn">Continuar</a><a href="renovation.html" class="btn btn--white">Volver a Seleccion de productos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="popup popup--confirmation">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-check.svg"></div>
+          <div class="popup__text">Producto agregado al carro de compras</div>
+        </div>
+      </div>
+      <div class="popup popup--error">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-error.svg"></div>
+          <div class="popup__text">Ha ocurrido un error</div>
+        </div>
+      </div>
+      <div class="popup popup--alert">
+        <div class="popup__bar"> <img src="img/icons/line-colors.svg"></div>
+        <div class="popup__close"><span class="fa fa-close"></span></div>
+        <div class="popup__body">
+          <div class="popup__icon"><img src="img/icons/icon-alert.svg"></div>
+          <div class="popup__text">esto es una alerta</div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer--renovation">
+      <div class="footer__wrap">
+        <div class="footer__primary">
+          <div class="footer__top">
+            <div class="cols">
+              <div class="col-xs-12 col-md-4">
+                <div class="footer__logo"><a href="#"><img src="img/icons/ecert-footer.svg"></a></div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="footer__info"> 
+                  <div class="footer__icon"> <img src="img/icons/phone.png"></div>
+                  <div class="footer__info__content"> 
+                    <p class="footer__description">Atención Comercial y Soporte Técnico </p><span class="footer__value">600 3620 400</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="footer__info"> 
+                  <div class="footer__icon"> <img src="img/icons/whatsapp.png"></div>
+                  <div class="footer__info__content"> 
+                    <p class="footer__description">Escríbenos por Whatsapp</p><span class="footer__value">(+56 2) 3340 7500</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__secondary">
+          <div class="footer__bottom">
+            <div class="footer__flex">
+              <div class="footer__socials"> 
+                <div class="footer__social"> <a href="https://www.linkedin.com/company/e-certchile/mycompany/?viewAsMember=true" target="_blank"><span class="fa fa-linkedin"></span></a></div>
+                <div class="footer__social"> <a href="https://www.facebook.com/ecertla?_rdc=2&amp;_rdr" target="_blank"><span class="fa fa-facebook"></span></a></div>
+                <div class="footer__social"> <a href="https://www.youtube.com/channel/UC9whVrAV_jlNif3Evo9LQXQ/videos" target="_blank"><span class="fa fa-youtube"></span></a></div>
+                <div class="footer__social"> <a href="https://www.instagram.com/ecert_la/" target="_blank"><span class="fa fa-instagram"></span></a></div>
+              </div>
+              <div class="footer__certifications">
+                <div class="footer__certification"> <img src="img/icons/icon-footer-1.svg"></div>
+                <div class="footer__certification"> <img src="img/icons/icon-footer-2.svg"></div>
+                <div class="footer__certification"> <img src="img/icons/icon-footer-4.svg"></div>
+                <div class="footer__certification"> <img src="img/icons/icon-footer-3.svg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

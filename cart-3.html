@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=58677" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=61363" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=58677" type="text/javascript"></script>
+    <script src="js/main.js?v=61363" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -112,21 +112,21 @@
                             <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
                             <div class="header__nav__submenu__header"> 
                               <h4>Ayuda </h4>
-                              <p>Non vehicula vitae inceptos potenti tristique curae
+                              <p>Elit vehicula vitae magna odio euismod gravida
                               </p>
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="faq.html">Preguntas frecuentes</a>
-                                  <p>Adipiscing consectetur aenean interdum
+                                  <p>Hac metus suscipit porta
                                   </p>
                                 </li>
                                 <li><a href="tools.html">Herramientas</a>
-                                  <p>Sem morbi morbi blandit
+                                  <p>Rutrum elementum colus commodo
                                   </p>
                                 </li>
                                 <li class="last"><a href="tutoriales.html">Tutoriales</a>
-                                  <p>Facilisis erat pellentesque varius
+                                  <p>Turpis adipiscing dictumst curabitur
                                   </p>
                                 </li>
                               </ul>
@@ -146,15 +146,15 @@
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="aboutus.html">Quiénes somos</a>
-                                  <p>Ligula non habitasse sem magna sollicitudin
+                                  <p>Vitae proin facilisis inceptos sapien porttitor
                                   </p>
                                 </li>
                                 <li><a href="news.html">Blog</a>
-                                  <p>Risus blandit colus ornare mauris ut malesuada
+                                  <p>Dictumst vehicula proin id metus donec pretium
                                   </p>
                                 </li>
                                 <li class="last"><a href="red-atencion.html">Red de Atención</a>
-                                  <p>Erat at inceptos convallis taciti
+                                  <p>Tincidunt congue vel etiam odio
                                   </p>
                                 </li>
                               </ul>
@@ -216,7 +216,8 @@
                     </ul>
                   </div>
                 </div>
-                <div class="header__nav__nav__body">
+                <div class="header__nav__nav__body header__nav__nav__body--light">
+                  <h4>Links de interés</h4>
                   <div class="header__nav__nav__menu"> 
                     <ul> 
                       <li><a href="#">Portal Empresa</a></li>
@@ -239,27 +240,11 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--header section--header--cart">
-        <div class="section__clipath">
-          <div class="section__bg">
-            <div class="bg"><img src="img/uploads/2.jpg"></div>
-          </div>
-          <div class="section__wrap section__wrap--header--cart">
-            <div class="section__body">
-              <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html">Carro de compras</a></div>
-              <div class="section__content">		
-                <h1 class="section__title">Carro de compras</h1>
-                <p class="section__description">Ut at phasellus nulla cras pharetra eu fames pharetra adipiscing fringilla sed class accumsan ante.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="section--cart">
-        <div class="section__wrap section--md">
+        <div class="section__wrap section__wrap--sm">
           <div class="section__header">
-            <div class="section__steps section__steps--3">
+            <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="cart-1.html" class="current">Carro de compras</a></div>
+            <div class="section__steps">
               <div class="section__step section__step--current">
                 <div class="section__step__number">1</div>
                 <div class="section__step__text">Seleccion de productos						</div>
@@ -275,11 +260,9 @@
             </div>
             <div class="section__cart"> 
               <h3 class="section__title">Compra Firma Electrónica</h3>
-              <p class="section__description">In nisi morbi gravida felis tincidunt ullamcorper cras nibh lobortis nisl malesuada potenti libero elementum.
-              </p>
             </div>
           </div>
-          <div class="section__body section__body--xs"> 
+          <div class="section__body section__body--show section__body--xs"> 
             <div class="cols">
               <div class="col-md-12">
                 <div class="section__payment"> 
@@ -288,18 +271,18 @@
                   </div>
                   <div class="section__payment__body">
                     <div class="section__payment__options">
-                      <div class="section__payment__option">
+                      <div class="section__payment__option section__payment__option--selected">
                         <div class="section__payment__icon"> <img src="img/icons/payment-1.svg"></div>
                         <div class="section__payment__text"> <span>Pago Online</span></div>
                         <label>
-                          <input id="options_payment" type="radio" name="payment" checked>
+                          <input type="radio" name="payment" checked class="options_payment">
                         </label>
                       </div>
                       <div class="section__payment__option">
                         <div class="section__payment__icon"> <img src="img/icons/payment-2.svg"></div>
                         <div class="section__payment__text"> <span>Pago Presencial</span></div>
                         <label>
-                          <input id="options_payment" type="radio" name="payment">
+                          <input type="radio" name="payment" class="options_payment">
                         </label>
                       </div>
                     </div>
@@ -361,13 +344,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="section__buttons"> <a href="#" class="btn">Continuar</a><a href="cart-2.html" class="btn btn--white">Cancelar</a></div>
+                <div class="section__buttons">
+                  <form type="POST" action="https://ecert.resit.cl/envio-flow" class="form--sendcart">
+                    <input type="hidden" name="url" class="input__urlpayment">
+                  </form><a event-submit-cart class="btn">Continuar</a><a href="cart-2.html" class="btn btn--white">Cancelar</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="section__loader"></div>
       <div class="addcart"> 
         <div class="addcart__opacity"></div>
         <div class="addcart__box">
@@ -376,7 +362,7 @@
           <div class="addcart__box__box">
             <div class="addcart__box__header"> 
               <h3 class="addcart__title">Agregar nuevo producto </h3>
-              <p class="addcart__description">Ultrices scelerisque feugiat suspendisse posuere himenaeos maecenas praesent mauris curae etiam convallis mi ornare mollis.
+              <p class="addcart__description">Tristique placerat leo pharetra interdum sagittis sed elit nam habitant platea ullamcorper volutpat potenti netus.
               </p>
             </div>
             <div class="addcart__box__body">
@@ -408,19 +394,19 @@
                     <div class="addcart__tooltip">
                       <div class="addcart__circle"><span>?</span></div>
                       <div class="addcart__tooltip__tooltip">
-                        <h5>Eros nullam
+                        <h5>Euismod phasellus
                         </h5>
-                        <p>Pellentesque accumsan tempus cubilia aliquam quam augue libero elit et. Arcu sem erat feugiat donec at aliquam gravida porta turpis mattis eros himenaeos torquent aptent.
+                        <p>Fusce leo dui cubilia eu donec iaculis nostra vulputate donec. Felis suspendisse convallis etiam eleifend porttitor primis aenean fringilla consequat dictumst fusce volutpat facilisis nec.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="addcart__question__body">
-                    <div class="addcart__options"></div>
+                    <div special_form="false" class="addcart__options"></div>
                   </div>
                   <div class="addcart__question__footer">
-                    <div class="addcart__alert"> <span class="fa fa-exclamation-triangle"></span>
-                      <p></p>
+                    <div class="addcart__alert"><span class="fa fa-exclamation-triangle"></span>
+                      <div class="addcart__alert__content"></div>
                     </div>
                     <div class="addcart__question__footer__buttons"><a data-prev-question class="btn btn--primary--white btn--hidden">Volver a paso anterior</a><a data-next-question class="btn">Continuar</a></div>
                   </div>
@@ -459,7 +445,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Iniciar sesión</h3>
-              <p class="section__description">Habitant sociosqu risus tortor aliquam lectus augue pellentesque
+              <p class="section__description">Consequat tempus habitasse faucibus porta ut donec convallis
               </p>
             </div>
             <div class="modal__body">
@@ -544,7 +530,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Registro</h3>
-              <p class="section__description">Urna ullamcorper curabitur condimentum ultricies fringilla augue egestas
+              <p class="section__description">Pharetra vehicula mattis accumsan mollis fusce praesent pretium
               </p>
             </div>
             <div class="modal__body">
@@ -616,7 +602,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Recuperar contraseña</h3>
-              <p class="section__description">Class volutpat pellentesque ante mollis rhoncus aenean velit
+              <p class="section__description">Lacus potenti diam senectus vitae ornare mi habitasse
               </p>
             </div>
             <div class="modal__body">
@@ -639,20 +625,6 @@
                   </div>
                 </form>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal modal--focusrut">
-        <div class="modal__back"></div>
-        <div class="modal__front">
-          <div class="modal__box">
-            <div class="modal__close"><span class="fa fa-close"></span></div>
-            <div class="modal__header">
-              <h3 class="modal__title">¿Quieres aplicar los mismos datos del primer producto?</h3>
-            </div>
-            <div class="modal__body">
-              <div class="modal__button"><a class="btn">Reutilizar los mismos datos</a><a class="btn btn--white">Continuar con otros datos</a></div>
             </div>
           </div>
         </div>
@@ -683,18 +655,16 @@
       </div>
     </div>
     <footer>
-      <div class="footer__bar"> <img src="img/icons/line-colors.svg"></div>
       <div class="footer__wrap">
-        <div class="footer__svg"> <img src="img/icons/eff-white.svg"></div>
         <div class="footer__primary">
           <div class="footer__top">
             <div class="cols">
               <div class="col-xs-12 col-md-3">
-                <div class="footer__logo"><a href="#"><img src="img/icons/logo-ecert.png"></a></div>
+                <div class="footer__logo"><a href="#"><img src="img/icons/logo-ecert-white.svg"></a></div>
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/phone-svg.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/phone.png"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Atención Comercial y Soporte Técnico </p><span class="footer__value">600 3620 400</span>
                   </div>
@@ -702,7 +672,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/whatsapp.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/whatsapp.png"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Escríbenos por Whatsapp</p><span class="footer__value">(+56 2) 3340 7500</span>
                   </div>
@@ -710,15 +680,14 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/mail.svg"></div>
-                  <div class="footer__info__content"> <span class="footer__value">Contáctanos</span></div>
+                  <div class="footer__button"><a href="contact.html" class="btn btn--secondary">Hablemos<img src="img/icons/icon-contact.png"></a></div>
                 </div>
               </div>
             </div>
           </div>
           <div class="footer__center">
             <div class="cols">
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">E-CERTCHILE</h4>
                   <ul>
@@ -732,7 +701,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">Personas</h4>
                   <ul>
@@ -742,7 +711,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">PYMES</h4>
                   <ul>
@@ -752,7 +721,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">Empresas</h4>
                   <ul>

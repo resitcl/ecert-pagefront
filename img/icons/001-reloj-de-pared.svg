@@ -1,0 +1,57 @@
+<svg id="_001-reloj-de-pared" data-name="001-reloj-de-pared" xmlns="http://www.w3.org/2000/svg" width="18.443" height="18.443" viewBox="0 0 18.443 18.443">
+  <g id="Grupo_3777" data-name="Grupo 3777" transform="translate(5.868 3.773)">
+    <g id="Grupo_3776" data-name="Grupo 3776">
+      <circle id="Elipse_822" data-name="Elipse 822" cx="0.419" cy="0.419" r="0.419" fill="#a23388"/>
+    </g>
+  </g>
+  <g id="Grupo_3779" data-name="Grupo 3779" transform="translate(11.738 13.834)">
+    <g id="Grupo_3778" data-name="Grupo 3778">
+      <circle id="Elipse_823" data-name="Elipse 823" cx="0.419" cy="0.419" r="0.419" fill="#a23388"/>
+    </g>
+  </g>
+  <g id="Grupo_3781" data-name="Grupo 3781" transform="translate(3.773 5.868)">
+    <g id="Grupo_3780" data-name="Grupo 3780">
+      <circle id="Elipse_824" data-name="Elipse 824" cx="0.419" cy="0.419" r="0.419" fill="#a23388"/>
+    </g>
+  </g>
+  <g id="Grupo_3783" data-name="Grupo 3783" transform="translate(13.832 11.737)">
+    <g id="Grupo_3782" data-name="Grupo 3782">
+      <circle id="Elipse_825" data-name="Elipse 825" cx="0.419" cy="0.419" r="0.419" fill="#a23388"/>
+    </g>
+  </g>
+  <g id="Grupo_3785" data-name="Grupo 3785" transform="translate(11.737 3.771)">
+    <g id="Grupo_3784" data-name="Grupo 3784">
+      <circle id="Elipse_826" data-name="Elipse 826" cx="0.419" cy="0.419" r="0.419" fill="#a23388"/>
+    </g>
+  </g>
+  <g id="Grupo_3787" data-name="Grupo 3787" transform="translate(5.868 13.833)">
+    <g id="Grupo_3786" data-name="Grupo 3786">
+      <circle id="Elipse_827" data-name="Elipse 827" cx="0.419" cy="0.419" r="0.419" fill="#a23388"/>
+    </g>
+  </g>
+  <g id="Grupo_3789" data-name="Grupo 3789" transform="translate(13.832 5.868)">
+    <g id="Grupo_3788" data-name="Grupo 3788">
+      <circle id="Elipse_828" data-name="Elipse 828" cx="0.419" cy="0.419" r="0.419" fill="#a23388"/>
+    </g>
+  </g>
+  <g id="Grupo_3791" data-name="Grupo 3791" transform="translate(3.773 11.736)">
+    <g id="Grupo_3790" data-name="Grupo 3790">
+      <circle id="Elipse_829" data-name="Elipse 829" cx="0.419" cy="0.419" r="0.419" fill="#a23388"/>
+    </g>
+  </g>
+  <g id="Grupo_3793" data-name="Grupo 3793">
+    <g id="Grupo_3792" data-name="Grupo 3792">
+      <path id="Trazado_7434" data-name="Trazado 7434" d="M9.222,0a9.222,9.222,0,0,0,0,18.443.419.419,0,1,0,0-.838,8.47,8.47,0,1,1,1.593-.168.435.435,0,0,0-.335.5.406.406,0,0,0,.5.335A9.223,9.223,0,0,0,9.222,0Z" fill="#a23388"/>
+    </g>
+  </g>
+  <g id="Grupo_3795" data-name="Grupo 3795" transform="translate(1.677 1.677)">
+    <g id="Grupo_3794" data-name="Grupo 3794">
+      <path id="Trazado_7435" data-name="Trazado 7435" d="M55.851,46.756a.412.412,0,1,0-.21.8,6.781,6.781,0,0,1,5.156,6.12h-.838a.419.419,0,0,0,0,.838h.8a6.683,6.683,0,0,1-6.246,6.246v-.8a.419.419,0,0,0-.838,0v.8a6.683,6.683,0,0,1-6.246-6.246h.8a.419.419,0,1,0,0-.838h-.838a6.762,6.762,0,0,1,6.287-6.287v.838a.419.419,0,1,0,.838,0V46.965a.4.4,0,0,0-.419-.419,7.551,7.551,0,1,0,1.761.21Z" transform="translate(-46.545 -46.546)" fill="#a23388"/>
+    </g>
+  </g>
+  <g id="Grupo_3797" data-name="Grupo 3797" transform="translate(7.964 5.449)">
+    <g id="Grupo_3796" data-name="Grupo 3796">
+      <path id="Trazado_7436" data-name="Trazado 7436" d="M226,158.105l-2.515-2.515a1.16,1.16,0,0,0,.126-.545,1.221,1.221,0,0,0-.838-1.174v-2.18a.419.419,0,0,0-.838,0v2.18a1.221,1.221,0,0,0-.838,1.174,1.235,1.235,0,0,0,1.257,1.258,1.16,1.16,0,0,0,.545-.126l2.515,2.515a.405.405,0,0,0,.587,0A.405.405,0,0,0,226,158.105Zm-3.647-2.641a.419.419,0,1,1,.419-.419A.4.4,0,0,1,222.348,155.465Z" transform="translate(-221.091 -151.273)" fill="#a23388"/>
+    </g>
+  </g>
+</svg>

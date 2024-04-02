@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.501" height="66.943" viewBox="0 0 61.501 66.943">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_3322" data-name="Rectángulo 3322" width="61.501" height="66.943" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_4467" data-name="Grupo 4467" transform="translate(0 0)">
+    <line id="Línea_26" data-name="Línea 26" x2="27.333" transform="translate(17.084 14.88)" fill="none" stroke="#25215f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <line id="Línea_27" data-name="Línea 27" x2="20.409" transform="translate(20.546 20.837)" fill="none" stroke="#25215f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <g id="Grupo_4464" data-name="Grupo 4464">
+      <g id="Grupo_4463" data-name="Grupo 4463" clip-path="url(#clip-path)">
+        <path id="Trazado_7520" data-name="Trazado 7520" d="M15.314,44.584H1.25V1.25h59V44.584H46.489" fill="none" stroke="#25215f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+      </g>
+    </g>
+    <path id="Trazado_7521" data-name="Trazado 7521" d="M6.644,13.722V6.431h7.289" fill="none" stroke="#25215f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <path id="Trazado_7522" data-name="Trazado 7522" d="M47.565,6.431h7.291v7.291" fill="none" stroke="#25215f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <path id="Trazado_7523" data-name="Trazado 7523" d="M54.856,32.112V39.4H47.565" fill="none" stroke="#25215f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <path id="Trazado_7524" data-name="Trazado 7524" d="M13.934,39.4H6.645V32.112" fill="none" stroke="#25215f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <g id="Grupo_4466" data-name="Grupo 4466">
+      <g id="Grupo_4465" data-name="Grupo 4465" clip-path="url(#clip-path)">
+        <path id="Trazado_7525" data-name="Trazado 7525" d="M36.018,50.29l.01,13.746-5.257-4.979L25.4,63.938,25.4,54.816" fill="none" stroke="#25215f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+        <path id="Trazado_7526" data-name="Trazado 7526" d="M26.007,29.528a11.466,11.466,0,1,1-4.345,3.453" fill="none" stroke="#25215f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+        <path id="Trazado_7527" data-name="Trazado 7527" d="M24.688,39.272l4.1,5.673,7.551-9.027" fill="none" stroke="#25215f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

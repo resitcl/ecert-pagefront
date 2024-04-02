@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=60828" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=22461" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=60828" type="text/javascript"></script>
+    <script src="js/main.js?v=22461" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -112,21 +112,21 @@
                             <div class="header__nav__submenu__image"> <img src="img/icons/eff-4-opacity.svg"></div>
                             <div class="header__nav__submenu__header"> 
                               <h4>Ayuda </h4>
-                              <p>Nulla a quam blandit sagittis augue varius
+                              <p>Cras commodo at senectus ligula libero ad
                               </p>
                             </div>
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="faq.html">Preguntas frecuentes</a>
-                                  <p>Consectetur justo semper porta
+                                  <p>Dictum tortor molestie cras
                                   </p>
                                 </li>
                                 <li><a href="tools.html">Herramientas</a>
-                                  <p>Leo habitasse ante vitae
+                                  <p>Vivamus mi enim erat
                                   </p>
                                 </li>
                                 <li class="last"><a href="tutoriales.html">Tutoriales</a>
-                                  <p>At tempor turpis semper
+                                  <p>Primis facilisis quisque praesent
                                   </p>
                                 </li>
                               </ul>
@@ -146,15 +146,15 @@
                             <div class="header__nav__submenu__body"> 
                               <ul> 
                                 <li> <a href="aboutus.html">Quiénes somos</a>
-                                  <p>Lacinia eu vehicula mauris et suscipit
+                                  <p>Primis class eget cubilia suspendisse sodales
                                   </p>
                                 </li>
                                 <li><a href="news.html">Blog</a>
-                                  <p>Pretium arcu ornare mattis adipiscing purus varius
+                                  <p>Primis mattis nisl rhoncus nunc accumsan platea
                                   </p>
                                 </li>
                                 <li class="last"><a href="red-atencion.html">Red de Atención</a>
-                                  <p>Ultrices elementum fringilla euismod vulputate
+                                  <p>Tincidunt integer nibh vivamus sed
                                   </p>
                                 </li>
                               </ul>
@@ -216,7 +216,8 @@
                     </ul>
                   </div>
                 </div>
-                <div class="header__nav__nav__body">
+                <div class="header__nav__nav__body header__nav__nav__body--light">
+                  <h4>Links de interés</h4>
                   <div class="header__nav__nav__menu"> 
                     <ul> 
                       <li><a href="#">Portal Empresa</a></li>
@@ -239,10 +240,16 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--contact">
+      <section class="section--breadcrumb">
         <div class="section__wrap section__wrap--sm">
           <div class="section__header">
             <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="contact.html" class="current">Hablemos</a></div>
+          </div>
+        </div>
+      </section>
+      <section class="section--contact">
+        <div class="section__wrap section__wrap--sm">
+          <div class="section__header">				
             <div class="section__back"> <a href="#" class="btn btn--xs">Volver <span class="fa fa-angle-left"></span></a></div>
             <div class="section__content"> 
               <h1 class="h2 section__title">Hablemos</h1>
@@ -286,18 +293,18 @@
                     </div>
                   </div>
                   <div class="col-xs-12">
-                    <div class="form__element"> 
+                    <div class="form__element form__element--codephone form__element--codephone--top">
                       <div class="form__title">Celular 1</div>
-                      <div class="form__input">
-                        <input type="text" name="#" placeholder="Ej: Ignacio Sepúlveda">
+                      <div class="form__input"> 
+                        <input type="tel" name="#" value="+56" required>
                       </div>
                     </div>
                   </div>
                   <div class="col-xs-12">
-                    <div class="form__element"> 
+                    <div class="form__element form__element--codephone">
                       <div class="form__title">Celular 2</div>
-                      <div class="form__input">
-                        <input type="text" name="#" placeholder="Ej: Ignacio Sepúlveda">
+                      <div class="form__input"> 
+                        <input type="tel" name="#" value="+56" required>
                       </div>
                     </div>
                   </div>
@@ -306,17 +313,17 @@
                       <div class="form__title">Asunto</div>
                       <div class="form__input">
                         <select name="#">
-                          <option value="#">Justo integer pellentesque
+                          <option value="#">Aenean in fermentum
                           </option>
-                          <option value="#">Sed vehicula
+                          <option value="#">Ut taciti
                           </option>
-                          <option value="#">Sollicitudin
+                          <option value="#">Lacus
                           </option>
-                          <option value="#">Bibendum augue dapibus
+                          <option value="#">Torquent convallis potenti
                           </option>
-                          <option value="#">Eros felis
+                          <option value="#">Ornare nam
                           </option>
-                          <option value="#">Aenean dictumst malesuada
+                          <option value="#">Bibendum tellus habitant
                           </option>
                         </select>
                       </div>
@@ -327,12 +334,12 @@
                       <div class="form__title">Comentarios</div>
                       <div class="form__input">
                         <textarea name="#" placeholder="Escribe tu comentario"></textarea>
-                      </div>
+                      </div><span>*Campos obligatorios</span>
                     </div>
                   </div>
                   <div class="col-xs-12 col-md-12">
                     <div class="form__button"> 
-                      <button class="btn">Enviar</button>
+                      <button class="btn btn--secondary">Enviar</button>
                     </div>
                   </div>
                 </div>
@@ -341,7 +348,6 @@
           </div>
         </div>
       </section>
-      <div class="section__loader"></div>
       <div class="addcart"> 
         <div class="addcart__opacity"></div>
         <div class="addcart__box">
@@ -350,7 +356,7 @@
           <div class="addcart__box__box">
             <div class="addcart__box__header"> 
               <h3 class="addcart__title">Agregar nuevo producto </h3>
-              <p class="addcart__description">Et netus ultricies purus sodales vehicula leo et ullamcorper lacinia mattis aenean pretium inceptos convallis.
+              <p class="addcart__description">Tempus cursus dictum sociosqu rutrum enim class auctor venenatis per tristique aliquam mollis potenti nisi.
               </p>
             </div>
             <div class="addcart__box__body">
@@ -382,19 +388,19 @@
                     <div class="addcart__tooltip">
                       <div class="addcart__circle"><span>?</span></div>
                       <div class="addcart__tooltip__tooltip">
-                        <h5>Eleifend odio
+                        <h5>Aenean curae
                         </h5>
-                        <p>Semper conubia pharetra nisi inceptos cras consectetur tellus vitae praesent. Commodo aptent euismod phasellus lacus velit eget convallis eget mollis cubilia senectus etiam id iaculis.
+                        <p>Neque erat semper felis mi potenti placerat ornare lacinia felis. Feugiat posuere nostra fames ultrices iaculis per colus fusce faucibus ultrices imperdiet ornare eleifend laoreet.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="addcart__question__body">
-                    <div class="addcart__options"></div>
+                    <div special_form="false" class="addcart__options"></div>
                   </div>
                   <div class="addcart__question__footer">
-                    <div class="addcart__alert"> <span class="fa fa-exclamation-triangle"></span>
-                      <p></p>
+                    <div class="addcart__alert"><span class="fa fa-exclamation-triangle"></span>
+                      <div class="addcart__alert__content"></div>
                     </div>
                     <div class="addcart__question__footer__buttons"><a data-prev-question class="btn btn--primary--white btn--hidden">Volver a paso anterior</a><a data-next-question class="btn">Continuar</a></div>
                   </div>
@@ -433,7 +439,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Iniciar sesión</h3>
-              <p class="section__description">Orci posuere netus nulla convallis purus colus tortor
+              <p class="section__description">Dapibus per maecenas pulvinar eu sociosqu scelerisque porttitor
               </p>
             </div>
             <div class="modal__body">
@@ -518,7 +524,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Registro</h3>
-              <p class="section__description">Mollis sagittis tristique vehicula leo eros scelerisque cras
+              <p class="section__description">Auctor tortor nec enim molestie ultrices eget fusce
               </p>
             </div>
             <div class="modal__body">
@@ -590,7 +596,7 @@
             <div class="modal__close"><span class="fa fa-close"></span></div>
             <div class="modal__header">
               <h3 class="modal__title">Recuperar contraseña</h3>
-              <p class="section__description">Potenti quam curabitur proin cubilia varius orci elementum
+              <p class="section__description">Class torquent a sociosqu lobortis nulla imperdiet vulputate
               </p>
             </div>
             <div class="modal__body">
@@ -613,20 +619,6 @@
                   </div>
                 </form>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal modal--focusrut">
-        <div class="modal__back"></div>
-        <div class="modal__front">
-          <div class="modal__box">
-            <div class="modal__close"><span class="fa fa-close"></span></div>
-            <div class="modal__header">
-              <h3 class="modal__title">¿Quieres aplicar los mismos datos del primer producto?</h3>
-            </div>
-            <div class="modal__body">
-              <div class="modal__button"><a class="btn">Reutilizar los mismos datos</a><a class="btn btn--white">Continuar con otros datos</a></div>
             </div>
           </div>
         </div>
@@ -657,18 +649,16 @@
       </div>
     </div>
     <footer>
-      <div class="footer__bar"> <img src="img/icons/line-colors.svg"></div>
       <div class="footer__wrap">
-        <div class="footer__svg"> <img src="img/icons/eff-white.svg"></div>
         <div class="footer__primary">
           <div class="footer__top">
             <div class="cols">
               <div class="col-xs-12 col-md-3">
-                <div class="footer__logo"><a href="#"><img src="img/icons/logo-ecert.png"></a></div>
+                <div class="footer__logo"><a href="#"><img src="img/icons/logo-ecert-white.svg"></a></div>
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/phone-svg.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/phone.png"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Atención Comercial y Soporte Técnico </p><span class="footer__value">600 3620 400</span>
                   </div>
@@ -676,7 +666,7 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/whatsapp.svg"></div>
+                  <div class="footer__icon"> <img src="img/icons/whatsapp.png"></div>
                   <div class="footer__info__content"> 
                     <p class="footer__description">Escríbenos por Whatsapp</p><span class="footer__value">(+56 2) 3340 7500</span>
                   </div>
@@ -684,15 +674,14 @@
               </div>
               <div class="col-xs-12 col-md-3">
                 <div class="footer__info"> 
-                  <div class="footer__icon"> <img src="img/icons/mail.svg"></div>
-                  <div class="footer__info__content"> <span class="footer__value">Contáctanos</span></div>
+                  <div class="footer__button"><a href="contact.html" class="btn btn--secondary">Hablemos<img src="img/icons/icon-contact.png"></a></div>
                 </div>
               </div>
             </div>
           </div>
           <div class="footer__center">
             <div class="cols">
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">E-CERTCHILE</h4>
                   <ul>
@@ -706,7 +695,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">Personas</h4>
                   <ul>
@@ -716,7 +705,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">PYMES</h4>
                   <ul>
@@ -726,7 +715,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-12 col-md-3">
                 <div class="footer__links">
                   <h4 class="footer__title">Empresas</h4>
                   <ul>
